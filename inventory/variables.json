@@ -5,5 +5,12 @@
     "type": "",
     "isCloud": false,
     "value": 32
+  },
+  "sDVM867#/yz+{7d-.Dy9": {
+    "id": "sDVM867#/yz+{7d-.Dy9",
+    "name": "GridSpacing",
+    "type": "",
+    "isCloud": false,
+    "value": 0.25
   }
 }

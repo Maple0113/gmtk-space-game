@@ -12,5 +12,15 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "GAME main menu"
+  },
+  "mY!n(%JOZe1++Q$MH;WY": {
+    "id": "mY!n(%JOZe1++Q$MH;WY",
+    "name": "Bodies",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":2}}"
+    ],
+    "_monitorUpToDate": true
   }
 }
