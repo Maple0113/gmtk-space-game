@@ -25,7 +25,7 @@
     "name": "MaxPages",
     "type": "",
     "isCloud": false,
-    "value": 2
+    "value": 1
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -43,11 +43,9 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"generic\",\"Amount\":5,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":4,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":7,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":2345,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":45,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}"
+      "{\"Name\":\"generic bottom\",\"Amount\":-3,\"Position\":0,\"Costume\":\"generic\"}",
+      "{\"Name\":\"generic middle\",\"Amount\":-10,\"Position\":1,\"Costume\":\"generic\"}",
+      "{\"Name\":\"generic top\",\"Amount\":3,\"Position\":2,\"Costume\":\"generic\"}"
     ],
     "_monitorUpToDate": false
   },
@@ -74,9 +72,16 @@
   },
   ")1W_C~aD`ARD+yfD~n2n": {
     "id": ")1W_C~aD`ARD+yfD~n2n",
-    "name": "INVENTORY page change",
+    "name": "INVENTORY refresh page",
     "type": "broadcast_msg",
     "isCloud": false,
-    "value": "INVENTORY page change"
+    "value": "INVENTORY refresh page"
+  },
+  "q-Pgc5$|Ybudr72CICJN": {
+    "id": "q-Pgc5$|Ybudr72CICJN",
+    "name": "INVENTORY dragging item",
+    "type": "broadcast_msg",
+    "isCloud": false,
+    "value": "INVENTORY dragging item"
   }
 }
