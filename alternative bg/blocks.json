@@ -30,6 +30,21 @@
       "x": 339,
       "y": 659
     },
+    "math_number2": {
+      "id": "math_number2",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "500"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "|igRxi5;LFK?;e$r0e)`",
+      "shadow": true
+    },
     "looks_setsizeto1": {
       "id": "looks_setsizeto1",
       "opcode": "looks_setsizeto",
@@ -45,8 +60,8 @@
       "topLevel": false,
       "parent": "looks_gotofrontback1",
       "shadow": false,
-      "x": "-358",
-      "y": "715"
+      "x": 348.29629629629625,
+      "y": 768.2962962962962
     },
     "math_number1": {
       "id": "math_number1",

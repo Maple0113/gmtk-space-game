@@ -7,78 +7,6 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "Welcome to my project!",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": true,
-      "parent": null,
-      "shadow": true,
-      "x": 336.7037014431425,
-      "y": 511.8148148148145
-    },
-    "math_number1": {
-      "id": "math_number1",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "3883.2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": true,
-      "parent": null,
-      "shadow": true,
-      "x": 463.05349392361126,
-      "y": 511.8148148148146
-    },
-    "math_number2": {
-      "id": "math_number2",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": true,
-      "parent": null,
-      "shadow": true,
-      "x": 303.62962962962985,
-      "y": 664.2592592592575
-    },
-    "math_number3": {
-      "id": "math_number3",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": true,
-      "parent": null,
-      "shadow": true,
-      "x": 435.1990742860019,
-      "y": 668.2592592592575
-    },
-    "text2": {
-      "id": "text2",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
           "value": "",
           "id": null
         }
@@ -90,8 +18,8 @@
       "x": 382.23765359101486,
       "y": 664.2222222222225
     },
-    "text3": {
-      "id": "text3",
+    "text2": {
+      "id": "text2",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -107,6 +35,138 @@
       "shadow": true,
       "x": 455.2222179836698,
       "y": 511.8148148148145
+    },
+    "math_number11": {
+      "id": "math_number11",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "100"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "-0f8)!awl+|DwUyRmK^/",
+      "shadow": true
+    },
+    "control_create_clone_of_menu2": {
+      "id": "control_create_clone_of_menu2",
+      "opcode": "control_create_clone_of_menu",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": {
+          "name": "CLONE_OPTION",
+          "value": "_myself_"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "R%XMUSMRu;|FE98Pm*VM",
+      "shadow": true
+    },
+    "text4": {
+      "id": "text4",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "T-"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": true
+    },
+    "math_number12": {
+      "id": "math_number12",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "4"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "strings_letters_of1",
+      "shadow": true
+    },
+    "math_number13": {
+      "id": "math_number13",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "99"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "strings_letters_of1",
+      "shadow": true
+    },
+    "math_number14": {
+      "id": "math_number14",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "5"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_multiply1",
+      "shadow": true
+    },
+    "control_start_as_clone1": {
+      "id": "control_start_as_clone1",
+      "opcode": "control_start_as_clone",
+      "inputs": {},
+      "fields": {},
+      "next": "looks_setsizeto1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 739,
+      "y": 140
+    },
+    "math_number15": {
+      "id": "math_number15",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "450"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "nAq$M@tK?Xl.UeGFl4#[",
+      "shadow": true
+    },
+    "math_number16": {
+      "id": "math_number16",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "7"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "M7cNGQ.E@uLt`iWa57qs",
+      "shadow": true
     },
     "event_whenbroadcastreceived1": {
       "id": "event_whenbroadcastreceived1",
@@ -132,41 +192,10 @@
       "opcode": "sensing_resettimer",
       "inputs": {},
       "fields": {},
-      "next": "looks_setsizeto1",
+      "next": "looks_setsizeto2",
       "topLevel": false,
       "parent": "event_whenbroadcastreceived1",
       "shadow": false
-    },
-    "looks_setsizeto1": {
-      "id": "looks_setsizeto1",
-      "opcode": "looks_setsizeto",
-      "inputs": {
-        "SIZE": {
-          "name": "SIZE",
-          "block": "math_number11",
-          "shadow": "math_number11"
-        }
-      },
-      "fields": {},
-      "next": "motion_gotoxy1",
-      "topLevel": false,
-      "parent": "sensing_resettimer1",
-      "shadow": false
-    },
-    "math_number11": {
-      "id": "math_number11",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "100"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": true
     },
     "motion_gotoxy1": {
       "id": "motion_gotoxy1",
@@ -174,23 +203,23 @@
       "inputs": {
         "X": {
           "name": "X",
-          "block": "math_number9",
-          "shadow": "math_number9"
+          "block": "math_number8",
+          "shadow": "math_number8"
         },
         "Y": {
           "name": "Y",
-          "block": "math_number10",
-          "shadow": "math_number10"
+          "block": "math_number9",
+          "shadow": "math_number9"
         }
       },
       "fields": {},
       "next": "control_create_clone_of1",
       "topLevel": false,
-      "parent": "looks_setsizeto1",
+      "parent": "looks_setsizeto2",
       "shadow": false
     },
-    "math_number9": {
-      "id": "math_number9",
+    "math_number8": {
+      "id": "math_number8",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -204,8 +233,8 @@
       "parent": "motion_gotoxy1",
       "shadow": true
     },
-    "math_number10": {
-      "id": "math_number10",
+    "math_number9": {
+      "id": "math_number9",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -217,37 +246,6 @@
       "next": null,
       "topLevel": false,
       "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "control_create_clone_of1": {
-      "id": "control_create_clone_of1",
-      "opcode": "control_create_clone_of",
-      "inputs": {
-        "CLONE_OPTION": {
-          "name": "CLONE_OPTION",
-          "block": "control_create_clone_of_menu1",
-          "shadow": "control_create_clone_of_menu1"
-        }
-      },
-      "fields": {},
-      "next": "text_setFontInput1",
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": false
-    },
-    "control_create_clone_of_menu1": {
-      "id": "control_create_clone_of_menu1",
-      "opcode": "control_create_clone_of_menu",
-      "inputs": {},
-      "fields": {
-        "CLONE_OPTION": {
-          "name": "CLONE_OPTION",
-          "value": "_myself_"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "control_create_clone_of1",
       "shadow": true
     },
     "text_setFontInput1": {
@@ -287,8 +285,8 @@
       "inputs": {
         "WIDTH": {
           "name": "WIDTH",
-          "block": "math_number8",
-          "shadow": "math_number8"
+          "block": "math_number7",
+          "shadow": "math_number7"
         },
         "ALIGN": {
           "name": "ALIGN",
@@ -302,8 +300,8 @@
       "parent": "text_setFontInput1",
       "shadow": false
     },
-    "math_number8": {
-      "id": "math_number8",
+    "math_number7": {
+      "id": "math_number7",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -401,8 +399,8 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "text4",
-          "shadow": "text4"
+          "block": "text3",
+          "shadow": "text3"
         },
         "STRING2": {
           "name": "STRING2",
@@ -416,8 +414,8 @@
       "parent": "text_setText1",
       "shadow": false
     },
-    "text4": {
-      "id": "text4",
+    "text3": {
+      "id": "text3",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -437,13 +435,13 @@
       "inputs": {
         "LETTER1": {
           "name": "LETTER1",
-          "block": "math_number4",
-          "shadow": "math_number4"
+          "block": "math_number3",
+          "shadow": "math_number3"
         },
         "LETTER2": {
           "name": "LETTER2",
-          "block": "math_number5",
-          "shadow": "math_number5"
+          "block": "math_number4",
+          "shadow": "math_number4"
         },
         "STRING": {
           "name": "STRING",
@@ -455,10 +453,12 @@
       "next": null,
       "topLevel": false,
       "parent": "operator_join1",
-      "shadow": false
+      "shadow": false,
+      "x": 420.13991405345774,
+      "y": 779.9629629629629
     },
-    "math_number4": {
-      "id": "math_number4",
+    "math_number3": {
+      "id": "math_number3",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -472,8 +472,8 @@
       "parent": "strings_letters_of1",
       "shadow": true
     },
-    "math_number5": {
-      "id": "math_number5",
+    "math_number4": {
+      "id": "math_number4",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -506,7 +506,9 @@
       "next": null,
       "topLevel": false,
       "parent": "strings_letters_of1",
-      "shadow": false
+      "shadow": false,
+      "x": 541.0905303955078,
+      "y": 643
     },
     "operator_subtract1": {
       "id": "operator_subtract1",
@@ -535,20 +537,37 @@
       "inputs": {
         "NUM1": {
           "name": "NUM1",
-          "block": "math_number6",
-          "shadow": "math_number6"
+          "block": "math_number5",
+          "shadow": "math_number5"
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number7",
-          "shadow": "math_number7"
+          "block": "math_number6",
+          "shadow": "math_number6"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
       "parent": "operator_subtract1",
-      "shadow": false
+      "shadow": false,
+      "x": 630.6903230879041,
+      "y": 627.9259259259259
+    },
+    "math_number5": {
+      "id": "math_number5",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "60"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_multiply1",
+      "shadow": true
     },
     "math_number6": {
       "id": "math_number6",
@@ -558,21 +577,6 @@
         "NUM": {
           "name": "NUM",
           "value": "5"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply1",
-      "shadow": true
-    },
-    "math_number7": {
-      "id": "math_number7",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "60"
         }
       },
       "next": null,
@@ -605,36 +609,59 @@
       "parent": "sipctime_formatTime1",
       "shadow": true
     },
-    "control_start_as_clone1": {
-      "id": "control_start_as_clone1",
-      "opcode": "control_start_as_clone",
-      "inputs": {},
+    "motion_changeyby1": {
+      "id": "motion_changeyby1",
+      "opcode": "motion_changeyby",
+      "inputs": {
+        "DY": {
+          "name": "DY",
+          "block": "math_number1",
+          "shadow": "math_number1"
+        }
+      },
       "fields": {},
-      "next": "looks_setsizeto2",
-      "topLevel": true,
-      "parent": null,
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
       "shadow": false,
-      "x": 739,
-      "y": 140
+      "x": 721.7694905520468,
+      "y": 221.62962962962922
     },
-    "looks_setsizeto2": {
-      "id": "looks_setsizeto2",
+    "math_number1": {
+      "id": "math_number1",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "8"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_changeyby1",
+      "shadow": true
+    },
+    "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
       "opcode": "looks_setsizeto",
       "inputs": {
         "SIZE": {
           "name": "SIZE",
-          "block": "math_number13",
-          "shadow": "math_number13"
+          "block": "math_number2",
+          "shadow": "math_number2"
         }
       },
       "fields": {},
       "next": "motion_changeyby1",
       "topLevel": false,
       "parent": "control_start_as_clone1",
-      "shadow": false
+      "shadow": false,
+      "x": 739.5472683298246,
+      "y": 236.4444444444439
     },
-    "math_number13": {
-      "id": "math_number13",
+    "math_number2": {
+      "id": "math_number2",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -645,49 +672,80 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_setsizeto2",
+      "parent": "looks_setsizeto1",
       "shadow": true
     },
-    "motion_changeyby1": {
-      "id": "motion_changeyby1",
-      "opcode": "motion_changeyby",
+    "looks_setsizeto2": {
+      "id": "looks_setsizeto2",
+      "opcode": "looks_setsizeto",
       "inputs": {
-        "DY": {
-          "name": "DY",
-          "block": "math_number12",
-          "shadow": "math_number12"
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number10",
+          "shadow": "math_number10"
         }
       },
       "fields": {},
-      "next": null,
+      "next": "motion_gotoxy1",
       "topLevel": false,
-      "parent": "looks_setsizeto2",
-      "shadow": false
+      "parent": "sensing_resettimer1",
+      "shadow": false,
+      "x": 197.8888888888889,
+      "y": 242.4444444444444
     },
-    "math_number12": {
-      "id": "math_number12",
+    "math_number10": {
+      "id": "math_number10",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "7"
+          "value": "100"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "motion_changeyby1",
+      "parent": "looks_setsizeto2",
+      "shadow": true
+    },
+    "control_create_clone_of1": {
+      "id": "control_create_clone_of1",
+      "opcode": "control_create_clone_of",
+      "inputs": {
+        "CLONE_OPTION": {
+          "name": "CLONE_OPTION",
+          "block": "control_create_clone_of_menu1",
+          "shadow": "control_create_clone_of_menu1"
+        }
+      },
+      "fields": {},
+      "next": "text_setFontInput1",
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": false,
+      "x": 157.32504610760253,
+      "y": 330.61728395061664
+    },
+    "control_create_clone_of_menu1": {
+      "id": "control_create_clone_of_menu1",
+      "opcode": "control_create_clone_of_menu",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": {
+          "name": "CLONE_OPTION",
+          "value": "_myself_"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_create_clone_of1",
       "shadow": true
     }
   },
   "scripts": [
     "text1",
-    "math_number1",
-    "math_number2",
-    "math_number3",
     "text2",
-    "text3",
-    "event_whenbroadcastreceived1",
-    "control_start_as_clone1"
+    "control_start_as_clone1",
+    "event_whenbroadcastreceived1"
   ]
 }

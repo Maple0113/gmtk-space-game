@@ -2,13 +2,13 @@
   {
     "name": "empty",
     "dataFormat": "png",
-    "rotationCenterX": 31,
+    "rotationCenterX": 32,
     "rotationCenterY": 32
   },
   {
     "name": "full",
     "dataFormat": "png",
-    "rotationCenterX": 31,
+    "rotationCenterX": 32,
     "rotationCenterY": 32
   }
 ]

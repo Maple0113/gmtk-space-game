@@ -62,8 +62,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,1]",
-      "[0,1]"
+      "[0,0]",
+      "[1,1]"
     ],
     "_monitorUpToDate": false
   },
@@ -73,8 +73,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,1,0]",
-      "[1,1,1]"
+      "[0,0,0]",
+      "[0,0,1]"
     ],
     "_monitorUpToDate": false
   },
@@ -84,8 +84,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,0,1,1]",
-      "[0,0,0,0]"
+      "[0,0,0,0]",
+      "[0,1,0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -95,14 +95,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "1x Advertising Panels",
+      "3x Advertising Panels",
       "1x Body",
-      "0x Cargo Bay",
+      "1x Cargo Bay",
       "2x Fins",
-      "2x Fuel Tank",
+      "3x Fuel Tank",
       "1x Nose Cone",
-      "2x Thrusters",
-      "2x Windows"
+      "1x Thrusters",
+      "1x Windows"
     ],
     "_monitorUpToDate": false
   },
@@ -112,14 +112,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":1,\"type\":\"AdvertisingPanels\"}",
+      "{\"amount\":3,\"type\":\"AdvertisingPanels\"}",
       "{\"amount\":1,\"type\":\"Body\"}",
-      "{\"amount\":0,\"type\":\"CargoBay\"}",
+      "{\"amount\":1,\"type\":\"CargoBay\"}",
       "{\"amount\":2,\"type\":\"Fins\"}",
-      "{\"amount\":2,\"type\":\"FuelTank\"}",
+      "{\"amount\":3,\"type\":\"FuelTank\"}",
       "{\"amount\":1,\"type\":\"NoseCone\"}",
-      "{\"amount\":2,\"type\":\"Thrusters\"}",
-      "{\"amount\":2,\"type\":\"Windows\"}"
+      "{\"amount\":1,\"type\":\"Thrusters\"}",
+      "{\"amount\":1,\"type\":\"Windows\"}"
     ],
     "_monitorUpToDate": false
   },
