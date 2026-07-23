@@ -261,7 +261,7 @@
         }
       },
       "fields": {},
-      "next": "control_wait2",
+      "next": "looks_gotofrontback1",
       "topLevel": false,
       "parent": "looks_show1",
       "shadow": false
@@ -363,7 +363,7 @@
       "fields": {},
       "next": "looks_hide1",
       "topLevel": false,
-      "parent": "looks_switchcostumeto1",
+      "parent": "looks_gotofrontback1",
       "shadow": false
     },
     "math_positive_number1": {
@@ -409,7 +409,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2096
+      "y": 2144
     },
     "theshovelcanvaseffects_seteffect2": {
       "id": "theshovelcanvaseffects_seteffect2",
@@ -545,7 +545,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2368
+      "y": 2416
     },
     "theshovelcanvaseffects_seteffect3": {
       "id": "theshovelcanvaseffects_seteffect3",
@@ -681,7 +681,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2640
+      "y": 2688
     },
     "theshovelcanvaseffects_seteffect4": {
       "id": "theshovelcanvaseffects_seteffect4",
@@ -817,7 +817,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2912
+      "y": 2960
     },
     "theshovelcanvaseffects_seteffect5": {
       "id": "theshovelcanvaseffects_seteffect5",
@@ -936,112 +936,24 @@
       "parent": "iframe_displayHTML4",
       "shadow": true
     },
-    "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
-      "opcode": "event_whenflagclicked",
+    "event_whenbroadcastreceived5": {
+      "id": "event_whenbroadcastreceived5",
+      "opcode": "event_whenbroadcastreceived",
       "inputs": {},
-      "fields": {},
-      "next": "looks_setsizeto1",
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "Windows",
+          "id": "c?L#51.#1:Q{u9h1$T@0",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "theshovelcanvaseffects_seteffect6",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 64
-    },
-    "looks_setsizeto1": {
-      "id": "looks_setsizeto1",
-      "opcode": "looks_setsizeto",
-      "inputs": {
-        "SIZE": {
-          "name": "SIZE",
-          "block": "math_number11",
-          "shadow": "math_number11"
-        }
-      },
-      "fields": {},
-      "next": "motion_gotoxy2",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false
-    },
-    "math_number11": {
-      "id": "math_number11",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "500",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": true
-    },
-    "motion_gotoxy2": {
-      "id": "motion_gotoxy2",
-      "opcode": "motion_gotoxy",
-      "inputs": {
-        "X": {
-          "name": "X",
-          "block": "math_number9",
-          "shadow": "math_number9"
-        },
-        "Y": {
-          "name": "Y",
-          "block": "math_number10",
-          "shadow": "math_number10"
-        }
-      },
-      "fields": {},
-      "next": "looks_hide2",
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": false
-    },
-    "math_number9": {
-      "id": "math_number9",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "0",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": true
-    },
-    "math_number10": {
-      "id": "math_number10",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "0",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": true
-    },
-    "looks_hide2": {
-      "id": "looks_hide2",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": "theshovelcanvaseffects_seteffect6",
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": false
+      "y": 1328
     },
     "theshovelcanvaseffects_seteffect6": {
       "id": "theshovelcanvaseffects_seteffect6",
@@ -1059,9 +971,9 @@
         }
       },
       "fields": {},
-      "next": "iframe_close2",
+      "next": "iframe_setInteractive6",
       "topLevel": false,
-      "parent": "looks_hide2",
+      "parent": "event_whenbroadcastreceived5",
       "shadow": false
     },
     "theshovelcanvaseffects_menu_EFFECTMENU6": {
@@ -1087,95 +999,13 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "0",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect6",
-      "shadow": true
-    },
-    "iframe_close2": {
-      "id": "iframe_close2",
-      "opcode": "iframe_close",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect6",
-      "shadow": false
-    },
-    "event_whenbroadcastreceived5": {
-      "id": "event_whenbroadcastreceived5",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "value": "Windows",
-          "id": "c?L#51.#1:Q{u9h1$T@0",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "theshovelcanvaseffects_seteffect7",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 48,
-      "y": 1280
-    },
-    "theshovelcanvaseffects_seteffect7": {
-      "id": "theshovelcanvaseffects_seteffect7",
-      "opcode": "theshovelcanvaseffects_seteffect",
-      "inputs": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU7",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU7"
-        },
-        "NUMBER": {
-          "name": "NUMBER",
-          "block": "math_number12",
-          "shadow": "math_number12"
-        }
-      },
-      "fields": {},
-      "next": "iframe_setInteractive6",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived5",
-      "shadow": false
-    },
-    "theshovelcanvaseffects_menu_EFFECTMENU7": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU7",
-      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
-      "inputs": {},
-      "fields": {
-        "EFFECTMENU": {
-          "name": "EFFECTMENU",
-          "value": "blur",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect7",
-      "shadow": true
-    },
-    "math_number12": {
-      "id": "math_number12",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
           "value": "2",
           "id": null
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect7",
+      "parent": "theshovelcanvaseffects_seteffect6",
       "shadow": true
     },
     "iframe_setInteractive6": {
@@ -1191,7 +1021,7 @@
       "fields": {},
       "next": "iframe_displayHTML5",
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect7",
+      "parent": "theshovelcanvaseffects_seteffect6",
       "shadow": false
     },
     "iframe_menu_interactiveMenu6": {
@@ -1254,26 +1084,26 @@
           "variableType": "broadcast_msg"
         }
       },
-      "next": "theshovelcanvaseffects_seteffect8",
+      "next": "theshovelcanvaseffects_seteffect7",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 1008
+      "y": 1056
     },
-    "theshovelcanvaseffects_seteffect8": {
-      "id": "theshovelcanvaseffects_seteffect8",
+    "theshovelcanvaseffects_seteffect7": {
+      "id": "theshovelcanvaseffects_seteffect7",
       "opcode": "theshovelcanvaseffects_seteffect",
       "inputs": {
         "EFFECT": {
           "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU8",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU8"
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU7",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU7"
         },
         "NUMBER": {
           "name": "NUMBER",
-          "block": "math_number13",
-          "shadow": "math_number13"
+          "block": "math_number9",
+          "shadow": "math_number9"
         }
       },
       "fields": {},
@@ -1282,8 +1112,8 @@
       "parent": "event_whenbroadcastreceived6",
       "shadow": false
     },
-    "theshovelcanvaseffects_menu_EFFECTMENU8": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU8",
+    "theshovelcanvaseffects_menu_EFFECTMENU7": {
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU7",
       "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
       "inputs": {},
       "fields": {
@@ -1295,11 +1125,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect8",
+      "parent": "theshovelcanvaseffects_seteffect7",
       "shadow": true
     },
-    "math_number13": {
-      "id": "math_number13",
+    "math_number9": {
+      "id": "math_number9",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1311,7 +1141,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect8",
+      "parent": "theshovelcanvaseffects_seteffect7",
       "shadow": true
     },
     "iframe_setInteractive7": {
@@ -1327,7 +1157,7 @@
       "fields": {},
       "next": "iframe_displayHTML6",
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect8",
+      "parent": "theshovelcanvaseffects_seteffect7",
       "shadow": false
     },
     "iframe_menu_interactiveMenu7": {
@@ -1385,31 +1215,31 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "edp?C};k@B||N{dL%CY7",
           "value": "NoseCone",
+          "id": "edp?C};k@B||N{dL%CY7",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "theshovelcanvaseffects_seteffect9",
+      "next": "theshovelcanvaseffects_seteffect8",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 1552
+      "y": 1600
     },
-    "theshovelcanvaseffects_seteffect9": {
-      "id": "theshovelcanvaseffects_seteffect9",
+    "theshovelcanvaseffects_seteffect8": {
+      "id": "theshovelcanvaseffects_seteffect8",
       "opcode": "theshovelcanvaseffects_seteffect",
       "inputs": {
         "EFFECT": {
           "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU9",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU9"
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU8",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU8"
         },
         "NUMBER": {
           "name": "NUMBER",
-          "block": "math_number14",
-          "shadow": "math_number14"
+          "block": "math_number10",
+          "shadow": "math_number10"
         }
       },
       "fields": {},
@@ -1418,34 +1248,36 @@
       "parent": "event_whenbroadcastreceived7",
       "shadow": false
     },
-    "theshovelcanvaseffects_menu_EFFECTMENU9": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU9",
+    "theshovelcanvaseffects_menu_EFFECTMENU8": {
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU8",
       "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
       "inputs": {},
       "fields": {
         "EFFECTMENU": {
           "name": "EFFECTMENU",
-          "value": "blur"
+          "value": "blur",
+          "id": null
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
+      "parent": "theshovelcanvaseffects_seteffect8",
       "shadow": true
     },
-    "math_number14": {
-      "id": "math_number14",
+    "math_number10": {
+      "id": "math_number10",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
+      "parent": "theshovelcanvaseffects_seteffect8",
       "shadow": true
     },
     "iframe_setInteractive8": {
@@ -1461,7 +1293,7 @@
       "fields": {},
       "next": "iframe_displayHTML7",
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
+      "parent": "theshovelcanvaseffects_seteffect8",
       "shadow": false
     },
     "iframe_menu_interactiveMenu8": {
@@ -1471,7 +1303,8 @@
       "fields": {
         "interactiveMenu": {
           "name": "interactiveMenu",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -1502,7 +1335,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;color:white;font-family:sans-serif;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"msg\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let msg=document.getElementById(\"msg\"); let drawing=false; let pts=[]; let lastX=0; let lastY=0;  ctx.fillStyle=\"#222\"; ctx.fillRect(0,0,300,300);  function addPoint(x,y){   pts.push({x:x,y:y}); }  function drawLine(x1,y1,x2,y2){   ctx.strokeStyle=\"#4aa3ff\";   ctx.lineWidth=4;   ctx.lineCap=\"round\";   ctx.beginPath();   ctx.moveTo(x1,y1);   ctx.lineTo(x2,y2);   ctx.stroke();   let steps=10;   for(let i=0;i<=steps;i++){     let t=i/steps;     let x=x1+(x2-x1)*t;     let y=y1+(y2-y1)*t;     addPoint(x,y);   } }  function finish(){   if(pts.length<10)return;   let cx=150;   let cy=150;   let radii=pts.map(p=>Math.hypot(p.x-cx,p.y-cy));   let avg=radii.reduce((a,b)=>a+b,0)/radii.length;   let diffs=radii.map(r=>Math.abs(r-avg));   let err=diffs.reduce((a,b)=>a+b,0)/diffs.length;   let score=err<8?3:err<20?2:err<35?1:0;   window.parent.postMessage({type:\"noseScore\",score:score},\"*\"); }  c.onmousedown=e=>{   drawing=true;   let r=c.getBoundingClientRect();   lastX=e.clientX-r.left;   lastY=e.clientY-r.top;   addPoint(lastX,lastY); };  c.onmouseup=e=>{   drawing=false;   finish(); };  c.onmousemove=e=>{   if(!drawing)return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   drawLine(lastX,lastY,x,y);   lastX=x;   lastY=y; }; </script>  </body> </html>"
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;color:white;font-family:sans-serif;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"msg\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let msg=document.getElementById(\"msg\"); let drawing=false; let pts=[]; let lastX=0; let lastY=0;  ctx.fillStyle=\"#222\"; ctx.fillRect(0,0,300,300);  function addPoint(x,y){   pts.push({x:x,y:y}); }  function drawLine(x1,y1,x2,y2){   ctx.strokeStyle=\"#4aa3ff\";   ctx.lineWidth=4;   ctx.lineCap=\"round\";   ctx.beginPath();   ctx.moveTo(x1,y1);   ctx.lineTo(x2,y2);   ctx.stroke();   let steps=10;   for(let i=0;i<=steps;i++){     let t=i/steps;     let x=x1+(x2-x1)*t;     let y=y1+(y2-y1)*t;     addPoint(x,y);   } }  function finish(){   if(pts.length<10)return;   let cx=150;   let cy=150;   let radii=pts.map(p=>Math.hypot(p.x-cx,p.y-cy));   let avg=radii.reduce((a,b)=>a+b,0)/radii.length;   let diffs=radii.map(r=>Math.abs(r-avg));   let err=diffs.reduce((a,b)=>a+b,0)/diffs.length;   let score=err<8?3:err<20?2:err<35?1:0;   window.parent.postMessage({type:\"noseScore\",score:score},\"*\"); }  c.onmousedown=e=>{   drawing=true;   let r=c.getBoundingClientRect();   lastX=e.clientX-r.left;   lastY=e.clientY-r.top;   addPoint(lastX,lastY); };  c.onmouseup=e=>{   drawing=false;   finish(); };  c.onmousemove=e=>{   if(!drawing)return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   drawLine(lastX,lastY,x,y);   lastX=x;   lastY=y; }; </script>  </body> </html>",
+          "id": null
         }
       },
       "next": null,
@@ -1517,31 +1351,31 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "fAF}S32L:%A[3Hh*]?:@",
           "value": "FuelTank",
+          "id": "fAF}S32L:%A[3Hh*]?:@",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "theshovelcanvaseffects_seteffect10",
+      "next": "theshovelcanvaseffects_seteffect9",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 1824
+      "y": 1872
     },
-    "theshovelcanvaseffects_seteffect10": {
-      "id": "theshovelcanvaseffects_seteffect10",
+    "theshovelcanvaseffects_seteffect9": {
+      "id": "theshovelcanvaseffects_seteffect9",
       "opcode": "theshovelcanvaseffects_seteffect",
       "inputs": {
         "EFFECT": {
           "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU10",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU10"
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU9",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU9"
         },
         "NUMBER": {
           "name": "NUMBER",
-          "block": "math_number15",
-          "shadow": "math_number15"
+          "block": "math_number11",
+          "shadow": "math_number11"
         }
       },
       "fields": {},
@@ -1550,34 +1384,36 @@
       "parent": "event_whenbroadcastreceived8",
       "shadow": false
     },
-    "theshovelcanvaseffects_menu_EFFECTMENU10": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU10",
+    "theshovelcanvaseffects_menu_EFFECTMENU9": {
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU9",
       "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
       "inputs": {},
       "fields": {
         "EFFECTMENU": {
           "name": "EFFECTMENU",
-          "value": "blur"
+          "value": "blur",
+          "id": null
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
+      "parent": "theshovelcanvaseffects_seteffect9",
       "shadow": true
     },
-    "math_number15": {
-      "id": "math_number15",
+    "math_number11": {
+      "id": "math_number11",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
+      "parent": "theshovelcanvaseffects_seteffect9",
       "shadow": true
     },
     "iframe_setInteractive9": {
@@ -1593,7 +1429,7 @@
       "fields": {},
       "next": "iframe_displayHTML8",
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
+      "parent": "theshovelcanvaseffects_seteffect9",
       "shadow": false
     },
     "iframe_menu_interactiveMenu9": {
@@ -1603,7 +1439,8 @@
       "fields": {
         "interactiveMenu": {
           "name": "interactiveMenu",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -1634,13 +1471,196 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} #b0{left:40px;} #b1{left:120px;} #b2{left:200px;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"b0\" class=\"btn\"></div>   <div id=\"b1\" class=\"btn\"></div>   <div id=\"b2\" class=\"btn\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let b0=document.getElementById(\"b0\"); let b1=document.getElementById(\"b1\"); let b2=document.getElementById(\"b2\");  let targets=[0,0,0]; let fills=[0,0,0]; let active=-1; let ended=false;  let barX=30; let barY=140; let barW=240; let barH=20;  function randomTargets(){   let a=Math.random();   let b=Math.random();   let d=Math.random();   let s=a+b+d;   targets=[a/s,b/s,d/s]; }  randomTargets();  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.fillStyle=\"#333\";   ctx.fillRect(barX-4,barY-4,barW+8,barH+8);    let w0=fills[0]*barW;   let w1=fills[1]*barW;   let w2=fills[2]*barW;    ctx.fillStyle=\"#ff4444\";   ctx.fillRect(barX,barY,w0,barH);    ctx.fillStyle=\"#44ff44\";   ctx.fillRect(barX+w0,barY,w1,barH);    ctx.fillStyle=\"#4488ff\";   ctx.fillRect(barX+w0+w1,barY,w2,barH);    let t0=targets[0]*barW;   let t1=targets[1]*barW;   let t2=targets[2]*barW;    ctx.fillStyle=\"#ffffff\";   ctx.fillRect(barX+t0-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1+t2-2,barY-6,4,4); }  function update(){   if(ended)return;   if(active>=0){     fills[active]+=0.004;     if(fills[active]>1)fills[active]=1;   }   draw();   requestAnimationFrame(update); }  function finish(){   if(ended)return;   ended=true;   let err=0;   for(let i=0;i<3;i++){     err+=Math.abs(fills[i]-targets[i]);   }   err/=3;   let score=err<0.05?3:err<0.12?2:err<0.2?1:0;   window.parent.postMessage({type:\"fuelScore\",score:score},\"*\"); }  function down(i){if(!ended)active=i;} function up(){active=-1;}  b0.onmousedown=()=>down(0); b1.onmousedown=()=>down(1); b2.onmousedown=()=>down(2);  b0.onmouseup=up; b1.onmouseup=up; b2.onmouseup=up;  b0.onmouseleave=up; b1.onmouseleave=up; b2.onmouseleave=up;  setTimeout(()=>{finish();},6000);  draw(); update(); </script>  </body> </html>"
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} #b0{left:40px;} #b1{left:120px;} #b2{left:200px;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"b0\" class=\"btn\"></div>   <div id=\"b1\" class=\"btn\"></div>   <div id=\"b2\" class=\"btn\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let b0=document.getElementById(\"b0\"); let b1=document.getElementById(\"b1\"); let b2=document.getElementById(\"b2\");  let targets=[0,0,0]; let fills=[0,0,0]; let active=-1; let ended=false;  let barX=30; let barY=140; let barW=240; let barH=20;  function randomTargets(){   let a=Math.random();   let b=Math.random();   let d=Math.random();   let s=a+b+d;   targets=[a/s,b/s,d/s]; }  randomTargets();  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.fillStyle=\"#333\";   ctx.fillRect(barX-4,barY-4,barW+8,barH+8);    let w0=fills[0]*barW;   let w1=fills[1]*barW;   let w2=fills[2]*barW;    ctx.fillStyle=\"#ff4444\";   ctx.fillRect(barX,barY,w0,barH);    ctx.fillStyle=\"#44ff44\";   ctx.fillRect(barX+w0,barY,w1,barH);    ctx.fillStyle=\"#4488ff\";   ctx.fillRect(barX+w0+w1,barY,w2,barH);    let t0=targets[0]*barW;   let t1=targets[1]*barW;   let t2=targets[2]*barW;    ctx.fillStyle=\"#ffffff\";   ctx.fillRect(barX+t0-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1+t2-2,barY-6,4,4); }  function update(){   if(ended)return;   if(active>=0){     fills[active]+=0.004;     if(fills[active]>1)fills[active]=1;   }   draw();   requestAnimationFrame(update); }  function finish(){   if(ended)return;   ended=true;   let err=0;   for(let i=0;i<3;i++){     err+=Math.abs(fills[i]-targets[i]);   }   err/=3;   let score=err<0.05?3:err<0.12?2:err<0.2?1:0;   window.parent.postMessage({type:\"fuelScore\",score:score},\"*\"); }  function down(i){if(!ended)active=i;} function up(){active=-1;}  b0.onmousedown=()=>down(0); b1.onmousedown=()=>down(1); b2.onmousedown=()=>down(2);  b0.onmouseup=up; b1.onmouseup=up; b2.onmouseup=up;  b0.onmouseleave=up; b1.onmouseleave=up; b2.onmouseleave=up;  setTimeout(()=>{finish();},6000);  draw(); update(); </script>  </body> </html>",
+          "id": null
         }
       },
       "next": null,
       "topLevel": false,
       "parent": "iframe_displayHTML8",
       "shadow": true
+    },
+    "event_whenflagclicked1": {
+      "id": "event_whenflagclicked1",
+      "opcode": "event_whenflagclicked",
+      "inputs": {},
+      "fields": {},
+      "next": "looks_setsizeto1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 48,
+      "y": 64
+    },
+    "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number15",
+          "shadow": "math_number15"
+        }
+      },
+      "fields": {},
+      "next": "motion_gotoxy2",
+      "topLevel": false,
+      "parent": "event_whenflagclicked1",
+      "shadow": false
+    },
+    "math_number15": {
+      "id": "math_number15",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "500"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": true
+    },
+    "motion_gotoxy2": {
+      "id": "motion_gotoxy2",
+      "opcode": "motion_gotoxy",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number13",
+          "shadow": "math_number13"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number14",
+          "shadow": "math_number14"
+        }
+      },
+      "fields": {},
+      "next": "looks_hide2",
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": false
+    },
+    "math_number13": {
+      "id": "math_number13",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy2",
+      "shadow": true
+    },
+    "math_number14": {
+      "id": "math_number14",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy2",
+      "shadow": true
+    },
+    "looks_hide2": {
+      "id": "looks_hide2",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": "theshovelcanvaseffects_seteffect10",
+      "topLevel": false,
+      "parent": "motion_gotoxy2",
+      "shadow": false
+    },
+    "theshovelcanvaseffects_seteffect10": {
+      "id": "theshovelcanvaseffects_seteffect10",
+      "opcode": "theshovelcanvaseffects_seteffect",
+      "inputs": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU10",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU10"
+        },
+        "NUMBER": {
+          "name": "NUMBER",
+          "block": "math_number12",
+          "shadow": "math_number12"
+        }
+      },
+      "fields": {},
+      "next": "iframe_close2",
+      "topLevel": false,
+      "parent": "looks_hide2",
+      "shadow": false
+    },
+    "theshovelcanvaseffects_menu_EFFECTMENU10": {
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU10",
+      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
+      "inputs": {},
+      "fields": {
+        "EFFECTMENU": {
+          "name": "EFFECTMENU",
+          "value": "blur"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "theshovelcanvaseffects_seteffect10",
+      "shadow": true
+    },
+    "math_number12": {
+      "id": "math_number12",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "theshovelcanvaseffects_seteffect10",
+      "shadow": true
+    },
+    "iframe_close2": {
+      "id": "iframe_close2",
+      "opcode": "iframe_close",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "theshovelcanvaseffects_seteffect10",
+      "shadow": false
+    },
+    "looks_gotofrontback1": {
+      "id": "looks_gotofrontback1",
+      "opcode": "looks_gotofrontback",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": {
+          "name": "FRONT_BACK",
+          "value": "front"
+        }
+      },
+      "next": "control_wait2",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": false,
+      "x": 71.2592592592593,
+      "y": 822.45267489712
     }
   },
   "scripts": [
@@ -1649,10 +1669,10 @@
     "event_whenbroadcastreceived2",
     "event_whenbroadcastreceived3",
     "event_whenbroadcastreceived4",
-    "event_whenflagclicked1",
     "event_whenbroadcastreceived5",
     "event_whenbroadcastreceived6",
     "event_whenbroadcastreceived7",
-    "event_whenbroadcastreceived8"
+    "event_whenbroadcastreceived8",
+    "event_whenflagclicked1"
   ]
 }

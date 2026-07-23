@@ -1,8 +1,8 @@
 [
   {
     "name": "backdrop1",
-    "dataFormat": "svg",
-    "rotationCenterX": 240,
-    "rotationCenterY": 180
+    "dataFormat": "png",
+    "rotationCenterX": 640,
+    "rotationCenterY": 360
   }
 ]

@@ -1,0 +1,858 @@
+{
+  "blocks": {
+    "control_start_as_clone1": {
+      "id": "control_start_as_clone1",
+      "opcode": "control_start_as_clone",
+      "inputs": {},
+      "fields": {},
+      "next": "motion_changexby1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 574,
+      "y": 64
+    },
+    "motion_changexby1": {
+      "id": "motion_changexby1",
+      "opcode": "motion_changexby",
+      "inputs": {
+        "DX": {
+          "name": "DX",
+          "block": "math_number4",
+          "shadow": "math_number4"
+        }
+      },
+      "fields": {},
+      "next": "text_setFont1",
+      "topLevel": false,
+      "parent": "control_start_as_clone1",
+      "shadow": false
+    },
+    "math_number4": {
+      "id": "math_number4",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-91"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_changexby1",
+      "shadow": true
+    },
+    "text_setFont1": {
+      "id": "text_setFont1",
+      "opcode": "text_setFont",
+      "inputs": {},
+      "fields": {
+        "FONT": {
+          "name": "FONT",
+          "value": "\"BillJilly\", Pixel"
+        }
+      },
+      "next": "looks_setsizeto1",
+      "topLevel": false,
+      "parent": "motion_changexby1",
+      "shadow": false
+    },
+    "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number3",
+          "shadow": "math_number3"
+        }
+      },
+      "fields": {},
+      "next": "text_setColor1",
+      "topLevel": false,
+      "parent": "text_setFont1",
+      "shadow": false
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "50"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": true
+    },
+    "text_setColor1": {
+      "id": "text_setColor1",
+      "opcode": "text_setColor",
+      "inputs": {
+        "COLOR": {
+          "name": "COLOR",
+          "block": "colour_picker1",
+          "shadow": "colour_picker1"
+        }
+      },
+      "fields": {},
+      "next": "looks_gotofrontback1",
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": false
+    },
+    "colour_picker1": {
+      "id": "colour_picker1",
+      "opcode": "colour_picker",
+      "inputs": {},
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#000000"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor1",
+      "shadow": true
+    },
+    "looks_gotofrontback1": {
+      "id": "looks_gotofrontback1",
+      "opcode": "looks_gotofrontback",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": {
+          "name": "FRONT_BACK",
+          "value": "front"
+        }
+      },
+      "next": "text_setTypeDelay1",
+      "topLevel": false,
+      "parent": "text_setColor1",
+      "shadow": false
+    },
+    "text_setTypeDelay1": {
+      "id": "text_setTypeDelay1",
+      "opcode": "text_setTypeDelay",
+      "inputs": {
+        "NUM": {
+          "name": "NUM",
+          "block": "math_number2",
+          "shadow": "math_number2"
+        }
+      },
+      "fields": {},
+      "next": "text_setWidth1",
+      "topLevel": false,
+      "parent": "looks_gotofrontback1",
+      "shadow": false
+    },
+    "math_number2": {
+      "id": "math_number2",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0.02"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setTypeDelay1",
+      "shadow": true
+    },
+    "text_setWidth1": {
+      "id": "text_setWidth1",
+      "opcode": "text_setWidth",
+      "inputs": {
+        "WIDTH": {
+          "name": "WIDTH",
+          "block": "math_number1",
+          "shadow": "math_number1"
+        }
+      },
+      "fields": {
+        "ALIGN": {
+          "name": "ALIGN",
+          "value": "left"
+        }
+      },
+      "next": "text_setText1",
+      "topLevel": false,
+      "parent": "text_setTypeDelay1",
+      "shadow": false
+    },
+    "math_number1": {
+      "id": "math_number1",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "145"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setWidth1",
+      "shadow": true
+    },
+    "text_setText1": {
+      "id": "text_setText1",
+      "opcode": "text_setText",
+      "inputs": {
+        "TEXT": {
+          "name": "TEXT",
+          "block": "operator_join1",
+          "shadow": "text7"
+        }
+      },
+      "fields": {},
+      "next": "text_animateUntilDone1",
+      "topLevel": false,
+      "parent": "text_setWidth1",
+      "shadow": false
+    },
+    "operator_join1": {
+      "id": "operator_join1",
+      "opcode": "operator_join",
+      "inputs": {
+        "STRING1": {
+          "name": "STRING1",
+          "block": "text1",
+          "shadow": "text1"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "skyhigh173JSON_json_array_join1",
+          "shadow": "text6"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText1",
+      "shadow": false
+    },
+    "text1": {
+      "id": "text1",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "- "
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": true
+    },
+    "skyhigh173JSON_json_array_join1": {
+      "id": "skyhigh173JSON_json_array_join1",
+      "opcode": "skyhigh173JSON_json_array_join",
+      "inputs": {
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_vm_getlist1",
+          "shadow": "text2"
+        },
+        "d": {
+          "name": "d",
+          "block": "operator_join2",
+          "shadow": "text5"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": false
+    },
+    "skyhigh173JSON_json_vm_getlist1": {
+      "id": "skyhigh173JSON_json_vm_getlist1",
+      "opcode": "skyhigh173JSON_json_vm_getlist",
+      "inputs": {
+        "list": {
+          "name": "list",
+          "block": "skyhigh173JSON_menu_get_list1",
+          "shadow": "skyhigh173JSON_menu_get_list1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_array_join1",
+      "shadow": false
+    },
+    "skyhigh173JSON_menu_get_list1": {
+      "id": "skyhigh173JSON_menu_get_list1",
+      "opcode": "skyhigh173JSON_menu_get_list",
+      "inputs": {},
+      "fields": {
+        "get_list": {
+          "name": "get_list",
+          "value": "4M]CWZT`OxT`H~EUzUZ}"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_vm_getlist1",
+      "shadow": true
+    },
+    "text2": {
+      "id": "text2",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "[\"a\",\"b\",\"c\"]"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_array_join1",
+      "shadow": true,
+      "x": "450.83126491970495",
+      "y": "668.0905349793991"
+    },
+    "operator_join2": {
+      "id": "operator_join2",
+      "opcode": "operator_join",
+      "inputs": {
+        "STRING1": {
+          "name": "STRING1",
+          "block": "utilities_newline1",
+          "shadow": "text3"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "text4",
+          "shadow": "text4"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_array_join1",
+      "shadow": false
+    },
+    "utilities_newline1": {
+      "id": "utilities_newline1",
+      "opcode": "utilities_newline",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": false
+    },
+    "text3": {
+      "id": "text3",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "apple "
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": true,
+      "x": "1367.2407026290894",
+      "y": "496"
+    },
+    "text4": {
+      "id": "text4",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "- "
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": true
+    },
+    "text5": {
+      "id": "text5",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ","
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_array_join1",
+      "shadow": true,
+      "x": "1229.4053144454956",
+      "y": "492"
+    },
+    "text6": {
+      "id": "text6",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": true,
+      "x": "978.9979050600971",
+      "y": "703.7407407407408"
+    },
+    "text7": {
+      "id": "text7",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText1",
+      "shadow": true,
+      "x": "714.7798223495483",
+      "y": "492"
+    },
+    "text_animateUntilDone1": {
+      "id": "text_animateUntilDone1",
+      "opcode": "text_animateUntilDone",
+      "inputs": {
+        "ANIMATE": {
+          "name": "ANIMATE",
+          "block": "text_menu_twAnimate1",
+          "shadow": "text_menu_twAnimate1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText1",
+      "shadow": false
+    },
+    "text_menu_twAnimate1": {
+      "id": "text_menu_twAnimate1",
+      "opcode": "text_menu_twAnimate",
+      "inputs": {},
+      "fields": {
+        "twAnimate": {
+          "name": "twAnimate",
+          "value": "type"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_animateUntilDone1",
+      "shadow": true
+    },
+    "event_whenbroadcastreceived1": {
+      "id": "event_whenbroadcastreceived1",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "value": "GAME begin",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "looks_switchcostumeto1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 48,
+      "y": 64
+    },
+    "looks_switchcostumeto1": {
+      "id": "looks_switchcostumeto1",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume3",
+          "shadow": "looks_costume3"
+        }
+      },
+      "fields": {},
+      "next": "looks_setsizeto2",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
+      "shadow": false
+    },
+    "looks_costume3": {
+      "id": "looks_costume3",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "profile"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": true
+    },
+    "looks_setsizeto2": {
+      "id": "looks_setsizeto2",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number7",
+          "shadow": "math_number7"
+        }
+      },
+      "fields": {},
+      "next": "motion_gotoxy1",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": false
+    },
+    "math_number7": {
+      "id": "math_number7",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "400"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto2",
+      "shadow": true
+    },
+    "motion_gotoxy1": {
+      "id": "motion_gotoxy1",
+      "opcode": "motion_gotoxy",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number5",
+          "shadow": "math_number5"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number6",
+          "shadow": "math_number6"
+        }
+      },
+      "fields": {},
+      "next": "control_forever1",
+      "topLevel": false,
+      "parent": "looks_setsizeto2",
+      "shadow": false
+    },
+    "math_number5": {
+      "id": "math_number5",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "290"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "math_number6": {
+      "id": "math_number6",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "150"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "control_forever1": {
+      "id": "control_forever1",
+      "opcode": "control_forever",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_wait_until1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": false
+    },
+    "control_wait_until1": {
+      "id": "control_wait_until1",
+      "opcode": "control_wait_until",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "sensing_touchingobject2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_switchcostumeto2",
+      "topLevel": false,
+      "parent": "control_forever1",
+      "shadow": false
+    },
+    "sensing_touchingobject2": {
+      "id": "sensing_touchingobject2",
+      "opcode": "sensing_touchingobject",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "block": "sensing_touchingobjectmenu2",
+          "shadow": "sensing_touchingobjectmenu2"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_wait_until1",
+      "shadow": false
+    },
+    "sensing_touchingobjectmenu2": {
+      "id": "sensing_touchingobjectmenu2",
+      "opcode": "sensing_touchingobjectmenu",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "value": "_mouse_"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "sensing_touchingobject2",
+      "shadow": true
+    },
+    "looks_switchcostumeto2": {
+      "id": "looks_switchcostumeto2",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume2",
+          "shadow": "looks_costume2"
+        }
+      },
+      "fields": {},
+      "next": "control_create_clone_of1",
+      "topLevel": false,
+      "parent": "control_wait_until1",
+      "shadow": false
+    },
+    "looks_costume2": {
+      "id": "looks_costume2",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": true
+    },
+    "control_create_clone_of1": {
+      "id": "control_create_clone_of1",
+      "opcode": "control_create_clone_of",
+      "inputs": {
+        "CLONE_OPTION": {
+          "name": "CLONE_OPTION",
+          "block": "control_create_clone_of_menu1",
+          "shadow": "control_create_clone_of_menu1"
+        }
+      },
+      "fields": {},
+      "next": "control_wait_until2",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": false
+    },
+    "control_create_clone_of_menu1": {
+      "id": "control_create_clone_of_menu1",
+      "opcode": "control_create_clone_of_menu",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": {
+          "name": "CLONE_OPTION",
+          "value": "_myself_"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_create_clone_of1",
+      "shadow": true
+    },
+    "control_wait_until2": {
+      "id": "control_wait_until2",
+      "opcode": "control_wait_until",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_deleteClonesInSprite1",
+      "topLevel": false,
+      "parent": "control_create_clone_of1",
+      "shadow": false
+    },
+    "operator_not1": {
+      "id": "operator_not1",
+      "opcode": "operator_not",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "sensing_touchingobject1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_wait_until2",
+      "shadow": false
+    },
+    "sensing_touchingobject1": {
+      "id": "sensing_touchingobject1",
+      "opcode": "sensing_touchingobject",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "block": "sensing_touchingobjectmenu1",
+          "shadow": "sensing_touchingobjectmenu1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_not1",
+      "shadow": false
+    },
+    "sensing_touchingobjectmenu1": {
+      "id": "sensing_touchingobjectmenu1",
+      "opcode": "sensing_touchingobjectmenu",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "value": "_mouse_"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "sensing_touchingobject1",
+      "shadow": true
+    },
+    "lmsclonesplus_deleteClonesInSprite1": {
+      "id": "lmsclonesplus_deleteClonesInSprite1",
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "inputs": {
+        "INPUT": {
+          "name": "INPUT",
+          "block": "lmsclonesplus_menu_spriteMenu1",
+          "shadow": "lmsclonesplus_menu_spriteMenu1"
+        }
+      },
+      "fields": {},
+      "next": "looks_switchcostumeto3",
+      "topLevel": false,
+      "parent": "control_wait_until2",
+      "shadow": false
+    },
+    "lmsclonesplus_menu_spriteMenu1": {
+      "id": "lmsclonesplus_menu_spriteMenu1",
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": {
+          "name": "spriteMenu",
+          "value": "Investors"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "shadow": true
+    },
+    "looks_switchcostumeto3": {
+      "id": "looks_switchcostumeto3",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume1",
+          "shadow": "looks_costume1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "shadow": false
+    },
+    "looks_costume1": {
+      "id": "looks_costume1",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "profile"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto3",
+      "shadow": true
+    }
+  },
+  "scripts": [
+    "control_start_as_clone1",
+    "event_whenbroadcastreceived1"
+  ]
+}

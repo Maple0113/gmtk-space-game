@@ -599,17 +599,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals1",
-          "shadow": "operator_equals1"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto1",
-          "shadow": "data_setvariableto1"
+          "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else2",
-          "shadow": "control_if_else2"
+          "shadow": null
         }
       },
       "fields": {},
@@ -625,7 +625,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable1",
-          "shadow": "data_variable1"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -646,8 +646,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CloneType",
           "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
           "variableType": ""
         }
       },
@@ -663,8 +663,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1",
-          "id": null
+          "value": "1"
         }
       },
       "next": null,
@@ -685,8 +684,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "PartsFilter",
           "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
           "variableType": ""
         }
       },
@@ -702,8 +701,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits",
-          "id": null
+          "value": "kits"
         }
       },
       "next": null,
@@ -724,8 +722,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -741,8 +739,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1",
-          "id": null
+          "value": "1"
         }
       },
       "next": null,
@@ -773,8 +770,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page change",
           "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
           "variableType": "broadcast_msg"
         }
       },
@@ -790,17 +787,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals2",
-          "shadow": "operator_equals2"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto3",
-          "shadow": "data_setvariableto3"
+          "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else3",
-          "shadow": "control_if_else3"
+          "shadow": null
         }
       },
       "fields": {},
@@ -816,7 +813,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable2",
-          "shadow": "data_variable2"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -837,8 +834,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CloneType",
           "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
           "variableType": ""
         }
       },
@@ -854,8 +851,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2",
-          "id": null
+          "value": "2"
         }
       },
       "next": null,
@@ -876,8 +872,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "PartsFilter",
           "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
           "variableType": ""
         }
       },
@@ -893,8 +889,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts",
-          "id": null
+          "value": "parts"
         }
       },
       "next": null,
@@ -915,8 +910,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -932,8 +927,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1",
-          "id": null
+          "value": "1"
         }
       },
       "next": null,
@@ -964,8 +958,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page change",
           "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
           "variableType": "broadcast_msg"
         }
       },
@@ -981,17 +975,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals3",
-          "shadow": "operator_equals3"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby1",
-          "shadow": "data_changevariableby1"
+          "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if2",
-          "shadow": "control_if2"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1007,7 +1001,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable3",
-          "shadow": "data_variable3"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1028,8 +1022,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CloneType",
           "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
           "variableType": ""
         }
       },
@@ -1045,8 +1039,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
       "next": null,
@@ -1067,8 +1060,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -1084,8 +1077,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "1",
-          "id": null
+          "value": "1"
         }
       },
       "next": null,
@@ -1100,12 +1092,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_gt1",
-          "shadow": "operator_gt1"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto5",
-          "shadow": "data_setvariableto5"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1121,12 +1113,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable4",
-          "shadow": "data_variable4"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
           "block": "data_variable5",
-          "shadow": "data_variable5"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1142,8 +1134,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -1159,8 +1151,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MaxPages",
           "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
           "variableType": ""
         }
       },
@@ -1182,8 +1174,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -1199,8 +1191,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1",
-          "id": null
+          "value": "1"
         }
       },
       "next": null,
@@ -1231,8 +1222,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page change",
           "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
           "variableType": "broadcast_msg"
         }
       },
@@ -1248,12 +1239,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals4",
-          "shadow": "operator_equals4"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby2",
-          "shadow": "data_changevariableby2"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1269,7 +1260,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable6",
-          "shadow": "data_variable6"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1290,8 +1281,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CloneType",
           "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
           "variableType": ""
         }
       },
@@ -1307,8 +1298,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "4",
-          "id": null
+          "value": "4"
         }
       },
       "next": null,
@@ -1329,8 +1319,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -1346,8 +1336,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-1",
-          "id": null
+          "value": "-1"
         }
       },
       "next": null,
@@ -1362,12 +1351,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_lt1",
-          "shadow": "operator_lt1"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto6",
-          "shadow": "data_setvariableto6"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1383,7 +1372,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable7",
-          "shadow": "data_variable7"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1404,8 +1393,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -1421,8 +1410,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1",
-          "id": null
+          "value": "1"
         }
       },
       "next": null,
@@ -1437,14 +1425,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "data_variable8",
-          "shadow": "data_variable8"
+          "shadow": null
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
@@ -1460,8 +1448,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MaxPages",
           "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
           "variableType": ""
         }
       },
@@ -1493,8 +1481,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page change",
           "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
           "variableType": "broadcast_msg"
         }
       },

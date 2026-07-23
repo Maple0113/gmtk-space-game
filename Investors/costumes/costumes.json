@@ -1,0 +1,20 @@
+[
+  {
+    "name": "profile",
+    "dataFormat": "png",
+    "rotationCenterX": 8,
+    "rotationCenterY": 8
+  },
+  {
+    "name": "profileUpdate",
+    "dataFormat": "png",
+    "rotationCenterX": 8,
+    "rotationCenterY": 8
+  },
+  {
+    "name": "list",
+    "dataFormat": "png",
+    "rotationCenterX": 83,
+    "rotationCenterY": 8
+  }
+]

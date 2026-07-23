@@ -62,8 +62,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,0]",
-      "[0,0]"
+      "[1,1]",
+      "[1,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -74,7 +74,7 @@
     "isCloud": false,
     "value": [
       "[1,0,0]",
-      "[0,1,0]"
+      "[1,1,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -84,8 +84,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,1,1]",
-      "[0,1,1,0]"
+      "[1,0,1,1]",
+      "[0,0,1,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -165,5 +165,17 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "FIns"
+  },
+  "4M]CWZT`OxT`H~EUzUZ}": {
+    "id": "4M]CWZT`OxT`H~EUzUZ}",
+    "name": "Demands",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "demand 1",
+      "demand 2",
+      "demand 3"
+    ],
+    "_monitorUpToDate": true
   }
 }
