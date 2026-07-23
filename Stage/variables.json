@@ -44,8 +44,8 @@
     "isCloud": false,
     "value": [
       "{\"Name\":\"generic\",\"Amount\":5,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"generic2\",\"Amount\":5,\"Position\":1,\"Costume\":\"generic\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"invalid\",\"Amount\":5,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}"
+      "{\"Name\":\"generic2\",\"Amount\":5,\"Position\":1,\"Costume\":\"generic\",\"Pattern\":[[\"1\",\"1\"],[\"1\"]]}",
+      "{\"Name\":\"invalid\",\"Amount\":5,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -65,7 +65,7 @@
       "[1,0]",
       "[0,0]"
     ],
-    "_monitorUpToDate": true
+    "_monitorUpToDate": false
   },
   "Ra$$n.MH7F=ze%M=X)qZ": {
     "id": "Ra$$n.MH7F=ze%M=X)qZ",
@@ -73,8 +73,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0]",
-      "[0,0,0]"
+      "[1,0,0]",
+      "[0,1,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -84,8 +84,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0,1]",
-      "[0,1,0,1]"
+      "[0,0,1,1]",
+      "[0,1,1,0]"
     ],
     "_monitorUpToDate": false
   },

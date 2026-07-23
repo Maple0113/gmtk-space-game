@@ -1,1 +1,42 @@
-{}
+{
+  "{_]gX(rjuH4Wu{kiVN0t": {
+    "id": "{_]gX(rjuH4Wu{kiVN0t",
+    "text": "make part an easy-to-use object",
+    "x": -502,
+    "y": 602,
+    "width": 181,
+    "height": 103,
+    "minimized": false,
+    "blockId": "lmsTempVars2_forEachThreadVariable1"
+  },
+  "sd=YuacS;AaRElv:=Vy]": {
+    "id": "sd=YuacS;AaRElv:=Vy]",
+    "text": "get grid",
+    "x": -716,
+    "y": 915,
+    "width": 200,
+    "height": 200,
+    "minimized": true,
+    "blockId": ")V)eWDA?ilQT,W|YXiC~"
+  },
+  "dJsW%PYedfZ8;-66wcbw": {
+    "id": "dJsW%PYedfZ8;-66wcbw",
+    "text": "binarify pattern",
+    "x": -534,
+    "y": 1807,
+    "width": 156,
+    "height": 80,
+    "minimized": false,
+    "blockId": "{Df{z!KfW(t:X~(%mrHt"
+  },
+  "#$oLM:3RAeZ3?3WL*Yt~": {
+    "id": "#$oLM:3RAeZ3?3WL*Yt~",
+    "text": "binarify grid",
+    "x": -684,
+    "y": 1969,
+    "width": 118,
+    "height": 85,
+    "minimized": false,
+    "blockId": "IG$=yuQ}wBg]_[)ZImC["
+  }
+}

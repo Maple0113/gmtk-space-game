@@ -1,7 +1,10 @@
 {
   "extensionSources": [
+    "https://extensions.turbowarp.org/text.js",
     "https://extensions.turbowarp.org/iframe.js",
+    "https://extensions.turbowarp.org/bitwise.js",
     "https://extensions.turbowarp.org/lab/text.js",
+    "https://extensions.turbowarp.org/Lily/Cast.js",
     "https://extensions.turbowarp.org/Lily/ClonesPlus.js",
     "https://extensions.turbowarp.org/Lily/MoreEvents.js",
     "https://extensions.turbowarp.org/Skyhigh173/json.js",

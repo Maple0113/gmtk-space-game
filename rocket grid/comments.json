@@ -1,1 +1,102 @@
-{}
+{
+  "#$oLM:3RAeZ3?3WL*Yt~": {
+    "id": "#$oLM:3RAeZ3?3WL*Yt~",
+    "text": "binarify grid",
+    "x": -476.43677364748714,
+    "y": 4205.079553052891,
+    "width": 118.6011962890625,
+    "height": 85.654052734375,
+    "minimized": false,
+    "blockId": "lmsTempVars2_forEachThreadVariable6"
+  },
+  "dJsW%PYedfZ8;-66wcbw": {
+    "id": "dJsW%PYedfZ8;-66wcbw",
+    "text": "binarify pattern",
+    "x": -297.99999999999955,
+    "y": 4000,
+    "width": 156.71649169921875,
+    "height": 80.48587036132812,
+    "minimized": false,
+    "blockId": "lmsTempVars2_forEachThreadVariable5"
+  },
+  "{_]gX(rjuH4Wu{kiVN0t": {
+    "id": "{_]gX(rjuH4Wu{kiVN0t",
+    "text": "make part an easy-to-use object",
+    "x": -502.4989085796237,
+    "y": 602.978830429526,
+    "width": 181.911376953125,
+    "height": 103.09664916992188,
+    "minimized": false,
+    "blockId": "lmsTempVars2_forEachThreadVariable1"
+  },
+  "sd=YuacS;AaRElv:=Vy]": {
+    "id": "sd=YuacS;AaRElv:=Vy]",
+    "text": "get grid",
+    "x": -413,
+    "y": 923,
+    "width": 200,
+    "height": 200,
+    "minimized": true,
+    "blockId": "control_if_else1"
+  },
+  ",?ygoLYN;jQRXook-%[o": {
+    "id": ",?ygoLYN;jQRXook-%[o",
+    "text": "get number of 1s needed",
+    "x": -292.65870535614795,
+    "y": 3172.9551618858613,
+    "width": 126.99948120117188,
+    "height": 100.5125732421875,
+    "minimized": false,
+    "blockId": "lmsTempVars2_forEachThreadVariable3"
+  },
+  "ku[4Q;OBkG7RUSE7xL2]": {
+    "id": "ku[4Q;OBkG7RUSE7xL2]",
+    "text": "fit pattern to grid",
+    "x": -692.3443797284216,
+    "y": 1657.2658771778556,
+    "width": 171.57501220703125,
+    "height": 79.19381713867188,
+    "minimized": false,
+    "blockId": "control_repeat1"
+  },
+  "UfKYt8j_75T~N3H0N;X5": {
+    "id": "UfKYt8j_75T~N3H0N;X5",
+    "text": "move pattern",
+    "x": -285.09650802612305,
+    "y": 1547,
+    "width": 124.08984375,
+    "height": 79.43673706054688,
+    "minimized": false,
+    "blockId": "lmsTempVars2_setThreadVariable1"
+  },
+  "VLsCfr.iKFvvUfr^n|Ee": {
+    "id": "VLsCfr.iKFvvUfr^n|Ee",
+    "text": "make placed array",
+    "x": -696.0736418512419,
+    "y": 4377.4068379375185,
+    "width": 182.55743408203125,
+    "height": 81.13189697265625,
+    "minimized": false,
+    "blockId": "lmsTempVars2_setThreadVariable7"
+  },
+  "Tkx|`BFUY8=}K!sl~kjJ": {
+    "id": "Tkx|`BFUY8=}K!sl~kjJ",
+    "text": "Try placing",
+    "x": -571.3913288116455,
+    "y": 4427,
+    "width": 200,
+    "height": 200,
+    "minimized": true,
+    "blockId": "lmsTempVars2_setThreadVariable7"
+  },
+  "nK,pOZfyUN_:+8_|o_#N": {
+    "id": "nK,pOZfyUN_:+8_|o_#N",
+    "text": "count 1s in modified grid",
+    "x": -431.64149490015916,
+    "y": 4633.557396621403,
+    "width": 117.95516967773438,
+    "height": 98.57447814941406,
+    "minimized": false,
+    "blockId": "lmsTempVars2_setThreadVariable8"
+  }
+}
