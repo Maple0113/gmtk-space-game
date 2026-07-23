@@ -599,17 +599,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals1",
-          "shadow": null
+          "shadow": "operator_equals1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto1",
-          "shadow": null
+          "shadow": "data_setvariableto1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else2",
-          "shadow": null
+          "shadow": "control_if_else2"
         }
       },
       "fields": {},
@@ -625,7 +625,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable1",
-          "shadow": null
+          "shadow": "data_variable1"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -646,8 +646,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -663,7 +663,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -684,8 +685,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "value": "PartsFilter",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
       },
@@ -701,7 +702,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "next": null,
@@ -722,8 +724,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -739,7 +741,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -770,8 +773,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
           "value": "INVENTORY page change",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
           "variableType": "broadcast_msg"
         }
       },
@@ -787,17 +790,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals2",
-          "shadow": null
+          "shadow": "operator_equals2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto3",
-          "shadow": null
+          "shadow": "data_setvariableto3"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else3",
-          "shadow": null
+          "shadow": "control_if_else3"
         }
       },
       "fields": {},
@@ -813,7 +816,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable2",
-          "shadow": null
+          "shadow": "data_variable2"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -834,8 +837,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -851,7 +854,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "next": null,
@@ -872,8 +876,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "value": "PartsFilter",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
       },
@@ -889,7 +893,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "next": null,
@@ -910,8 +915,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -927,7 +932,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -958,8 +964,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
           "value": "INVENTORY page change",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
           "variableType": "broadcast_msg"
         }
       },
@@ -975,17 +981,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals3",
-          "shadow": null
+          "shadow": "operator_equals3"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby1",
-          "shadow": null
+          "shadow": "data_changevariableby1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if2",
-          "shadow": null
+          "shadow": "control_if2"
         }
       },
       "fields": {},
@@ -1001,7 +1007,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable3",
-          "shadow": null
+          "shadow": "data_variable3"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1022,8 +1028,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -1039,7 +1045,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3"
+          "value": "3",
+          "id": null
         }
       },
       "next": null,
@@ -1060,8 +1067,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -1077,7 +1084,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -1092,12 +1100,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_gt1",
-          "shadow": null
+          "shadow": "operator_gt1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto5",
-          "shadow": null
+          "shadow": "data_setvariableto5"
         }
       },
       "fields": {},
@@ -1113,12 +1121,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable4",
-          "shadow": null
+          "shadow": "data_variable4"
         },
         "OPERAND2": {
           "name": "OPERAND2",
           "block": "data_variable5",
-          "shadow": null
+          "shadow": "data_variable5"
         }
       },
       "fields": {},
@@ -1134,8 +1142,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -1151,8 +1159,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "value": "MaxPages",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
       },
@@ -1174,8 +1182,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -1191,7 +1199,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -1222,8 +1231,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
           "value": "INVENTORY page change",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
           "variableType": "broadcast_msg"
         }
       },
@@ -1239,12 +1248,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals4",
-          "shadow": null
+          "shadow": "operator_equals4"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby2",
-          "shadow": null
+          "shadow": "data_changevariableby2"
         }
       },
       "fields": {},
@@ -1260,7 +1269,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable6",
-          "shadow": null
+          "shadow": "data_variable6"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1281,8 +1290,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -1298,7 +1307,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "4"
+          "value": "4",
+          "id": null
         }
       },
       "next": null,
@@ -1319,8 +1329,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -1336,7 +1346,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-1"
+          "value": "-1",
+          "id": null
         }
       },
       "next": null,
@@ -1351,12 +1362,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_lt1",
-          "shadow": null
+          "shadow": "operator_lt1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto6",
-          "shadow": null
+          "shadow": "data_setvariableto6"
         }
       },
       "fields": {},
@@ -1372,7 +1383,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable7",
-          "shadow": null
+          "shadow": "data_variable7"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1393,8 +1404,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -1410,7 +1421,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -1425,14 +1437,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "data_variable8",
-          "shadow": null
+          "shadow": "data_variable8"
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -1448,8 +1460,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "value": "MaxPages",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
       },
@@ -1481,8 +1493,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
           "value": "INVENTORY page change",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
           "variableType": "broadcast_msg"
         }
       },
@@ -1491,8 +1503,653 @@
       "parent": "event_broadcast4",
       "shadow": true
     },
+    "procedures_definition1": {
+      "id": "procedures_definition1",
+      "opcode": "procedures_definition",
+      "inputs": {
+        "custom_block": {
+          "name": "custom_block",
+          "block": "procedures_prototype1",
+          "shadow": "procedures_prototype1"
+        }
+      },
+      "fields": {},
+      "next": "control_if_else4",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 2440,
+      "y": -200
+    },
+    "procedures_prototype1": {
+      "id": "procedures_prototype1",
+      "opcode": "procedures_prototype",
+      "inputs": {
+        ":CrV_7X(R8(}#0lw(7nU": {
+          "name": ":CrV_7X(R8(}#0lw(7nU",
+          "block": "argument_reporter_string_number5",
+          "shadow": "argument_reporter_string_number5"
+        },
+        "M3wcRZ-GrYWV9qe,PUsL": {
+          "name": "M3wcRZ-GrYWV9qe,PUsL",
+          "block": "argument_reporter_string_number6",
+          "shadow": "argument_reporter_string_number6"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_definition1",
+      "shadow": true,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "max %s %s",
+        "argumentids": "[\":CrV_7X(R8(}#0lw(7nU\",\"M3wcRZ-GrYWV9qe,PUsL\"]",
+        "argumentnames": "[\"Num1\",\"Num2\"]",
+        "argumentdefaults": "[\"\",\"\"]",
+        "warp": "true"
+      }
+    },
+    "argument_reporter_string_number5": {
+      "id": "argument_reporter_string_number5",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num1",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype1",
+      "shadow": true
+    },
+    "argument_reporter_string_number6": {
+      "id": "argument_reporter_string_number6",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num2",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype1",
+      "shadow": true
+    },
+    "control_if_else4": {
+      "id": "control_if_else4",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_gt2",
+          "shadow": "operator_gt2"
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "procedures_return1",
+          "shadow": "procedures_return1"
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "procedures_return2",
+          "shadow": "procedures_return2"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_definition1",
+      "shadow": false
+    },
+    "operator_gt2": {
+      "id": "operator_gt2",
+      "opcode": "operator_gt",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "argument_reporter_string_number1",
+          "shadow": "argument_reporter_string_number1"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "argument_reporter_string_number2",
+          "shadow": "argument_reporter_string_number2"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "argument_reporter_string_number1": {
+      "id": "argument_reporter_string_number1",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num1",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt2",
+      "shadow": false
+    },
+    "argument_reporter_string_number2": {
+      "id": "argument_reporter_string_number2",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num2",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt2",
+      "shadow": false
+    },
+    "procedures_return1": {
+      "id": "procedures_return1",
+      "opcode": "procedures_return",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "argument_reporter_string_number3",
+          "shadow": "argument_reporter_string_number3"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "argument_reporter_string_number3": {
+      "id": "argument_reporter_string_number3",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num1",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_return1",
+      "shadow": false
+    },
+    "procedures_return2": {
+      "id": "procedures_return2",
+      "opcode": "procedures_return",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "argument_reporter_string_number4",
+          "shadow": "argument_reporter_string_number4"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "argument_reporter_string_number4": {
+      "id": "argument_reporter_string_number4",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num2",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_return2",
+      "shadow": false
+    },
     "event_whenbroadcastreceived1": {
       "id": "event_whenbroadcastreceived1",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "motion_gotoxy1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 232,
+      "y": -187
+    },
+    "motion_gotoxy1": {
+      "id": "motion_gotoxy1",
+      "opcode": "motion_gotoxy",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number3",
+          "shadow": "math_number3"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number4",
+          "shadow": "math_number4"
+        }
+      },
+      "fields": {},
+      "next": "looks_switchcostumeto1",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
+      "shadow": false
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-200",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "math_number4": {
+      "id": "math_number4",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "20",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "looks_switchcostumeto1": {
+      "id": "looks_switchcostumeto1",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume5",
+          "shadow": "looks_costume5"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": false
+    },
+    "looks_costume5": {
+      "id": "looks_costume5",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "kits",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar1": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text17",
+          "shadow": "text17"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y",
+          "id": null
+        }
+      },
+      "next": "looks_switchcostumeto2",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": false
+    },
+    "text17": {
+      "id": "text17",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "shadow": true
+    },
+    "looks_switchcostumeto2": {
+      "id": "looks_switchcostumeto2",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume4",
+          "shadow": "looks_costume4"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "shadow": false
+    },
+    "looks_costume4": {
+      "id": "looks_costume4",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "parts",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar2": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text16",
+          "shadow": "text16"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y",
+          "id": null
+        }
+      },
+      "next": "looks_switchcostumeto3",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": false
+    },
+    "text16": {
+      "id": "text16",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "shadow": true
+    },
+    "looks_switchcostumeto3": {
+      "id": "looks_switchcostumeto3",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume3",
+          "shadow": "looks_costume3"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "shadow": false
+    },
+    "looks_costume3": {
+      "id": "looks_costume3",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "page next",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto3",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar3": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text15",
+          "shadow": "text15"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y",
+          "id": null
+        }
+      },
+      "next": "looks_switchcostumeto4",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto3",
+      "shadow": false
+    },
+    "text15": {
+      "id": "text15",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "shadow": true
+    },
+    "looks_switchcostumeto4": {
+      "id": "looks_switchcostumeto4",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume2",
+          "shadow": "looks_costume2"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "shadow": false
+    },
+    "looks_costume2": {
+      "id": "looks_costume2",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "page prev",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto4",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar4": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text14",
+          "shadow": "text14"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y",
+          "id": null
+        }
+      },
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto4",
+      "shadow": false
+    },
+    "text14": {
+      "id": "text14",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar5": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text13",
+          "shadow": "text13"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y",
+          "id": null
+        }
+      },
+      "next": "looks_switchcostumeto5",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "shadow": false
+    },
+    "text13": {
+      "id": "text13",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "5",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "shadow": true
+    },
+    "looks_switchcostumeto5": {
+      "id": "looks_switchcostumeto5",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume1",
+          "shadow": "looks_costume1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "shadow": false
+    },
+    "looks_costume1": {
+      "id": "looks_costume1",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "base",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto5",
+      "shadow": true
+    },
+    "event_whenbroadcastreceived2": {
+      "id": "event_whenbroadcastreceived2",
       "opcode": "event_whenbroadcastreceived",
       "inputs": {},
       "fields": {
@@ -1521,14 +2178,14 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else5",
+          "block": "control_if_else6",
           "shadow": null
         }
       },
       "fields": {},
       "next": "control_if5",
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
+      "parent": "event_whenbroadcastreceived2",
       "shadow": false
     },
     "operator_equals7": {
@@ -1542,8 +2199,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text15",
-          "shadow": "text15"
+          "block": "text20",
+          "shadow": "text20"
         }
       },
       "fields": {},
@@ -1569,8 +2226,8 @@
       "parent": "operator_equals7",
       "shadow": false
     },
-    "text15": {
-      "id": "text15",
+    "text20": {
+      "id": "text20",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1584,8 +2241,8 @@
       "parent": "operator_equals7",
       "shadow": true
     },
-    "control_if_else5": {
-      "id": "control_if_else5",
+    "control_if_else6": {
+      "id": "control_if_else6",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -1595,12 +2252,12 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "looks_switchcostumeto3",
+          "block": "looks_switchcostumeto8",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "looks_switchcostumeto4",
+          "block": "looks_switchcostumeto9",
           "shadow": null
         }
       },
@@ -1621,14 +2278,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text16",
-          "shadow": "text16"
+          "block": "text21",
+          "shadow": "text21"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
     "data_variable12": {
@@ -1648,8 +2305,8 @@
       "parent": "operator_equals8",
       "shadow": false
     },
-    "text16": {
-      "id": "text16",
+    "text21": {
+      "id": "text21",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1663,24 +2320,24 @@
       "parent": "operator_equals8",
       "shadow": true
     },
-    "looks_switchcostumeto3": {
-      "id": "looks_switchcostumeto3",
+    "looks_switchcostumeto8": {
+      "id": "looks_switchcostumeto8",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume3",
-          "shadow": "looks_costume3"
+          "block": "looks_costume8",
+          "shadow": "looks_costume8"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
-    "looks_costume3": {
-      "id": "looks_costume3",
+    "looks_costume8": {
+      "id": "looks_costume8",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -1691,27 +2348,27 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto3",
+      "parent": "looks_switchcostumeto8",
       "shadow": true
     },
-    "looks_switchcostumeto4": {
-      "id": "looks_switchcostumeto4",
+    "looks_switchcostumeto9": {
+      "id": "looks_switchcostumeto9",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume4",
-          "shadow": "looks_costume4"
+          "block": "looks_costume9",
+          "shadow": "looks_costume9"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
-    "looks_costume4": {
-      "id": "looks_costume4",
+    "looks_costume9": {
+      "id": "looks_costume9",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -1722,7 +2379,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto4",
+      "parent": "looks_switchcostumeto9",
       "shadow": true
     },
     "control_if5": {
@@ -1736,7 +2393,7 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else4",
+          "block": "control_if_else5",
           "shadow": null
         }
       },
@@ -1757,8 +2414,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text13",
-          "shadow": "text13"
+          "block": "text18",
+          "shadow": "text18"
         }
       },
       "fields": {},
@@ -1784,8 +2441,8 @@
       "parent": "operator_equals5",
       "shadow": false
     },
-    "text13": {
-      "id": "text13",
+    "text18": {
+      "id": "text18",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1799,8 +2456,8 @@
       "parent": "operator_equals5",
       "shadow": true
     },
-    "control_if_else4": {
-      "id": "control_if_else4",
+    "control_if_else5": {
+      "id": "control_if_else5",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -1810,12 +2467,12 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "looks_switchcostumeto1",
+          "block": "looks_switchcostumeto6",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "looks_switchcostumeto2",
+          "block": "looks_switchcostumeto7",
           "shadow": null
         }
       },
@@ -1836,14 +2493,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text14",
-          "shadow": "text14"
+          "block": "text19",
+          "shadow": "text19"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
     "data_variable10": {
@@ -1863,8 +2520,8 @@
       "parent": "operator_equals6",
       "shadow": false
     },
-    "text14": {
-      "id": "text14",
+    "text19": {
+      "id": "text19",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1878,24 +2535,24 @@
       "parent": "operator_equals6",
       "shadow": true
     },
-    "looks_switchcostumeto1": {
-      "id": "looks_switchcostumeto1",
+    "looks_switchcostumeto6": {
+      "id": "looks_switchcostumeto6",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume1",
-          "shadow": "looks_costume1"
+          "block": "looks_costume6",
+          "shadow": "looks_costume6"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
-    "looks_costume1": {
-      "id": "looks_costume1",
+    "looks_costume6": {
+      "id": "looks_costume6",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -1906,27 +2563,27 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto1",
+      "parent": "looks_switchcostumeto6",
       "shadow": true
     },
-    "looks_switchcostumeto2": {
-      "id": "looks_switchcostumeto2",
+    "looks_switchcostumeto7": {
+      "id": "looks_switchcostumeto7",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume2",
-          "shadow": "looks_costume2"
+          "block": "looks_costume7",
+          "shadow": "looks_costume7"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
-    "looks_costume2": {
-      "id": "looks_costume2",
+    "looks_costume7": {
+      "id": "looks_costume7",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -1937,7 +2594,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto2",
+      "parent": "looks_switchcostumeto7",
       "shadow": true
     },
     "control_start_as_clone1": {
@@ -1963,7 +2620,7 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else8",
+          "block": "control_if_else9",
           "shadow": null
         }
       },
@@ -1984,8 +2641,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text24",
-          "shadow": "text24"
+          "block": "text29",
+          "shadow": "text29"
         }
       },
       "fields": {},
@@ -2011,8 +2668,8 @@
       "parent": "operator_equals13",
       "shadow": false
     },
-    "text24": {
-      "id": "text24",
+    "text29": {
+      "id": "text29",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2026,8 +2683,8 @@
       "parent": "operator_equals13",
       "shadow": true
     },
-    "control_if_else8": {
-      "id": "control_if_else8",
+    "control_if_else9": {
+      "id": "control_if_else9",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -2037,12 +2694,12 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "looks_switchcostumeto7",
+          "block": "looks_switchcostumeto12",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "looks_switchcostumeto8",
+          "block": "looks_switchcostumeto13",
           "shadow": null
         }
       },
@@ -2063,14 +2720,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text25",
-          "shadow": "text25"
+          "block": "text30",
+          "shadow": "text30"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else8",
+      "parent": "control_if_else9",
       "shadow": false
     },
     "data_variable22": {
@@ -2090,8 +2747,8 @@
       "parent": "operator_equals14",
       "shadow": false
     },
-    "text25": {
-      "id": "text25",
+    "text30": {
+      "id": "text30",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2105,24 +2762,24 @@
       "parent": "operator_equals14",
       "shadow": true
     },
-    "looks_switchcostumeto7": {
-      "id": "looks_switchcostumeto7",
+    "looks_switchcostumeto12": {
+      "id": "looks_switchcostumeto12",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume7",
-          "shadow": "looks_costume7"
+          "block": "looks_costume12",
+          "shadow": "looks_costume12"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else8",
+      "parent": "control_if_else9",
       "shadow": false
     },
-    "looks_costume7": {
-      "id": "looks_costume7",
+    "looks_costume12": {
+      "id": "looks_costume12",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -2133,27 +2790,27 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto7",
+      "parent": "looks_switchcostumeto12",
       "shadow": true
     },
-    "looks_switchcostumeto8": {
-      "id": "looks_switchcostumeto8",
+    "looks_switchcostumeto13": {
+      "id": "looks_switchcostumeto13",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume8",
-          "shadow": "looks_costume8"
+          "block": "looks_costume13",
+          "shadow": "looks_costume13"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else8",
+      "parent": "control_if_else9",
       "shadow": false
     },
-    "looks_costume8": {
-      "id": "looks_costume8",
+    "looks_costume13": {
+      "id": "looks_costume13",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -2164,7 +2821,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto8",
+      "parent": "looks_switchcostumeto13",
       "shadow": true
     },
     "control_if7": {
@@ -2178,7 +2835,7 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else7",
+          "block": "control_if_else8",
           "shadow": null
         }
       },
@@ -2199,8 +2856,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text22",
-          "shadow": "text22"
+          "block": "text27",
+          "shadow": "text27"
         }
       },
       "fields": {},
@@ -2226,8 +2883,8 @@
       "parent": "operator_equals11",
       "shadow": false
     },
-    "text22": {
-      "id": "text22",
+    "text27": {
+      "id": "text27",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2241,8 +2898,8 @@
       "parent": "operator_equals11",
       "shadow": true
     },
-    "control_if_else7": {
-      "id": "control_if_else7",
+    "control_if_else8": {
+      "id": "control_if_else8",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -2252,12 +2909,12 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "looks_switchcostumeto5",
+          "block": "looks_switchcostumeto10",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "looks_switchcostumeto6",
+          "block": "looks_switchcostumeto11",
           "shadow": null
         }
       },
@@ -2278,14 +2935,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text23",
-          "shadow": "text23"
+          "block": "text28",
+          "shadow": "text28"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else7",
+      "parent": "control_if_else8",
       "shadow": false
     },
     "data_variable20": {
@@ -2305,8 +2962,8 @@
       "parent": "operator_equals12",
       "shadow": false
     },
-    "text23": {
-      "id": "text23",
+    "text28": {
+      "id": "text28",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2320,24 +2977,24 @@
       "parent": "operator_equals12",
       "shadow": true
     },
-    "looks_switchcostumeto5": {
-      "id": "looks_switchcostumeto5",
+    "looks_switchcostumeto10": {
+      "id": "looks_switchcostumeto10",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume5",
-          "shadow": "looks_costume5"
+          "block": "looks_costume10",
+          "shadow": "looks_costume10"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else7",
+      "parent": "control_if_else8",
       "shadow": false
     },
-    "looks_costume5": {
-      "id": "looks_costume5",
+    "looks_costume10": {
+      "id": "looks_costume10",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -2348,27 +3005,27 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto5",
+      "parent": "looks_switchcostumeto10",
       "shadow": true
     },
-    "looks_switchcostumeto6": {
-      "id": "looks_switchcostumeto6",
+    "looks_switchcostumeto11": {
+      "id": "looks_switchcostumeto11",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume6",
-          "shadow": "looks_costume6"
+          "block": "looks_costume11",
+          "shadow": "looks_costume11"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else7",
+      "parent": "control_if_else8",
       "shadow": false
     },
-    "looks_costume6": {
-      "id": "looks_costume6",
+    "looks_costume11": {
+      "id": "looks_costume11",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -2379,7 +3036,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto6",
+      "parent": "looks_switchcostumeto11",
       "shadow": true
     },
     "control_if8": {
@@ -2414,8 +3071,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text17",
-          "shadow": "text17"
+          "block": "text22",
+          "shadow": "text22"
         }
       },
       "fields": {},
@@ -2441,8 +3098,8 @@
       "parent": "operator_equals9",
       "shadow": false
     },
-    "text17": {
-      "id": "text17",
+    "text22": {
+      "id": "text22",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2478,8 +3135,8 @@
       "inputs": {
         "SIZE": {
           "name": "SIZE",
-          "block": "math_number5",
-          "shadow": "math_number5"
+          "block": "math_number7",
+          "shadow": "math_number7"
         }
       },
       "fields": {},
@@ -2488,8 +3145,8 @@
       "parent": "control_forever1",
       "shadow": false
     },
-    "math_number5": {
-      "id": "math_number5",
+    "math_number7": {
+      "id": "math_number7",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -2509,8 +3166,8 @@
       "inputs": {
         "Y": {
           "name": "Y",
-          "block": "math_number4",
-          "shadow": "math_number4"
+          "block": "math_number6",
+          "shadow": "math_number6"
         }
       },
       "fields": {},
@@ -2519,8 +3176,8 @@
       "parent": "looks_setsizeto1",
       "shadow": false
     },
-    "math_number4": {
-      "id": "math_number4",
+    "math_number6": {
+      "id": "math_number6",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -2586,8 +3243,8 @@
       "inputs": {
         "WIDTH": {
           "name": "WIDTH",
-          "block": "math_number3",
-          "shadow": "math_number3"
+          "block": "math_number5",
+          "shadow": "math_number5"
         }
       },
       "fields": {
@@ -2596,13 +3253,13 @@
           "value": "center"
         }
       },
-      "next": "control_if_else6",
+      "next": "control_if_else7",
       "topLevel": false,
       "parent": "text_setFont1",
       "shadow": false
     },
-    "math_number3": {
-      "id": "math_number3",
+    "math_number5": {
+      "id": "math_number5",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -2616,8 +3273,8 @@
       "parent": "text_setWidth1",
       "shadow": true
     },
-    "control_if_else6": {
-      "id": "control_if_else6",
+    "control_if_else7": {
+      "id": "control_if_else7",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -2653,14 +3310,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text19",
-          "shadow": "text19"
+          "block": "text24",
+          "shadow": "text24"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else6",
+      "parent": "control_if_else7",
       "shadow": false
     },
     "data_variable16": {
@@ -2680,8 +3337,8 @@
       "parent": "operator_equals10",
       "shadow": false
     },
-    "text19": {
-      "id": "text19",
+    "text24": {
+      "id": "text24",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2715,7 +3372,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else6",
+      "parent": "control_if_else7",
       "shadow": false
     },
     "procedures_call1": {
@@ -2729,8 +3386,8 @@
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
-          "block": "text20",
-          "shadow": "text20"
+          "block": "text25",
+          "shadow": "text25"
         }
       },
       "fields": {},
@@ -2823,8 +3480,8 @@
       "parent": "operator_divide1",
       "shadow": false
     },
-    "text20": {
-      "id": "text20",
+    "text25": {
+      "id": "text25",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2858,7 +3515,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else6",
+      "parent": "control_if_else7",
       "shadow": false
     },
     "procedures_call2": {
@@ -2872,8 +3529,8 @@
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
-          "block": "text21",
-          "shadow": "text21"
+          "block": "text26",
+          "shadow": "text26"
         }
       },
       "fields": {},
@@ -2966,8 +3623,8 @@
       "parent": "operator_divide2",
       "shadow": false
     },
-    "text21": {
-      "id": "text21",
+    "text26": {
+      "id": "text26",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2994,7 +3651,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else6",
+      "parent": "control_if_else7",
       "shadow": false
     },
     "operator_join1": {
@@ -3041,8 +3698,8 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "text18",
-          "shadow": "text18"
+          "block": "text23",
+          "shadow": "text23"
         },
         "STRING2": {
           "name": "STRING2",
@@ -3056,8 +3713,8 @@
       "parent": "operator_join1",
       "shadow": false
     },
-    "text18": {
-      "id": "text18",
+    "text23": {
+      "id": "text23",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -3087,637 +3744,15 @@
       "topLevel": false,
       "parent": "operator_join2",
       "shadow": false
-    },
-    "procedures_definition1": {
-      "id": "procedures_definition1",
-      "opcode": "procedures_definition",
-      "inputs": {
-        "custom_block": {
-          "name": "custom_block",
-          "block": "procedures_prototype1",
-          "shadow": "procedures_prototype1"
-        }
-      },
-      "fields": {},
-      "next": "control_if_else9",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 2440,
-      "y": -200
-    },
-    "procedures_prototype1": {
-      "id": "procedures_prototype1",
-      "opcode": "procedures_prototype",
-      "inputs": {
-        ":CrV_7X(R8(}#0lw(7nU": {
-          "name": ":CrV_7X(R8(}#0lw(7nU",
-          "block": "argument_reporter_string_number5",
-          "shadow": "argument_reporter_string_number5"
-        },
-        "M3wcRZ-GrYWV9qe,PUsL": {
-          "name": "M3wcRZ-GrYWV9qe,PUsL",
-          "block": "argument_reporter_string_number6",
-          "shadow": "argument_reporter_string_number6"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_definition1",
-      "shadow": true,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "max %s %s",
-        "argumentids": "[\":CrV_7X(R8(}#0lw(7nU\",\"M3wcRZ-GrYWV9qe,PUsL\"]",
-        "argumentnames": "[\"Num1\",\"Num2\"]",
-        "argumentdefaults": "[\"\",\"\"]",
-        "warp": "true"
-      }
-    },
-    "argument_reporter_string_number5": {
-      "id": "argument_reporter_string_number5",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_prototype1",
-      "shadow": true
-    },
-    "argument_reporter_string_number6": {
-      "id": "argument_reporter_string_number6",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_prototype1",
-      "shadow": true
-    },
-    "control_if_else9": {
-      "id": "control_if_else9",
-      "opcode": "control_if_else",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_gt2",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "procedures_return1",
-          "shadow": null
-        },
-        "SUBSTACK2": {
-          "name": "SUBSTACK2",
-          "block": "procedures_return2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_definition1",
-      "shadow": false
-    },
-    "operator_gt2": {
-      "id": "operator_gt2",
-      "opcode": "operator_gt",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "argument_reporter_string_number1",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "argument_reporter_string_number2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else9",
-      "shadow": false
-    },
-    "argument_reporter_string_number1": {
-      "id": "argument_reporter_string_number1",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt2",
-      "shadow": false
-    },
-    "argument_reporter_string_number2": {
-      "id": "argument_reporter_string_number2",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt2",
-      "shadow": false
-    },
-    "procedures_return1": {
-      "id": "procedures_return1",
-      "opcode": "procedures_return",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "argument_reporter_string_number3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else9",
-      "shadow": false
-    },
-    "argument_reporter_string_number3": {
-      "id": "argument_reporter_string_number3",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_return1",
-      "shadow": false
-    },
-    "procedures_return2": {
-      "id": "procedures_return2",
-      "opcode": "procedures_return",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "argument_reporter_string_number4",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else9",
-      "shadow": false
-    },
-    "argument_reporter_string_number4": {
-      "id": "argument_reporter_string_number4",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_return2",
-      "shadow": false
-    },
-    "event_whenbroadcastreceived2": {
-      "id": "event_whenbroadcastreceived2",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
-          "value": "GAME begin",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "motion_gotoxy1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 232,
-      "y": -187
-    },
-    "motion_gotoxy1": {
-      "id": "motion_gotoxy1",
-      "opcode": "motion_gotoxy",
-      "inputs": {
-        "X": {
-          "name": "X",
-          "block": "math_number6",
-          "shadow": "math_number6"
-        },
-        "Y": {
-          "name": "Y",
-          "block": "math_number7",
-          "shadow": "math_number7"
-        }
-      },
-      "fields": {},
-      "next": "looks_switchcostumeto9",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived2",
-      "shadow": false
-    },
-    "math_number6": {
-      "id": "math_number6",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "-200"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "math_number7": {
-      "id": "math_number7",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "20"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "looks_switchcostumeto9": {
-      "id": "looks_switchcostumeto9",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume13",
-          "shadow": "looks_costume13"
-        }
-      },
-      "fields": {},
-      "next": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": false
-    },
-    "looks_costume13": {
-      "id": "looks_costume13",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "kits"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto9",
-      "shadow": true
-    },
-    "lmsclonesplus_createCloneOfMyselfWithVar1": {
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "text30",
-          "shadow": "text30"
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y"
-        }
-      },
-      "next": "looks_switchcostumeto10",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto9",
-      "shadow": false
-    },
-    "text30": {
-      "id": "text30",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "shadow": true
-    },
-    "looks_switchcostumeto10": {
-      "id": "looks_switchcostumeto10",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume12",
-          "shadow": "looks_costume12"
-        }
-      },
-      "fields": {},
-      "next": "lmsclonesplus_createCloneOfMyselfWithVar2",
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "shadow": false
-    },
-    "looks_costume12": {
-      "id": "looks_costume12",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "parts"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto10",
-      "shadow": true
-    },
-    "lmsclonesplus_createCloneOfMyselfWithVar2": {
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar2",
-      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "text29",
-          "shadow": "text29"
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y"
-        }
-      },
-      "next": "looks_switchcostumeto11",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto10",
-      "shadow": false
-    },
-    "text29": {
-      "id": "text29",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
-      "shadow": true
-    },
-    "looks_switchcostumeto11": {
-      "id": "looks_switchcostumeto11",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume11",
-          "shadow": "looks_costume11"
-        }
-      },
-      "fields": {},
-      "next": "lmsclonesplus_createCloneOfMyselfWithVar3",
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
-      "shadow": false
-    },
-    "looks_costume11": {
-      "id": "looks_costume11",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "page next"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto11",
-      "shadow": true
-    },
-    "lmsclonesplus_createCloneOfMyselfWithVar3": {
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar3",
-      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "text28",
-          "shadow": "text28"
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y"
-        }
-      },
-      "next": "looks_switchcostumeto12",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto11",
-      "shadow": false
-    },
-    "text28": {
-      "id": "text28",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar3",
-      "shadow": true
-    },
-    "looks_switchcostumeto12": {
-      "id": "looks_switchcostumeto12",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume10",
-          "shadow": "looks_costume10"
-        }
-      },
-      "fields": {},
-      "next": "lmsclonesplus_createCloneOfMyselfWithVar4",
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar3",
-      "shadow": false
-    },
-    "looks_costume10": {
-      "id": "looks_costume10",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "page prev"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto12",
-      "shadow": true
-    },
-    "lmsclonesplus_createCloneOfMyselfWithVar4": {
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar4",
-      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "text27",
-          "shadow": "text27"
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y"
-        }
-      },
-      "next": "lmsclonesplus_createCloneOfMyselfWithVar5",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto12",
-      "shadow": false
-    },
-    "text27": {
-      "id": "text27",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar4",
-      "shadow": true
-    },
-    "lmsclonesplus_createCloneOfMyselfWithVar5": {
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar5",
-      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "text26",
-          "shadow": "text26"
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y"
-        }
-      },
-      "next": "looks_switchcostumeto13",
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar4",
-      "shadow": false
-    },
-    "text26": {
-      "id": "text26",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "5"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar5",
-      "shadow": true
-    },
-    "looks_switchcostumeto13": {
-      "id": "looks_switchcostumeto13",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume9",
-          "shadow": "looks_costume9"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar5",
-      "shadow": false
-    },
-    "looks_costume9": {
-      "id": "looks_costume9",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "base"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto13",
-      "shadow": true
     }
   },
   "scripts": [
     "text1",
     "text2",
     "event_whenthisspriteclicked1",
-    "event_whenbroadcastreceived1",
-    "control_start_as_clone1",
     "procedures_definition1",
-    "event_whenbroadcastreceived2"
+    "event_whenbroadcastreceived1",
+    "event_whenbroadcastreceived2",
+    "control_start_as_clone1"
   ]
 }

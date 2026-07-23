@@ -399,8 +399,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "CargoBay",
-          "id": "5]]i7RzsBZq$K0aU**U6",
+          "value": "Thrusters",
+          "id": "V,zpOO?*cV-EcwsqbEz{",
           "variableType": "broadcast_msg"
         }
       },
@@ -409,7 +409,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2144
+      "y": 2688
     },
     "theshovelcanvaseffects_seteffect2": {
       "id": "theshovelcanvaseffects_seteffect2",
@@ -519,7 +519,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\");  let positions=[   {x:80,y:220},   {x:220,y:220},   {x:150,y:80} ];  let boxes=[   {pos:0,id:0},   {pos:1,id:1},   {pos:2,id:2} ];  let cargoBox=Math.floor(Math.random()*3); let phase=\"show\"; let anim=null; let swapsLeft=6; let ended=false;  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     ctx.fillStyle=\"#333\";     ctx.fillRect(p.x-30,p.y-30,60,60);   }    if(phase===\"show\"){     let b=boxes[cargoBox];     let p=positions[b.pos];     ctx.fillStyle=\"#ffaa00\";     ctx.fillRect(p.x-18,p.y-18,36,36);   } }  function startSwap(a,b){   let pa=positions[boxes[a].pos];   let pb=positions[boxes[b].pos];   let cx=(pa.x+pb.x)/2;   let cy=(pa.y+pb.y)/2;   let ra=Math.hypot(pa.x-cx,pa.y-cy);   let rb=Math.hypot(pb.x-cx,pb.y-cy);   let aa=Math.atan2(pa.y-cy,pa.x-cx);   let ab=Math.atan2(pb.y-cy,pb.x-cx);   anim={a:a,b:b,cx:cx,cy:cy,ra:ra,rb:rb,aa:aa,ab:ab,t:0}; }  function applyAnim(){   if(!anim)return;   anim.t+=0.04;   let ta=anim.aa+Math.PI*anim.t;   let tb=anim.ab+Math.PI*anim.t;   let pa={x:anim.cx+Math.cos(ta)*anim.ra,y:anim.cy+Math.sin(ta)*anim.ra};   let pb={x:anim.cx+Math.cos(tb)*anim.rb,y:anim.cy+Math.sin(tb)*anim.rb};   positions[boxes[anim.a].pos]=pa;   positions[boxes[anim.b].pos]=pb;   if(anim.t>=1){     let tmp=boxes[anim.a].pos;     boxes[anim.a].pos=boxes[anim.b].pos;     boxes[anim.b].pos=tmp;     positions[boxes[anim.a].pos]=pa;     positions[boxes[anim.b].pos]=pb;     anim=null;     swapsLeft--;     if(swapsLeft>0){       let i=Math.floor(Math.random()*3);       let j=i;       while(j===i)j=Math.floor(Math.random()*3);       startSwap(i,j);     }else{       phase=\"guess\";     }   } }  function update(){   if(ended)return;   if(phase===\"shuffle\"&&anim)applyAnim();   draw();   requestAnimationFrame(update); }  setTimeout(()=>{phase=\"cover\";},800); setTimeout(()=>{   phase=\"shuffle\";   let i=Math.floor(Math.random()*3);   let j=i;   while(j===i)j=Math.floor(Math.random()*3);   startSwap(i,j); },1400);  panel.onmousedown=e=>{   if(ended||phase!==\"guess\")return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     if(x>=p.x-30&&x<=p.x+30&&y>=p.y-30&&y<=p.y+30){       ended=true;       let score=b.id===cargoBox?3:0;       window.parent.postMessage({type:\"cargoScore\",score:score},\"*\");     }   } };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"cargoScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>",
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;left:120px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"thruster\" class=\"btn\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let thruster=document.getElementById(\"thruster\");  let cursorY=150; let cursorVel=0;  let fishY=150; let fishStartY=150; let fishTargetY=150; let fishTimer=0; let fishDuration=1;  let gravity=0.25; let cursorBoost=-4;  let caughtTime=0; let ended=false;  function newFishGlide(){   fishStartY=fishY;   fishTargetY=Math.random()*140+80;   fishDuration=Math.random()*1.2+0.4;   fishTimer=0; }  newFishGlide();  function updateFish(dt){   fishTimer+=dt;   let t=fishTimer/fishDuration;   if(t>1)t=1;   fishY=fishStartY+(fishTargetY-fishStartY)*t;   if(t>=1){     newFishGlide();   } }  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.fillStyle=\"#333\";   ctx.fillRect(140,50,20,200);    ctx.fillStyle=\"#44aa44\";   ctx.fillRect(140,fishY-30,20,60);    ctx.fillStyle=\"#ffaa00\";   ctx.fillRect(140,cursorY-10,20,20); }  function update(){   if(ended)return;    cursorVel+=gravity;   cursorY+=cursorVel;    if(cursorY<60){     cursorY=60;     cursorVel=0;   }   if(cursorY>240){     cursorY=240;     cursorVel=0;   }    let dt=0.016;   updateFish(dt);    if(cursorY>fishY-30 && cursorY<fishY+30){     caughtTime+=dt;   }    if(caughtTime>=1.2){     ended=true;     window.parent.postMessage({type:\"thrusterScore\",score:3},\"*\");   }    draw();   requestAnimationFrame(update); }  thruster.onmousedown=()=>{   if(ended)return;   cursorVel=cursorBoost; };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"thrusterScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>",
           "id": null
         }
       },
@@ -535,8 +535,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "AdvertisingPanels",
-          "id": "eHVwl1UwxaE)r:gKR~{H",
+          "value": "FIns",
+          "id": "FuLC;cfr:.|j%bTpI#J}",
           "variableType": "broadcast_msg"
         }
       },
@@ -545,7 +545,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2416
+      "y": 2960
     },
     "theshovelcanvaseffects_seteffect3": {
       "id": "theshovelcanvaseffects_seteffect3",
@@ -655,7 +655,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} input{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:200px;height:30px;background:#333;border:0;color:#fff;font-size:18px;text-align:center;outline:none;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <input id=\"t\" autocomplete=\"off\" spellcheck=\"false\"> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let t=document.getElementById(\"t\");  let phrases=[   \"BUY NOW\",   \"SALE\",   \"50% OFF\",   \"LIMITED TIME\",   \"BEST DEAL\",   \"NEW ARRIVAL\",   \"HOT OFFER\" ];  let target=\"\"; let ended=false; let startTime=0;  function pickPhrase(){   return phrases[Math.floor(Math.random()*phrases.length)]; }  function drawPhrase(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);   ctx.fillStyle=\"#fff\";   ctx.font=\"32px sans-serif\";   ctx.textAlign=\"center\";   ctx.fillText(target,150,150); }  function hide(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300); }  function start(){   target=pickPhrase();   drawPhrase();    setTimeout(()=>{     hide();     startTime=performance.now();      let ev=new MouseEvent(\"mousedown\",{bubbles:true});     t.dispatchEvent(ev);     t.focus();    },1000); }  function finish(){   if(ended)return;   ended=true;   let correct=t.value.toUpperCase()===target;   let time=(performance.now()-startTime)/1000;   let score=0;   if(correct){     score=time<1.0?3:time<1.8?2:1;   }   window.parent.postMessage({type:\"adScore\",score:score},\"*\"); }  t.oninput=()=>{   if(ended)return;   if(t.value.length>=target.length){     finish();   } };  t.onkeydown=e=>{   if(ended)return;   if(e.key===\"Enter\"){     finish();   } };  setTimeout(()=>{   finish(); },6000);  start(); </script>  </body> </html>",
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;left:120px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"tap\" class=\"btn\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let tap=document.getElementById(\"tap\");  let angle=0; let speed=0.12;  let targetAngle=Math.random()*Math.PI*2; let ended=false;  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.save();   ctx.translate(150,150);    ctx.fillStyle=\"#44ff44\";   ctx.rotate(targetAngle);   ctx.fillRect(-10,-80,20,40);   ctx.rotate(-targetAngle);    ctx.rotate(angle);   ctx.fillStyle=\"#4488ff\";   ctx.fillRect(-10,-80,20,80);    ctx.restore(); }  function update(){   if(ended)return;   angle+=speed;   draw();   requestAnimationFrame(update); }  tap.onmousedown=()=>{   if(ended)return;   ended=true;    let diff=Math.abs(((angle - targetAngle + Math.PI*3) % (Math.PI*2)) - Math.PI);    let score=0;   if(diff<0.15)score=3;   else if(diff<0.35)score=2;   else if(diff<0.55)score=1;    window.parent.postMessage({type:\"finsScore\",score:score},\"*\"); };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"finsScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>",
           "id": null
         }
       },
@@ -671,8 +671,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "Thrusters",
-          "id": "V,zpOO?*cV-EcwsqbEz{",
+          "value": "Windows",
+          "id": "c?L#51.#1:Q{u9h1$T@0",
           "variableType": "broadcast_msg"
         }
       },
@@ -681,7 +681,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2688
+      "y": 1328
     },
     "theshovelcanvaseffects_seteffect4": {
       "id": "theshovelcanvaseffects_seteffect4",
@@ -791,7 +791,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;left:120px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"thruster\" class=\"btn\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let thruster=document.getElementById(\"thruster\");  let cursorY=150; let cursorVel=0;  let fishY=150; let fishStartY=150; let fishTargetY=150; let fishTimer=0; let fishDuration=1;  let gravity=0.25; let cursorBoost=-4;  let caughtTime=0; let ended=false;  function newFishGlide(){   fishStartY=fishY;   fishTargetY=Math.random()*140+80;   fishDuration=Math.random()*1.2+0.4;   fishTimer=0; }  newFishGlide();  function updateFish(dt){   fishTimer+=dt;   let t=fishTimer/fishDuration;   if(t>1)t=1;   fishY=fishStartY+(fishTargetY-fishStartY)*t;   if(t>=1){     newFishGlide();   } }  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.fillStyle=\"#333\";   ctx.fillRect(140,50,20,200);    ctx.fillStyle=\"#44aa44\";   ctx.fillRect(140,fishY-30,20,60);    ctx.fillStyle=\"#ffaa00\";   ctx.fillRect(140,cursorY-10,20,20); }  function update(){   if(ended)return;    cursorVel+=gravity;   cursorY+=cursorVel;    if(cursorY<60){     cursorY=60;     cursorVel=0;   }   if(cursorY>240){     cursorY=240;     cursorVel=0;   }    let dt=0.016;   updateFish(dt);    if(cursorY>fishY-30 && cursorY<fishY+30){     caughtTime+=dt;   }    if(caughtTime>=1.2){     ended=true;     window.parent.postMessage({type:\"thrusterScore\",score:3},\"*\");   }    draw();   requestAnimationFrame(update); }  thruster.onmousedown=()=>{   if(ended)return;   cursorVel=cursorBoost; };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"thrusterScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>",
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;color:white;font-family:sans-serif;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"msg\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let msg=document.getElementById(\"msg\"); let painting=false; let cleaned=0; let total=0; let gridSize=10; let cols=300/gridSize; let rows=300/gridSize; let grid=[]; let lastX=0; let lastY=0; let ended=false;  for(let y=0;y<rows;y++){   grid[y]=[];   for(let x=0;x<cols;x++){     grid[y][x]=0;     total++;   } }  ctx.fillStyle=\"#8b5a2b\"; ctx.fillRect(0,0,300,300);  function markCell(x,y){   let gx=Math.floor(x/gridSize);   let gy=Math.floor(y/gridSize);   if(gx>=0&&gx<cols&&gy>=0&&gy<rows){     if(grid[gy][gx]===0){       grid[gy][gx]=1;       cleaned++;     }   } }  function paintLine(x1,y1,x2,y2){   ctx.strokeStyle=\"#88ccee\";   ctx.lineWidth=48;   ctx.lineCap=\"round\";   ctx.beginPath();   ctx.moveTo(x1,y1);   ctx.lineTo(x2,y2);   ctx.stroke();   let steps=20;   for(let i=0;i<=steps;i++){     let t=i/steps;     let x=x1+(x2-x1)*t;     let y=y1+(y2-y1)*t;     markCell(x,y);   } }  function finish(){   if(ended)return;   ended=true;   let ratio=cleaned/total;   let score=ratio>0.8?3:ratio>0.6?2:ratio>0.4?1:0;   window.parent.postMessage({type:\"windowsScore\",score:score},\"*\"); }  c.onmousedown=e=>{   painting=true;   let r=c.getBoundingClientRect();   lastX=e.clientX-r.left;   lastY=e.clientY-r.top;   paintLine(lastX,lastY,lastX,lastY); };  c.onmouseup=e=>{   painting=false;   finish(); };  c.onmousemove=e=>{   if(!painting)return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   paintLine(lastX,lastY,x,y);   lastX=x;   lastY=y; };  setTimeout(()=>{finish();},7000); </script>  </body> </html>",
           "id": null
         }
       },
@@ -807,8 +807,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "FIns",
-          "id": "FuLC;cfr:.|j%bTpI#J}",
+          "value": "Body",
+          "id": "^y%zj*[2)y-pS@YA|+tu",
           "variableType": "broadcast_msg"
         }
       },
@@ -817,7 +817,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 2960
+      "y": 1056
     },
     "theshovelcanvaseffects_seteffect5": {
       "id": "theshovelcanvaseffects_seteffect5",
@@ -927,7 +927,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;left:120px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"tap\" class=\"btn\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let tap=document.getElementById(\"tap\");  let angle=0; let speed=0.12;  let targetAngle=Math.random()*Math.PI*2; let ended=false;  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.save();   ctx.translate(150,150);    ctx.fillStyle=\"#44ff44\";   ctx.rotate(targetAngle);   ctx.fillRect(-10,-80,20,40);   ctx.rotate(-targetAngle);    ctx.rotate(angle);   ctx.fillStyle=\"#4488ff\";   ctx.fillRect(-10,-80,20,80);    ctx.restore(); }  function update(){   if(ended)return;   angle+=speed;   draw();   requestAnimationFrame(update); }  tap.onmousedown=()=>{   if(ended)return;   ended=true;    let diff=Math.abs(((angle - targetAngle + Math.PI*3) % (Math.PI*2)) - Math.PI);    let score=0;   if(diff<0.15)score=3;   else if(diff<0.35)score=2;   else if(diff<0.55)score=1;    window.parent.postMessage({type:\"finsScore\",score:score},\"*\"); };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"finsScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>",
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;overflow:hidden;border:3px solid #555;color:white;font-family:sans-serif;} .block{width:80px;height:20px;background:#4aa3ff;position:absolute;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} </style> </head> <body>  <div id=\"panel\">   <div id=\"msg\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let msg=document.getElementById(\"msg\"); let blocks=[]; let current=null; let dir=1; let speed=2; let baseY=260; let dropping=false; let dropV=6;  function spawnBlock(){   current=document.createElement(\"div\");   current.className=\"block\";   current.style.top=\"20px\";   current.style.left=\"10px\";   panel.appendChild(current);   dir=1;   dropping=false; }  function moveBlock(){   if(current){     if(!dropping){       let x=current.offsetLeft+speed*dir;       if(x<0){x=0;dir=1;}       if(x>220){x=220;dir=-1;}       current.style.left=x+\"px\";     }else{       let y=current.offsetTop+dropV;       if(y>=baseY){         y=baseY;         current.style.top=y+\"px\";         blocks.push(current);         baseY-=22;         current=null;         if(blocks.length>=3){finish();}         else{spawnBlock();}       }else{         current.style.top=y+\"px\";       }     }   }   requestAnimationFrame(moveBlock); }  function finish(){   let score=3;   for(let i=1;i<blocks.length;i++){     let a=blocks[i].offsetLeft;     let b=blocks[i-1].offsetLeft;     let diff=Math.abs(a-b);     if(diff>40){score=0;break;}     if(diff>25&&score>1){score=1;}     if(diff>15&&score>2){score=2;}   }   window.parent.postMessage({type:\"bodyScore\",score:score},\"*\"); }  panel.onclick=()=>{   if(current&&!dropping){dropping=true;} };  spawnBlock(); moveBlock(); </script>  </body> </html>",
           "id": null
         }
       },
@@ -943,8 +943,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "Windows",
-          "id": "c?L#51.#1:Q{u9h1$T@0",
+          "value": "NoseCone",
+          "id": "edp?C};k@B||N{dL%CY7",
           "variableType": "broadcast_msg"
         }
       },
@@ -953,7 +953,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 1328
+      "y": 1600
     },
     "theshovelcanvaseffects_seteffect6": {
       "id": "theshovelcanvaseffects_seteffect6",
@@ -1063,7 +1063,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;color:white;font-family:sans-serif;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"msg\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let msg=document.getElementById(\"msg\"); let painting=false; let cleaned=0; let total=0; let gridSize=10; let cols=300/gridSize; let rows=300/gridSize; let grid=[]; let lastX=0; let lastY=0; let ended=false;  for(let y=0;y<rows;y++){   grid[y]=[];   for(let x=0;x<cols;x++){     grid[y][x]=0;     total++;   } }  ctx.fillStyle=\"#8b5a2b\"; ctx.fillRect(0,0,300,300);  function markCell(x,y){   let gx=Math.floor(x/gridSize);   let gy=Math.floor(y/gridSize);   if(gx>=0&&gx<cols&&gy>=0&&gy<rows){     if(grid[gy][gx]===0){       grid[gy][gx]=1;       cleaned++;     }   } }  function paintLine(x1,y1,x2,y2){   ctx.strokeStyle=\"#88ccee\";   ctx.lineWidth=48;   ctx.lineCap=\"round\";   ctx.beginPath();   ctx.moveTo(x1,y1);   ctx.lineTo(x2,y2);   ctx.stroke();   let steps=20;   for(let i=0;i<=steps;i++){     let t=i/steps;     let x=x1+(x2-x1)*t;     let y=y1+(y2-y1)*t;     markCell(x,y);   } }  function finish(){   if(ended)return;   ended=true;   let ratio=cleaned/total;   let score=ratio>0.8?3:ratio>0.6?2:ratio>0.4?1:0;   window.parent.postMessage({type:\"windowsScore\",score:score},\"*\"); }  c.onmousedown=e=>{   painting=true;   let r=c.getBoundingClientRect();   lastX=e.clientX-r.left;   lastY=e.clientY-r.top;   paintLine(lastX,lastY,lastX,lastY); };  c.onmouseup=e=>{   painting=false;   finish(); };  c.onmousemove=e=>{   if(!painting)return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   paintLine(lastX,lastY,x,y);   lastX=x;   lastY=y; };  setTimeout(()=>{finish();},7000); </script>  </body> </html>",
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;color:white;font-family:sans-serif;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"msg\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let msg=document.getElementById(\"msg\"); let drawing=false; let pts=[]; let lastX=0; let lastY=0;  ctx.fillStyle=\"#222\"; ctx.fillRect(0,0,300,300);  function addPoint(x,y){   pts.push({x:x,y:y}); }  function drawLine(x1,y1,x2,y2){   ctx.strokeStyle=\"#4aa3ff\";   ctx.lineWidth=4;   ctx.lineCap=\"round\";   ctx.beginPath();   ctx.moveTo(x1,y1);   ctx.lineTo(x2,y2);   ctx.stroke();   let steps=10;   for(let i=0;i<=steps;i++){     let t=i/steps;     let x=x1+(x2-x1)*t;     let y=y1+(y2-y1)*t;     addPoint(x,y);   } }  function finish(){   if(pts.length<10)return;   let cx=150;   let cy=150;   let radii=pts.map(p=>Math.hypot(p.x-cx,p.y-cy));   let avg=radii.reduce((a,b)=>a+b,0)/radii.length;   let diffs=radii.map(r=>Math.abs(r-avg));   let err=diffs.reduce((a,b)=>a+b,0)/diffs.length;   let score=err<8?3:err<20?2:err<35?1:0;   window.parent.postMessage({type:\"noseScore\",score:score},\"*\"); }  c.onmousedown=e=>{   drawing=true;   let r=c.getBoundingClientRect();   lastX=e.clientX-r.left;   lastY=e.clientY-r.top;   addPoint(lastX,lastY); };  c.onmouseup=e=>{   drawing=false;   finish(); };  c.onmousemove=e=>{   if(!drawing)return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   drawLine(lastX,lastY,x,y);   lastX=x;   lastY=y; }; </script>  </body> </html>",
           "id": null
         }
       },
@@ -1079,8 +1079,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "Body",
-          "id": "^y%zj*[2)y-pS@YA|+tu",
+          "value": "FuelTank",
+          "id": "fAF}S32L:%A[3Hh*]?:@",
           "variableType": "broadcast_msg"
         }
       },
@@ -1089,7 +1089,7 @@
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 1056
+      "y": 1872
     },
     "theshovelcanvaseffects_seteffect7": {
       "id": "theshovelcanvaseffects_seteffect7",
@@ -1199,7 +1199,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;overflow:hidden;border:3px solid #555;color:white;font-family:sans-serif;} .block{width:80px;height:20px;background:#4aa3ff;position:absolute;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} </style> </head> <body>  <div id=\"panel\">   <div id=\"msg\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let msg=document.getElementById(\"msg\"); let blocks=[]; let current=null; let dir=1; let speed=2; let baseY=260; let dropping=false; let dropV=6;  function spawnBlock(){   current=document.createElement(\"div\");   current.className=\"block\";   current.style.top=\"20px\";   current.style.left=\"10px\";   panel.appendChild(current);   dir=1;   dropping=false; }  function moveBlock(){   if(current){     if(!dropping){       let x=current.offsetLeft+speed*dir;       if(x<0){x=0;dir=1;}       if(x>220){x=220;dir=-1;}       current.style.left=x+\"px\";     }else{       let y=current.offsetTop+dropV;       if(y>=baseY){         y=baseY;         current.style.top=y+\"px\";         blocks.push(current);         baseY-=22;         current=null;         if(blocks.length>=3){finish();}         else{spawnBlock();}       }else{         current.style.top=y+\"px\";       }     }   }   requestAnimationFrame(moveBlock); }  function finish(){   let score=3;   for(let i=1;i<blocks.length;i++){     let a=blocks[i].offsetLeft;     let b=blocks[i-1].offsetLeft;     let diff=Math.abs(a-b);     if(diff>40){score=0;break;}     if(diff>25&&score>1){score=1;}     if(diff>15&&score>2){score=2;}   }   window.parent.postMessage({type:\"bodyScore\",score:score},\"*\"); }  panel.onclick=()=>{   if(current&&!dropping){dropping=true;} };  spawnBlock(); moveBlock(); </script>  </body> </html>",
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} #b0{left:40px;} #b1{left:120px;} #b2{left:200px;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"b0\" class=\"btn\"></div>   <div id=\"b1\" class=\"btn\"></div>   <div id=\"b2\" class=\"btn\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let b0=document.getElementById(\"b0\"); let b1=document.getElementById(\"b1\"); let b2=document.getElementById(\"b2\");  let targets=[0,0,0]; let fills=[0,0,0]; let active=-1; let ended=false;  let barX=30; let barY=140; let barW=240; let barH=20;  function randomTargets(){   let a=Math.random();   let b=Math.random();   let d=Math.random();   let s=a+b+d;   targets=[a/s,b/s,d/s]; }  randomTargets();  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.fillStyle=\"#333\";   ctx.fillRect(barX-4,barY-4,barW+8,barH+8);    let w0=fills[0]*barW;   let w1=fills[1]*barW;   let w2=fills[2]*barW;    ctx.fillStyle=\"#ff4444\";   ctx.fillRect(barX,barY,w0,barH);    ctx.fillStyle=\"#44ff44\";   ctx.fillRect(barX+w0,barY,w1,barH);    ctx.fillStyle=\"#4488ff\";   ctx.fillRect(barX+w0+w1,barY,w2,barH);    let t0=targets[0]*barW;   let t1=targets[1]*barW;   let t2=targets[2]*barW;    ctx.fillStyle=\"#ffffff\";   ctx.fillRect(barX+t0-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1+t2-2,barY-6,4,4); }  function update(){   if(ended)return;   if(active>=0){     fills[active]+=0.004;     if(fills[active]>1)fills[active]=1;   }   draw();   requestAnimationFrame(update); }  function finish(){   if(ended)return;   ended=true;   let err=0;   for(let i=0;i<3;i++){     err+=Math.abs(fills[i]-targets[i]);   }   err/=3;   let score=err<0.05?3:err<0.12?2:err<0.2?1:0;   window.parent.postMessage({type:\"fuelScore\",score:score},\"*\"); }  function down(i){if(!ended)active=i;} function up(){active=-1;}  b0.onmousedown=()=>down(0); b1.onmousedown=()=>down(1); b2.onmousedown=()=>down(2);  b0.onmouseup=up; b1.onmouseup=up; b2.onmouseup=up;  b0.onmouseleave=up; b1.onmouseleave=up; b2.onmouseleave=up;  setTimeout(()=>{finish();},6000);  draw(); update(); </script>  </body> </html>",
           "id": null
         }
       },
@@ -1208,24 +1208,112 @@
       "parent": "iframe_displayHTML6",
       "shadow": true
     },
-    "event_whenbroadcastreceived7": {
-      "id": "event_whenbroadcastreceived7",
-      "opcode": "event_whenbroadcastreceived",
+    "event_whenflagclicked1": {
+      "id": "event_whenflagclicked1",
+      "opcode": "event_whenflagclicked",
       "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "value": "NoseCone",
-          "id": "edp?C};k@B||N{dL%CY7",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "theshovelcanvaseffects_seteffect8",
+      "fields": {},
+      "next": "looks_setsizeto1",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 1600
+      "y": 64
+    },
+    "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number13",
+          "shadow": "math_number13"
+        }
+      },
+      "fields": {},
+      "next": "motion_gotoxy2",
+      "topLevel": false,
+      "parent": "event_whenflagclicked1",
+      "shadow": false
+    },
+    "math_number13": {
+      "id": "math_number13",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "500",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": true
+    },
+    "motion_gotoxy2": {
+      "id": "motion_gotoxy2",
+      "opcode": "motion_gotoxy",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number11",
+          "shadow": "math_number11"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number12",
+          "shadow": "math_number12"
+        }
+      },
+      "fields": {},
+      "next": "looks_hide2",
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": false
+    },
+    "math_number11": {
+      "id": "math_number11",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy2",
+      "shadow": true
+    },
+    "math_number12": {
+      "id": "math_number12",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0",
+          "id": null
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy2",
+      "shadow": true
+    },
+    "looks_hide2": {
+      "id": "looks_hide2",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": "theshovelcanvaseffects_seteffect8",
+      "topLevel": false,
+      "parent": "motion_gotoxy2",
+      "shadow": false
     },
     "theshovelcanvaseffects_seteffect8": {
       "id": "theshovelcanvaseffects_seteffect8",
@@ -1243,9 +1331,9 @@
         }
       },
       "fields": {},
-      "next": "iframe_setInteractive8",
+      "next": "iframe_close2",
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived7",
+      "parent": "looks_hide2",
       "shadow": false
     },
     "theshovelcanvaseffects_menu_EFFECTMENU8": {
@@ -1271,13 +1359,111 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "2",
+          "value": "0",
           "id": null
         }
       },
       "next": null,
       "topLevel": false,
       "parent": "theshovelcanvaseffects_seteffect8",
+      "shadow": true
+    },
+    "iframe_close2": {
+      "id": "iframe_close2",
+      "opcode": "iframe_close",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "theshovelcanvaseffects_seteffect8",
+      "shadow": false
+    },
+    "looks_gotofrontback1": {
+      "id": "looks_gotofrontback1",
+      "opcode": "looks_gotofrontback",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": {
+          "name": "FRONT_BACK",
+          "value": "front",
+          "id": null
+        }
+      },
+      "next": "control_wait2",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": false,
+      "x": 71.2592592592593,
+      "y": 822.45267489712
+    },
+    "event_whenbroadcastreceived7": {
+      "id": "event_whenbroadcastreceived7",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "5]]i7RzsBZq$K0aU**U6",
+          "value": "CargoBay",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "theshovelcanvaseffects_seteffect9",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 48,
+      "y": 2144
+    },
+    "theshovelcanvaseffects_seteffect9": {
+      "id": "theshovelcanvaseffects_seteffect9",
+      "opcode": "theshovelcanvaseffects_seteffect",
+      "inputs": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU9",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU9"
+        },
+        "NUMBER": {
+          "name": "NUMBER",
+          "block": "math_number14",
+          "shadow": "math_number14"
+        }
+      },
+      "fields": {},
+      "next": "iframe_setInteractive8",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived7",
+      "shadow": false
+    },
+    "theshovelcanvaseffects_menu_EFFECTMENU9": {
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU9",
+      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
+      "inputs": {},
+      "fields": {
+        "EFFECTMENU": {
+          "name": "EFFECTMENU",
+          "value": "blur"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "theshovelcanvaseffects_seteffect9",
+      "shadow": true
+    },
+    "math_number14": {
+      "id": "math_number14",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "theshovelcanvaseffects_seteffect9",
       "shadow": true
     },
     "iframe_setInteractive8": {
@@ -1293,7 +1479,7 @@
       "fields": {},
       "next": "iframe_displayHTML7",
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect8",
+      "parent": "theshovelcanvaseffects_seteffect9",
       "shadow": false
     },
     "iframe_menu_interactiveMenu8": {
@@ -1303,8 +1489,7 @@
       "fields": {
         "interactiveMenu": {
           "name": "interactiveMenu",
-          "value": "true",
-          "id": null
+          "value": "true"
         }
       },
       "next": null,
@@ -1335,8 +1520,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;color:white;font-family:sans-serif;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"msg\"></div> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let msg=document.getElementById(\"msg\"); let drawing=false; let pts=[]; let lastX=0; let lastY=0;  ctx.fillStyle=\"#222\"; ctx.fillRect(0,0,300,300);  function addPoint(x,y){   pts.push({x:x,y:y}); }  function drawLine(x1,y1,x2,y2){   ctx.strokeStyle=\"#4aa3ff\";   ctx.lineWidth=4;   ctx.lineCap=\"round\";   ctx.beginPath();   ctx.moveTo(x1,y1);   ctx.lineTo(x2,y2);   ctx.stroke();   let steps=10;   for(let i=0;i<=steps;i++){     let t=i/steps;     let x=x1+(x2-x1)*t;     let y=y1+(y2-y1)*t;     addPoint(x,y);   } }  function finish(){   if(pts.length<10)return;   let cx=150;   let cy=150;   let radii=pts.map(p=>Math.hypot(p.x-cx,p.y-cy));   let avg=radii.reduce((a,b)=>a+b,0)/radii.length;   let diffs=radii.map(r=>Math.abs(r-avg));   let err=diffs.reduce((a,b)=>a+b,0)/diffs.length;   let score=err<8?3:err<20?2:err<35?1:0;   window.parent.postMessage({type:\"noseScore\",score:score},\"*\"); }  c.onmousedown=e=>{   drawing=true;   let r=c.getBoundingClientRect();   lastX=e.clientX-r.left;   lastY=e.clientY-r.top;   addPoint(lastX,lastY); };  c.onmouseup=e=>{   drawing=false;   finish(); };  c.onmousemove=e=>{   if(!drawing)return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   drawLine(lastX,lastY,x,y);   lastX=x;   lastY=y; }; </script>  </body> </html>",
-          "id": null
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\");  let positions=[   {x:80,y:220},   {x:220,y:220},   {x:150,y:80} ];  let boxes=[   {pos:0,id:0},   {pos:1,id:1},   {pos:2,id:2} ];  let cargoBox=Math.floor(Math.random()*3); let phase=\"show\"; let anim=null; let swapsLeft=6; let ended=false;  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     ctx.fillStyle=\"#333\";     ctx.fillRect(p.x-30,p.y-30,60,60);   }    if(phase===\"show\"){     let b=boxes[cargoBox];     let p=positions[b.pos];     ctx.fillStyle=\"#ffaa00\";     ctx.fillRect(p.x-18,p.y-18,36,36);   } }  function startSwap(a,b){   let pa=positions[boxes[a].pos];   let pb=positions[boxes[b].pos];   let cx=(pa.x+pb.x)/2;   let cy=(pa.y+pb.y)/2;   let ra=Math.hypot(pa.x-cx,pa.y-cy);   let rb=Math.hypot(pb.x-cx,pb.y-cy);   let aa=Math.atan2(pa.y-cy,pa.x-cx);   let ab=Math.atan2(pb.y-cy,pb.x-cx);   anim={a:a,b:b,cx:cx,cy:cy,ra:ra,rb:rb,aa:aa,ab:ab,t:0}; }  function applyAnim(){   if(!anim)return;   anim.t+=0.04;   let ta=anim.aa+Math.PI*anim.t;   let tb=anim.ab+Math.PI*anim.t;   let pa={x:anim.cx+Math.cos(ta)*anim.ra,y:anim.cy+Math.sin(ta)*anim.ra};   let pb={x:anim.cx+Math.cos(tb)*anim.rb,y:anim.cy+Math.sin(tb)*anim.rb};   positions[boxes[anim.a].pos]=pa;   positions[boxes[anim.b].pos]=pb;   if(anim.t>=1){     let tmp=boxes[anim.a].pos;     boxes[anim.a].pos=boxes[anim.b].pos;     boxes[anim.b].pos=tmp;     positions[boxes[anim.a].pos]=pa;     positions[boxes[anim.b].pos]=pb;     anim=null;     swapsLeft--;     if(swapsLeft>0){       let i=Math.floor(Math.random()*3);       let j=i;       while(j===i)j=Math.floor(Math.random()*3);       startSwap(i,j);     }else{       phase=\"guess\";     }   } }  function update(){   if(ended)return;   if(phase===\"shuffle\"&&anim)applyAnim();   draw();   requestAnimationFrame(update); }  setTimeout(()=>{phase=\"cover\";},800); setTimeout(()=>{   phase=\"shuffle\";   let i=Math.floor(Math.random()*3);   let j=i;   while(j===i)j=Math.floor(Math.random()*3);   startSwap(i,j); },1400);  panel.onmousedown=e=>{   if(ended||phase!==\"guess\")return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     if(x>=p.x-30&&x<=p.x+30&&y>=p.y-30&&y<=p.y+30){       ended=true;       let score=b.id===cargoBox?3:0;       window.parent.postMessage({type:\"cargoScore\",score:score},\"*\");     }   } };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"cargoScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>"
         }
       },
       "next": null,
@@ -1351,31 +1535,31 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "FuelTank",
-          "id": "fAF}S32L:%A[3Hh*]?:@",
+          "id": "eHVwl1UwxaE)r:gKR~{H",
+          "value": "AdvertisingPanels",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "theshovelcanvaseffects_seteffect9",
+      "next": "theshovelcanvaseffects_seteffect10",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 48,
-      "y": 1872
+      "y": 2416
     },
-    "theshovelcanvaseffects_seteffect9": {
-      "id": "theshovelcanvaseffects_seteffect9",
+    "theshovelcanvaseffects_seteffect10": {
+      "id": "theshovelcanvaseffects_seteffect10",
       "opcode": "theshovelcanvaseffects_seteffect",
       "inputs": {
         "EFFECT": {
           "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU9",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU9"
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU10",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU10"
         },
         "NUMBER": {
           "name": "NUMBER",
-          "block": "math_number11",
-          "shadow": "math_number11"
+          "block": "math_number15",
+          "shadow": "math_number15"
         }
       },
       "fields": {},
@@ -1384,36 +1568,34 @@
       "parent": "event_whenbroadcastreceived8",
       "shadow": false
     },
-    "theshovelcanvaseffects_menu_EFFECTMENU9": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU9",
+    "theshovelcanvaseffects_menu_EFFECTMENU10": {
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU10",
       "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
       "inputs": {},
       "fields": {
         "EFFECTMENU": {
           "name": "EFFECTMENU",
-          "value": "blur",
-          "id": null
+          "value": "blur"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
+      "parent": "theshovelcanvaseffects_seteffect10",
       "shadow": true
     },
-    "math_number11": {
-      "id": "math_number11",
+    "math_number15": {
+      "id": "math_number15",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "2",
-          "id": null
+          "value": "2"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
+      "parent": "theshovelcanvaseffects_seteffect10",
       "shadow": true
     },
     "iframe_setInteractive9": {
@@ -1429,7 +1611,7 @@
       "fields": {},
       "next": "iframe_displayHTML8",
       "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
+      "parent": "theshovelcanvaseffects_seteffect10",
       "shadow": false
     },
     "iframe_menu_interactiveMenu9": {
@@ -1439,8 +1621,7 @@
       "fields": {
         "interactiveMenu": {
           "name": "interactiveMenu",
-          "value": "true",
-          "id": null
+          "value": "true"
         }
       },
       "next": null,
@@ -1471,196 +1652,13 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} .btn{position:absolute;bottom:20px;width:60px;height:30px;background:#333;border-radius:4px;cursor:pointer;} #b0{left:40px;} #b1{left:120px;} #b2{left:200px;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"b0\" class=\"btn\"></div>   <div id=\"b1\" class=\"btn\"></div>   <div id=\"b2\" class=\"btn\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let b0=document.getElementById(\"b0\"); let b1=document.getElementById(\"b1\"); let b2=document.getElementById(\"b2\");  let targets=[0,0,0]; let fills=[0,0,0]; let active=-1; let ended=false;  let barX=30; let barY=140; let barW=240; let barH=20;  function randomTargets(){   let a=Math.random();   let b=Math.random();   let d=Math.random();   let s=a+b+d;   targets=[a/s,b/s,d/s]; }  randomTargets();  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    ctx.fillStyle=\"#333\";   ctx.fillRect(barX-4,barY-4,barW+8,barH+8);    let w0=fills[0]*barW;   let w1=fills[1]*barW;   let w2=fills[2]*barW;    ctx.fillStyle=\"#ff4444\";   ctx.fillRect(barX,barY,w0,barH);    ctx.fillStyle=\"#44ff44\";   ctx.fillRect(barX+w0,barY,w1,barH);    ctx.fillStyle=\"#4488ff\";   ctx.fillRect(barX+w0+w1,barY,w2,barH);    let t0=targets[0]*barW;   let t1=targets[1]*barW;   let t2=targets[2]*barW;    ctx.fillStyle=\"#ffffff\";   ctx.fillRect(barX+t0-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1-2,barY-6,4,4);   ctx.fillRect(barX+t0+t1+t2-2,barY-6,4,4); }  function update(){   if(ended)return;   if(active>=0){     fills[active]+=0.004;     if(fills[active]>1)fills[active]=1;   }   draw();   requestAnimationFrame(update); }  function finish(){   if(ended)return;   ended=true;   let err=0;   for(let i=0;i<3;i++){     err+=Math.abs(fills[i]-targets[i]);   }   err/=3;   let score=err<0.05?3:err<0.12?2:err<0.2?1:0;   window.parent.postMessage({type:\"fuelScore\",score:score},\"*\"); }  function down(i){if(!ended)active=i;} function up(){active=-1;}  b0.onmousedown=()=>down(0); b1.onmousedown=()=>down(1); b2.onmousedown=()=>down(2);  b0.onmouseup=up; b1.onmouseup=up; b2.onmouseup=up;  b0.onmouseleave=up; b1.onmouseleave=up; b2.onmouseleave=up;  setTimeout(()=>{finish();},6000);  draw(); update(); </script>  </body> </html>",
-          "id": null
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} input{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:200px;height:30px;background:#333;border:0;color:#fff;font-size:18px;text-align:center;outline:none;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <input id=\"t\" autocomplete=\"off\" spellcheck=\"false\"> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let t=document.getElementById(\"t\");  let phrases=[   \"BUY NOW\",   \"SALE\",   \"50% OFF\",   \"LIMITED TIME\",   \"BEST DEAL\",   \"NEW ARRIVAL\",   \"HOT OFFER\" ];  let target=\"\"; let ended=false; let startTime=0;  function pickPhrase(){   return phrases[Math.floor(Math.random()*phrases.length)]; }  function drawPhrase(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);   ctx.fillStyle=\"#fff\";   ctx.font=\"32px sans-serif\";   ctx.textAlign=\"center\";   ctx.fillText(target,150,150); }  function hide(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300); }  function start(){   target=pickPhrase();   drawPhrase();    setTimeout(()=>{     hide();     startTime=performance.now();      let ev=new MouseEvent(\"mousedown\",{bubbles:true});     t.dispatchEvent(ev);     t.focus();    },1000); }  function finish(){   if(ended)return;   ended=true;   let correct=t.value.toUpperCase()===target;   let time=(performance.now()-startTime)/1000;   let score=0;   if(correct){     score=time<1.0?3:time<1.8?2:1;   }   window.parent.postMessage({type:\"adScore\",score:score},\"*\"); }  t.oninput=()=>{   if(ended)return;   if(t.value.length>=target.length){     finish();   } };  t.onkeydown=e=>{   if(ended)return;   if(e.key===\"Enter\"){     finish();   } };  setTimeout(()=>{   finish(); },6000);  start(); </script>  </body> </html>"
         }
       },
       "next": null,
       "topLevel": false,
       "parent": "iframe_displayHTML8",
       "shadow": true
-    },
-    "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
-      "opcode": "event_whenflagclicked",
-      "inputs": {},
-      "fields": {},
-      "next": "looks_setsizeto1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 48,
-      "y": 64
-    },
-    "looks_setsizeto1": {
-      "id": "looks_setsizeto1",
-      "opcode": "looks_setsizeto",
-      "inputs": {
-        "SIZE": {
-          "name": "SIZE",
-          "block": "math_number15",
-          "shadow": "math_number15"
-        }
-      },
-      "fields": {},
-      "next": "motion_gotoxy2",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false
-    },
-    "math_number15": {
-      "id": "math_number15",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "500"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": true
-    },
-    "motion_gotoxy2": {
-      "id": "motion_gotoxy2",
-      "opcode": "motion_gotoxy",
-      "inputs": {
-        "X": {
-          "name": "X",
-          "block": "math_number13",
-          "shadow": "math_number13"
-        },
-        "Y": {
-          "name": "Y",
-          "block": "math_number14",
-          "shadow": "math_number14"
-        }
-      },
-      "fields": {},
-      "next": "looks_hide2",
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": false
-    },
-    "math_number13": {
-      "id": "math_number13",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": true
-    },
-    "math_number14": {
-      "id": "math_number14",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": true
-    },
-    "looks_hide2": {
-      "id": "looks_hide2",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": "theshovelcanvaseffects_seteffect10",
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": false
-    },
-    "theshovelcanvaseffects_seteffect10": {
-      "id": "theshovelcanvaseffects_seteffect10",
-      "opcode": "theshovelcanvaseffects_seteffect",
-      "inputs": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU10",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU10"
-        },
-        "NUMBER": {
-          "name": "NUMBER",
-          "block": "math_number12",
-          "shadow": "math_number12"
-        }
-      },
-      "fields": {},
-      "next": "iframe_close2",
-      "topLevel": false,
-      "parent": "looks_hide2",
-      "shadow": false
-    },
-    "theshovelcanvaseffects_menu_EFFECTMENU10": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU10",
-      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
-      "inputs": {},
-      "fields": {
-        "EFFECTMENU": {
-          "name": "EFFECTMENU",
-          "value": "blur"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
-      "shadow": true
-    },
-    "math_number12": {
-      "id": "math_number12",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
-      "shadow": true
-    },
-    "iframe_close2": {
-      "id": "iframe_close2",
-      "opcode": "iframe_close",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
-      "shadow": false
-    },
-    "looks_gotofrontback1": {
-      "id": "looks_gotofrontback1",
-      "opcode": "looks_gotofrontback",
-      "inputs": {},
-      "fields": {
-        "FRONT_BACK": {
-          "name": "FRONT_BACK",
-          "value": "front"
-        }
-      },
-      "next": "control_wait2",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto1",
-      "shadow": false,
-      "x": 71.2592592592593,
-      "y": 822.45267489712
     }
   },
   "scripts": [
@@ -1671,8 +1669,8 @@
     "event_whenbroadcastreceived4",
     "event_whenbroadcastreceived5",
     "event_whenbroadcastreceived6",
+    "event_whenflagclicked1",
     "event_whenbroadcastreceived7",
-    "event_whenbroadcastreceived8",
-    "event_whenflagclicked1"
+    "event_whenbroadcastreceived8"
   ]
 }

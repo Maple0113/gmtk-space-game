@@ -1,0 +1,36 @@
+{
+  "blocks": {
+    "looks_gotofrontback1": {
+      "id": "looks_gotofrontback1",
+      "opcode": "looks_gotofrontback",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": {
+          "name": "FRONT_BACK",
+          "value": "back"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_whenflagclicked1",
+      "shadow": false,
+      "x": 340,
+      "y": 700.1522633744852
+    },
+    "event_whenflagclicked1": {
+      "id": "event_whenflagclicked1",
+      "opcode": "event_whenflagclicked",
+      "inputs": {},
+      "fields": {},
+      "next": "looks_gotofrontback1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 339.96296296296293,
+      "y": 659.7777777777777
+    }
+  },
+  "scripts": [
+    "event_whenflagclicked1"
+  ]
+}

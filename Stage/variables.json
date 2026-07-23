@@ -62,8 +62,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,1]",
-      "[1,0]"
+      "[0,1]",
+      "[0,1]"
     ],
     "_monitorUpToDate": false
   },
@@ -73,7 +73,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,0,0]",
+      "[1,1,1]",
       "[1,1,0]"
     ],
     "_monitorUpToDate": false
@@ -84,8 +84,18 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,0,1,1]",
-      "[0,0,1,0]"
+      "[1,0,0,0]",
+      "[0,0,0,0]"
+    ],
+    "_monitorUpToDate": false
+  },
+  "4M]CWZT`OxT`H~EUzUZ}": {
+    "id": "4M]CWZT`OxT`H~EUzUZ}",
+    "name": "Demands",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "1x Advertisingpanels"
     ],
     "_monitorUpToDate": false
   },
@@ -166,15 +176,13 @@
     "isCloud": false,
     "value": "FIns"
   },
-  "4M]CWZT`OxT`H~EUzUZ}": {
-    "id": "4M]CWZT`OxT`H~EUzUZ}",
-    "name": "Demands",
+  "DfaDaK,D#K$]mB5ec~BD": {
+    "id": "DfaDaK,D#K$]mB5ec~BD",
+    "name": "DemandsInternal",
     "type": "list",
     "isCloud": false,
     "value": [
-      "demand 1",
-      "demand 2",
-      "demand 3"
+      "{\"amount\":1,\"type\":\"AdvertisingPanels\"}"
     ],
     "_monitorUpToDate": true
   }
