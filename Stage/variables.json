@@ -25,7 +25,7 @@
     "name": "MaxPages",
     "type": "",
     "isCloud": false,
-    "value": 2
+    "value": 1
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -43,11 +43,9 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"generic\",\"Amount\":5,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":4,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":7,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":2345,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
-      "{\"Name\":\"generic\",\"Amount\":45,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}"
+      "{\"Name\":\"generic\",\"Amount\":5,\"Position\":0,\"Costume\":\"\",\"Pattern\":[1]}",
+      "{\"Name\":\"generic2\",\"Amount\":5,\"Position\":1,\"Costume\":\"generic\",\"Pattern\":[1,1]}",
+      "{\"Name\":\"invalid\",\"Amount\":5,\"Position\":1,\"Costume\":\"\",\"Pattern\":[11]}"
     ],
     "_monitorUpToDate": false
   },
@@ -134,5 +132,26 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "FIns"
+  },
+  "0A][[Y=]Bc/QhAT9X])!": {
+    "id": "0A][[Y=]Bc/QhAT9X])!",
+    "name": "GridTop",
+    "type": "list",
+    "isCloud": false,
+    "value": []
+  },
+  "Ra$$n.MH7F=ze%M=X)qZ": {
+    "id": "Ra$$n.MH7F=ze%M=X)qZ",
+    "name": "GridMiddle",
+    "type": "list",
+    "isCloud": false,
+    "value": []
+  },
+  "kV@_K9?WKoQT!ow4j}}8": {
+    "id": "kV@_K9?WKoQT!ow4j}}8",
+    "name": "GridBottom",
+    "type": "list",
+    "isCloud": false,
+    "value": []
   }
 }
