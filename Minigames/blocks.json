@@ -1403,8 +1403,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "5]]i7RzsBZq$K0aU**U6",
           "value": "CargoBay",
+          "id": "5]]i7RzsBZq$K0aU**U6",
           "variableType": "broadcast_msg"
         }
       },
@@ -1443,7 +1443,8 @@
       "fields": {
         "EFFECTMENU": {
           "name": "EFFECTMENU",
-          "value": "blur"
+          "value": "blur",
+          "id": null
         }
       },
       "next": null,
@@ -1458,7 +1459,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "next": null,
@@ -1489,7 +1491,8 @@
       "fields": {
         "interactiveMenu": {
           "name": "interactiveMenu",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -1520,7 +1523,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\");  let positions=[   {x:80,y:220},   {x:220,y:220},   {x:150,y:80} ];  let boxes=[   {pos:0,id:0},   {pos:1,id:1},   {pos:2,id:2} ];  let cargoBox=Math.floor(Math.random()*3); let phase=\"show\"; let anim=null; let swapsLeft=6; let ended=false;  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     ctx.fillStyle=\"#333\";     ctx.fillRect(p.x-30,p.y-30,60,60);   }    if(phase===\"show\"){     let b=boxes[cargoBox];     let p=positions[b.pos];     ctx.fillStyle=\"#ffaa00\";     ctx.fillRect(p.x-18,p.y-18,36,36);   } }  function startSwap(a,b){   let pa=positions[boxes[a].pos];   let pb=positions[boxes[b].pos];   let cx=(pa.x+pb.x)/2;   let cy=(pa.y+pb.y)/2;   let ra=Math.hypot(pa.x-cx,pa.y-cy);   let rb=Math.hypot(pb.x-cx,pb.y-cy);   let aa=Math.atan2(pa.y-cy,pa.x-cx);   let ab=Math.atan2(pb.y-cy,pb.x-cx);   anim={a:a,b:b,cx:cx,cy:cy,ra:ra,rb:rb,aa:aa,ab:ab,t:0}; }  function applyAnim(){   if(!anim)return;   anim.t+=0.04;   let ta=anim.aa+Math.PI*anim.t;   let tb=anim.ab+Math.PI*anim.t;   let pa={x:anim.cx+Math.cos(ta)*anim.ra,y:anim.cy+Math.sin(ta)*anim.ra};   let pb={x:anim.cx+Math.cos(tb)*anim.rb,y:anim.cy+Math.sin(tb)*anim.rb};   positions[boxes[anim.a].pos]=pa;   positions[boxes[anim.b].pos]=pb;   if(anim.t>=1){     let tmp=boxes[anim.a].pos;     boxes[anim.a].pos=boxes[anim.b].pos;     boxes[anim.b].pos=tmp;     positions[boxes[anim.a].pos]=pa;     positions[boxes[anim.b].pos]=pb;     anim=null;     swapsLeft--;     if(swapsLeft>0){       let i=Math.floor(Math.random()*3);       let j=i;       while(j===i)j=Math.floor(Math.random()*3);       startSwap(i,j);     }else{       phase=\"guess\";     }   } }  function update(){   if(ended)return;   if(phase===\"shuffle\"&&anim)applyAnim();   draw();   requestAnimationFrame(update); }  setTimeout(()=>{phase=\"cover\";},800); setTimeout(()=>{   phase=\"shuffle\";   let i=Math.floor(Math.random()*3);   let j=i;   while(j===i)j=Math.floor(Math.random()*3);   startSwap(i,j); },1400);  panel.onmousedown=e=>{   if(ended||phase!==\"guess\")return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     if(x>=p.x-30&&x<=p.x+30&&y>=p.y-30&&y<=p.y+30){       ended=true;       let score=b.id===cargoBox?3:0;       window.parent.postMessage({type:\"cargoScore\",score:score},\"*\");     }   } };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"cargoScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>"
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\");  let positions=[   {x:80,y:220},   {x:220,y:220},   {x:150,y:80} ];  let boxes=[   {pos:0,id:0},   {pos:1,id:1},   {pos:2,id:2} ];  let cargoBox=Math.floor(Math.random()*3); let phase=\"show\"; let anim=null; let swapsLeft=6; let ended=false;  function draw(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);    for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     ctx.fillStyle=\"#333\";     ctx.fillRect(p.x-30,p.y-30,60,60);   }    if(phase===\"show\"){     let b=boxes[cargoBox];     let p=positions[b.pos];     ctx.fillStyle=\"#ffaa00\";     ctx.fillRect(p.x-18,p.y-18,36,36);   } }  function startSwap(a,b){   let pa=positions[boxes[a].pos];   let pb=positions[boxes[b].pos];   let cx=(pa.x+pb.x)/2;   let cy=(pa.y+pb.y)/2;   let ra=Math.hypot(pa.x-cx,pa.y-cy);   let rb=Math.hypot(pb.x-cx,pb.y-cy);   let aa=Math.atan2(pa.y-cy,pa.x-cx);   let ab=Math.atan2(pb.y-cy,pb.x-cx);   anim={a:a,b:b,cx:cx,cy:cy,ra:ra,rb:rb,aa:aa,ab:ab,t:0}; }  function applyAnim(){   if(!anim)return;   anim.t+=0.04;   let ta=anim.aa+Math.PI*anim.t;   let tb=anim.ab+Math.PI*anim.t;   let pa={x:anim.cx+Math.cos(ta)*anim.ra,y:anim.cy+Math.sin(ta)*anim.ra};   let pb={x:anim.cx+Math.cos(tb)*anim.rb,y:anim.cy+Math.sin(tb)*anim.rb};   positions[boxes[anim.a].pos]=pa;   positions[boxes[anim.b].pos]=pb;   if(anim.t>=1){     let tmp=boxes[anim.a].pos;     boxes[anim.a].pos=boxes[anim.b].pos;     boxes[anim.b].pos=tmp;     positions[boxes[anim.a].pos]=pa;     positions[boxes[anim.b].pos]=pb;     anim=null;     swapsLeft--;     if(swapsLeft>0){       let i=Math.floor(Math.random()*3);       let j=i;       while(j===i)j=Math.floor(Math.random()*3);       startSwap(i,j);     }else{       phase=\"guess\";     }   } }  function update(){   if(ended)return;   if(phase===\"shuffle\"&&anim)applyAnim();   draw();   requestAnimationFrame(update); }  setTimeout(()=>{phase=\"cover\";},800); setTimeout(()=>{   phase=\"shuffle\";   let i=Math.floor(Math.random()*3);   let j=i;   while(j===i)j=Math.floor(Math.random()*3);   startSwap(i,j); },1400);  panel.onmousedown=e=>{   if(ended||phase!==\"guess\")return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   for(let i=0;i<boxes.length;i++){     let b=boxes[i];     let p=positions[b.pos];     if(x>=p.x-30&&x<=p.x+30&&y>=p.y-30&&y<=p.y+30){       ended=true;       let score=b.id===cargoBox?3:0;       window.parent.postMessage({type:\"cargoScore\",score:score},\"*\");     }   } };  setTimeout(()=>{   if(!ended){     ended=true;     window.parent.postMessage({type:\"cargoScore\",score:0},\"*\");   } },6000);  draw(); update(); </script>  </body> </html>",
+          "id": null
         }
       },
       "next": null,
@@ -1535,8 +1539,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "eHVwl1UwxaE)r:gKR~{H",
           "value": "AdvertisingPanels",
+          "id": "eHVwl1UwxaE)r:gKR~{H",
           "variableType": "broadcast_msg"
         }
       },
@@ -1575,7 +1579,8 @@
       "fields": {
         "EFFECTMENU": {
           "name": "EFFECTMENU",
-          "value": "blur"
+          "value": "blur",
+          "id": null
         }
       },
       "next": null,
@@ -1590,7 +1595,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "next": null,
@@ -1621,7 +1627,8 @@
       "fields": {
         "interactiveMenu": {
           "name": "interactiveMenu",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -1652,7 +1659,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} input{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:200px;height:30px;background:#333;border:0;color:#fff;font-size:18px;text-align:center;outline:none;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <input id=\"t\" autocomplete=\"off\" spellcheck=\"false\"> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let t=document.getElementById(\"t\");  let phrases=[   \"BUY NOW\",   \"SALE\",   \"50% OFF\",   \"LIMITED TIME\",   \"BEST DEAL\",   \"NEW ARRIVAL\",   \"HOT OFFER\" ];  let target=\"\"; let ended=false; let startTime=0;  function pickPhrase(){   return phrases[Math.floor(Math.random()*phrases.length)]; }  function drawPhrase(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);   ctx.fillStyle=\"#fff\";   ctx.font=\"32px sans-serif\";   ctx.textAlign=\"center\";   ctx.fillText(target,150,150); }  function hide(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300); }  function start(){   target=pickPhrase();   drawPhrase();    setTimeout(()=>{     hide();     startTime=performance.now();      let ev=new MouseEvent(\"mousedown\",{bubbles:true});     t.dispatchEvent(ev);     t.focus();    },1000); }  function finish(){   if(ended)return;   ended=true;   let correct=t.value.toUpperCase()===target;   let time=(performance.now()-startTime)/1000;   let score=0;   if(correct){     score=time<1.0?3:time<1.8?2:1;   }   window.parent.postMessage({type:\"adScore\",score:score},\"*\"); }  t.oninput=()=>{   if(ended)return;   if(t.value.length>=target.length){     finish();   } };  t.onkeydown=e=>{   if(ended)return;   if(e.key===\"Enter\"){     finish();   } };  setTimeout(()=>{   finish(); },6000);  start(); </script>  </body> </html>"
+          "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;} canvas{position:absolute;top:0;left:0;} input{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:200px;height:30px;background:#333;border:0;color:#fff;font-size:18px;text-align:center;outline:none;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <input id=\"t\" autocomplete=\"off\" spellcheck=\"false\"> </div>  <script> let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let t=document.getElementById(\"t\");  let phrases=[   \"BUY NOW\",   \"SALE\",   \"50% OFF\",   \"LIMITED TIME\",   \"BEST DEAL\",   \"NEW ARRIVAL\",   \"HOT OFFER\" ];  let target=\"\"; let ended=false; let startTime=0;  function pickPhrase(){   return phrases[Math.floor(Math.random()*phrases.length)]; }  function drawPhrase(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300);   ctx.fillStyle=\"#fff\";   ctx.font=\"32px sans-serif\";   ctx.textAlign=\"center\";   ctx.fillText(target,150,150); }  function hide(){   ctx.fillStyle=\"#222\";   ctx.fillRect(0,0,300,300); }  function start(){   target=pickPhrase();   drawPhrase();    setTimeout(()=>{     hide();     startTime=performance.now();      let ev=new MouseEvent(\"mousedown\",{bubbles:true});     t.dispatchEvent(ev);     t.focus();    },1000); }  function finish(){   if(ended)return;   ended=true;   let correct=t.value.toUpperCase()===target;   let time=(performance.now()-startTime)/1000;   let score=0;   if(correct){     score=time<1.0?3:time<1.8?2:1;   }   window.parent.postMessage({type:\"adScore\",score:score},\"*\"); }  t.oninput=()=>{   if(ended)return;   if(t.value.length>=target.length){     finish();   } };  t.onkeydown=e=>{   if(ended)return;   if(e.key===\"Enter\"){     finish();   } };  setTimeout(()=>{   finish(); },6000);  start(); </script>  </body> </html>",
+          "id": null
         }
       },
       "next": null,

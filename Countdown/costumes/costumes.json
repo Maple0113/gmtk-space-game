@@ -1,8 +1,8 @@
 [
   {
     "name": "blank",
-    "dataFormat": "svg",
-    "rotationCenterX": 0,
-    "rotationCenterY": 0
+    "dataFormat": "png",
+    "rotationCenterX": 25,
+    "rotationCenterY": 7
   }
 ]

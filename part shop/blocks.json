@@ -2155,8 +2155,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
           "value": "INVENTORY page change",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
           "variableType": "broadcast_msg"
         }
       },
@@ -2174,12 +2174,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals7",
-          "shadow": null
+          "shadow": "operator_equals7"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else6",
-          "shadow": null
+          "shadow": "control_if_else6"
         }
       },
       "fields": {},
@@ -2195,7 +2195,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable11",
-          "shadow": null
+          "shadow": "data_variable11"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2216,8 +2216,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -2233,7 +2233,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -2248,17 +2249,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals8",
-          "shadow": null
+          "shadow": "operator_equals8"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto8",
-          "shadow": null
+          "shadow": "looks_switchcostumeto8"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto9",
-          "shadow": null
+          "shadow": "looks_switchcostumeto9"
         }
       },
       "fields": {},
@@ -2274,7 +2275,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable12",
-          "shadow": null
+          "shadow": "data_variable12"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2295,8 +2296,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "value": "PartsFilter",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
       },
@@ -2312,7 +2313,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "next": null,
@@ -2343,7 +2345,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "kits selected"
+          "value": "kits selected",
+          "id": null
         }
       },
       "next": null,
@@ -2374,7 +2377,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "next": null,
@@ -2389,12 +2393,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals5",
-          "shadow": null
+          "shadow": "operator_equals5"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else5",
-          "shadow": null
+          "shadow": "control_if_else5"
         }
       },
       "fields": {},
@@ -2410,7 +2414,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable9",
-          "shadow": null
+          "shadow": "data_variable9"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2431,8 +2435,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -2448,7 +2452,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "next": null,
@@ -2463,17 +2468,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals6",
-          "shadow": null
+          "shadow": "operator_equals6"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto6",
-          "shadow": null
+          "shadow": "looks_switchcostumeto6"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto7",
-          "shadow": null
+          "shadow": "looks_switchcostumeto7"
         }
       },
       "fields": {},
@@ -2489,7 +2494,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable10",
-          "shadow": null
+          "shadow": "data_variable10"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2510,8 +2515,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "value": "PartsFilter",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
       },
@@ -2527,7 +2532,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "next": null,
@@ -2558,7 +2564,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "parts selected"
+          "value": "parts selected",
+          "id": null
         }
       },
       "next": null,
@@ -2589,7 +2596,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "next": null,
@@ -2616,12 +2624,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals13",
-          "shadow": null
+          "shadow": "operator_equals13"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else9",
-          "shadow": null
+          "shadow": "control_if_else9"
         }
       },
       "fields": {},
@@ -2637,7 +2645,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable21",
-          "shadow": null
+          "shadow": "data_variable21"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2658,8 +2666,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -2675,7 +2683,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -2690,17 +2699,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals14",
-          "shadow": null
+          "shadow": "operator_equals14"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto12",
-          "shadow": null
+          "shadow": "looks_switchcostumeto12"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto13",
-          "shadow": null
+          "shadow": "looks_switchcostumeto13"
         }
       },
       "fields": {},
@@ -2716,7 +2725,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable22",
-          "shadow": null
+          "shadow": "data_variable22"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2737,8 +2746,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "value": "PartsFilter",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
       },
@@ -2754,7 +2763,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "next": null,
@@ -2785,7 +2795,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "kits selected"
+          "value": "kits selected",
+          "id": null
         }
       },
       "next": null,
@@ -2816,7 +2827,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "next": null,
@@ -2831,12 +2843,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals11",
-          "shadow": null
+          "shadow": "operator_equals11"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else8",
-          "shadow": null
+          "shadow": "control_if_else8"
         }
       },
       "fields": {},
@@ -2852,7 +2864,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable19",
-          "shadow": null
+          "shadow": "data_variable19"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2873,8 +2885,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -2890,7 +2902,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "next": null,
@@ -2905,17 +2918,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals12",
-          "shadow": null
+          "shadow": "operator_equals12"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto10",
-          "shadow": null
+          "shadow": "looks_switchcostumeto10"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto11",
-          "shadow": null
+          "shadow": "looks_switchcostumeto11"
         }
       },
       "fields": {},
@@ -2931,7 +2944,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable20",
-          "shadow": null
+          "shadow": "data_variable20"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2952,8 +2965,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "value": "PartsFilter",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
       },
@@ -2969,7 +2982,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "next": null,
@@ -3000,7 +3014,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "parts selected"
+          "value": "parts selected",
+          "id": null
         }
       },
       "next": null,
@@ -3031,7 +3046,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "next": null,
@@ -3046,12 +3062,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals9",
-          "shadow": null
+          "shadow": "operator_equals9"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_forever1",
-          "shadow": null
+          "shadow": "control_forever1"
         }
       },
       "fields": {},
@@ -3067,7 +3083,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable13",
-          "shadow": null
+          "shadow": "data_variable13"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -3088,8 +3104,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "]]0kojU6yhlk/-W+|:,y",
           "value": "CloneType",
+          "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
       },
@@ -3105,7 +3121,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "5"
+          "value": "5",
+          "id": null
         }
       },
       "next": null,
@@ -3120,7 +3137,7 @@
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_setsizeto1",
-          "shadow": null
+          "shadow": "looks_setsizeto1"
         }
       },
       "fields": {},
@@ -3152,7 +3169,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "90"
+          "value": "90",
+          "id": null
         }
       },
       "next": null,
@@ -3183,7 +3201,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-92"
+          "value": "-92",
+          "id": null
         }
       },
       "next": null,
@@ -3214,7 +3233,8 @@
       "fields": {
         "COLOUR": {
           "name": "COLOUR",
-          "value": "#9966ff"
+          "value": "#9966ff",
+          "id": null
         }
       },
       "next": null,
@@ -3229,7 +3249,8 @@
       "fields": {
         "FONT": {
           "name": "FONT",
-          "value": "\"BillJilly\", Pixel"
+          "value": "\"BillJilly\", Pixel",
+          "id": null
         }
       },
       "next": "text_setWidth1",
@@ -3250,7 +3271,8 @@
       "fields": {
         "ALIGN": {
           "name": "ALIGN",
-          "value": "center"
+          "value": "center",
+          "id": null
         }
       },
       "next": "control_if_else7",
@@ -3265,7 +3287,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "120"
+          "value": "120",
+          "id": null
         }
       },
       "next": null,
@@ -3280,17 +3303,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals10",
-          "shadow": null
+          "shadow": "operator_equals10"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto7",
-          "shadow": null
+          "shadow": "data_setvariableto7"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "data_setvariableto8",
-          "shadow": null
+          "shadow": "data_setvariableto8"
         }
       },
       "fields": {},
@@ -3306,7 +3329,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable16",
-          "shadow": null
+          "shadow": "data_variable16"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -3327,8 +3350,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "value": "PartsFilter",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
       },
@@ -3344,7 +3367,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "next": null,
@@ -3359,14 +3383,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "procedures_call1",
-          "shadow": null
+          "shadow": "procedures_call1"
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "value": "MaxPages",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
       },
@@ -3382,7 +3406,7 @@
         ":CrV_7X(R8(}#0lw(7nU": {
           "name": ":CrV_7X(R8(}#0lw(7nU",
           "block": "operator_mathop1",
-          "shadow": null
+          "shadow": "operator_mathop1"
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
@@ -3411,13 +3435,14 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_divide1",
-          "shadow": null
+          "shadow": "operator_divide1"
         }
       },
       "fields": {
         "OPERATOR": {
           "name": "OPERATOR",
-          "value": "ceiling"
+          "value": "ceiling",
+          "id": null
         }
       },
       "next": null,
@@ -3432,12 +3457,12 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_lengthoflist1",
-          "shadow": null
+          "shadow": "data_lengthoflist1"
         },
         "NUM2": {
           "name": "NUM2",
           "block": "data_variable17",
-          "shadow": null
+          "shadow": "data_variable17"
         }
       },
       "fields": {},
@@ -3453,8 +3478,8 @@
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
           "value": "Parts",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
           "variableType": "list"
         }
       },
@@ -3470,8 +3495,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "N^9khw,V+T2T#{O;t`$j",
           "value": "ItemsPerPage",
+          "id": "N^9khw,V+T2T#{O;t`$j",
           "variableType": ""
         }
       },
@@ -3487,7 +3512,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -3502,14 +3528,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "procedures_call2",
-          "shadow": null
+          "shadow": "procedures_call2"
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "value": "MaxPages",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
       },
@@ -3525,7 +3551,7 @@
         ":CrV_7X(R8(}#0lw(7nU": {
           "name": ":CrV_7X(R8(}#0lw(7nU",
           "block": "operator_mathop2",
-          "shadow": null
+          "shadow": "operator_mathop2"
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
@@ -3554,13 +3580,14 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_divide2",
-          "shadow": null
+          "shadow": "operator_divide2"
         }
       },
       "fields": {
         "OPERATOR": {
           "name": "OPERATOR",
-          "value": "ceiling"
+          "value": "ceiling",
+          "id": null
         }
       },
       "next": null,
@@ -3575,12 +3602,12 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_lengthoflist2",
-          "shadow": null
+          "shadow": "data_lengthoflist2"
         },
         "NUM2": {
           "name": "NUM2",
           "block": "data_variable18",
-          "shadow": null
+          "shadow": "data_variable18"
         }
       },
       "fields": {},
@@ -3596,8 +3623,8 @@
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "]l,zbY}0x)-[ceE+6JG:",
           "value": "Kits",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
           "variableType": "list"
         }
       },
@@ -3613,8 +3640,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "N^9khw,V+T2T#{O;t`$j",
           "value": "ItemsPerPage",
+          "id": "N^9khw,V+T2T#{O;t`$j",
           "variableType": ""
         }
       },
@@ -3630,7 +3657,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "next": null,
@@ -3645,7 +3673,7 @@
         "TEXT": {
           "name": "TEXT",
           "block": "operator_join1",
-          "shadow": null
+          "shadow": "operator_join1"
         }
       },
       "fields": {},
@@ -3661,12 +3689,12 @@
         "STRING1": {
           "name": "STRING1",
           "block": "data_variable14",
-          "shadow": null
+          "shadow": "data_variable14"
         },
         "STRING2": {
           "name": "STRING2",
           "block": "operator_join2",
-          "shadow": null
+          "shadow": "operator_join2"
         }
       },
       "fields": {},
@@ -3682,8 +3710,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
           "value": "CurrentPage",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
       },
@@ -3704,7 +3732,7 @@
         "STRING2": {
           "name": "STRING2",
           "block": "data_variable15",
-          "shadow": null
+          "shadow": "data_variable15"
         }
       },
       "fields": {},
@@ -3720,7 +3748,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "/"
+          "value": "/",
+          "id": null
         }
       },
       "next": null,
@@ -3735,8 +3764,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "value": "MaxPages",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
       },

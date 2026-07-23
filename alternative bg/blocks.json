@@ -7,10 +7,11 @@
       "fields": {
         "FRONT_BACK": {
           "name": "FRONT_BACK",
-          "value": "back"
+          "value": "back",
+          "id": null
         }
       },
-      "next": null,
+      "next": "looks_setsizeto1",
       "topLevel": false,
       "parent": "event_whenflagclicked1",
       "shadow": false,
@@ -26,8 +27,41 @@
       "topLevel": true,
       "parent": null,
       "shadow": false,
-      "x": 339.96296296296293,
-      "y": 659.7777777777777
+      "x": 339,
+      "y": 659
+    },
+    "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number1",
+          "shadow": "math_number1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_gotofrontback1",
+      "shadow": false,
+      "x": "-358",
+      "y": "715"
+    },
+    "math_number1": {
+      "id": "math_number1",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "500"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": true
     }
   },
   "scripts": [
