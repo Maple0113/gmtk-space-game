@@ -1,0 +1,20 @@
+[
+  {
+    "name": "invalid part",
+    "dataFormat": "png",
+    "rotationCenterX": 63,
+    "rotationCenterY": 64
+  },
+  {
+    "name": "invalid kit",
+    "dataFormat": "png",
+    "rotationCenterX": 63,
+    "rotationCenterY": 64
+  },
+  {
+    "name": "generic",
+    "dataFormat": "png",
+    "rotationCenterX": 63,
+    "rotationCenterY": 64
+  }
+]

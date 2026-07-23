@@ -1,4 +1,2285 @@
 {
-  "blocks": {},
-  "scripts": []
+  "blocks": {
+    "event_whenbroadcastreceived1": {
+      "id": "event_whenbroadcastreceived1",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "value": "GAME begin",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "motion_gotoxy1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 232,
+      "y": -187
+    },
+    "motion_gotoxy1": {
+      "id": "motion_gotoxy1",
+      "opcode": "motion_gotoxy",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number1",
+          "shadow": "math_number1"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number2",
+          "shadow": "math_number2"
+        }
+      },
+      "fields": {},
+      "next": "looks_switchcostumeto1",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
+      "shadow": false
+    },
+    "math_number1": {
+      "id": "math_number1",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-200"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "math_number2": {
+      "id": "math_number2",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "20"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "looks_switchcostumeto1": {
+      "id": "looks_switchcostumeto1",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume5",
+          "shadow": "looks_costume5"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": false
+    },
+    "looks_costume5": {
+      "id": "looks_costume5",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "kits"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar1": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text5",
+          "shadow": "text5"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y"
+        }
+      },
+      "next": "looks_switchcostumeto2",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto1",
+      "shadow": false
+    },
+    "text5": {
+      "id": "text5",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "shadow": true
+    },
+    "looks_switchcostumeto2": {
+      "id": "looks_switchcostumeto2",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume4",
+          "shadow": "looks_costume4"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "shadow": false
+    },
+    "looks_costume4": {
+      "id": "looks_costume4",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "parts"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar2": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text4",
+          "shadow": "text4"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y"
+        }
+      },
+      "next": "looks_switchcostumeto3",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": false
+    },
+    "text4": {
+      "id": "text4",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "shadow": true
+    },
+    "looks_switchcostumeto3": {
+      "id": "looks_switchcostumeto3",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume3",
+          "shadow": "looks_costume3"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
+      "shadow": false
+    },
+    "looks_costume3": {
+      "id": "looks_costume3",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "page next"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto3",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar3": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text3",
+          "shadow": "text3"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y"
+        }
+      },
+      "next": "looks_switchcostumeto4",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto3",
+      "shadow": false
+    },
+    "text3": {
+      "id": "text3",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "shadow": true
+    },
+    "looks_switchcostumeto4": {
+      "id": "looks_switchcostumeto4",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume2",
+          "shadow": "looks_costume2"
+        }
+      },
+      "fields": {},
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar3",
+      "shadow": false
+    },
+    "looks_costume2": {
+      "id": "looks_costume2",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "page prev"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto4",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar4": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text2",
+          "shadow": "text2"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y"
+        }
+      },
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto4",
+      "shadow": false
+    },
+    "text2": {
+      "id": "text2",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "shadow": true
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar5": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text1",
+          "shadow": "text1"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y"
+        }
+      },
+      "next": "looks_switchcostumeto5",
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar4",
+      "shadow": false
+    },
+    "text1": {
+      "id": "text1",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "5"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "shadow": true
+    },
+    "looks_switchcostumeto5": {
+      "id": "looks_switchcostumeto5",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume1",
+          "shadow": "looks_costume1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar5",
+      "shadow": false
+    },
+    "looks_costume1": {
+      "id": "looks_costume1",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "base"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto5",
+      "shadow": true
+    },
+    "event_whenthisspriteclicked1": {
+      "id": "event_whenthisspriteclicked1",
+      "opcode": "event_whenthisspriteclicked",
+      "inputs": {},
+      "fields": {},
+      "next": "control_if_else1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 818,
+      "y": -184
+    },
+    "control_if_else1": {
+      "id": "control_if_else1",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_setvariableto1",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "control_if_else2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "event_whenthisspriteclicked1",
+      "shadow": false
+    },
+    "operator_equals1": {
+      "id": "operator_equals1",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable1",
+          "shadow": "text6"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text7",
+          "shadow": "text7"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "data_variable1": {
+      "id": "data_variable1",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": false
+    },
+    "text6": {
+      "id": "text6",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": true
+    },
+    "text7": {
+      "id": "text7",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": true
+    },
+    "data_setvariableto1": {
+      "id": "data_setvariableto1",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text9",
+          "shadow": "text9"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": "data_setvariableto2",
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "text9": {
+      "id": "text9",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "kits"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto1",
+      "shadow": true
+    },
+    "data_setvariableto2": {
+      "id": "data_setvariableto2",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text8",
+          "shadow": "text8"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": "event_broadcast1",
+      "topLevel": false,
+      "parent": "data_setvariableto1",
+      "shadow": false
+    },
+    "text8": {
+      "id": "text8",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto2",
+      "shadow": true
+    },
+    "event_broadcast1": {
+      "id": "event_broadcast1",
+      "opcode": "event_broadcast",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu1",
+          "shadow": "event_broadcast_menu1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto2",
+      "shadow": false
+    },
+    "event_broadcast_menu1": {
+      "id": "event_broadcast_menu1",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast1",
+      "shadow": true
+    },
+    "control_if_else2": {
+      "id": "control_if_else2",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals2",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_setvariableto3",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "control_if_else3",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "operator_equals2": {
+      "id": "operator_equals2",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable2",
+          "shadow": "text10"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text11",
+          "shadow": "text11"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else2",
+      "shadow": false
+    },
+    "data_variable2": {
+      "id": "data_variable2",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": false
+    },
+    "text10": {
+      "id": "text10",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": true
+    },
+    "text11": {
+      "id": "text11",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": true
+    },
+    "data_setvariableto3": {
+      "id": "data_setvariableto3",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text13",
+          "shadow": "text13"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": "data_setvariableto4",
+      "topLevel": false,
+      "parent": "control_if_else2",
+      "shadow": false
+    },
+    "text13": {
+      "id": "text13",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "parts"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto3",
+      "shadow": true
+    },
+    "data_setvariableto4": {
+      "id": "data_setvariableto4",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text12",
+          "shadow": "text12"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": "event_broadcast2",
+      "topLevel": false,
+      "parent": "data_setvariableto3",
+      "shadow": false
+    },
+    "text12": {
+      "id": "text12",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto4",
+      "shadow": true
+    },
+    "event_broadcast2": {
+      "id": "event_broadcast2",
+      "opcode": "event_broadcast",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu2",
+          "shadow": "event_broadcast_menu2"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto4",
+      "shadow": false
+    },
+    "event_broadcast_menu2": {
+      "id": "event_broadcast_menu2",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast2",
+      "shadow": true
+    },
+    "control_if_else3": {
+      "id": "control_if_else3",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals3",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_changevariableby1",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "control_if2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else2",
+      "shadow": false
+    },
+    "operator_equals3": {
+      "id": "operator_equals3",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable3",
+          "shadow": "text14"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text15",
+          "shadow": "text15"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else3",
+      "shadow": false
+    },
+    "data_variable3": {
+      "id": "data_variable3",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals3",
+      "shadow": false
+    },
+    "text14": {
+      "id": "text14",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals3",
+      "shadow": true
+    },
+    "text15": {
+      "id": "text15",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals3",
+      "shadow": true
+    },
+    "data_changevariableby1": {
+      "id": "data_changevariableby1",
+      "opcode": "data_changevariableby",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "math_number3",
+          "shadow": "math_number3"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": "control_if1",
+      "topLevel": false,
+      "parent": "control_if_else3",
+      "shadow": false
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_changevariableby1",
+      "shadow": true
+    },
+    "control_if1": {
+      "id": "control_if1",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_gt1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_setvariableto5",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "event_broadcast3",
+      "topLevel": false,
+      "parent": "data_changevariableby1",
+      "shadow": false
+    },
+    "operator_gt1": {
+      "id": "operator_gt1",
+      "opcode": "operator_gt",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable4",
+          "shadow": "text16"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "data_variable5",
+          "shadow": "text17"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "data_variable4": {
+      "id": "data_variable4",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": false
+    },
+    "text16": {
+      "id": "text16",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": true
+    },
+    "data_variable5": {
+      "id": "data_variable5",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": false
+    },
+    "text17": {
+      "id": "text17",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "50"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": true
+    },
+    "data_setvariableto5": {
+      "id": "data_setvariableto5",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text18",
+          "shadow": "text18"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "text18": {
+      "id": "text18",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto5",
+      "shadow": true
+    },
+    "event_broadcast3": {
+      "id": "event_broadcast3",
+      "opcode": "event_broadcast",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu3",
+          "shadow": "event_broadcast_menu3"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "event_broadcast_menu3": {
+      "id": "event_broadcast_menu3",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast3",
+      "shadow": true
+    },
+    "control_if2": {
+      "id": "control_if2",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals4",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_changevariableby2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else3",
+      "shadow": false
+    },
+    "operator_equals4": {
+      "id": "operator_equals4",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable6",
+          "shadow": "text19"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text20",
+          "shadow": "text20"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if2",
+      "shadow": false
+    },
+    "data_variable6": {
+      "id": "data_variable6",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals4",
+      "shadow": false
+    },
+    "text19": {
+      "id": "text19",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals4",
+      "shadow": true
+    },
+    "text20": {
+      "id": "text20",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals4",
+      "shadow": true
+    },
+    "data_changevariableby2": {
+      "id": "data_changevariableby2",
+      "opcode": "data_changevariableby",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "math_number4",
+          "shadow": "math_number4"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": "control_if3",
+      "topLevel": false,
+      "parent": "control_if2",
+      "shadow": false
+    },
+    "math_number4": {
+      "id": "math_number4",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_changevariableby2",
+      "shadow": true
+    },
+    "control_if3": {
+      "id": "control_if3",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_lt1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_setvariableto6",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "event_broadcast4",
+      "topLevel": false,
+      "parent": "data_changevariableby2",
+      "shadow": false
+    },
+    "operator_lt1": {
+      "id": "operator_lt1",
+      "opcode": "operator_lt",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable7",
+          "shadow": "text21"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text22",
+          "shadow": "text22"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if3",
+      "shadow": false
+    },
+    "data_variable7": {
+      "id": "data_variable7",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_lt1",
+      "shadow": false
+    },
+    "text21": {
+      "id": "text21",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_lt1",
+      "shadow": true
+    },
+    "text22": {
+      "id": "text22",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_lt1",
+      "shadow": true
+    },
+    "data_setvariableto6": {
+      "id": "data_setvariableto6",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "data_variable8",
+          "shadow": "text23"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if3",
+      "shadow": false
+    },
+    "data_variable8": {
+      "id": "data_variable8",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto6",
+      "shadow": false
+    },
+    "text23": {
+      "id": "text23",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto6",
+      "shadow": true
+    },
+    "event_broadcast4": {
+      "id": "event_broadcast4",
+      "opcode": "event_broadcast",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu4",
+          "shadow": "event_broadcast_menu4"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if3",
+      "shadow": false
+    },
+    "event_broadcast_menu4": {
+      "id": "event_broadcast_menu4",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page change",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast4",
+      "shadow": true
+    },
+    "control_start_as_clone1": {
+      "id": "control_start_as_clone1",
+      "opcode": "control_start_as_clone",
+      "inputs": {},
+      "fields": {},
+      "next": "control_if4",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 1457,
+      "y": 203
+    },
+    "control_if4": {
+      "id": "control_if4",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals5",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_forever1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_start_as_clone1",
+      "shadow": false
+    },
+    "operator_equals5": {
+      "id": "operator_equals5",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable9",
+          "shadow": "text24"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text25",
+          "shadow": "text25"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if4",
+      "shadow": false
+    },
+    "data_variable9": {
+      "id": "data_variable9",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals5",
+      "shadow": false
+    },
+    "text24": {
+      "id": "text24",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals5",
+      "shadow": true
+    },
+    "text25": {
+      "id": "text25",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "5"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals5",
+      "shadow": true
+    },
+    "control_forever1": {
+      "id": "control_forever1",
+      "opcode": "control_forever",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_setsizeto1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if4",
+      "shadow": false
+    },
+    "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number13",
+          "shadow": "math_number13"
+        }
+      },
+      "fields": {},
+      "next": "motion_sety1",
+      "topLevel": false,
+      "parent": "control_forever1",
+      "shadow": false
+    },
+    "math_number13": {
+      "id": "math_number13",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "90"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": true
+    },
+    "motion_sety1": {
+      "id": "motion_sety1",
+      "opcode": "motion_sety",
+      "inputs": {
+        "Y": {
+          "name": "Y",
+          "block": "math_number12",
+          "shadow": "math_number12"
+        }
+      },
+      "fields": {},
+      "next": "text_setColor1",
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": false
+    },
+    "math_number12": {
+      "id": "math_number12",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-92"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_sety1",
+      "shadow": true
+    },
+    "text_setColor1": {
+      "id": "text_setColor1",
+      "opcode": "text_setColor",
+      "inputs": {
+        "COLOR": {
+          "name": "COLOR",
+          "block": "colour_picker1",
+          "shadow": "colour_picker1"
+        }
+      },
+      "fields": {},
+      "next": "text_setFont1",
+      "topLevel": false,
+      "parent": "motion_sety1",
+      "shadow": false
+    },
+    "colour_picker1": {
+      "id": "colour_picker1",
+      "opcode": "colour_picker",
+      "inputs": {},
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#9966ff"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor1",
+      "shadow": true
+    },
+    "text_setFont1": {
+      "id": "text_setFont1",
+      "opcode": "text_setFont",
+      "inputs": {},
+      "fields": {
+        "FONT": {
+          "name": "FONT",
+          "value": "\"BillJilly\", Pixel"
+        }
+      },
+      "next": "text_setWidth1",
+      "topLevel": false,
+      "parent": "text_setColor1",
+      "shadow": false
+    },
+    "text_setWidth1": {
+      "id": "text_setWidth1",
+      "opcode": "text_setWidth",
+      "inputs": {
+        "WIDTH": {
+          "name": "WIDTH",
+          "block": "math_number11",
+          "shadow": "math_number11"
+        }
+      },
+      "fields": {
+        "ALIGN": {
+          "name": "ALIGN",
+          "value": "center"
+        }
+      },
+      "next": "control_if_else4",
+      "topLevel": false,
+      "parent": "text_setFont1",
+      "shadow": false
+    },
+    "math_number11": {
+      "id": "math_number11",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "120"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setWidth1",
+      "shadow": true
+    },
+    "control_if_else4": {
+      "id": "control_if_else4",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals6",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_setvariableto7",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "data_setvariableto8",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "text_setText1",
+      "topLevel": false,
+      "parent": "text_setWidth1",
+      "shadow": false
+    },
+    "operator_equals6": {
+      "id": "operator_equals6",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable12",
+          "shadow": "text31"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text32",
+          "shadow": "text32"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "data_variable12": {
+      "id": "data_variable12",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals6",
+      "shadow": false
+    },
+    "text31": {
+      "id": "text31",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals6",
+      "shadow": true
+    },
+    "text32": {
+      "id": "text32",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "parts"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals6",
+      "shadow": true
+    },
+    "data_setvariableto7": {
+      "id": "data_setvariableto7",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "operator_mathop1",
+          "shadow": "text33"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "operator_mathop1": {
+      "id": "operator_mathop1",
+      "opcode": "operator_mathop",
+      "inputs": {
+        "NUM": {
+          "name": "NUM",
+          "block": "operator_divide1",
+          "shadow": "math_number7"
+        }
+      },
+      "fields": {
+        "OPERATOR": {
+          "name": "OPERATOR",
+          "value": "ceiling"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto7",
+      "shadow": false
+    },
+    "operator_divide1": {
+      "id": "operator_divide1",
+      "opcode": "operator_divide",
+      "inputs": {
+        "NUM1": {
+          "name": "NUM1",
+          "block": "data_lengthoflist1",
+          "shadow": "math_number5"
+        },
+        "NUM2": {
+          "name": "NUM2",
+          "block": "data_variable13",
+          "shadow": "math_number6"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_mathop1",
+      "shadow": false
+    },
+    "data_lengthoflist1": {
+      "id": "data_lengthoflist1",
+      "opcode": "data_lengthoflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide1",
+      "shadow": false
+    },
+    "math_number5": {
+      "id": "math_number5",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide1",
+      "shadow": true
+    },
+    "data_variable13": {
+      "id": "data_variable13",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "N^9khw,V+T2T#{O;t`$j",
+          "value": "ItemsPerPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide1",
+      "shadow": false
+    },
+    "math_number6": {
+      "id": "math_number6",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide1",
+      "shadow": true
+    },
+    "math_number7": {
+      "id": "math_number7",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_mathop1",
+      "shadow": true
+    },
+    "text33": {
+      "id": "text33",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto7",
+      "shadow": true
+    },
+    "data_setvariableto8": {
+      "id": "data_setvariableto8",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "operator_mathop2",
+          "shadow": "text34"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "operator_mathop2": {
+      "id": "operator_mathop2",
+      "opcode": "operator_mathop",
+      "inputs": {
+        "NUM": {
+          "name": "NUM",
+          "block": "operator_divide2",
+          "shadow": "math_number10"
+        }
+      },
+      "fields": {
+        "OPERATOR": {
+          "name": "OPERATOR",
+          "value": "ceiling"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto8",
+      "shadow": false
+    },
+    "operator_divide2": {
+      "id": "operator_divide2",
+      "opcode": "operator_divide",
+      "inputs": {
+        "NUM1": {
+          "name": "NUM1",
+          "block": "data_lengthoflist2",
+          "shadow": "math_number8"
+        },
+        "NUM2": {
+          "name": "NUM2",
+          "block": "data_variable14",
+          "shadow": "math_number9"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_mathop2",
+      "shadow": false
+    },
+    "data_lengthoflist2": {
+      "id": "data_lengthoflist2",
+      "opcode": "data_lengthoflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide2",
+      "shadow": false
+    },
+    "math_number8": {
+      "id": "math_number8",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide2",
+      "shadow": true
+    },
+    "data_variable14": {
+      "id": "data_variable14",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "N^9khw,V+T2T#{O;t`$j",
+          "value": "ItemsPerPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide2",
+      "shadow": false
+    },
+    "math_number9": {
+      "id": "math_number9",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide2",
+      "shadow": true
+    },
+    "math_number10": {
+      "id": "math_number10",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_mathop2",
+      "shadow": true
+    },
+    "text34": {
+      "id": "text34",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto8",
+      "shadow": true
+    },
+    "text_setText1": {
+      "id": "text_setText1",
+      "opcode": "text_setText",
+      "inputs": {
+        "TEXT": {
+          "name": "TEXT",
+          "block": "operator_join1",
+          "shadow": "text30"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "operator_join1": {
+      "id": "operator_join1",
+      "opcode": "operator_join",
+      "inputs": {
+        "STRING1": {
+          "name": "STRING1",
+          "block": "data_variable10",
+          "shadow": "text26"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "operator_join2",
+          "shadow": "text29"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText1",
+      "shadow": false
+    },
+    "data_variable10": {
+      "id": "data_variable10",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": false
+    },
+    "text26": {
+      "id": "text26",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": true
+    },
+    "operator_join2": {
+      "id": "operator_join2",
+      "opcode": "operator_join",
+      "inputs": {
+        "STRING1": {
+          "name": "STRING1",
+          "block": "text27",
+          "shadow": "text27"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "data_variable11",
+          "shadow": "text28"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": false
+    },
+    "text27": {
+      "id": "text27",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "/"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": true
+    },
+    "data_variable11": {
+      "id": "data_variable11",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": false
+    },
+    "text28": {
+      "id": "text28",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "banana"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": true
+    },
+    "text29": {
+      "id": "text29",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "banana"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": true
+    },
+    "text30": {
+      "id": "text30",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "page 1/2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText1",
+      "shadow": true
+    }
+  },
+  "scripts": [
+    "event_whenbroadcastreceived1",
+    "event_whenthisspriteclicked1",
+    "control_start_as_clone1"
+  ]
 }

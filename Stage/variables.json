@@ -1,4 +1,32 @@
 {
+  "x4gtq9]`+z%F4A@UJ1}N": {
+    "id": "x4gtq9]`+z%F4A@UJ1}N",
+    "name": "PartsFilter",
+    "type": "",
+    "isCloud": false,
+    "value": "parts"
+  },
+  "bV=j0c)Z7B_Di/e/upE(": {
+    "id": "bV=j0c)Z7B_Di/e/upE(",
+    "name": "CurrentPage",
+    "type": "",
+    "isCloud": false,
+    "value": 1
+  },
+  "N^9khw,V+T2T#{O;t`$j": {
+    "id": "N^9khw,V+T2T#{O;t`$j",
+    "name": "ItemsPerPage",
+    "type": "",
+    "isCloud": false,
+    "value": 4
+  },
+  "J4$f=e6$W|%Pb~%bF5i@": {
+    "id": "J4$f=e6$W|%Pb~%bF5i@",
+    "name": "MaxPages",
+    "type": "",
+    "isCloud": false,
+    "value": 2
+  },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
     "name": "Bodies",
@@ -8,6 +36,28 @@
       "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":2}}"
     ],
     "_monitorUpToDate": false
+  },
+  "w_bYE#_VOu%lcXO0`3Yh": {
+    "id": "w_bYE#_VOu%lcXO0`3Yh",
+    "name": "Parts",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "{\"Name\":\"generic\",\"Amount\":5,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
+      "{\"Name\":\"generic2\",\"Amount\":3,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
+      "{\"Name\":\"generic3\",\"Amount\":3,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
+      "{\"Name\":\"generic4\",\"Amount\":3,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
+      "{\"Name\":\"generic5\",\"Amount\":3,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}",
+      "{\"Name\":\"generic6\",\"Amount\":3,\"Position\":0,\"Pattern\":[[\"0\",\"1\",\"1\",\"0\"],[\"1\",\"0\",\"0\",\"1\"]]}"
+    ],
+    "_monitorUpToDate": false
+  },
+  "]l,zbY}0x)-[ceE+6JG:": {
+    "id": "]l,zbY}0x)-[ceE+6JG:",
+    "name": "Kits",
+    "type": "list",
+    "isCloud": false,
+    "value": []
   },
   "X$b7KhkWBuw^}6#}%6`n": {
     "id": "X$b7KhkWBuw^}6#}%6`n",
@@ -22,5 +72,12 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "GAME main menu"
+  },
+  ")1W_C~aD`ARD+yfD~n2n": {
+    "id": ")1W_C~aD`ARD+yfD~n2n",
+    "name": "INVENTORY page change",
+    "type": "broadcast_msg",
+    "isCloud": false,
+    "value": "INVENTORY page change"
   }
 }
