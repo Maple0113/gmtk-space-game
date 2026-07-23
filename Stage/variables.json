@@ -43,9 +43,9 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"generic\",\"Amount\":5,\"Position\":0,\"Costume\":\"\",\"Pattern\":[1]}",
-      "{\"Name\":\"generic2\",\"Amount\":5,\"Position\":1,\"Costume\":\"generic\",\"Pattern\":[1,1]}",
-      "{\"Name\":\"invalid\",\"Amount\":5,\"Position\":1,\"Costume\":\"\",\"Pattern\":[11]}"
+      "{\"Name\":\"generic\",\"Amount\":5,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"generic2\",\"Amount\":5,\"Position\":1,\"Costume\":\"generic\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"invalid\",\"Amount\":5,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -55,6 +55,39 @@
     "type": "list",
     "isCloud": false,
     "value": []
+  },
+  "0A][[Y=]Bc/QhAT9X])!": {
+    "id": "0A][[Y=]Bc/QhAT9X])!",
+    "name": "GridTop",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "[1,0]",
+      "[0,0]"
+    ],
+    "_monitorUpToDate": true
+  },
+  "Ra$$n.MH7F=ze%M=X)qZ": {
+    "id": "Ra$$n.MH7F=ze%M=X)qZ",
+    "name": "GridMiddle",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "[0,0,0]",
+      "[0,0,0]"
+    ],
+    "_monitorUpToDate": false
+  },
+  "kV@_K9?WKoQT!ow4j}}8": {
+    "id": "kV@_K9?WKoQT!ow4j}}8",
+    "name": "GridBottom",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "[0,0,0,1]",
+      "[0,1,0,1]"
+    ],
+    "_monitorUpToDate": false
   },
   "X$b7KhkWBuw^}6#}%6`n": {
     "id": "X$b7KhkWBuw^}6#}%6`n",
@@ -132,26 +165,5 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "FIns"
-  },
-  "0A][[Y=]Bc/QhAT9X])!": {
-    "id": "0A][[Y=]Bc/QhAT9X])!",
-    "name": "GridTop",
-    "type": "list",
-    "isCloud": false,
-    "value": []
-  },
-  "Ra$$n.MH7F=ze%M=X)qZ": {
-    "id": "Ra$$n.MH7F=ze%M=X)qZ",
-    "name": "GridMiddle",
-    "type": "list",
-    "isCloud": false,
-    "value": []
-  },
-  "kV@_K9?WKoQT!ow4j}}8": {
-    "id": "kV@_K9?WKoQT!ow4j}}8",
-    "name": "GridBottom",
-    "type": "list",
-    "isCloud": false,
-    "value": []
   }
 }
