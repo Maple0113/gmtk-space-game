@@ -1,0 +1,20 @@
+[
+  {
+    "name": "reference",
+    "dataFormat": "png",
+    "rotationCenterX": 31,
+    "rotationCenterY": 32
+  },
+  {
+    "name": "invalid",
+    "dataFormat": "png",
+    "rotationCenterX": 24,
+    "rotationCenterY": 27
+  },
+  {
+    "name": "generic",
+    "dataFormat": "png",
+    "rotationCenterX": 22,
+    "rotationCenterY": 24
+  }
+]

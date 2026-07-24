@@ -1,0 +1,1069 @@
+{
+  "blocks": {
+    "event_whenflagclicked1": {
+      "opcode": "event_whenflagclicked",
+      "next": "lmsclonesplus_deleteClonesInSprite1",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 262,
+      "y": 151,
+      "id": "event_whenflagclicked1"
+    },
+    "lmsclonesplus_deleteClonesInSprite1": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "looks_hide1",
+      "parent": "event_whenflagclicked1",
+      "inputs": {
+        "INPUT": {
+          "name": "INPUT",
+          "block": "lmsclonesplus_menu_spriteMenu1",
+          "shadow": "lmsclonesplus_menu_spriteMenu1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_deleteClonesInSprite1"
+    },
+    "lmsclonesplus_menu_spriteMenu1": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": {
+          "name": "spriteMenu",
+          "value": "grid item",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "lmsclonesplus_menu_spriteMenu1"
+    },
+    "looks_hide1": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
+    },
+    "event_whenbroadcastreceived1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "lmsclonesplus_deleteClonesInSprite2",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 577,
+      "y": 125,
+      "id": "event_whenbroadcastreceived1"
+    },
+    "lmsclonesplus_deleteClonesInSprite2": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "looks_hide2",
+      "parent": "event_whenbroadcastreceived1",
+      "inputs": {
+        "INPUT": {
+          "name": "INPUT",
+          "block": "lmsclonesplus_menu_spriteMenu2",
+          "shadow": "lmsclonesplus_menu_spriteMenu2"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_deleteClonesInSprite2"
+    },
+    "lmsclonesplus_menu_spriteMenu2": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite2",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": {
+          "name": "spriteMenu",
+          "value": "grid item",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "lmsclonesplus_menu_spriteMenu2"
+    },
+    "looks_hide2": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite2",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide2"
+    },
+    "event_whenbroadcastreceived2": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "control_if1",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "INVENTORY dragging item",
+          "id": "-4?$B(lcX?sZrOT8swK!",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 914,
+      "y": 125,
+      "id": "event_whenbroadcastreceived2"
+    },
+    "looks_show1": {
+      "opcode": "looks_show",
+      "next": "control_repeat_until1",
+      "parent": "looks_gotofrontback1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_show1"
+    },
+    "looks_switchcostumeto2": {
+      "opcode": "looks_switchcostumeto",
+      "next": "motion_goto1",
+      "parent": "data_setvariableto1",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "skyhigh173JSON_json_get1",
+          "shadow": "looks_costume1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_switchcostumeto2"
+    },
+    "looks_costume1": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "generic",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": true,
+      "x": 1058,
+      "y": 229,
+      "id": "looks_costume1"
+    },
+    "lmsMoreEvents_receivedData1": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "data_setvariableto1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData1"
+    },
+    "skyhigh173JSON_json_get1": {
+      "opcode": "skyhigh173JSON_json_get",
+      "next": null,
+      "parent": "looks_switchcostumeto2",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text2",
+          "shadow": "text2"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_variable2",
+          "shadow": "text3"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_get1"
+    },
+    "motion_goto1": {
+      "opcode": "motion_goto",
+      "next": "looks_gotofrontback1",
+      "parent": "looks_switchcostumeto2",
+      "inputs": {
+        "TO": {
+          "name": "TO",
+          "block": "motion_goto_menu2",
+          "shadow": "motion_goto_menu2"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_goto1"
+    },
+    "motion_goto_menu2": {
+      "opcode": "motion_goto_menu",
+      "next": null,
+      "parent": "motion_goto1",
+      "inputs": {},
+      "fields": {
+        "TO": {
+          "name": "TO",
+          "value": "_mouse_",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "motion_goto_menu2"
+    },
+    "looks_gotofrontback1": {
+      "opcode": "looks_gotofrontback",
+      "next": "looks_show1",
+      "parent": "motion_goto1",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": {
+          "name": "FRONT_BACK",
+          "value": "front",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_gotofrontback1"
+    },
+    "looks_switchcostumeto1": {
+      "opcode": "looks_switchcostumeto",
+      "next": "data_setvariableto1",
+      "parent": "control_if1",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume2",
+          "shadow": "looks_costume2"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_switchcostumeto1"
+    },
+    "looks_costume2": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "looks_switchcostumeto1",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "invalid",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "looks_costume2"
+    },
+    "control_repeat_until1": {
+      "opcode": "control_repeat_until",
+      "next": "lmsMoreEvents_broadcastDataAndWait1",
+      "parent": "looks_show1",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not2",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "motion_goto2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_repeat_until1"
+    },
+    "operator_not2": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "control_repeat_until1",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "sensing_mousedown1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_not2"
+    },
+    "sensing_mousedown1": {
+      "opcode": "sensing_mousedown",
+      "next": null,
+      "parent": "operator_not2",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "sensing_mousedown1"
+    },
+    "motion_goto2": {
+      "opcode": "motion_goto",
+      "next": null,
+      "parent": "control_repeat_until1",
+      "inputs": {
+        "TO": {
+          "name": "TO",
+          "block": "motion_goto_menu1",
+          "shadow": "motion_goto_menu1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_goto2"
+    },
+    "motion_goto_menu1": {
+      "opcode": "motion_goto_menu",
+      "next": null,
+      "parent": "motion_goto2",
+      "inputs": {},
+      "fields": {
+        "TO": {
+          "name": "TO",
+          "value": "_mouse_",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "motion_goto_menu1"
+    },
+    "data_setvariableto1": {
+      "opcode": "data_setvariableto",
+      "next": "looks_switchcostumeto2",
+      "parent": "looks_switchcostumeto1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "lmsMoreEvents_receivedData1",
+          "shadow": "text4"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto1"
+    },
+    "lmsMoreEvents_broadcastDataAndWait1": {
+      "opcode": "lmsMoreEvents_broadcastDataAndWait",
+      "next": null,
+      "parent": "control_repeat_until1",
+      "inputs": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "block": "event_broadcast_menu1",
+          "shadow": "event_broadcast_menu1"
+        },
+        "DATA": {
+          "name": "DATA",
+          "block": "data_variable1",
+          "shadow": "text1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_broadcastDataAndWait1"
+    },
+    "event_whenbroadcastreceived3": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "control_if2",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "INVENTORY placement results",
+          "id": "_h:aT2aen|@d{!*.]aoI",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1813,
+      "y": 121,
+      "id": "event_whenbroadcastreceived3"
+    },
+    "control_if_else1": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "control_if2",
+      "inputs": {
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "looks_hide3",
+          "shadow": null
+        },
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "motion_gotoxy1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_if_else1"
+    },
+    "looks_hide4": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "control_create_clone_of1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide4"
+    },
+    "operator_equals1": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "control_if_else1",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "skyhigh173JSON_json_get2",
+          "shadow": "text7"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text8",
+          "shadow": "text8"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_equals1"
+    },
+    "lmsMoreEvents_receivedData2": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get2",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData2"
+    },
+    "skyhigh173JSON_json_get2": {
+      "opcode": "skyhigh173JSON_json_get",
+      "next": null,
+      "parent": "operator_equals1",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text5",
+          "shadow": "text5"
+        },
+        "json": {
+          "name": "json",
+          "block": "lmsMoreEvents_receivedData2",
+          "shadow": "text6"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_get2"
+    },
+    "control_create_clone_of1": {
+      "opcode": "control_create_clone_of",
+      "next": "looks_hide4",
+      "parent": "motion_gotoxy1",
+      "inputs": {
+        "CLONE_OPTION": {
+          "name": "CLONE_OPTION",
+          "block": "control_create_clone_of_menu1",
+          "shadow": "control_create_clone_of_menu1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_create_clone_of1"
+    },
+    "control_create_clone_of_menu1": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "control_create_clone_of1",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": {
+          "name": "CLONE_OPTION",
+          "value": "_myself_",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "control_create_clone_of_menu1"
+    },
+    "looks_hide3": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "control_if_else1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide3"
+    },
+    "motion_gotoxy1": {
+      "opcode": "motion_gotoxy",
+      "next": "control_create_clone_of1",
+      "parent": "control_if_else1",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "skyhigh173JSON_json_get3",
+          "shadow": "math_number1"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "skyhigh173JSON_json_get4",
+          "shadow": "math_number2"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_gotoxy1"
+    },
+    "skyhigh173JSON_json_get3": {
+      "opcode": "skyhigh173JSON_json_get",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text9",
+          "shadow": "text9"
+        },
+        "json": {
+          "name": "json",
+          "block": "lmsMoreEvents_receivedData3",
+          "shadow": "text10"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_get3"
+    },
+    "lmsMoreEvents_receivedData3": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get3",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData3"
+    },
+    "skyhigh173JSON_json_get4": {
+      "opcode": "skyhigh173JSON_json_get",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text11",
+          "shadow": "text11"
+        },
+        "json": {
+          "name": "json",
+          "block": "lmsMoreEvents_receivedData4",
+          "shadow": "text12"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_get4"
+    },
+    "lmsMoreEvents_receivedData4": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get4",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData4"
+    },
+    "control_start_as_clone1": {
+      "opcode": "control_start_as_clone",
+      "next": "looks_seteffectto1",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2580,
+      "y": 68,
+      "id": "control_start_as_clone1"
+    },
+    "looks_show2": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "looks_seteffectto1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_show2"
+    },
+    "control_if2": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "event_whenbroadcastreceived3",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_if_else1",
+          "shadow": null
+        },
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not3",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_if2"
+    },
+    "operator_not3": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "control_if2",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "lmsclonesplus_isClone2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_not3"
+    },
+    "lmsclonesplus_isClone2": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "operator_not3",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_isClone2"
+    },
+    "control_if1": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "event_whenbroadcastreceived2",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_switchcostumeto1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_if1"
+    },
+    "operator_not1": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "control_if1",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "lmsclonesplus_isClone1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_not1"
+    },
+    "lmsclonesplus_isClone1": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "operator_not1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_isClone1"
+    },
+    "looks_seteffectto1": {
+      "opcode": "looks_seteffectto",
+      "next": "looks_show2",
+      "parent": "control_start_as_clone1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "math_number3",
+          "shadow": "math_number3"
+        }
+      },
+      "fields": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "value": "GHOST",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "comment": "jb",
+      "id": "looks_seteffectto1"
+    },
+    "text2": {
+      "id": "text2",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Name"
+        }
+      },
+      "topLevel": false
+    },
+    "data_variable2": {
+      "id": "data_variable2",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get1",
+      "shadow": false,
+      "inputs": {},
+      "opcode": "data_variable",
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
+          "variableType": ""
+        }
+      }
+    },
+    "text3": {
+      "id": "text3",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "{\"key\":\"value\"}"
+        }
+      },
+      "topLevel": false
+    },
+    "text4": {
+      "id": "text4",
+      "next": null,
+      "parent": "data_setvariableto1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "topLevel": false
+    },
+    "event_broadcast_menu1": {
+      "id": "event_broadcast_menu1",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataAndWait1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "event_broadcast_menu",
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "INVENTORY attempt placement",
+          "id": "Ru%mq|.pumO68=fh;0B9",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "topLevel": false
+    },
+    "data_variable1": {
+      "id": "data_variable1",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataAndWait1",
+      "shadow": false,
+      "inputs": {},
+      "opcode": "data_variable",
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
+          "variableType": ""
+        }
+      }
+    },
+    "text1": {
+      "id": "text1",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataAndWait1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "topLevel": false
+    },
+    "text7": {
+      "id": "text7",
+      "next": null,
+      "parent": "operator_equals1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "topLevel": false
+    },
+    "text8": {
+      "id": "text8",
+      "next": null,
+      "parent": "operator_equals1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "true"
+        }
+      },
+      "topLevel": false
+    },
+    "text5": {
+      "id": "text5",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Passed"
+        }
+      },
+      "topLevel": false
+    },
+    "text6": {
+      "id": "text6",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "{\"key\":\"value\"}"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number1": {
+      "id": "math_number1",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "16"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number2": {
+      "id": "math_number2",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-67"
+        }
+      },
+      "topLevel": false
+    },
+    "text9": {
+      "id": "text9",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "X"
+        }
+      },
+      "topLevel": false
+    },
+    "text10": {
+      "id": "text10",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "{\"key\":\"value\"}"
+        }
+      },
+      "topLevel": false
+    },
+    "text11": {
+      "id": "text11",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Y"
+        }
+      },
+      "topLevel": false
+    },
+    "text12": {
+      "id": "text12",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "{\"key\":\"value\"}"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "next": null,
+      "parent": "looks_seteffectto1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "25"
+        }
+      },
+      "topLevel": false
+    }
+  },
+  "scripts": [
+    "event_whenflagclicked1",
+    "event_whenbroadcastreceived1",
+    "event_whenbroadcastreceived2",
+    "looks_costume1",
+    "event_whenbroadcastreceived3",
+    "control_start_as_clone1"
+  ]
+}

@@ -1,56 +1,56 @@
 {
-  "#$oLM:3RAeZ3?3WL*Yt~": {
-    "id": "#$oLM:3RAeZ3?3WL*Yt~",
+  "hZ": {
+    "id": "hZ",
     "text": "binarify grid",
-    "x": -476.43677364748714,
-    "y": 4205.079553052891,
+    "x": -525.1183707137926,
+    "y": 4488.540825891456,
     "width": 118.6011962890625,
     "height": 85.654052734375,
     "minimized": false,
-    "blockId": "lmsTempVars2_forEachThreadVariable6"
+    "blockId": "je"
   },
-  "dJsW%PYedfZ8;-66wcbw": {
-    "id": "dJsW%PYedfZ8;-66wcbw",
+  "h!": {
+    "id": "h!",
     "text": "binarify pattern",
-    "x": -297.99999999999955,
-    "y": 4000,
+    "x": -346.1183707137926,
+    "y": 4283.540825891456,
     "width": 156.71649169921875,
     "height": 80.48587036132812,
     "minimized": false,
-    "blockId": "lmsTempVars2_forEachThreadVariable5"
+    "blockId": "jf"
   },
-  "{_]gX(rjuH4Wu{kiVN0t": {
-    "id": "{_]gX(rjuH4Wu{kiVN0t",
+  "d^": {
+    "id": "d^",
     "text": "make part an easy-to-use object",
     "x": -502.4989085796237,
     "y": 602.978830429526,
     "width": 181.911376953125,
     "height": 103.09664916992188,
     "minimized": false,
-    "blockId": "lmsTempVars2_forEachThreadVariable1"
+    "blockId": "lmsTempVars2_forEachThreadVariable5"
   },
-  "sd=YuacS;AaRElv:=Vy]": {
-    "id": "sd=YuacS;AaRElv:=Vy]",
+  "d`": {
+    "id": "d`",
     "text": "get grid",
     "x": -413,
     "y": 923,
     "width": 200,
     "height": 200,
     "minimized": true,
-    "blockId": "control_if_else1"
+    "blockId": "control_if_else2"
   },
-  ",?ygoLYN;jQRXook-%[o": {
-    "id": ",?ygoLYN;jQRXook-%[o",
+  "g_": {
+    "id": "g_",
     "text": "get number of 1s needed",
-    "x": -292.65870535614795,
-    "y": 3172.9551618858613,
+    "x": -292.0000000000002,
+    "y": 3164,
     "width": 126.99948120117188,
     "height": 100.5125732421875,
     "minimized": false,
-    "blockId": "lmsTempVars2_forEachThreadVariable3"
+    "blockId": "lmsTempVars2_forEachThreadVariable7"
   },
-  "ku[4Q;OBkG7RUSE7xL2]": {
-    "id": "ku[4Q;OBkG7RUSE7xL2]",
+  "jg": {
+    "id": "jg",
     "text": "fit pattern to grid",
     "x": -692.3443797284216,
     "y": 1657.2658771778556,
@@ -59,18 +59,18 @@
     "minimized": false,
     "blockId": "control_repeat3"
   },
-  "UfKYt8j_75T~N3H0N;X5": {
-    "id": "UfKYt8j_75T~N3H0N;X5",
+  "gT": {
+    "id": "gT",
     "text": "move pattern",
     "x": -285.09650802612305,
     "y": 1547,
     "width": 124.08984375,
     "height": 79.43673706054688,
     "minimized": false,
-    "blockId": "lmsTempVars2_setThreadVariable9"
+    "blockId": "lmsTempVars2_setThreadVariable10"
   },
-  "VLsCfr.iKFvvUfr^n|Ee": {
-    "id": "VLsCfr.iKFvvUfr^n|Ee",
+  "jh": {
+    "id": "jh",
     "text": "make placed array",
     "x": -696.0736418512419,
     "y": 4377.4068379375185,
@@ -79,24 +79,64 @@
     "minimized": false,
     "blockId": "lmsTempVars2_setThreadVariable15"
   },
-  "Tkx|`BFUY8=}K!sl~kjJ": {
-    "id": "Tkx|`BFUY8=}K!sl~kjJ",
+  "hg": {
+    "id": "hg",
     "text": "Try placing",
-    "x": -571.3913288116455,
-    "y": 4427,
+    "x": -571.0000000000002,
+    "y": 4019,
     "width": 200,
     "height": 200,
     "minimized": true,
     "blockId": "lmsTempVars2_setThreadVariable15"
   },
-  "nK,pOZfyUN_:+8_|o_#N": {
-    "id": "nK,pOZfyUN_:+8_|o_#N",
+  "hi": {
+    "id": "hi",
     "text": "count 1s in modified grid",
-    "x": -431.64149490015916,
-    "y": 4633.557396621403,
+    "x": -431.0000000000002,
+    "y": 4945,
     "width": 117.95516967773438,
     "height": 98.57447814941406,
     "minimized": false,
     "blockId": "lmsTempVars2_setThreadVariable16"
+  },
+  "fS": {
+    "id": "fS",
+    "text": "This block assumes you checked to see if the attempted part placement was valid",
+    "x": 626.5913284311173,
+    "y": -1430.482217669675,
+    "width": 197.4158935546875,
+    "height": 135.3977508544922,
+    "minimized": false,
+    "blockId": "procedures_definition2"
+  },
+  "ji": {
+    "id": "ji",
+    "text": "t h i c k e n\nthe affected grid",
+    "x": -239.09796714169158,
+    "y": 5966.289850706262,
+    "width": 141.85797119140625,
+    "height": 106.32675170898438,
+    "minimized": false,
+    "blockId": "jj"
+  },
+  "jk": {
+    "id": "jk",
+    "text": "Try placing",
+    "x": -665.3192627138915,
+    "y": 4153.858513989175,
+    "width": 200,
+    "height": 200,
+    "minimized": true,
+    "blockId": "jl"
+  },
+  "jm": {
+    "id": "jm",
+    "text": "count 1s in modified grid",
+    "x": -525.3192627138915,
+    "y": 5303.858513989175,
+    "width": 117,
+    "height": 98,
+    "minimized": false,
+    "blockId": "jn"
   }
 }
