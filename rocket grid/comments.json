@@ -1,36 +1,36 @@
 {
-  "hP": {
-    "id": "hP",
+  "h(": {
+    "id": "h(",
     "text": "binarify grid",
     "x": -525.1183707137926,
     "y": 4488.540825891456,
     "width": 118.6011962890625,
     "height": 85.654052734375,
     "minimized": false,
-    "blockId": "iM"
+    "blockId": "i;"
   },
-  "hQ": {
-    "id": "hQ",
+  "h)": {
+    "id": "h)",
     "text": "binarify pattern",
     "x": -346.1183707137926,
     "y": 4283.540825891456,
     "width": 156.71649169921875,
     "height": 80.48587036132812,
     "minimized": false,
-    "blockId": "iN"
+    "blockId": "i="
   },
-  "d?": {
-    "id": "d?",
+  "d]": {
+    "id": "d]",
     "text": "make part an easy-to-use object",
     "x": -502.4989085796237,
     "y": 602.978830429526,
     "width": 181.911376953125,
     "height": 103.09664916992188,
     "minimized": false,
-    "blockId": "lmsTempVars2_forEachThreadVariable5"
+    "blockId": "lmsTempVars2_forEachThreadVariable1"
   },
-  "d]": {
-    "id": "d]",
+  "d`": {
+    "id": "d`",
     "text": "get grid",
     "x": -413,
     "y": 923,
@@ -39,18 +39,18 @@
     "minimized": true,
     "blockId": "control_if_else1"
   },
-  "gW": {
-    "id": "gW",
+  "g.": {
+    "id": "g.",
     "text": "get number of 1s needed",
     "x": -292.0000000000002,
     "y": 3164,
     "width": 126.99948120117188,
     "height": 100.5125732421875,
     "minimized": false,
-    "blockId": "lmsTempVars2_forEachThreadVariable7"
+    "blockId": "lmsTempVars2_forEachThreadVariable3"
   },
-  "iO": {
-    "id": "iO",
+  "i?": {
+    "id": "i?",
     "text": "fit pattern to grid",
     "x": -692.3443797284216,
     "y": 1657.2658771778556,
@@ -59,94 +59,94 @@
     "minimized": false,
     "blockId": "control_repeat3"
   },
-  "gu": {
-    "id": "gu",
+  "gH": {
+    "id": "gH",
     "text": "move pattern",
     "x": -285.09650802612305,
     "y": 1547,
     "width": 124.08984375,
     "height": 79.43673706054688,
     "minimized": false,
-    "blockId": "lmsTempVars2_setThreadVariable10"
+    "blockId": "lmsTempVars2_setThreadVariable1"
   },
-  "iP": {
-    "id": "iP",
+  "i@": {
+    "id": "i@",
     "text": "make placed array",
     "x": -696.0736418512419,
     "y": 4377.4068379375185,
     "width": 182.55743408203125,
     "height": 81.13189697265625,
     "minimized": false,
-    "blockId": "lmsTempVars2_setThreadVariable15"
+    "blockId": "lmsTempVars2_setThreadVariable6"
   },
-  "g-": {
-    "id": "g-",
+  "g{": {
+    "id": "g{",
     "text": "Try placing",
     "x": -571.0000000000002,
     "y": 4019,
     "width": 200,
     "height": 200,
     "minimized": true,
-    "blockId": "lmsTempVars2_setThreadVariable15"
+    "blockId": "lmsTempVars2_setThreadVariable6"
   },
-  "g:": {
-    "id": "g:",
+  "g~": {
+    "id": "g~",
     "text": "count 1s in modified grid",
     "x": -431.0000000000002,
     "y": 4945,
     "width": 117.95516967773438,
     "height": 98.57447814941406,
     "minimized": false,
-    "blockId": "lmsTempVars2_setThreadVariable16"
+    "blockId": "lmsTempVars2_setThreadVariable7"
   },
-  "fD": {
-    "id": "fD",
-    "text": "This block assumes you checked to see if the attempted part placement was valid",
-    "x": 626.5913284311173,
-    "y": -1430.482217669675,
-    "width": 197.4158935546875,
-    "height": 135.3977508544922,
-    "minimized": false,
-    "blockId": "procedures_definition2"
-  },
-  "iQ": {
-    "id": "iQ",
+  "i[": {
+    "id": "i[",
     "text": "t h i c k e n\nthe affected grid",
     "x": -239.09796714169158,
     "y": 5966.289850706262,
     "width": 141.85797119140625,
     "height": 106.32675170898438,
     "minimized": false,
-    "blockId": "iR"
+    "blockId": "i]"
   },
-  "iS": {
-    "id": "iS",
+  "i^": {
+    "id": "i^",
     "text": "Try placing",
     "x": -665.3192627138915,
     "y": 4153.858513989175,
     "width": 200,
     "height": 200,
     "minimized": true,
-    "blockId": "iT"
+    "blockId": "i_"
   },
-  "iU": {
-    "id": "iU",
+  "i`": {
+    "id": "i`",
     "text": "count 1s in modified grid",
     "x": -525.3192627138915,
     "y": 5303.858513989175,
     "width": 117,
     "height": 98,
     "minimized": false,
-    "blockId": "iV"
+    "blockId": "i{"
   },
-  "hG": {
-    "id": "hG",
-    "text": "known bug: placing an item near a grid but not placing your mouse on a grid item can cause it to freeze in place until another item goes back to the inventory",
-    "x": 3009.6107821574396,
-    "y": -1585.965285061247,
-    "width": 344.708984375,
-    "height": 134.7517547607422,
+  "nQr/9U5je@R$GK$).`*=": {
+    "id": "nQr/9U5je@R$GK$).`*=",
+    "text": "",
+    "x": -518,
+    "y": 5187,
+    "width": 200,
+    "height": 200,
     "minimized": false,
-    "blockId": "event_whenbroadcastreceived1"
+    "blockId": "lmsTempVars2_getThreadVariable3"
+  },
+  "fQ": {
+    "id": "fQ",
+    "text": "",
+    "x": 626,
+    "y": -1430,
+    "width": 200,
+    "height": 200,
+    "minimized": false,
+    "blockId": "procedures_definition3"
   }
 }

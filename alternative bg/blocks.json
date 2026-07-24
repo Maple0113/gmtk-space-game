@@ -1,37 +1,35 @@
 {
   "blocks": {
     "event_whenflagclicked1": {
+      "id": "event_whenflagclicked1",
       "opcode": "event_whenflagclicked",
-      "next": "looks_gotofrontback1",
-      "parent": null,
       "inputs": {},
       "fields": {},
-      "shadow": false,
+      "next": "looks_gotofrontback1",
       "topLevel": true,
+      "parent": null,
+      "shadow": false,
       "x": 339,
-      "y": 659,
-      "id": "event_whenflagclicked1"
+      "y": 659
     },
     "looks_gotofrontback1": {
+      "id": "looks_gotofrontback1",
       "opcode": "looks_gotofrontback",
-      "next": "looks_setsizeto1",
-      "parent": "event_whenflagclicked1",
       "inputs": {},
       "fields": {
         "FRONT_BACK": {
           "name": "FRONT_BACK",
-          "value": "back",
-          "id": null
+          "value": "back"
         }
       },
-      "shadow": false,
+      "next": "looks_setsizeto1",
       "topLevel": false,
-      "id": "looks_gotofrontback1"
+      "parent": "event_whenflagclicked1",
+      "shadow": false
     },
     "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
       "opcode": "looks_setsizeto",
-      "next": null,
-      "parent": "looks_gotofrontback1",
       "inputs": {
         "SIZE": {
           "name": "SIZE",
@@ -40,24 +38,25 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "looks_setsizeto1"
+      "parent": "looks_gotofrontback1",
+      "shadow": false
     },
     "math_number1": {
       "id": "math_number1",
-      "next": null,
-      "parent": "looks_setsizeto1",
-      "shadow": true,
-      "inputs": {},
       "opcode": "math_number",
+      "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "500"
         }
       },
-      "topLevel": false
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": true
     }
   },
   "scripts": [

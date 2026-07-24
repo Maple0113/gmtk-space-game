@@ -3,7 +3,7 @@
     "control_create_clone_of_menu2": {
       "opcode": "control_create_clone_of_menu",
       "next": null,
-      "parent": "i#",
+      "parent": "jc",
       "inputs": {},
       "fields": {
         "CLONE_OPTION": {
