@@ -32,7 +32,7 @@
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[0,1,0,0],[1,0,0,0]]"
+    "value": "[[1,1,0,1],[0,1,0,0]]"
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -50,8 +50,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"generic\",\"Amount\":9997,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"invalid\",\"Amount\":9996,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}"
+      "{\"Name\":\"generic\",\"Amount\":9996,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"invalid\",\"Amount\":9999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -79,8 +79,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,1,1]",
-      "[1,1,1]"
+      "[0,0,0]",
+      "[0,0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -90,8 +90,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,1,0,0]",
-      "[1,0,0,0]"
+      "[1,0,0,1]",
+      "[0,1,0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -226,5 +226,12 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "INVENTORY placement results"
+  },
+  "M.gA(ATr6?gr=ji,!9R!": {
+    "id": "M.gA(ATr6?gr=ji,!9R!",
+    "name": "INVENTORY part refund",
+    "type": "broadcast_msg",
+    "isCloud": false,
+    "value": "INVENTORY part refund"
   }
 }

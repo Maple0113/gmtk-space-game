@@ -721,7 +721,7 @@
       "topLevel": true,
       "x": 251,
       "y": -1392,
-      "comment": "fy",
+      "comment": "fD",
       "id": "procedures_definition2"
     },
     "procedures_prototype2": {
@@ -4736,7 +4736,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "d^",
+      "comment": "d?",
       "id": "lmsTempVars2_forEachThreadVariable5"
     },
     "data_lengthoflist2": {
@@ -4958,7 +4958,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "d{",
+      "comment": "d]",
       "id": "control_if_else1"
     },
     "operator_equals18": {
@@ -5404,7 +5404,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "gv",
+      "comment": "gu",
       "id": "lmsTempVars2_setThreadVariable10"
     },
     "skyhigh173JSON_json_array_reverse1": {
@@ -6877,7 +6877,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "gX",
+      "comment": "gW",
       "id": "lmsTempVars2_forEachThreadVariable7"
     },
     "skyhigh173JSON_json_length10": {
@@ -7416,7 +7416,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "g.",
+      "comment": "g-",
       "id": "lmsTempVars2_setThreadVariable15"
     },
     "skyhigh173JSON_json_new9": {
@@ -7528,7 +7528,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "g;",
+      "comment": "g:",
       "id": "lmsTempVars2_setThreadVariable16"
     },
     "lmsTempVars2_forEachThreadVariable10": {
@@ -10009,6 +10009,871 @@
       "shadow": false,
       "topLevel": false,
       "id": "lmsTempVars2_getThreadVariable76"
+    },
+    "event_whenbroadcastreceived1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "control_if26",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "INVENTORY attempt placement",
+          "id": "Ru%mq|.pumO68=fh;0B9",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2564,
+      "y": -1438,
+      "comment": "hG",
+      "id": "event_whenbroadcastreceived1"
+    },
+    "control_if26": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "event_whenbroadcastreceived1",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "sensing_touchingobject1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_if_else8",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_if26"
+    },
+    "sensing_touchingobject1": {
+      "opcode": "sensing_touchingobject",
+      "next": null,
+      "parent": "control_if26",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "block": "sensing_touchingobjectmenu1",
+          "shadow": "sensing_touchingobjectmenu1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "sensing_touchingobject1"
+    },
+    "sensing_touchingobjectmenu1": {
+      "opcode": "sensing_touchingobjectmenu",
+      "next": null,
+      "parent": "sensing_touchingobject1",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "value": "_mouse_",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "sensing_touchingobjectmenu1"
+    },
+    "control_if_else8": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "control_if26",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_and1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "procedures_call10",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "lmsMoreEvents_broadcastDataToTargetAndWait2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_if_else8"
+    },
+    "operator_and1": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "control_if_else8",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "procedures_call9",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "operator_equals28",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_and1"
+    },
+    "procedures_call9": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "operator_and1",
+      "inputs": {
+        "V~Z{0I:J+BH=T@rH-;QB": {
+          "name": "V~Z{0I:J+BH=T@rH-;QB",
+          "block": "skyhigh173JSON_json_get22",
+          "shadow": null
+        },
+        "13e/]p3?XziCOSEgbeF=": {
+          "name": "13e/]p3?XziCOSEgbeF=",
+          "block": "data_variable44",
+          "shadow": "data_variable44"
+        },
+        "eCUTk^/},guLK-jMl7Id": {
+          "name": "eCUTk^/},guLK-jMl7Id",
+          "block": "data_variable45",
+          "shadow": "data_variable45"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "can place part %s at x: %s y: %s ?",
+        "argumentids": "[\"V~Z{0I:J+BH=T@rH-;QB\",\"13e/]p3?XziCOSEgbeF=\",\"eCUTk^/},guLK-jMl7Id\"]",
+        "warp": "true",
+        "return": "1"
+      },
+      "id": "procedures_call9"
+    },
+    "skyhigh173JSON_json_get22": {
+      "opcode": "skyhigh173JSON_json_get",
+      "next": null,
+      "parent": "procedures_call9",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text235",
+          "shadow": "text235"
+        },
+        "json": {
+          "name": "json",
+          "block": "lmsMoreEvents_receivedData1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_get22"
+    },
+    "lmsMoreEvents_receivedData1": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get22",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData1"
+    },
+    "operator_equals28": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "operator_and1",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "skyhigh173JSON_json_get23",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "data_variable46",
+          "shadow": "data_variable46"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_equals28"
+    },
+    "skyhigh173JSON_json_get23": {
+      "opcode": "skyhigh173JSON_json_get",
+      "next": null,
+      "parent": "operator_equals28",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text236",
+          "shadow": "text236"
+        },
+        "json": {
+          "name": "json",
+          "block": "lmsMoreEvents_receivedData2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_get23"
+    },
+    "lmsMoreEvents_receivedData2": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get23",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData2"
+    },
+    "procedures_call10": {
+      "opcode": "procedures_call",
+      "next": "lmsMoreEvents_broadcastDataToTargetAndWait1",
+      "parent": "control_if_else8",
+      "inputs": {
+        "HzJvcfnf#v^qO,ohmP!Y": {
+          "name": "HzJvcfnf#v^qO,ohmP!Y",
+          "block": "skyhigh173JSON_json_get24",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "place part %s",
+        "argumentids": "[\"HzJvcfnf#v^qO,ohmP!Y\"]",
+        "warp": "true"
+      },
+      "id": "procedures_call10"
+    },
+    "skyhigh173JSON_json_get24": {
+      "opcode": "skyhigh173JSON_json_get",
+      "next": null,
+      "parent": "procedures_call10",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text241",
+          "shadow": "text241"
+        },
+        "json": {
+          "name": "json",
+          "block": "lmsMoreEvents_receivedData3",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_get24"
+    },
+    "lmsMoreEvents_receivedData3": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get24",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData3"
+    },
+    "lmsMoreEvents_broadcastDataToTargetAndWait1": {
+      "opcode": "lmsMoreEvents_broadcastDataToTargetAndWait",
+      "next": null,
+      "parent": "procedures_call10",
+      "inputs": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "block": "event_broadcast_menu1",
+          "shadow": "event_broadcast_menu1"
+        },
+        "TARGET": {
+          "name": "TARGET",
+          "block": "lmsMoreEvents_menu_targetMenu1",
+          "shadow": "lmsMoreEvents_menu_targetMenu1"
+        },
+        "DATA": {
+          "name": "DATA",
+          "block": "skyhigh173JSON_json_set10",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_broadcastDataToTargetAndWait1"
+    },
+    "lmsMoreEvents_menu_targetMenu1": {
+      "opcode": "lmsMoreEvents_menu_targetMenu",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait1",
+      "inputs": {},
+      "fields": {
+        "targetMenu": {
+          "name": "targetMenu",
+          "value": "grid items",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "lmsMoreEvents_menu_targetMenu1"
+    },
+    "skyhigh173JSON_json_set10": {
+      "opcode": "skyhigh173JSON_json_set",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait1",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text237",
+          "shadow": "text237"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set11",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "motion_yposition1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_set10"
+    },
+    "skyhigh173JSON_json_set11": {
+      "opcode": "skyhigh173JSON_json_set",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set10",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text238",
+          "shadow": "text238"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set12",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "motion_xposition1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_set11"
+    },
+    "skyhigh173JSON_json_set12": {
+      "opcode": "skyhigh173JSON_json_set",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set11",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text239",
+          "shadow": "text239"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_new11",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "text240",
+          "shadow": "text240"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_set12"
+    },
+    "skyhigh173JSON_json_new11": {
+      "opcode": "skyhigh173JSON_json_new",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set12",
+      "inputs": {
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_menu_types11",
+          "shadow": "skyhigh173JSON_menu_types11"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_new11"
+    },
+    "skyhigh173JSON_menu_types11": {
+      "opcode": "skyhigh173JSON_menu_types",
+      "next": null,
+      "parent": "skyhigh173JSON_json_new11",
+      "inputs": {},
+      "fields": {
+        "types": {
+          "name": "types",
+          "value": "Object",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "skyhigh173JSON_menu_types11"
+    },
+    "motion_xposition1": {
+      "opcode": "motion_xposition",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set11",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_xposition1"
+    },
+    "motion_yposition1": {
+      "opcode": "motion_yposition",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set10",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_yposition1"
+    },
+    "lmsMoreEvents_broadcastDataToTargetAndWait2": {
+      "opcode": "lmsMoreEvents_broadcastDataToTargetAndWait",
+      "next": null,
+      "parent": "control_if_else8",
+      "inputs": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "block": "event_broadcast_menu2",
+          "shadow": "event_broadcast_menu2"
+        },
+        "TARGET": {
+          "name": "TARGET",
+          "block": "lmsMoreEvents_menu_targetMenu2",
+          "shadow": "lmsMoreEvents_menu_targetMenu2"
+        },
+        "DATA": {
+          "name": "DATA",
+          "block": "skyhigh173JSON_json_set13",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_broadcastDataToTargetAndWait2"
+    },
+    "lmsMoreEvents_menu_targetMenu2": {
+      "opcode": "lmsMoreEvents_menu_targetMenu",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait2",
+      "inputs": {},
+      "fields": {
+        "targetMenu": {
+          "name": "targetMenu",
+          "value": "grid items",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "lmsMoreEvents_menu_targetMenu2"
+    },
+    "skyhigh173JSON_json_set13": {
+      "opcode": "skyhigh173JSON_json_set",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait2",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text242",
+          "shadow": "text242"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set14",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "motion_yposition2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_set13"
+    },
+    "skyhigh173JSON_json_set14": {
+      "opcode": "skyhigh173JSON_json_set",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set13",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text243",
+          "shadow": "text243"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set15",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "motion_xposition2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_set14"
+    },
+    "skyhigh173JSON_json_set15": {
+      "opcode": "skyhigh173JSON_json_set",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set14",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text244",
+          "shadow": "text244"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_new12",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "text245",
+          "shadow": "text245"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_set15"
+    },
+    "skyhigh173JSON_json_new12": {
+      "opcode": "skyhigh173JSON_json_new",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set15",
+      "inputs": {
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_menu_types12",
+          "shadow": "skyhigh173JSON_menu_types12"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "skyhigh173JSON_json_new12"
+    },
+    "skyhigh173JSON_menu_types12": {
+      "opcode": "skyhigh173JSON_menu_types",
+      "next": null,
+      "parent": "skyhigh173JSON_json_new12",
+      "inputs": {},
+      "fields": {
+        "types": {
+          "name": "types",
+          "value": "Object",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "skyhigh173JSON_menu_types12"
+    },
+    "motion_xposition2": {
+      "opcode": "motion_xposition",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set14",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_xposition2"
+    },
+    "motion_yposition2": {
+      "opcode": "motion_yposition",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set13",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_yposition2"
+    },
+    "event_whenflagclicked1": {
+      "opcode": "event_whenflagclicked",
+      "next": "data_setvariableto7",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 227,
+      "y": -137,
+      "id": "event_whenflagclicked1"
+    },
+    "data_setvariableto7": {
+      "opcode": "data_setvariableto",
+      "next": "data_setvariableto8",
+      "parent": "event_whenflagclicked1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text248",
+          "shadow": "text248"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "TileSpacing",
+          "id": "Ir/22#j!^M{qDt!ZmD`y",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto7"
+    },
+    "data_setvariableto8": {
+      "opcode": "data_setvariableto",
+      "next": "data_setvariableto9",
+      "parent": "data_setvariableto7",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text247",
+          "shadow": "text247"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "GridSpacing",
+          "id": "sDVM867#/yz+{7d-.Dy9",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto8"
+    },
+    "data_setvariableto9": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "data_setvariableto8",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text246",
+          "shadow": "text246"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "GridType",
+          "id": "zZ|jkw/LMUcvPC=1XHTL",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto9"
+    },
+    "event_whenbroadcastreceived2": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "data_deletealloflist4",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 69,
+      "y": 227,
+      "id": "event_whenbroadcastreceived2"
+    },
+    "data_deletealloflist4": {
+      "opcode": "data_deletealloflist",
+      "next": "lmsclonesplus_deleteClonesInSprite1",
+      "parent": "event_whenbroadcastreceived2",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "value": "Bodies",
+          "id": "mY!n(%JOZe1++Q$MH;WY",
+          "variableType": "list"
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_deletealloflist4"
+    },
+    "lmsclonesplus_deleteClonesInSprite1": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "procedures_call11",
+      "parent": "data_deletealloflist4",
+      "inputs": {
+        "INPUT": {
+          "name": "INPUT",
+          "block": "lmsclonesplus_menu_spriteMenu1",
+          "shadow": "lmsclonesplus_menu_spriteMenu1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_deleteClonesInSprite1"
+    },
+    "lmsclonesplus_menu_spriteMenu1": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": {
+          "name": "spriteMenu",
+          "value": "inventory",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "lmsclonesplus_menu_spriteMenu1"
+    },
+    "procedures_call11": {
+      "opcode": "procedures_call",
+      "next": "procedures_call12",
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "inputs": {
+        "jaS]87icDRKb8*y}?#cQ": {
+          "name": "jaS]87icDRKb8*y}?#cQ",
+          "block": "text252",
+          "shadow": "text252"
+        },
+        "s81%EmP0Dr;whaQy*Y?T": {
+          "name": "s81%EmP0Dr;whaQy*Y?T",
+          "block": "text253",
+          "shadow": "text253"
+        },
+        "Y([KMET.%{JXEu,LI;(N": {
+          "name": "Y([KMET.%{JXEu,LI;(N",
+          "block": "text254",
+          "shadow": "text254"
+        },
+        "JpaW)i66=Hiq]2^nh|gA": {
+          "name": "JpaW)i66=Hiq]2^nh|gA",
+          "block": "text255",
+          "shadow": "text255"
+        },
+        "5]LZ=U9Z$;lY$h3BpL%r": {
+          "name": "5]LZ=U9Z$;lY$h3BpL%r",
+          "block": "text256",
+          "shadow": "text256"
+        },
+        "s{h5)mnN,C]28`WxBVg`": {
+          "name": "s{h5)mnN,C]28`WxBVg`",
+          "block": "text257",
+          "shadow": "text257"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
+        "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
+        "warp": "true"
+      },
+      "id": "procedures_call11"
+    },
+    "procedures_call12": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "procedures_call11",
+      "inputs": {
+        "+RAmS(uuJDU8?V!o3+mH": {
+          "name": "+RAmS(uuJDU8?V!o3+mH",
+          "block": "text249",
+          "shadow": "text249"
+        },
+        "q2%Kl0|274sQ{fF`b8;,": {
+          "name": "q2%Kl0|274sQ{fF`b8;,",
+          "block": "text250",
+          "shadow": "text250"
+        },
+        "+J7QmGF#fzIaV/}akx(1": {
+          "name": "+J7QmGF#fzIaV/}akx(1",
+          "block": "text251",
+          "shadow": "text251"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "draw body %s at x: %s y: %s",
+        "argumentids": "[\"+RAmS(uuJDU8?V!o3+mH\",\"q2%Kl0|274sQ{fF`b8;,\",\"+J7QmGF#fzIaV/}akx(1\"]",
+        "warp": "true"
+      },
+      "id": "procedures_call12"
     },
     "data_variable1": {
       "id": "data_variable1",
@@ -14598,1296 +15463,432 @@
       },
       "topLevel": false
     },
-    "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
-      "opcode": "event_whenbroadcastreceived",
+    "data_variable44": {
+      "id": "data_variable44",
+      "next": null,
+      "parent": "procedures_call9",
+      "shadow": true,
       "inputs": {},
+      "opcode": "data_variable",
       "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "Ru%mq|.pumO68=fh;0B9",
-          "value": "INVENTORY attempt placement",
-          "variableType": "broadcast_msg"
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "MyX",
+          "id": "]A|chi[eLS`j],BDmBX%",
+          "variableType": ""
         }
-      },
-      "next": "control_if26",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 2564,
-      "y": -1438,
-      "comment": "fEt|$PhX1%|r#uGFNu26"
-    },
-    "control_if26": {
-      "id": "control_if26",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "sensing_touchingobject1",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "control_if_else8",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false
-    },
-    "sensing_touchingobject1": {
-      "id": "sensing_touchingobject1",
-      "opcode": "sensing_touchingobject",
-      "inputs": {
-        "TOUCHINGOBJECTMENU": {
-          "name": "TOUCHINGOBJECTMENU",
-          "block": "sensing_touchingobjectmenu1",
-          "shadow": "sensing_touchingobjectmenu1"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if26",
-      "shadow": false
-    },
-    "sensing_touchingobjectmenu1": {
-      "id": "sensing_touchingobjectmenu1",
-      "opcode": "sensing_touchingobjectmenu",
-      "inputs": {},
-      "fields": {
-        "TOUCHINGOBJECTMENU": {
-          "name": "TOUCHINGOBJECTMENU",
-          "value": "_mouse_"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "sensing_touchingobject1",
-      "shadow": true
-    },
-    "control_if_else8": {
-      "id": "control_if_else8",
-      "opcode": "control_if_else",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_and1",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "procedures_call10",
-          "shadow": null
-        },
-        "SUBSTACK2": {
-          "name": "SUBSTACK2",
-          "block": "lmsMoreEvents_broadcastDataToTargetAndWait2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if26",
-      "shadow": false
-    },
-    "operator_and1": {
-      "id": "operator_and1",
-      "opcode": "operator_and",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "procedures_call9",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "operator_equals28",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else8",
-      "shadow": false,
-      "x": 2749.0539107871987,
-      "y": -1521.3464807330722
-    },
-    "procedures_call9": {
-      "id": "procedures_call9",
-      "opcode": "procedures_call",
-      "inputs": {
-        "V~Z{0I:J+BH=T@rH-;QB": {
-          "name": "V~Z{0I:J+BH=T@rH-;QB",
-          "block": "skyhigh173JSON_json_get22",
-          "shadow": null
-        },
-        "13e/]p3?XziCOSEgbeF=": {
-          "name": "13e/]p3?XziCOSEgbeF=",
-          "block": "data_variable44",
-          "shadow": "data_variable44"
-        },
-        "eCUTk^/},guLK-jMl7Id": {
-          "name": "eCUTk^/},guLK-jMl7Id",
-          "block": "data_variable45",
-          "shadow": "data_variable45"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_and1",
-      "shadow": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "can place part %s at x: %s y: %s ?",
-        "argumentids": "[\"V~Z{0I:J+BH=T@rH-;QB\",\"13e/]p3?XziCOSEgbeF=\",\"eCUTk^/},guLK-jMl7Id\"]",
-        "warp": "true",
-        "return": "1"
       }
     },
-    "skyhigh173JSON_json_get22": {
-      "id": "skyhigh173JSON_json_get22",
-      "opcode": "skyhigh173JSON_json_get",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text235",
-          "shadow": "text235"
-        },
-        "json": {
-          "name": "json",
-          "block": "lmsMoreEvents_receivedData1",
-          "shadow": null
-        }
-      },
-      "fields": {},
+    "data_variable45": {
+      "id": "data_variable45",
       "next": null,
-      "topLevel": false,
       "parent": "procedures_call9",
-      "shadow": false
+      "shadow": true,
+      "inputs": {},
+      "opcode": "data_variable",
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "MyY",
+          "id": "z8BocKD*c?.{=)E^WUYD",
+          "variableType": ""
+        }
+      }
     },
     "text235": {
       "id": "text235",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get22",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "Name"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_get22",
-      "shadow": true
+      "topLevel": false
     },
-    "lmsMoreEvents_receivedData1": {
-      "id": "lmsMoreEvents_receivedData1",
-      "opcode": "lmsMoreEvents_receivedData",
-      "inputs": {},
-      "fields": {},
+    "data_variable46": {
+      "id": "data_variable46",
       "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_get22",
-      "shadow": false
-    },
-    "data_variable44": {
-      "id": "data_variable44",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "]A|chi[eLS`j],BDmBX%",
-          "value": "MyX",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
-    },
-    "data_variable45": {
-      "id": "data_variable45",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "z8BocKD*c?.{=)E^WUYD",
-          "value": "MyY",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
-    },
-    "operator_equals28": {
-      "id": "operator_equals28",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "skyhigh173JSON_json_get23",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "data_variable46",
-          "shadow": "data_variable46"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_and1",
-      "shadow": false
-    },
-    "skyhigh173JSON_json_get23": {
-      "id": "skyhigh173JSON_json_get23",
-      "opcode": "skyhigh173JSON_json_get",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text236",
-          "shadow": "text236"
-        },
-        "json": {
-          "name": "json",
-          "block": "lmsMoreEvents_receivedData2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
       "parent": "operator_equals28",
-      "shadow": false
+      "shadow": true,
+      "inputs": {},
+      "opcode": "data_variable",
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "GridType",
+          "id": "zZ|jkw/LMUcvPC=1XHTL",
+          "variableType": ""
+        }
+      }
     },
     "text236": {
       "id": "text236",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get23",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "Position"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_get23",
-      "shadow": true
-    },
-    "lmsMoreEvents_receivedData2": {
-      "id": "lmsMoreEvents_receivedData2",
-      "opcode": "lmsMoreEvents_receivedData",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_get23",
-      "shadow": false
-    },
-    "data_variable46": {
-      "id": "data_variable46",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "zZ|jkw/LMUcvPC=1XHTL",
-          "value": "GridType",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals28",
-      "shadow": true
-    },
-    "procedures_call10": {
-      "id": "procedures_call10",
-      "opcode": "procedures_call",
-      "inputs": {
-        "HzJvcfnf#v^qO,ohmP!Y": {
-          "name": "HzJvcfnf#v^qO,ohmP!Y",
-          "block": "skyhigh173JSON_json_get24",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "lmsMoreEvents_broadcastDataToTargetAndWait1",
-      "topLevel": false,
-      "parent": "control_if_else8",
-      "shadow": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "place part %s",
-        "argumentids": "[\"HzJvcfnf#v^qO,ohmP!Y\"]",
-        "warp": "true"
-      }
-    },
-    "skyhigh173JSON_json_get24": {
-      "id": "skyhigh173JSON_json_get24",
-      "opcode": "skyhigh173JSON_json_get",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text241",
-          "shadow": "text241"
-        },
-        "json": {
-          "name": "json",
-          "block": "lmsMoreEvents_receivedData3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": false
+      "topLevel": false
     },
     "text241": {
       "id": "text241",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_get24",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "Name"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_get24",
-      "shadow": true
-    },
-    "lmsMoreEvents_receivedData3": {
-      "id": "lmsMoreEvents_receivedData3",
-      "opcode": "lmsMoreEvents_receivedData",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_get24",
-      "shadow": false
-    },
-    "lmsMoreEvents_broadcastDataToTargetAndWait1": {
-      "id": "lmsMoreEvents_broadcastDataToTargetAndWait1",
-      "opcode": "lmsMoreEvents_broadcastDataToTargetAndWait",
-      "inputs": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "block": "event_broadcast_menu1",
-          "shadow": "event_broadcast_menu1"
-        },
-        "TARGET": {
-          "name": "TARGET",
-          "block": "lmsMoreEvents_menu_targetMenu1",
-          "shadow": "lmsMoreEvents_menu_targetMenu1"
-        },
-        "DATA": {
-          "name": "DATA",
-          "block": "skyhigh173JSON_json_set10",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": false
+      "topLevel": false
     },
     "event_broadcast_menu1": {
       "id": "event_broadcast_menu1",
-      "opcode": "event_broadcast_menu",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "event_broadcast_menu",
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "_h:aT2aen|@d{!*.]aoI",
           "value": "INVENTORY placement results",
+          "id": "_h:aT2aen|@d{!*.]aoI",
           "variableType": "broadcast_msg"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait1",
-      "shadow": true
-    },
-    "lmsMoreEvents_menu_targetMenu1": {
-      "id": "lmsMoreEvents_menu_targetMenu1",
-      "opcode": "lmsMoreEvents_menu_targetMenu",
-      "inputs": {},
-      "fields": {
-        "targetMenu": {
-          "name": "targetMenu",
-          "value": "grid items"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait1",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_set10": {
-      "id": "skyhigh173JSON_json_set10",
-      "opcode": "skyhigh173JSON_json_set",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text237",
-          "shadow": "text237"
-        },
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_json_set11",
-          "shadow": null
-        },
-        "value": {
-          "name": "value",
-          "block": "motion_yposition1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait1",
-      "shadow": false
+      "topLevel": false
     },
     "text237": {
       "id": "text237",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set10",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "Y"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set10",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_set11": {
-      "id": "skyhigh173JSON_json_set11",
-      "opcode": "skyhigh173JSON_json_set",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text238",
-          "shadow": "text238"
-        },
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_json_set12",
-          "shadow": null
-        },
-        "value": {
-          "name": "value",
-          "block": "motion_xposition1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set10",
-      "shadow": false
+      "topLevel": false
     },
     "text238": {
       "id": "text238",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set11",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "X"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set11",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_set12": {
-      "id": "skyhigh173JSON_json_set12",
-      "opcode": "skyhigh173JSON_json_set",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text239",
-          "shadow": "text239"
-        },
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_json_new11",
-          "shadow": null
-        },
-        "value": {
-          "name": "value",
-          "block": "text240",
-          "shadow": "text240"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set11",
-      "shadow": false
+      "topLevel": false
     },
     "text239": {
       "id": "text239",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "Passed"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set12",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_new11": {
-      "id": "skyhigh173JSON_json_new11",
-      "opcode": "skyhigh173JSON_json_new",
-      "inputs": {
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_menu_types11",
-          "shadow": "skyhigh173JSON_menu_types11"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set12",
-      "shadow": false
-    },
-    "skyhigh173JSON_menu_types11": {
-      "id": "skyhigh173JSON_menu_types11",
-      "opcode": "skyhigh173JSON_menu_types",
-      "inputs": {},
-      "fields": {
-        "types": {
-          "name": "types",
-          "value": "Object"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_new11",
-      "shadow": true
+      "topLevel": false
     },
     "text240": {
       "id": "text240",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "true"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set12",
-      "shadow": true
-    },
-    "motion_xposition1": {
-      "id": "motion_xposition1",
-      "opcode": "motion_xposition",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set11",
-      "shadow": false
-    },
-    "motion_yposition1": {
-      "id": "motion_yposition1",
-      "opcode": "motion_yposition",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set10",
-      "shadow": false
-    },
-    "lmsMoreEvents_broadcastDataToTargetAndWait2": {
-      "id": "lmsMoreEvents_broadcastDataToTargetAndWait2",
-      "opcode": "lmsMoreEvents_broadcastDataToTargetAndWait",
-      "inputs": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "block": "event_broadcast_menu2",
-          "shadow": "event_broadcast_menu2"
-        },
-        "TARGET": {
-          "name": "TARGET",
-          "block": "lmsMoreEvents_menu_targetMenu2",
-          "shadow": "lmsMoreEvents_menu_targetMenu2"
-        },
-        "DATA": {
-          "name": "DATA",
-          "block": "skyhigh173JSON_json_set13",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else8",
-      "shadow": false
+      "topLevel": false
     },
     "event_broadcast_menu2": {
       "id": "event_broadcast_menu2",
-      "opcode": "event_broadcast_menu",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait2",
+      "shadow": true,
       "inputs": {},
+      "opcode": "event_broadcast_menu",
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "_h:aT2aen|@d{!*.]aoI",
           "value": "INVENTORY placement results",
+          "id": "_h:aT2aen|@d{!*.]aoI",
           "variableType": "broadcast_msg"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait2",
-      "shadow": true
-    },
-    "lmsMoreEvents_menu_targetMenu2": {
-      "id": "lmsMoreEvents_menu_targetMenu2",
-      "opcode": "lmsMoreEvents_menu_targetMenu",
-      "inputs": {},
-      "fields": {
-        "targetMenu": {
-          "name": "targetMenu",
-          "value": "grid items"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait2",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_set13": {
-      "id": "skyhigh173JSON_json_set13",
-      "opcode": "skyhigh173JSON_json_set",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text242",
-          "shadow": "text242"
-        },
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_json_set14",
-          "shadow": null
-        },
-        "value": {
-          "name": "value",
-          "block": "motion_yposition2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastDataToTargetAndWait2",
-      "shadow": false
+      "topLevel": false
     },
     "text242": {
       "id": "text242",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set13",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "Y"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set13",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_set14": {
-      "id": "skyhigh173JSON_json_set14",
-      "opcode": "skyhigh173JSON_json_set",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text243",
-          "shadow": "text243"
-        },
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_json_set15",
-          "shadow": null
-        },
-        "value": {
-          "name": "value",
-          "block": "motion_xposition2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set13",
-      "shadow": false
+      "topLevel": false
     },
     "text243": {
       "id": "text243",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set14",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "X"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set14",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_set15": {
-      "id": "skyhigh173JSON_json_set15",
-      "opcode": "skyhigh173JSON_json_set",
-      "inputs": {
-        "item": {
-          "name": "item",
-          "block": "text244",
-          "shadow": "text244"
-        },
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_json_new12",
-          "shadow": null
-        },
-        "value": {
-          "name": "value",
-          "block": "text245",
-          "shadow": "text245"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set14",
-      "shadow": false
+      "topLevel": false
     },
     "text244": {
       "id": "text244",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set15",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "Passed"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set15",
-      "shadow": true
-    },
-    "skyhigh173JSON_json_new12": {
-      "id": "skyhigh173JSON_json_new12",
-      "opcode": "skyhigh173JSON_json_new",
-      "inputs": {
-        "json": {
-          "name": "json",
-          "block": "skyhigh173JSON_menu_types12",
-          "shadow": "skyhigh173JSON_menu_types12"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set15",
-      "shadow": false
-    },
-    "skyhigh173JSON_menu_types12": {
-      "id": "skyhigh173JSON_menu_types12",
-      "opcode": "skyhigh173JSON_menu_types",
-      "inputs": {},
-      "fields": {
-        "types": {
-          "name": "types",
-          "value": "Object"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_new12",
-      "shadow": true
+      "topLevel": false
     },
     "text245": {
       "id": "text245",
-      "opcode": "text",
+      "next": null,
+      "parent": "skyhigh173JSON_json_set15",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "false"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set15",
-      "shadow": true
-    },
-    "motion_xposition2": {
-      "id": "motion_xposition2",
-      "opcode": "motion_xposition",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set14",
-      "shadow": false
-    },
-    "motion_yposition2": {
-      "id": "motion_yposition2",
-      "opcode": "motion_yposition",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "skyhigh173JSON_json_set13",
-      "shadow": false
-    },
-    "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
-      "opcode": "event_whenflagclicked",
-      "inputs": {},
-      "fields": {},
-      "next": "data_setvariableto7",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 227,
-      "y": -137
-    },
-    "data_setvariableto7": {
-      "id": "data_setvariableto7",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text248",
-          "shadow": "text248"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Ir/22#j!^M{qDt!ZmD`y",
-          "value": "TileSpacing",
-          "variableType": ""
-        }
-      },
-      "next": "data_setvariableto8",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false
+      "topLevel": false
     },
     "text248": {
       "id": "text248",
-      "opcode": "text",
+      "next": null,
+      "parent": "data_setvariableto7",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "32"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto7",
-      "shadow": true
-    },
-    "data_setvariableto8": {
-      "id": "data_setvariableto8",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text247",
-          "shadow": "text247"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "sDVM867#/yz+{7d-.Dy9",
-          "value": "GridSpacing",
-          "variableType": ""
-        }
-      },
-      "next": "data_setvariableto9",
-      "topLevel": false,
-      "parent": "data_setvariableto7",
-      "shadow": false
+      "topLevel": false
     },
     "text247": {
       "id": "text247",
-      "opcode": "text",
+      "next": null,
+      "parent": "data_setvariableto8",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "0.25"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto8",
-      "shadow": true
-    },
-    "data_setvariableto9": {
-      "id": "data_setvariableto9",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text246",
-          "shadow": "text246"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "zZ|jkw/LMUcvPC=1XHTL",
-          "value": "GridType",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto8",
-      "shadow": false
+      "topLevel": false
     },
     "text246": {
       "id": "text246",
-      "opcode": "text",
+      "next": null,
+      "parent": "data_setvariableto9",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "0"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto9",
-      "shadow": true
-    },
-    "event_whenbroadcastreceived2": {
-      "id": "event_whenbroadcastreceived2",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
-          "value": "GAME begin",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "data_deletealloflist4",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 69,
-      "y": 227
-    },
-    "data_deletealloflist4": {
-      "id": "data_deletealloflist4",
-      "opcode": "data_deletealloflist",
-      "inputs": {},
-      "fields": {
-        "LIST": {
-          "name": "LIST",
-          "id": "mY!n(%JOZe1++Q$MH;WY",
-          "value": "Bodies",
-          "variableType": "list"
-        }
-      },
-      "next": "lmsclonesplus_deleteClonesInSprite1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived2",
-      "shadow": false
-    },
-    "lmsclonesplus_deleteClonesInSprite1": {
-      "id": "lmsclonesplus_deleteClonesInSprite1",
-      "opcode": "lmsclonesplus_deleteClonesInSprite",
-      "inputs": {
-        "INPUT": {
-          "name": "INPUT",
-          "block": "lmsclonesplus_menu_spriteMenu1",
-          "shadow": "lmsclonesplus_menu_spriteMenu1"
-        }
-      },
-      "fields": {},
-      "next": "procedures_call11",
-      "topLevel": false,
-      "parent": "data_deletealloflist4",
-      "shadow": false
-    },
-    "lmsclonesplus_menu_spriteMenu1": {
-      "id": "lmsclonesplus_menu_spriteMenu1",
-      "opcode": "lmsclonesplus_menu_spriteMenu",
-      "inputs": {},
-      "fields": {
-        "spriteMenu": {
-          "name": "spriteMenu",
-          "value": "inventory"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite1",
-      "shadow": true
-    },
-    "procedures_call11": {
-      "id": "procedures_call11",
-      "opcode": "procedures_call",
-      "inputs": {
-        "jaS]87icDRKb8*y}?#cQ": {
-          "name": "jaS]87icDRKb8*y}?#cQ",
-          "block": "text252",
-          "shadow": "text252"
-        },
-        "s81%EmP0Dr;whaQy*Y?T": {
-          "name": "s81%EmP0Dr;whaQy*Y?T",
-          "block": "text253",
-          "shadow": "text253"
-        },
-        "Y([KMET.%{JXEu,LI;(N": {
-          "name": "Y([KMET.%{JXEu,LI;(N",
-          "block": "text254",
-          "shadow": "text254"
-        },
-        "JpaW)i66=Hiq]2^nh|gA": {
-          "name": "JpaW)i66=Hiq]2^nh|gA",
-          "block": "text255",
-          "shadow": "text255"
-        },
-        "5]LZ=U9Z$;lY$h3BpL%r": {
-          "name": "5]LZ=U9Z$;lY$h3BpL%r",
-          "block": "text256",
-          "shadow": "text256"
-        },
-        "s{h5)mnN,C]28`WxBVg`": {
-          "name": "s{h5)mnN,C]28`WxBVg`",
-          "block": "text257",
-          "shadow": "text257"
-        }
-      },
-      "fields": {},
-      "next": "procedures_call12",
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite1",
-      "shadow": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
-        "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
-        "warp": "true"
-      }
+      "topLevel": false
     },
     "text252": {
       "id": "text252",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
+      "topLevel": false
     },
     "text253": {
       "id": "text253",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
+      "topLevel": false
     },
     "text254": {
       "id": "text254",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "3"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
+      "topLevel": false
     },
     "text255": {
       "id": "text255",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
+      "topLevel": false
     },
     "text256": {
       "id": "text256",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "4"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
+      "topLevel": false
     },
     "text257": {
       "id": "text257",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
-    },
-    "procedures_call12": {
-      "id": "procedures_call12",
-      "opcode": "procedures_call",
-      "inputs": {
-        "+RAmS(uuJDU8?V!o3+mH": {
-          "name": "+RAmS(uuJDU8?V!o3+mH",
-          "block": "text249",
-          "shadow": "text249"
-        },
-        "q2%Kl0|274sQ{fF`b8;,": {
-          "name": "q2%Kl0|274sQ{fF`b8;,",
-          "block": "text250",
-          "shadow": "text250"
-        },
-        "+J7QmGF#fzIaV/}akx(1": {
-          "name": "+J7QmGF#fzIaV/}akx(1",
-          "block": "text251",
-          "shadow": "text251"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "draw body %s at x: %s y: %s",
-        "argumentids": "[\"+RAmS(uuJDU8?V!o3+mH\",\"q2%Kl0|274sQ{fF`b8;,\",\"+J7QmGF#fzIaV/}akx(1\"]",
-        "warp": "true"
-      }
+      "topLevel": false
     },
     "text249": {
       "id": "text249",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "1"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
     "text250": {
       "id": "text250",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "0"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
     "text251": {
       "id": "text251",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "-100"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     }
   },
   "scripts": [
