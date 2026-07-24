@@ -20,17 +20,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals1",
-          "shadow": null
+          "shadow": "operator_equals1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto1",
-          "shadow": null
+          "shadow": "data_setvariableto1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else2",
-          "shadow": null
+          "shadow": "control_if_else2"
         }
       },
       "fields": {},
@@ -46,7 +46,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable1",
-          "shadow": null
+          "shadow": "data_variable1"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -129,17 +129,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals2",
-          "shadow": null
+          "shadow": "operator_equals2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto3",
-          "shadow": null
+          "shadow": "data_setvariableto3"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else3",
-          "shadow": null
+          "shadow": "control_if_else3"
         }
       },
       "fields": {},
@@ -155,7 +155,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable2",
-          "shadow": null
+          "shadow": "data_variable2"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -238,17 +238,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals3",
-          "shadow": null
+          "shadow": "operator_equals3"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby1",
-          "shadow": null
+          "shadow": "data_changevariableby1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if2",
-          "shadow": null
+          "shadow": "control_if2"
         }
       },
       "fields": {},
@@ -264,7 +264,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable3",
-          "shadow": null
+          "shadow": "data_variable3"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -308,12 +308,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_gt1",
-          "shadow": null
+          "shadow": "operator_gt1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto5",
-          "shadow": null
+          "shadow": "data_setvariableto5"
         }
       },
       "fields": {},
@@ -329,12 +329,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable4",
-          "shadow": null
+          "shadow": "data_variable4"
         },
         "OPERAND2": {
           "name": "OPERAND2",
           "block": "data_variable5",
-          "shadow": null
+          "shadow": "data_variable5"
         }
       },
       "fields": {},
@@ -389,12 +389,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals4",
-          "shadow": null
+          "shadow": "operator_equals4"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby2",
-          "shadow": null
+          "shadow": "data_changevariableby2"
         }
       },
       "fields": {},
@@ -410,7 +410,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable6",
-          "shadow": null
+          "shadow": "data_variable6"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -454,12 +454,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_lt1",
-          "shadow": null
+          "shadow": "operator_lt1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto6",
-          "shadow": null
+          "shadow": "data_setvariableto6"
         }
       },
       "fields": {},
@@ -475,7 +475,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable7",
-          "shadow": null
+          "shadow": "data_variable7"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -496,7 +496,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "data_variable8",
-          "shadow": null
+          "shadow": "data_variable8"
         }
       },
       "fields": {
@@ -547,12 +547,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals9",
-          "shadow": null
+          "shadow": "operator_equals9"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else6",
-          "shadow": null
+          "shadow": "control_if_else6"
         }
       },
       "fields": {},
@@ -568,7 +568,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable17",
-          "shadow": null
+          "shadow": "data_variable17"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -589,17 +589,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals10",
-          "shadow": null
+          "shadow": "operator_equals10"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto3",
-          "shadow": null
+          "shadow": "looks_switchcostumeto3"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto4",
-          "shadow": null
+          "shadow": "looks_switchcostumeto4"
         }
       },
       "fields": {},
@@ -615,7 +615,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable18",
-          "shadow": null
+          "shadow": "data_variable18"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -700,12 +700,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals7",
-          "shadow": null
+          "shadow": "operator_equals7"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else5",
-          "shadow": null
+          "shadow": "control_if_else5"
         }
       },
       "fields": {},
@@ -721,7 +721,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable15",
-          "shadow": null
+          "shadow": "data_variable15"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -742,17 +742,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals8",
-          "shadow": null
+          "shadow": "operator_equals8"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto1",
-          "shadow": null
+          "shadow": "looks_switchcostumeto1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto2",
-          "shadow": null
+          "shadow": "looks_switchcostumeto2"
         }
       },
       "fields": {},
@@ -768,7 +768,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable16",
-          "shadow": null
+          "shadow": "data_variable16"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -853,12 +853,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals5",
-          "shadow": null
+          "shadow": "operator_equals5"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_forever1",
-          "shadow": null
+          "shadow": "control_forever1"
         }
       },
       "fields": {},
@@ -874,7 +874,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable9",
-          "shadow": null
+          "shadow": "data_variable9"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -895,7 +895,7 @@
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_setsizeto1",
-          "shadow": null
+          "shadow": "looks_setsizeto1"
         }
       },
       "fields": {},
@@ -997,17 +997,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals6",
-          "shadow": null
+          "shadow": "operator_equals6"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto7",
-          "shadow": null
+          "shadow": "data_setvariableto7"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "data_setvariableto8",
-          "shadow": null
+          "shadow": "data_setvariableto8"
         }
       },
       "fields": {},
@@ -1023,7 +1023,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable12",
-          "shadow": null
+          "shadow": "data_variable12"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1044,7 +1044,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "procedures_call1",
-          "shadow": null
+          "shadow": "procedures_call1"
         }
       },
       "fields": {
@@ -1067,7 +1067,7 @@
         ":CrV_7X(R8(}#0lw(7nU": {
           "name": ":CrV_7X(R8(}#0lw(7nU",
           "block": "operator_mathop1",
-          "shadow": null
+          "shadow": "operator_mathop1"
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
@@ -1096,7 +1096,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_divide1",
-          "shadow": null
+          "shadow": "operator_divide1"
         }
       },
       "fields": {
@@ -1118,12 +1118,12 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_lengthoflist1",
-          "shadow": null
+          "shadow": "data_lengthoflist1"
         },
         "NUM2": {
           "name": "NUM2",
           "block": "data_variable13",
-          "shadow": null
+          "shadow": "data_variable13"
         }
       },
       "fields": {},
@@ -1156,7 +1156,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "procedures_call2",
-          "shadow": null
+          "shadow": "procedures_call2"
         }
       },
       "fields": {
@@ -1179,7 +1179,7 @@
         ":CrV_7X(R8(}#0lw(7nU": {
           "name": ":CrV_7X(R8(}#0lw(7nU",
           "block": "operator_mathop2",
-          "shadow": null
+          "shadow": "operator_mathop2"
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
@@ -1208,7 +1208,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_divide2",
-          "shadow": null
+          "shadow": "operator_divide2"
         }
       },
       "fields": {
@@ -1230,12 +1230,12 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_lengthoflist2",
-          "shadow": null
+          "shadow": "data_lengthoflist2"
         },
         "NUM2": {
           "name": "NUM2",
           "block": "data_variable14",
-          "shadow": null
+          "shadow": "data_variable14"
         }
       },
       "fields": {},
@@ -1268,7 +1268,7 @@
         "TEXT": {
           "name": "TEXT",
           "block": "operator_join1",
-          "shadow": null
+          "shadow": "operator_join1"
         }
       },
       "fields": {},
@@ -1284,12 +1284,12 @@
         "STRING1": {
           "name": "STRING1",
           "block": "data_variable10",
-          "shadow": null
+          "shadow": "data_variable10"
         },
         "STRING2": {
           "name": "STRING2",
           "block": "operator_join2",
-          "shadow": null
+          "shadow": "operator_join2"
         }
       },
       "fields": {},
@@ -1310,7 +1310,7 @@
         "STRING2": {
           "name": "STRING2",
           "block": "data_variable11",
-          "shadow": null
+          "shadow": "data_variable11"
         }
       },
       "fields": {},
@@ -1406,17 +1406,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_gt2",
-          "shadow": null
+          "shadow": "operator_gt2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "procedures_return1",
-          "shadow": null
+          "shadow": "procedures_return1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "procedures_return2",
-          "shadow": null
+          "shadow": "procedures_return2"
         }
       },
       "fields": {},
@@ -1432,12 +1432,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "argument_reporter_string_number1",
-          "shadow": null
+          "shadow": "argument_reporter_string_number1"
         },
         "OPERAND2": {
           "name": "OPERAND2",
           "block": "argument_reporter_string_number2",
-          "shadow": null
+          "shadow": "argument_reporter_string_number2"
         }
       },
       "fields": {},
@@ -1485,7 +1485,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "argument_reporter_string_number3",
-          "shadow": null
+          "shadow": "argument_reporter_string_number3"
         }
       },
       "fields": {},
@@ -1517,7 +1517,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "argument_reporter_string_number4",
-          "shadow": null
+          "shadow": "argument_reporter_string_number4"
         }
       },
       "fields": {},
@@ -1584,12 +1584,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals13",
-          "shadow": null
+          "shadow": "operator_equals13"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else9",
-          "shadow": null
+          "shadow": "control_if_else9"
         }
       },
       "fields": {},
@@ -1605,7 +1605,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable21",
-          "shadow": null
+          "shadow": "data_variable21"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1626,17 +1626,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals14",
-          "shadow": null
+          "shadow": "operator_equals14"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto7",
-          "shadow": null
+          "shadow": "looks_switchcostumeto7"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto8",
-          "shadow": null
+          "shadow": "looks_switchcostumeto8"
         }
       },
       "fields": {},
@@ -1652,7 +1652,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable22",
-          "shadow": null
+          "shadow": "data_variable22"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1737,12 +1737,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals11",
-          "shadow": null
+          "shadow": "operator_equals11"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else8",
-          "shadow": null
+          "shadow": "control_if_else8"
         }
       },
       "fields": {},
@@ -1758,7 +1758,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable19",
-          "shadow": null
+          "shadow": "data_variable19"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1779,17 +1779,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals12",
-          "shadow": null
+          "shadow": "operator_equals12"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto5",
-          "shadow": null
+          "shadow": "looks_switchcostumeto5"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto6",
-          "shadow": null
+          "shadow": "looks_switchcostumeto6"
         }
       },
       "fields": {},
@@ -1805,7 +1805,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable20",
-          "shadow": null
+          "shadow": "data_variable20"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -2196,7 +2196,7 @@
       "id": "data_variable1",
       "next": null,
       "parent": "operator_equals1",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2274,7 +2274,7 @@
       "id": "data_variable2",
       "next": null,
       "parent": "operator_equals2",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2352,7 +2352,7 @@
       "id": "data_variable3",
       "next": null,
       "parent": "operator_equals3",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2398,7 +2398,7 @@
       "id": "data_variable4",
       "next": null,
       "parent": "operator_gt1",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2414,7 +2414,7 @@
       "id": "data_variable5",
       "next": null,
       "parent": "operator_gt1",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2462,7 +2462,7 @@
       "id": "data_variable6",
       "next": null,
       "parent": "operator_equals4",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2508,7 +2508,7 @@
       "id": "data_variable7",
       "next": null,
       "parent": "operator_lt1",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2539,7 +2539,7 @@
       "id": "data_variable8",
       "next": null,
       "parent": "data_setvariableto6",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2572,7 +2572,7 @@
       "id": "data_variable17",
       "next": null,
       "parent": "operator_equals9",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2603,7 +2603,7 @@
       "id": "data_variable18",
       "next": null,
       "parent": "operator_equals10",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2634,7 +2634,7 @@
       "id": "data_variable15",
       "next": null,
       "parent": "operator_equals7",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2665,7 +2665,7 @@
       "id": "data_variable16",
       "next": null,
       "parent": "operator_equals8",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2696,7 +2696,7 @@
       "id": "data_variable9",
       "next": null,
       "parent": "operator_equals5",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2787,7 +2787,7 @@
       "id": "data_variable12",
       "next": null,
       "parent": "operator_equals6",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2833,7 +2833,7 @@
       "id": "data_variable13",
       "next": null,
       "parent": "operator_divide1",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2864,7 +2864,7 @@
       "id": "data_variable14",
       "next": null,
       "parent": "operator_divide2",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2880,7 +2880,7 @@
       "id": "data_variable10",
       "next": null,
       "parent": "operator_join1",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2911,7 +2911,7 @@
       "id": "data_variable11",
       "next": null,
       "parent": "operator_join2",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2927,7 +2927,7 @@
       "id": "data_variable21",
       "next": null,
       "parent": "operator_equals13",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2958,7 +2958,7 @@
       "id": "data_variable22",
       "next": null,
       "parent": "operator_equals14",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -2989,7 +2989,7 @@
       "id": "data_variable19",
       "next": null,
       "parent": "operator_equals11",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -3020,7 +3020,7 @@
       "id": "data_variable20",
       "next": null,
       "parent": "operator_equals12",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {

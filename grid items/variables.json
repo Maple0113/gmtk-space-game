@@ -4,6 +4,27 @@
     "name": "CurrentItem",
     "type": "",
     "isCloud": false,
-    "value": "{\"Name\":\"invalid\",\"Amount\":9998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
+    "value": "{\"Name\":\"generic\",\"Amount\":9997,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}"
+  },
+  "0Cv@|H_/Yp!mKHn]?M:~": {
+    "id": "0Cv@|H_/Yp!mKHn]?M:~",
+    "name": "BeingDragged?",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "3y+3{3t^btg^fPDkAklY": {
+    "id": "3y+3{3t^btg^fPDkAklY",
+    "name": "HomeX",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "[iph^3L7HVi)Yq+ZW{%$": {
+    "id": "[iph^3L7HVi)Yq+ZW{%$",
+    "name": "HomeY",
+    "type": "",
+    "isCloud": false,
+    "value": 0
   }
 }

@@ -32,7 +32,7 @@
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[0,1,1],[0,1,1]]"
+    "value": "[[0,1,0,0],[1,0,0,0]]"
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -41,7 +41,8 @@
     "isCloud": false,
     "value": [
       "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":2}}"
-    ]
+    ],
+    "_monitorUpToDate": false
   },
   "w_bYE#_VOu%lcXO0`3Yh": {
     "id": "w_bYE#_VOu%lcXO0`3Yh",
@@ -50,8 +51,9 @@
     "isCloud": false,
     "value": [
       "{\"Name\":\"generic\",\"Amount\":9997,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"invalid\",\"Amount\":9998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
-    ]
+      "{\"Name\":\"invalid\",\"Amount\":9996,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}"
+    ],
+    "_monitorUpToDate": false
   },
   "]l,zbY}0x)-[ceE+6JG:": {
     "id": "]l,zbY}0x)-[ceE+6JG:",
@@ -68,7 +70,8 @@
     "value": [
       "[0,0]",
       "[0,0]"
-    ]
+    ],
+    "_monitorUpToDate": false
   },
   "Ra$$n.MH7F=ze%M=X)qZ": {
     "id": "Ra$$n.MH7F=ze%M=X)qZ",
@@ -76,9 +79,10 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,1,1]",
-      "[0,1,1]"
-    ]
+      "[1,1,1]",
+      "[1,1,1]"
+    ],
+    "_monitorUpToDate": false
   },
   "kV@_K9?WKoQT!ow4j}}8": {
     "id": "kV@_K9?WKoQT!ow4j}}8",
@@ -86,9 +90,10 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,0,0,0]",
-      "[0,0,1,0]"
-    ]
+      "[0,1,0,0]",
+      "[1,0,0,0]"
+    ],
+    "_monitorUpToDate": false
   },
   "4M]CWZT`OxT`H~EUzUZ}": {
     "id": "4M]CWZT`OxT`H~EUzUZ}",
@@ -96,10 +101,33 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "demand 1",
-      "demand 2",
-      "demand 3"
-    ]
+      "1x Advertising Panels",
+      "1x Body",
+      "1x Cargo Bay",
+      "2x Fins",
+      "2x Fuel Tank",
+      "1x Nose Cone",
+      "3x Thrusters",
+      "1x Windows"
+    ],
+    "_monitorUpToDate": false
+  },
+  "DfaDaK,D#K$]mB5ec~BD": {
+    "id": "DfaDaK,D#K$]mB5ec~BD",
+    "name": "DemandsInternal",
+    "type": "list",
+    "isCloud": false,
+    "value": [
+      "{\"amount\":1,\"type\":\"AdvertisingPanels\"}",
+      "{\"amount\":1,\"type\":\"Body\"}",
+      "{\"amount\":1,\"type\":\"CargoBay\"}",
+      "{\"amount\":2,\"type\":\"Fins\"}",
+      "{\"amount\":2,\"type\":\"FuelTank\"}",
+      "{\"amount\":1,\"type\":\"NoseCone\"}",
+      "{\"amount\":3,\"type\":\"Thrusters\"}",
+      "{\"amount\":1,\"type\":\"Windows\"}"
+    ],
+    "_monitorUpToDate": false
   },
   "X$b7KhkWBuw^}6#}%6`n": {
     "id": "X$b7KhkWBuw^}6#}%6`n",

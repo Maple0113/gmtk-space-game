@@ -1,23 +1,5 @@
 {
   "blocks": {
-    "looks_gotofrontback1": {
-      "id": "looks_gotofrontback1",
-      "opcode": "looks_gotofrontback",
-      "inputs": {},
-      "fields": {
-        "FRONT_BACK": {
-          "name": "FRONT_BACK",
-          "value": "back",
-          "id": null
-        }
-      },
-      "next": "looks_setsizeto1",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false,
-      "x": 340,
-      "y": 700.1522633744852
-    },
     "event_whenflagclicked1": {
       "id": "event_whenflagclicked1",
       "opcode": "event_whenflagclicked",
@@ -30,20 +12,20 @@
       "x": 339,
       "y": 659
     },
-    "math_number2": {
-      "id": "math_number2",
-      "opcode": "math_number",
+    "looks_gotofrontback1": {
+      "id": "looks_gotofrontback1",
+      "opcode": "looks_gotofrontback",
       "inputs": {},
       "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "500"
+        "FRONT_BACK": {
+          "name": "FRONT_BACK",
+          "value": "back"
         }
       },
-      "next": null,
+      "next": "looks_setsizeto1",
       "topLevel": false,
-      "parent": "|igRxi5;LFK?;e$r0e)`",
-      "shadow": true
+      "parent": "event_whenflagclicked1",
+      "shadow": false
     },
     "looks_setsizeto1": {
       "id": "looks_setsizeto1",
@@ -59,9 +41,7 @@
       "next": null,
       "topLevel": false,
       "parent": "looks_gotofrontback1",
-      "shadow": false,
-      "x": 348.29629629629625,
-      "y": 768.2962962962962
+      "shadow": false
     },
     "math_number1": {
       "id": "math_number1",
