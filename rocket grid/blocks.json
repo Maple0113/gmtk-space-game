@@ -1757,7 +1757,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "en",
+      "comment": "eS",
       "id": "lmsTempVars2_forEachThreadVariable1"
     },
     "data_lengthoflist1": {
@@ -1979,7 +1979,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "eq",
+      "comment": "eV",
       "id": "control_if_else1"
     },
     "operator_equals14": {
@@ -2425,7 +2425,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "hV",
+      "comment": "iS",
       "id": "lmsTempVars2_setThreadVariable1"
     },
     "skyhigh173JSON_json_array_reverse1": {
@@ -3898,7 +3898,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "h}",
+      "comment": "i`",
       "id": "lmsTempVars2_forEachThreadVariable3"
     },
     "skyhigh173JSON_json_length7": {
@@ -4437,7 +4437,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "ik",
+      "comment": "jh",
       "id": "lmsTempVars2_setThreadVariable6"
     },
     "skyhigh173JSON_json_new5": {
@@ -4549,7 +4549,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "in",
+      "comment": "jk",
       "id": "lmsTempVars2_setThreadVariable7"
     },
     "lmsTempVars2_forEachThreadVariable6": {
@@ -5052,7 +5052,7 @@
       "fields": {},
       "shadow": false,
       "topLevel": false,
-      "comment": "iy",
+      "comment": "jv",
       "id": "lmsTempVars2_getThreadVariable3"
     },
     "procedures_return2": {
@@ -6445,7 +6445,7 @@
       "topLevel": true,
       "x": 251,
       "y": -1392,
-      "comment": "i+",
+      "comment": "j(",
       "id": "procedures_definition3"
     },
     "procedures_prototype3": {
@@ -17746,6 +17746,282 @@
       "topLevel": false,
       "parent": "procedures_call25",
       "shadow": true
+    },
+    "event_whenbroadcastreceived4": {
+      "id": "event_whenbroadcastreceived4",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "value": "GAME rocket submit",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "control_if_else10",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": -446.76243886281594,
+      "y": -1851.0346037257825
+    },
+    "control_if_else10": {
+      "id": "control_if_else10",
+      "opcode": "control_if_else",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_delete_this_clone1",
+          "shadow": null
+        },
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "lmsclonesplus_isClone1",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "data_deletealloflist5",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "procedures_call26",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived4",
+      "shadow": false,
+      "x": "-444",
+      "y": "-1621"
+    },
+    "control_delete_this_clone1": {
+      "id": "control_delete_this_clone1",
+      "opcode": "control_delete_this_clone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else10",
+      "shadow": false,
+      "x": "-444",
+      "y": "-1576"
+    },
+    "lmsclonesplus_isClone1": {
+      "id": "lmsclonesplus_isClone1",
+      "opcode": "lmsclonesplus_isClone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else10",
+      "shadow": false,
+      "x": "-444",
+      "y": "-1521"
+    },
+    "data_deletealloflist5": {
+      "id": "data_deletealloflist5",
+      "opcode": "data_deletealloflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "0A][[Y=]Bc/QhAT9X])!",
+          "value": "GridTop",
+          "variableType": "list"
+        }
+      },
+      "next": "data_deletealloflist6",
+      "topLevel": false,
+      "parent": "control_if_else10",
+      "shadow": false,
+      "x": -202.23449315253356,
+      "y": -1432.01504043877
+    },
+    "data_deletealloflist6": {
+      "id": "data_deletealloflist6",
+      "opcode": "data_deletealloflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "Ra$$n.MH7F=ze%M=X)qZ",
+          "value": "GridMiddle",
+          "variableType": "list"
+        }
+      },
+      "next": "data_deletealloflist7",
+      "topLevel": false,
+      "parent": "data_deletealloflist5",
+      "shadow": false,
+      "x": "-291",
+      "y": "-1552"
+    },
+    "data_deletealloflist7": {
+      "id": "data_deletealloflist7",
+      "opcode": "data_deletealloflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "kV@_K9?WKoQT!ow4j}}8",
+          "value": "GridBottom",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_deletealloflist6",
+      "shadow": false,
+      "x": "-291",
+      "y": "-1504"
+    },
+    "procedures_call26": {
+      "id": "procedures_call26",
+      "opcode": "procedures_call",
+      "inputs": {
+        "+RAmS(uuJDU8?V!o3+mH": {
+          "name": "+RAmS(uuJDU8?V!o3+mH",
+          "block": "operator_random2",
+          "shadow": "text327"
+        },
+        "q2%Kl0|274sQ{fF`b8;,": {
+          "name": "q2%Kl0|274sQ{fF`b8;,",
+          "block": "text328",
+          "shadow": "text328"
+        },
+        "+J7QmGF#fzIaV/}akx(1": {
+          "name": "+J7QmGF#fzIaV/}akx(1",
+          "block": "text329",
+          "shadow": "text329"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else10",
+      "shadow": false,
+      "x": "265",
+      "y": "-1689",
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "draw body %s at x: %s y: %s",
+        "argumentids": "[\"+RAmS(uuJDU8?V!o3+mH\",\"q2%Kl0|274sQ{fF`b8;,\",\"+J7QmGF#fzIaV/}akx(1\"]",
+        "warp": "true"
+      }
+    },
+    "operator_random2": {
+      "id": "operator_random2",
+      "opcode": "operator_random",
+      "inputs": {
+        "FROM": {
+          "name": "FROM",
+          "block": "math_number29",
+          "shadow": "math_number29"
+        },
+        "TO": {
+          "name": "TO",
+          "block": "data_lengthoflist4",
+          "shadow": "math_number30"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call26",
+      "shadow": false
+    },
+    "math_number29": {
+      "id": "math_number29",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_random2",
+      "shadow": true
+    },
+    "data_lengthoflist4": {
+      "id": "data_lengthoflist4",
+      "opcode": "data_lengthoflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "mY!n(%JOZe1++Q$MH;WY",
+          "value": "Bodies",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_random2",
+      "shadow": false
+    },
+    "math_number30": {
+      "id": "math_number30",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "8"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_random2",
+      "shadow": true
+    },
+    "text327": {
+      "id": "text327",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "12"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call26",
+      "shadow": true
+    },
+    "text328": {
+      "id": "text328",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call26",
+      "shadow": true
+    },
+    "text329": {
+      "id": "text329",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "-100"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call26",
+      "shadow": true
     }
   },
   "scripts": [
@@ -17759,6 +18035,7 @@
     "procedures_definition5",
     "control_start_as_clone1",
     "event_whenbroadcastreceived2",
-    "event_whenbroadcastreceived3"
+    "event_whenbroadcastreceived3",
+    "event_whenbroadcastreceived4"
   ]
 }

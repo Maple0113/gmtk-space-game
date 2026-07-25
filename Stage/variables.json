@@ -4,7 +4,7 @@
     "name": "PartsFilter",
     "type": "",
     "isCloud": false,
-    "value": "kits"
+    "value": "parts"
   },
   "bV=j0c)Z7B_Di/e/upE(": {
     "id": "bV=j0c)Z7B_Di/e/upE(",
@@ -32,14 +32,14 @@
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[1,0],[0,0]]"
+    "value": "[[0,0,0],[0,1,0],[1,0,0]]"
   },
   "Pt.1X5RCAbK=Tm1JiWs^": {
     "id": "Pt.1X5RCAbK=Tm1JiWs^",
     "name": "Money",
     "type": "",
     "isCloud": false,
-    "value": 1000
+    "value": 1897.4
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -88,8 +88,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0]",
-      "[0,0,0]"
+      "[0,0]",
+      "[0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -110,9 +110,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0,0]",
-      "[0,0,0,0]",
-      "[0,0,0,0]"
+      "[0,0]",
+      "[0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -134,6 +133,14 @@
     "value": [
       "{\"amount\":1,\"type\":\"Generic\"}"
     ],
+    "_monitorUpToDate": false
+  },
+  "`Jp6(c{^ow3|dL:U9g_$": {
+    "id": "`Jp6(c{^ow3|dL:U9g_$",
+    "name": "Rocket",
+    "type": "list",
+    "isCloud": false,
+    "value": [],
     "_monitorUpToDate": false
   },
   "X$b7KhkWBuw^}6#}%6`n": {
@@ -261,20 +268,5 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "GAME rocket submit"
-  },
-  "`Jp6(c{^ow3|dL:U9g_$": {
-    "id": "`Jp6(c{^ow3|dL:U9g_$",
-    "name": "Rocket",
-    "type": "list",
-    "isCloud": false,
-    "value": [],
-    "_monitorUpToDate": false
-  },
-  "f[MDhi4^zy`#d/VtF`8#": {
-    "id": "f[MDhi4^zy`#d/VtF`8#",
-    "name": "InvestorSatisfaction",
-    "type": "",
-    "isCloud": false,
-    "value": 10
   }
 }
