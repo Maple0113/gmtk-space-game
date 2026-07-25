@@ -104,13 +104,13 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "2x Advertising Panels",
+      "1x Advertising Panels",
       "1x Body",
       "1x Cargo Bay",
       "2x Fins",
-      "1x Fuel Tank",
+      "2x Fuel Tank",
       "1x Nose Cone",
-      "3x Thrusters",
+      "1x Thrusters",
       "1x Windows"
     ],
     "_monitorUpToDate": false
@@ -121,13 +121,13 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":2,\"type\":\"AdvertisingPanels\"}",
+      "{\"amount\":1,\"type\":\"AdvertisingPanels\"}",
       "{\"amount\":1,\"type\":\"Body\"}",
       "{\"amount\":1,\"type\":\"CargoBay\"}",
       "{\"amount\":2,\"type\":\"Fins\"}",
-      "{\"amount\":1,\"type\":\"FuelTank\"}",
+      "{\"amount\":2,\"type\":\"FuelTank\"}",
       "{\"amount\":1,\"type\":\"NoseCone\"}",
-      "{\"amount\":3,\"type\":\"Thrusters\"}",
+      "{\"amount\":1,\"type\":\"Thrusters\"}",
       "{\"amount\":1,\"type\":\"Windows\"}"
     ],
     "_monitorUpToDate": false

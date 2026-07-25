@@ -20,8 +20,8 @@
   {
     "name": "base",
     "dataFormat": "svg",
-    "rotationCenterX": 92.60026999999997,
-    "rotationCenterY": 133.23780999999983
+    "rotationCenterX": 92.60027,
+    "rotationCenterY": 133.23780999999994
   },
   {
     "name": "buttons",
@@ -31,27 +31,27 @@
   },
   {
     "name": "kits",
-    "dataFormat": "svg",
-    "rotationCenterX": 80.85286499999998,
-    "rotationCenterY": 86.05590551710709
+    "dataFormat": "png",
+    "rotationCenterX": 149,
+    "rotationCenterY": 173
   },
   {
     "name": "kits selected",
-    "dataFormat": "svg",
-    "rotationCenterX": 80.85286499999998,
-    "rotationCenterY": 86.05590551710709
+    "dataFormat": "png",
+    "rotationCenterX": 149,
+    "rotationCenterY": 173
   },
   {
     "name": "parts",
-    "dataFormat": "svg",
-    "rotationCenterX": -3.62199499999997,
-    "rotationCenterY": 86.05590551710709
+    "dataFormat": "png",
+    "rotationCenterX": -21,
+    "rotationCenterY": 174
   },
   {
     "name": "parts selected",
-    "dataFormat": "svg",
-    "rotationCenterX": -3.62199499999997,
-    "rotationCenterY": 86.05590551710709
+    "dataFormat": "png",
+    "rotationCenterX": -21,
+    "rotationCenterY": 174
   },
   {
     "name": "pages",
@@ -60,15 +60,15 @@
     "rotationCenterY": -92.82017707703841
   },
   {
-    "name": "page next",
-    "dataFormat": "svg",
-    "rotationCenterX": -65.62408126584711,
-    "rotationCenterY": -92.82017052109853
+    "name": "page prev",
+    "dataFormat": "png",
+    "rotationCenterX": 158,
+    "rotationCenterY": -192
   },
   {
-    "name": "page prev",
-    "dataFormat": "svg",
-    "rotationCenterX": 80.43599620245868,
-    "rotationCenterY": -92.82018616467246
+    "name": "page next",
+    "dataFormat": "png",
+    "rotationCenterX": -132,
+    "rotationCenterY": -192
   }
 ]

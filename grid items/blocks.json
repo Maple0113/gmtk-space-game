@@ -1096,6 +1096,188 @@
       "topLevel": false,
       "id": "looks_hide1"
     },
+    "event_whenbroadcastreceived2": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "lmsclonesplus_deleteClonesInSprite2",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 577,
+      "y": 125,
+      "id": "event_whenbroadcastreceived2"
+    },
+    "lmsclonesplus_deleteClonesInSprite2": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "looks_hide2",
+      "parent": "event_whenbroadcastreceived2",
+      "inputs": {
+        "INPUT": {
+          "name": "INPUT",
+          "block": "lmsclonesplus_menu_spriteMenu2",
+          "shadow": "lmsclonesplus_menu_spriteMenu2"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_deleteClonesInSprite2"
+    },
+    "lmsclonesplus_menu_spriteMenu2": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite2",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": {
+          "name": "spriteMenu",
+          "value": "grid item",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "lmsclonesplus_menu_spriteMenu2"
+    },
+    "looks_hide2": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite2",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide2"
+    },
+    "event_whenbroadcastreceived3": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "control_if3",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "INVENTORY dragging item",
+          "id": "-4?$B(lcX?sZrOT8swK!",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 914,
+      "y": 125,
+      "id": "event_whenbroadcastreceived3"
+    },
+    "control_if3": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "event_whenbroadcastreceived3",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not3",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_setvariableto5",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_if3"
+    },
+    "operator_not3": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "control_if3",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "lmsclonesplus_isClone2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_not3"
+    },
+    "lmsclonesplus_isClone2": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "operator_not3",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_isClone2"
+    },
+    "data_setvariableto5": {
+      "opcode": "data_setvariableto",
+      "next": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "parent": "control_if3",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "lmsMoreEvents_receivedData4",
+          "shadow": null
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto5"
+    },
+    "lmsMoreEvents_receivedData4": {
+      "opcode": "lmsMoreEvents_receivedData",
+      "next": null,
+      "parent": "data_setvariableto5",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsMoreEvents_receivedData4"
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar1": {
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "next": null,
+      "parent": "data_setvariableto5",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text16",
+          "shadow": "text16"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "0Cv@|H_/Yp!mKHn]?M:~",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar1"
+    },
     "text7": {
       "id": "text7",
       "next": null,
@@ -1782,200 +1964,20 @@
       },
       "topLevel": false
     },
-    "event_whenbroadcastreceived2": {
-      "id": "event_whenbroadcastreceived2",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
-          "value": "GAME begin",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "lmsclonesplus_deleteClonesInSprite2",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 577,
-      "y": 125
-    },
-    "lmsclonesplus_deleteClonesInSprite2": {
-      "id": "lmsclonesplus_deleteClonesInSprite2",
-      "opcode": "lmsclonesplus_deleteClonesInSprite",
-      "inputs": {
-        "INPUT": {
-          "name": "INPUT",
-          "block": "lmsclonesplus_menu_spriteMenu2",
-          "shadow": "lmsclonesplus_menu_spriteMenu2"
-        }
-      },
-      "fields": {},
-      "next": "looks_hide2",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived2",
-      "shadow": false
-    },
-    "lmsclonesplus_menu_spriteMenu2": {
-      "id": "lmsclonesplus_menu_spriteMenu2",
-      "opcode": "lmsclonesplus_menu_spriteMenu",
-      "inputs": {},
-      "fields": {
-        "spriteMenu": {
-          "name": "spriteMenu",
-          "value": "grid item"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite2",
-      "shadow": true
-    },
-    "looks_hide2": {
-      "id": "looks_hide2",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite2",
-      "shadow": false
-    },
-    "event_whenbroadcastreceived3": {
-      "id": "event_whenbroadcastreceived3",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "-4?$B(lcX?sZrOT8swK!",
-          "value": "INVENTORY dragging item",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "control_if3",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 914,
-      "y": 125
-    },
-    "control_if3": {
-      "id": "control_if3",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_not3",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "data_setvariableto5",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived3",
-      "shadow": false
-    },
-    "operator_not3": {
-      "id": "operator_not3",
-      "opcode": "operator_not",
-      "inputs": {
-        "OPERAND": {
-          "name": "OPERAND",
-          "block": "lmsclonesplus_isClone2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if3",
-      "shadow": false
-    },
-    "lmsclonesplus_isClone2": {
-      "id": "lmsclonesplus_isClone2",
-      "opcode": "lmsclonesplus_isClone",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_not3",
-      "shadow": false
-    },
-    "data_setvariableto5": {
-      "id": "data_setvariableto5",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "lmsMoreEvents_receivedData4",
-          "shadow": null
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
-          "value": "CurrentItem",
-          "variableType": ""
-        }
-      },
-      "next": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "topLevel": false,
-      "parent": "control_if3",
-      "shadow": false
-    },
-    "lmsMoreEvents_receivedData4": {
-      "id": "lmsMoreEvents_receivedData4",
-      "opcode": "lmsMoreEvents_receivedData",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto5",
-      "shadow": false
-    },
-    "lmsclonesplus_createCloneOfMyselfWithVar1": {
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "text16",
-          "shadow": "text16"
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "0Cv@|H_/Yp!mKHn]?M:~"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto5",
-      "shadow": false
-    },
     "text16": {
       "id": "text16",
-      "opcode": "text",
+      "next": null,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "true"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "shadow": true
+      "topLevel": false
     }
   },
   "scripts": [

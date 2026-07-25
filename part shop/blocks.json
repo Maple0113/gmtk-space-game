@@ -1,52 +1,74 @@
 {
   "blocks": {
     "event_whenbroadcastreceived1": {
+      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
-      "next": "control_if1",
-      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY empty",
           "id": "Q;JHx*HE()n/w|78wtw.",
+          "value": "INVENTORY empty",
           "variableType": "broadcast_msg"
         }
       },
-      "shadow": false,
+      "next": "control_if1",
       "topLevel": true,
-      "x": 229,
-      "y": 450,
-      "id": "event_whenbroadcastreceived1"
-    },
-    "lmsclonesplus_whenCloneStartsWithVar1": {
-      "opcode": "lmsclonesplus_whenCloneStartsWithVar",
-      "next": "control_if2",
       "parent": null,
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "text6",
-          "shadow": "text6"
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y",
-          "id": null
-        }
-      },
       "shadow": false,
-      "topLevel": true,
-      "x": 240,
-      "y": 723,
-      "id": "lmsclonesplus_whenCloneStartsWithVar1"
+      "x": 229,
+      "y": 450
+    },
+    "control_if1": {
+      "id": "control_if1",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "lmsclonesplus_createCloneOfMyselfWithVar1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
+      "shadow": false
+    },
+    "operator_not1": {
+      "id": "operator_not1",
+      "opcode": "operator_not",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "lmsclonesplus_isClone1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "lmsclonesplus_isClone1": {
+      "id": "lmsclonesplus_isClone1",
+      "opcode": "lmsclonesplus_isClone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_not1",
+      "shadow": false
     },
     "lmsclonesplus_createCloneOfMyselfWithVar1": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar1",
       "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "next": null,
-      "parent": "control_if1",
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
@@ -57,60 +79,70 @@
       "fields": {
         "INPUTA": {
           "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y",
-          "id": null
+          "value": "]]0kojU6yhlk/-W+|:,y"
         }
       },
-      "shadow": false,
-      "topLevel": false,
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar1"
-    },
-    "operator_equals1": {
-      "opcode": "operator_equals",
       "next": null,
-      "parent": "control_if3",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable1",
-          "shadow": "text2"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text3",
-          "shadow": "text3"
-        }
-      },
-      "fields": {},
-      "shadow": false,
       "topLevel": false,
-      "id": "operator_equals1"
+      "parent": "control_if1",
+      "shadow": false
     },
-    "control_if3": {
-      "opcode": "control_if",
-      "next": "looks_gotofrontback1",
-      "parent": "control_if2",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_equals1",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "looks_switchcostumeto1",
-          "shadow": null
+    "text1": {
+      "id": "text1",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "6"
         }
       },
-      "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "control_if3"
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "shadow": true
+    },
+    "lmsclonesplus_whenCloneStartsWithVar1": {
+      "id": "lmsclonesplus_whenCloneStartsWithVar1",
+      "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "text6",
+          "shadow": "text6"
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "]]0kojU6yhlk/-W+|:,y"
+        }
+      },
+      "next": "control_if2",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 240,
+      "y": 723
+    },
+    "text6": {
+      "id": "text6",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "6"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_whenCloneStartsWithVar1",
+      "shadow": true
     },
     "control_if2": {
+      "id": "control_if2",
       "opcode": "control_if",
-      "next": "control_if3",
-      "parent": "lmsclonesplus_whenCloneStartsWithVar1",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -124,14 +156,14 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": "control_if3",
       "topLevel": false,
-      "id": "control_if2"
+      "parent": "lmsclonesplus_whenCloneStartsWithVar1",
+      "shadow": false
     },
     "operator_equals2": {
+      "id": "operator_equals2",
       "opcode": "operator_equals",
-      "next": null,
-      "parent": "control_if2",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -145,24 +177,61 @@
         }
       },
       "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "operator_equals2"
-    },
-    "looks_show1": {
-      "opcode": "looks_show",
       "next": null,
-      "parent": "looks_gotofrontback1",
-      "inputs": {},
-      "fields": {},
-      "shadow": false,
       "topLevel": false,
-      "id": "looks_show1"
+      "parent": "control_if2",
+      "shadow": false
+    },
+    "data_variable2": {
+      "id": "data_variable2",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": false
+    },
+    "text4": {
+      "id": "text4",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": true
+    },
+    "text5": {
+      "id": "text5",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "kits"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": true
     },
     "looks_switchcostumeto2": {
+      "id": "looks_switchcostumeto2",
       "opcode": "looks_switchcostumeto",
-      "next": null,
-      "parent": "control_if2",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
@@ -171,30 +240,118 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "looks_switchcostumeto2"
+      "parent": "control_if2",
+      "shadow": false
     },
     "looks_costume2": {
+      "id": "looks_costume2",
       "opcode": "looks_costume",
-      "next": null,
-      "parent": "looks_switchcostumeto2",
       "inputs": {},
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "no kits",
-          "id": null
+          "value": "no kits"
         }
       },
-      "shadow": true,
+      "next": null,
       "topLevel": false,
-      "id": "looks_costume2"
+      "parent": "looks_switchcostumeto2",
+      "shadow": true
+    },
+    "control_if3": {
+      "id": "control_if3",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_switchcostumeto1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_gotofrontback1",
+      "topLevel": false,
+      "parent": "control_if2",
+      "shadow": false
+    },
+    "operator_equals1": {
+      "id": "operator_equals1",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable1",
+          "shadow": "text2"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text3",
+          "shadow": "text3"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if3",
+      "shadow": false
+    },
+    "data_variable1": {
+      "id": "data_variable1",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": false
+    },
+    "text2": {
+      "id": "text2",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": true
+    },
+    "text3": {
+      "id": "text3",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "parts"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": true
     },
     "looks_switchcostumeto1": {
+      "id": "looks_switchcostumeto1",
       "opcode": "looks_switchcostumeto",
-      "next": null,
-      "parent": "control_if3",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
@@ -203,105 +360,66 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "looks_switchcostumeto1"
+      "parent": "control_if3",
+      "shadow": false
     },
     "looks_costume1": {
+      "id": "looks_costume1",
       "opcode": "looks_costume",
-      "next": null,
-      "parent": "looks_switchcostumeto1",
       "inputs": {},
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "no parts",
-          "id": null
+          "value": "no parts"
         }
       },
-      "shadow": true,
+      "next": null,
       "topLevel": false,
-      "id": "looks_costume1"
+      "parent": "looks_switchcostumeto1",
+      "shadow": true
     },
     "looks_gotofrontback1": {
+      "id": "looks_gotofrontback1",
       "opcode": "looks_gotofrontback",
-      "next": "looks_show1",
-      "parent": "control_if3",
       "inputs": {},
       "fields": {
         "FRONT_BACK": {
           "name": "FRONT_BACK",
-          "value": "front",
-          "id": null
+          "value": "front"
         }
       },
-      "shadow": false,
+      "next": "looks_show1",
       "topLevel": false,
-      "id": "looks_gotofrontback1"
+      "parent": "control_if3",
+      "shadow": false
     },
-    "control_if1": {
-      "opcode": "control_if",
-      "next": null,
-      "parent": "event_whenbroadcastreceived1",
-      "inputs": {
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "lmsclonesplus_createCloneOfMyselfWithVar1",
-          "shadow": null
-        },
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_not1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "control_if1"
-    },
-    "operator_not1": {
-      "opcode": "operator_not",
-      "next": null,
-      "parent": "control_if1",
-      "inputs": {
-        "OPERAND": {
-          "name": "OPERAND",
-          "block": "lmsclonesplus_isClone1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "operator_not1"
-    },
-    "lmsclonesplus_isClone1": {
-      "opcode": "lmsclonesplus_isClone",
-      "next": null,
-      "parent": "operator_not1",
+    "looks_show1": {
+      "id": "looks_show1",
+      "opcode": "looks_show",
       "inputs": {},
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "lmsclonesplus_isClone1"
+      "parent": "looks_gotofrontback1",
+      "shadow": false
     },
     "event_whenthisspriteclicked1": {
+      "id": "event_whenthisspriteclicked1",
       "opcode": "event_whenthisspriteclicked",
-      "next": "control_if_else1",
-      "parent": null,
       "inputs": {},
       "fields": {},
-      "shadow": false,
+      "next": "control_if_else1",
       "topLevel": true,
+      "parent": null,
+      "shadow": false,
       "x": 818,
-      "y": -184,
-      "id": "event_whenthisspriteclicked1"
+      "y": -184
     },
     "control_if_else1": {
+      "id": "control_if_else1",
       "opcode": "control_if_else",
-      "next": null,
-      "parent": "event_whenthisspriteclicked1",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -320,14 +438,14 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "control_if_else1"
+      "parent": "event_whenthisspriteclicked1",
+      "shadow": false
     },
     "operator_equals3": {
+      "id": "operator_equals3",
       "opcode": "operator_equals",
-      "next": null,
-      "parent": "control_if_else1",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -341,14 +459,46 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "operator_equals3"
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "data_variable3": {
+      "id": "data_variable3",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals3",
+      "shadow": true
+    },
+    "text7": {
+      "id": "text7",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals3",
+      "shadow": true
     },
     "data_setvariableto1": {
+      "id": "data_setvariableto1",
       "opcode": "data_setvariableto",
-      "next": "data_setvariableto2",
-      "parent": "control_if_else1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -359,19 +509,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "PartsFilter",
           "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "data_setvariableto2",
       "topLevel": false,
-      "id": "data_setvariableto1"
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "text10": {
+      "id": "text10",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "kits"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto1",
+      "shadow": true
     },
     "data_setvariableto2": {
+      "id": "data_setvariableto2",
       "opcode": "data_setvariableto",
-      "next": "lmsclonesplus_deleteCloneWithVar1",
-      "parent": "data_setvariableto1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -382,19 +547,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "lmsclonesplus_deleteCloneWithVar1",
       "topLevel": false,
-      "id": "data_setvariableto2"
+      "parent": "data_setvariableto1",
+      "shadow": false
+    },
+    "text9": {
+      "id": "text9",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto2",
+      "shadow": true
     },
     "lmsclonesplus_deleteCloneWithVar1": {
+      "id": "lmsclonesplus_deleteCloneWithVar1",
       "opcode": "lmsclonesplus_deleteCloneWithVar",
-      "next": "event_broadcast1",
-      "parent": "data_setvariableto2",
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
@@ -405,18 +585,32 @@
       "fields": {
         "INPUTA": {
           "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y",
-          "id": null
+          "value": "]]0kojU6yhlk/-W+|:,y"
         }
       },
-      "shadow": false,
+      "next": "event_broadcast1",
       "topLevel": false,
-      "id": "lmsclonesplus_deleteCloneWithVar1"
+      "parent": "data_setvariableto2",
+      "shadow": false
+    },
+    "text8": {
+      "id": "text8",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "6"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_deleteCloneWithVar1",
+      "shadow": true
     },
     "event_broadcast1": {
+      "id": "event_broadcast1",
       "opcode": "event_broadcast",
-      "next": null,
-      "parent": "lmsclonesplus_deleteCloneWithVar1",
       "inputs": {
         "BROADCAST_INPUT": {
           "name": "BROADCAST_INPUT",
@@ -425,14 +619,31 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "event_broadcast1"
+      "parent": "lmsclonesplus_deleteCloneWithVar1",
+      "shadow": false
+    },
+    "event_broadcast_menu1": {
+      "id": "event_broadcast_menu1",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page refresh",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast1",
+      "shadow": true
     },
     "control_if_else2": {
+      "id": "control_if_else2",
       "opcode": "control_if_else",
-      "next": null,
-      "parent": "control_if_else1",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -451,14 +662,14 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "control_if_else2"
+      "parent": "control_if_else1",
+      "shadow": false
     },
     "operator_equals4": {
+      "id": "operator_equals4",
       "opcode": "operator_equals",
-      "next": null,
-      "parent": "control_if_else2",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -472,14 +683,46 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "operator_equals4"
+      "parent": "control_if_else2",
+      "shadow": false
+    },
+    "data_variable4": {
+      "id": "data_variable4",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals4",
+      "shadow": true
+    },
+    "text11": {
+      "id": "text11",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals4",
+      "shadow": true
     },
     "data_setvariableto3": {
+      "id": "data_setvariableto3",
       "opcode": "data_setvariableto",
-      "next": "data_setvariableto4",
-      "parent": "control_if_else2",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -490,19 +733,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "PartsFilter",
           "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "data_setvariableto4",
       "topLevel": false,
-      "id": "data_setvariableto3"
+      "parent": "control_if_else2",
+      "shadow": false
+    },
+    "text14": {
+      "id": "text14",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "parts"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto3",
+      "shadow": true
     },
     "data_setvariableto4": {
+      "id": "data_setvariableto4",
       "opcode": "data_setvariableto",
-      "next": "lmsclonesplus_deleteCloneWithVar2",
-      "parent": "data_setvariableto3",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -513,19 +771,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "lmsclonesplus_deleteCloneWithVar2",
       "topLevel": false,
-      "id": "data_setvariableto4"
+      "parent": "data_setvariableto3",
+      "shadow": false
+    },
+    "text13": {
+      "id": "text13",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto4",
+      "shadow": true
     },
     "lmsclonesplus_deleteCloneWithVar2": {
+      "id": "lmsclonesplus_deleteCloneWithVar2",
       "opcode": "lmsclonesplus_deleteCloneWithVar",
-      "next": "event_broadcast2",
-      "parent": "data_setvariableto4",
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
@@ -536,18 +809,32 @@
       "fields": {
         "INPUTA": {
           "name": "INPUTA",
-          "value": "]]0kojU6yhlk/-W+|:,y",
-          "id": null
+          "value": "]]0kojU6yhlk/-W+|:,y"
         }
       },
-      "shadow": false,
+      "next": "event_broadcast2",
       "topLevel": false,
-      "id": "lmsclonesplus_deleteCloneWithVar2"
+      "parent": "data_setvariableto4",
+      "shadow": false
+    },
+    "text12": {
+      "id": "text12",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "6"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_deleteCloneWithVar2",
+      "shadow": true
     },
     "event_broadcast2": {
+      "id": "event_broadcast2",
       "opcode": "event_broadcast",
-      "next": null,
-      "parent": "lmsclonesplus_deleteCloneWithVar2",
       "inputs": {
         "BROADCAST_INPUT": {
           "name": "BROADCAST_INPUT",
@@ -556,14 +843,31 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "event_broadcast2"
+      "parent": "lmsclonesplus_deleteCloneWithVar2",
+      "shadow": false
+    },
+    "event_broadcast_menu2": {
+      "id": "event_broadcast_menu2",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page refresh",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast2",
+      "shadow": true
     },
     "control_if_else3": {
+      "id": "control_if_else3",
       "opcode": "control_if_else",
-      "next": null,
-      "parent": "control_if_else2",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -582,14 +886,14 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "control_if_else3"
+      "parent": "control_if_else2",
+      "shadow": false
     },
     "operator_equals5": {
+      "id": "operator_equals5",
       "opcode": "operator_equals",
-      "next": null,
-      "parent": "control_if_else3",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -603,14 +907,46 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "operator_equals5"
+      "parent": "control_if_else3",
+      "shadow": false
+    },
+    "data_variable5": {
+      "id": "data_variable5",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals5",
+      "shadow": true
+    },
+    "text15": {
+      "id": "text15",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals5",
+      "shadow": true
     },
     "data_changevariableby1": {
+      "id": "data_changevariableby1",
       "opcode": "data_changevariableby",
-      "next": "control_if4",
-      "parent": "control_if_else3",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -621,19 +957,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "control_if4",
       "topLevel": false,
-      "id": "data_changevariableby1"
+      "parent": "control_if_else3",
+      "shadow": false
+    },
+    "math_number1": {
+      "id": "math_number1",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_changevariableby1",
+      "shadow": true
     },
     "control_if4": {
+      "id": "control_if4",
       "opcode": "control_if",
-      "next": "event_broadcast3",
-      "parent": "data_changevariableby1",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -647,14 +998,14 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": "event_broadcast3",
       "topLevel": false,
-      "id": "control_if4"
+      "parent": "data_changevariableby1",
+      "shadow": false
     },
     "operator_gt1": {
+      "id": "operator_gt1",
       "opcode": "operator_gt",
-      "next": null,
-      "parent": "control_if4",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -668,14 +1019,48 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "operator_gt1"
+      "parent": "control_if4",
+      "shadow": false
+    },
+    "data_variable6": {
+      "id": "data_variable6",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": true
+    },
+    "data_variable7": {
+      "id": "data_variable7",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": true
     },
     "data_setvariableto5": {
+      "id": "data_setvariableto5",
       "opcode": "data_setvariableto",
-      "next": null,
-      "parent": "control_if4",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -686,19 +1071,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "data_setvariableto5"
+      "parent": "control_if4",
+      "shadow": false
+    },
+    "text16": {
+      "id": "text16",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto5",
+      "shadow": true
     },
     "event_broadcast3": {
+      "id": "event_broadcast3",
       "opcode": "event_broadcast",
-      "next": null,
-      "parent": "control_if4",
       "inputs": {
         "BROADCAST_INPUT": {
           "name": "BROADCAST_INPUT",
@@ -707,14 +1107,31 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "event_broadcast3"
+      "parent": "control_if4",
+      "shadow": false
+    },
+    "event_broadcast_menu3": {
+      "id": "event_broadcast_menu3",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page refresh",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast3",
+      "shadow": true
     },
     "control_if5": {
+      "id": "control_if5",
       "opcode": "control_if",
-      "next": null,
-      "parent": "control_if_else3",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -728,14 +1145,14 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "control_if5"
+      "parent": "control_if_else3",
+      "shadow": false
     },
     "operator_equals6": {
+      "id": "operator_equals6",
       "opcode": "operator_equals",
-      "next": null,
-      "parent": "control_if5",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -749,14 +1166,46 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "operator_equals6"
+      "parent": "control_if5",
+      "shadow": false
+    },
+    "data_variable8": {
+      "id": "data_variable8",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "]]0kojU6yhlk/-W+|:,y",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals6",
+      "shadow": true
+    },
+    "text17": {
+      "id": "text17",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals6",
+      "shadow": true
     },
     "data_changevariableby2": {
+      "id": "data_changevariableby2",
       "opcode": "data_changevariableby",
-      "next": "control_if6",
-      "parent": "control_if5",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -767,19 +1216,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "control_if6",
       "topLevel": false,
-      "id": "data_changevariableby2"
+      "parent": "control_if5",
+      "shadow": false
+    },
+    "math_number2": {
+      "id": "math_number2",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_changevariableby2",
+      "shadow": true
     },
     "control_if6": {
+      "id": "control_if6",
       "opcode": "control_if",
-      "next": "event_broadcast4",
-      "parent": "data_changevariableby2",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -793,14 +1257,14 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": "event_broadcast4",
       "topLevel": false,
-      "id": "control_if6"
+      "parent": "data_changevariableby2",
+      "shadow": false
     },
     "operator_lt1": {
+      "id": "operator_lt1",
       "opcode": "operator_lt",
-      "next": null,
-      "parent": "control_if6",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -814,14 +1278,46 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "operator_lt1"
+      "parent": "control_if6",
+      "shadow": false
+    },
+    "data_variable9": {
+      "id": "data_variable9",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_lt1",
+      "shadow": true
+    },
+    "text18": {
+      "id": "text18",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_lt1",
+      "shadow": true
     },
     "data_setvariableto6": {
+      "id": "data_setvariableto6",
       "opcode": "data_setvariableto",
-      "next": null,
-      "parent": "control_if6",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -832,19 +1328,36 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "CurrentPage",
           "id": "bV=j0c)Z7B_Di/e/upE(",
+          "value": "CurrentPage",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "data_setvariableto6"
+      "parent": "control_if6",
+      "shadow": false
+    },
+    "data_variable10": {
+      "id": "data_variable10",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "J4$f=e6$W|%Pb~%bF5i@",
+          "value": "MaxPages",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto6",
+      "shadow": true
     },
     "event_broadcast4": {
+      "id": "event_broadcast4",
       "opcode": "event_broadcast",
-      "next": null,
-      "parent": "control_if6",
       "inputs": {
         "BROADCAST_INPUT": {
           "name": "BROADCAST_INPUT",
@@ -853,537 +1366,27 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "event_broadcast4"
-    },
-    "text6": {
-      "id": "text6",
-      "next": null,
-      "parent": "lmsclonesplus_whenCloneStartsWithVar1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "6"
-        }
-      },
-      "topLevel": false
-    },
-    "text1": {
-      "id": "text1",
-      "next": null,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "6"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable1": {
-      "id": "data_variable1",
-      "next": null,
-      "parent": "operator_equals1",
-      "shadow": false,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "PartsFilter",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
-          "variableType": ""
-        }
-      }
-    },
-    "text2": {
-      "id": "text2",
-      "next": null,
-      "parent": "operator_equals1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "topLevel": false
-    },
-    "text3": {
-      "id": "text3",
-      "next": null,
-      "parent": "operator_equals1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "parts"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable2": {
-      "id": "data_variable2",
-      "next": null,
-      "parent": "operator_equals2",
-      "shadow": false,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "PartsFilter",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
-          "variableType": ""
-        }
-      }
-    },
-    "text4": {
-      "id": "text4",
-      "next": null,
-      "parent": "operator_equals2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "topLevel": false
-    },
-    "text5": {
-      "id": "text5",
-      "next": null,
-      "parent": "operator_equals2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "kits"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable3": {
-      "id": "data_variable3",
-      "next": null,
-      "parent": "operator_equals3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "CloneType",
-          "id": "]]0kojU6yhlk/-W+|:,y",
-          "variableType": ""
-        }
-      }
-    },
-    "text7": {
-      "id": "text7",
-      "next": null,
-      "parent": "operator_equals3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "topLevel": false
-    },
-    "text10": {
-      "id": "text10",
-      "next": null,
-      "parent": "data_setvariableto1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "kits"
-        }
-      },
-      "topLevel": false
-    },
-    "text9": {
-      "id": "text9",
-      "next": null,
-      "parent": "data_setvariableto2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "topLevel": false
-    },
-    "text8": {
-      "id": "text8",
-      "next": null,
-      "parent": "lmsclonesplus_deleteCloneWithVar1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "6"
-        }
-      },
-      "topLevel": false
-    },
-    "event_broadcast_menu1": {
-      "id": "event_broadcast_menu1",
-      "next": null,
-      "parent": "event_broadcast1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "event_broadcast_menu",
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page refresh",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable4": {
-      "id": "data_variable4",
-      "next": null,
-      "parent": "operator_equals4",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "CloneType",
-          "id": "]]0kojU6yhlk/-W+|:,y",
-          "variableType": ""
-        }
-      }
-    },
-    "text11": {
-      "id": "text11",
-      "next": null,
-      "parent": "operator_equals4",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2"
-        }
-      },
-      "topLevel": false
-    },
-    "text14": {
-      "id": "text14",
-      "next": null,
-      "parent": "data_setvariableto3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "parts"
-        }
-      },
-      "topLevel": false
-    },
-    "text13": {
-      "id": "text13",
-      "next": null,
-      "parent": "data_setvariableto4",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "topLevel": false
-    },
-    "text12": {
-      "id": "text12",
-      "next": null,
-      "parent": "lmsclonesplus_deleteCloneWithVar2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "6"
-        }
-      },
-      "topLevel": false
-    },
-    "event_broadcast_menu2": {
-      "id": "event_broadcast_menu2",
-      "next": null,
-      "parent": "event_broadcast2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "event_broadcast_menu",
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page refresh",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable5": {
-      "id": "data_variable5",
-      "next": null,
-      "parent": "operator_equals5",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "CloneType",
-          "id": "]]0kojU6yhlk/-W+|:,y",
-          "variableType": ""
-        }
-      }
-    },
-    "text15": {
-      "id": "text15",
-      "next": null,
-      "parent": "operator_equals5",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3"
-        }
-      },
-      "topLevel": false
-    },
-    "math_number1": {
-      "id": "math_number1",
-      "next": null,
-      "parent": "data_changevariableby1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable6": {
-      "id": "data_variable6",
-      "next": null,
-      "parent": "operator_gt1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "CurrentPage",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
-          "variableType": ""
-        }
-      }
-    },
-    "data_variable7": {
-      "id": "data_variable7",
-      "next": null,
-      "parent": "operator_gt1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "MaxPages",
-          "id": "J4$f=e6$W|%Pb~%bF5i@",
-          "variableType": ""
-        }
-      }
-    },
-    "text16": {
-      "id": "text16",
-      "next": null,
-      "parent": "data_setvariableto5",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "topLevel": false
-    },
-    "event_broadcast_menu3": {
-      "id": "event_broadcast_menu3",
-      "next": null,
-      "parent": "event_broadcast3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "event_broadcast_menu",
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page refresh",
-          "id": ")1W_C~aD`ARD+yfD~n2n",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable8": {
-      "id": "data_variable8",
-      "next": null,
-      "parent": "operator_equals6",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "CloneType",
-          "id": "]]0kojU6yhlk/-W+|:,y",
-          "variableType": ""
-        }
-      }
-    },
-    "text17": {
-      "id": "text17",
-      "next": null,
-      "parent": "operator_equals6",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4"
-        }
-      },
-      "topLevel": false
-    },
-    "math_number2": {
-      "id": "math_number2",
-      "next": null,
-      "parent": "data_changevariableby2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "-1"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable9": {
-      "id": "data_variable9",
-      "next": null,
-      "parent": "operator_lt1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "CurrentPage",
-          "id": "bV=j0c)Z7B_Di/e/upE(",
-          "variableType": ""
-        }
-      }
-    },
-    "text18": {
-      "id": "text18",
-      "next": null,
-      "parent": "operator_lt1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable10": {
-      "id": "data_variable10",
-      "next": null,
-      "parent": "data_setvariableto6",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "MaxPages",
-          "id": "J4$f=e6$W|%Pb~%bF5i@",
-          "variableType": ""
-        }
-      }
+      "parent": "control_if6",
+      "shadow": false
     },
     "event_broadcast_menu4": {
       "id": "event_broadcast_menu4",
-      "next": null,
-      "parent": "event_broadcast4",
-      "shadow": true,
-      "inputs": {},
       "opcode": "event_broadcast_menu",
+      "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page refresh",
           "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page refresh",
           "variableType": "broadcast_msg"
         }
       },
-      "topLevel": false
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast4",
+      "shadow": true
     },
     "control_start_as_clone1": {
       "id": "control_start_as_clone1",
@@ -2017,7 +2020,7 @@
       "fields": {
         "COLOUR": {
           "name": "COLOUR",
-          "value": "#9966ff"
+          "value": "#000000"
         }
       },
       "next": null,
