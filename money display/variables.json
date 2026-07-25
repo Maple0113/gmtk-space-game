@@ -1,1 +1,16 @@
-{}
+{
+  "a5x6#]MeH,|Mrof4A|+A": {
+    "id": "a5x6#]MeH,|Mrof4A|+A",
+    "name": "MoneyDifference",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "JcCwdCqPkN6E2Daw|a1T": {
+    "id": "JcCwdCqPkN6E2Daw|a1T",
+    "name": "MoneyOnLastFrame",
+    "type": "",
+    "isCloud": false,
+    "value": 1000
+  }
+}

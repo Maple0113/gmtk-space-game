@@ -1728,24 +1728,17 @@
       },
       "topLevel": false
     },
-    "event_whenbroadcastreceived2": {
-      "id": "event_whenbroadcastreceived2",
-      "opcode": "event_whenbroadcastreceived",
+    "event_whenflagclicked1": {
+      "id": "event_whenflagclicked1",
+      "opcode": "event_whenflagclicked",
       "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
-          "value": "GAME begin",
-          "variableType": "broadcast_msg"
-        }
-      },
+      "fields": {},
       "next": "lmsclonesplus_deleteClonesInSprite1",
       "topLevel": true,
       "parent": null,
       "shadow": false,
-      "x": 577,
-      "y": 125
+      "x": 262,
+      "y": 151
     },
     "lmsclonesplus_deleteClonesInSprite1": {
       "id": "lmsclonesplus_deleteClonesInSprite1",
@@ -1760,7 +1753,7 @@
       "fields": {},
       "next": "looks_hide1",
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived2",
+      "parent": "event_whenflagclicked1",
       "shadow": false
     },
     "lmsclonesplus_menu_spriteMenu1": {
@@ -1788,8 +1781,196 @@
       "parent": "lmsclonesplus_deleteClonesInSprite1",
       "shadow": false
     },
+    "event_whenbroadcastreceived2": {
+      "id": "event_whenbroadcastreceived2",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "value": "GAME rocket submit",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "control_if3",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 505,
+      "y": 576
+    },
+    "control_if3": {
+      "id": "control_if3",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "lmsclonesplus_isClone2",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_addtolist1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived2",
+      "shadow": false,
+      "x": 505.9160408240625,
+      "y": 624.4973010512854
+    },
+    "lmsclonesplus_isClone2": {
+      "id": "lmsclonesplus_isClone2",
+      "opcode": "lmsclonesplus_isClone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if3",
+      "shadow": false
+    },
+    "data_addtolist1": {
+      "id": "data_addtolist1",
+      "opcode": "data_addtolist",
+      "inputs": {
+        "ITEM": {
+          "name": "ITEM",
+          "block": "skyhigh173JSON_json_get5",
+          "shadow": "text18"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
+          "value": "Rocket",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if3",
+      "shadow": false
+    },
+    "data_variable15": {
+      "id": "data_variable15",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "[wpz18`o.^R2]}4_GrwE",
+          "value": "CurrentItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get5",
+      "shadow": false,
+      "x": 733.0896762282771,
+      "y": 803.9124247763734
+    },
+    "text18": {
+      "id": "text18",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "CurrentItem"
+        }
+      },
+      "next": null,
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": 569,
+      "y": 680
+    },
     "event_whenbroadcastreceived3": {
       "id": "event_whenbroadcastreceived3",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "value": "GAME begin",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "data_deletealloflist1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 577,
+      "y": 125
+    },
+    "data_deletealloflist1": {
+      "id": "data_deletealloflist1",
+      "opcode": "data_deletealloflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
+          "value": "Rocket",
+          "variableType": "list"
+        }
+      },
+      "next": "lmsclonesplus_deleteClonesInSprite2",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived3",
+      "shadow": false
+    },
+    "lmsclonesplus_deleteClonesInSprite2": {
+      "id": "lmsclonesplus_deleteClonesInSprite2",
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "inputs": {
+        "INPUT": {
+          "name": "INPUT",
+          "block": "lmsclonesplus_menu_spriteMenu2",
+          "shadow": "lmsclonesplus_menu_spriteMenu2"
+        }
+      },
+      "fields": {},
+      "next": "looks_hide2",
+      "topLevel": false,
+      "parent": "data_deletealloflist1",
+      "shadow": false
+    },
+    "lmsclonesplus_menu_spriteMenu2": {
+      "id": "lmsclonesplus_menu_spriteMenu2",
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": {
+          "name": "spriteMenu",
+          "value": "grid item"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_deleteClonesInSprite2",
+      "shadow": true
+    },
+    "looks_hide2": {
+      "id": "looks_hide2",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_deleteClonesInSprite2",
+      "shadow": false
+    },
+    "event_whenbroadcastreceived4": {
+      "id": "event_whenbroadcastreceived4",
       "opcode": "event_whenbroadcastreceived",
       "inputs": {},
       "fields": {
@@ -1800,15 +1981,15 @@
           "variableType": "broadcast_msg"
         }
       },
-      "next": "control_if3",
+      "next": "control_if4",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 914,
       "y": 125
     },
-    "control_if3": {
-      "id": "control_if3",
+    "control_if4": {
+      "id": "control_if4",
       "opcode": "control_if",
       "inputs": {
         "CONDITION": {
@@ -1825,7 +2006,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived3",
+      "parent": "event_whenbroadcastreceived4",
       "shadow": false
     },
     "operator_not3": {
@@ -1834,18 +2015,18 @@
       "inputs": {
         "OPERAND": {
           "name": "OPERAND",
-          "block": "lmsclonesplus_isClone2",
+          "block": "lmsclonesplus_isClone3",
           "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if3",
+      "parent": "control_if4",
       "shadow": false
     },
-    "lmsclonesplus_isClone2": {
-      "id": "lmsclonesplus_isClone2",
+    "lmsclonesplus_isClone3": {
+      "id": "lmsclonesplus_isClone3",
       "opcode": "lmsclonesplus_isClone",
       "inputs": {},
       "fields": {},
@@ -1874,7 +2055,7 @@
       },
       "next": "lmsclonesplus_createCloneOfMyselfWithVar1",
       "topLevel": false,
-      "parent": "control_if3",
+      "parent": "control_if4",
       "shadow": false
     },
     "lmsMoreEvents_receivedData4": {
@@ -1893,8 +2074,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text16",
-          "shadow": "text16"
+          "block": "text19",
+          "shadow": "text19"
         }
       },
       "fields": {
@@ -1908,8 +2089,8 @@
       "parent": "data_setvariableto5",
       "shadow": false
     },
-    "text16": {
-      "id": "text16",
+    "text19": {
+      "id": "text19",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1923,58 +2104,60 @@
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
       "shadow": true
     },
-    "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
-      "opcode": "event_whenflagclicked",
-      "inputs": {},
-      "fields": {},
-      "next": "lmsclonesplus_deleteClonesInSprite2",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 262,
-      "y": 151
-    },
-    "lmsclonesplus_deleteClonesInSprite2": {
-      "id": "lmsclonesplus_deleteClonesInSprite2",
-      "opcode": "lmsclonesplus_deleteClonesInSprite",
+    "skyhigh173JSON_json_get5": {
+      "id": "skyhigh173JSON_json_get5",
+      "opcode": "skyhigh173JSON_json_get",
       "inputs": {
-        "INPUT": {
-          "name": "INPUT",
-          "block": "lmsclonesplus_menu_spriteMenu2",
-          "shadow": "lmsclonesplus_menu_spriteMenu2"
+        "item": {
+          "name": "item",
+          "block": "text16",
+          "shadow": "text16"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_variable15",
+          "shadow": "text17"
         }
       },
       "fields": {},
-      "next": "looks_hide2",
+      "next": null,
       "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false
+      "parent": "data_addtolist1",
+      "shadow": false,
+      "x": 585.6431075182422,
+      "y": 666.7270437395478
     },
-    "lmsclonesplus_menu_spriteMenu2": {
-      "id": "lmsclonesplus_menu_spriteMenu2",
-      "opcode": "lmsclonesplus_menu_spriteMenu",
+    "text16": {
+      "id": "text16",
+      "opcode": "text",
       "inputs": {},
       "fields": {
-        "spriteMenu": {
-          "name": "spriteMenu",
-          "value": "grid item"
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Name"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite2",
+      "parent": "skyhigh173JSON_json_get5",
       "shadow": true
     },
-    "looks_hide2": {
-      "id": "looks_hide2",
-      "opcode": "looks_hide",
+    "text17": {
+      "id": "text17",
+      "opcode": "text",
       "inputs": {},
-      "fields": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "{\"key\":\"value\"}"
+        }
+      },
       "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite2",
-      "shadow": false
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": 705.563954269987,
+      "y": 814.1440048524513
     }
   },
   "scripts": [
@@ -1982,8 +2165,11 @@
     "event_whenthisspriteclicked1",
     "control_start_as_clone1",
     "event_whenbroadcastreceived1",
+    "event_whenflagclicked1",
     "event_whenbroadcastreceived2",
     "event_whenbroadcastreceived3",
-    "event_whenflagclicked1"
+    "event_whenbroadcastreceived4",
+    "text17",
+    "text18"
   ]
 }

@@ -7,7 +7,7 @@
     "width": 181,
     "height": 103,
     "minimized": false,
-    "blockId": "lc"
+    "blockId": "lU"
   },
   "eq": {
     "id": "eq",
@@ -17,26 +17,26 @@
     "width": 200,
     "height": 200,
     "minimized": true,
-    "blockId": "ld"
+    "blockId": "lV"
   },
-  "i~": {
-    "id": "i~",
+  "jJ": {
+    "id": "jJ",
     "text": "binarify pattern",
     "x": -534,
     "y": 1807,
     "width": 156,
     "height": 80,
     "minimized": false,
-    "blockId": "le"
+    "blockId": "lW"
   },
-  "i}": {
-    "id": "i}",
+  "jI": {
+    "id": "jI",
     "text": "binarify grid",
     "x": -684,
     "y": 1969,
     "width": 118,
     "height": 85,
     "minimized": false,
-    "blockId": "lf"
+    "blockId": "lX"
   }
 }

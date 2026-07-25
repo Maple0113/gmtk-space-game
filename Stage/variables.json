@@ -32,7 +32,14 @@
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[0,0,0,0],[1,0,0,0]]"
+    "value": "[[1,0],[0,0]]"
+  },
+  "Pt.1X5RCAbK=Tm1JiWs^": {
+    "id": "Pt.1X5RCAbK=Tm1JiWs^",
+    "name": "Money",
+    "type": "",
+    "isCloud": false,
+    "value": 1000
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -81,8 +88,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0]",
-      "[0,0]"
+      "[0,0,0]",
+      "[0,0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -92,8 +99,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0]",
-      "[0,0,0]"
+      "[0,0]",
+      "[0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -103,6 +110,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
+      "[0,0,0,0]",
       "[0,0,0,0]",
       "[0,0,0,0]"
     ],
@@ -114,14 +122,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "3x Advertising Panels",
-      "1x Body",
-      "1x Cargo Bay",
-      "3x Fins",
-      "2x Fuel Tank",
-      "1x Nose Cone",
-      "2x Thrusters",
-      "3x Windows"
+      "1x Generic"
     ],
     "_monitorUpToDate": false
   },
@@ -131,14 +132,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":3,\"type\":\"AdvertisingPanels\"}",
-      "{\"amount\":1,\"type\":\"Body\"}",
-      "{\"amount\":1,\"type\":\"CargoBay\"}",
-      "{\"amount\":3,\"type\":\"Fins\"}",
-      "{\"amount\":2,\"type\":\"FuelTank\"}",
-      "{\"amount\":1,\"type\":\"NoseCone\"}",
-      "{\"amount\":2,\"type\":\"Thrusters\"}",
-      "{\"amount\":3,\"type\":\"Windows\"}"
+      "{\"amount\":1,\"type\":\"Generic\"}"
     ],
     "_monitorUpToDate": false
   },
@@ -261,11 +255,26 @@
     "isCloud": false,
     "value": "INVENTORY empty"
   },
-  "Pt.1X5RCAbK=Tm1JiWs^": {
-    "id": "Pt.1X5RCAbK=Tm1JiWs^",
-    "name": "Money",
+  "=9Rd9n:vJm=CO$~p|E1n": {
+    "id": "=9Rd9n:vJm=CO$~p|E1n",
+    "name": "GAME rocket submit",
+    "type": "broadcast_msg",
+    "isCloud": false,
+    "value": "GAME rocket submit"
+  },
+  "`Jp6(c{^ow3|dL:U9g_$": {
+    "id": "`Jp6(c{^ow3|dL:U9g_$",
+    "name": "Rocket",
+    "type": "list",
+    "isCloud": false,
+    "value": [],
+    "_monitorUpToDate": false
+  },
+  "f[MDhi4^zy`#d/VtF`8#": {
+    "id": "f[MDhi4^zy`#d/VtF`8#",
+    "name": "InvestorSatisfaction",
     "type": "",
     "isCloud": false,
-    "value": 500
+    "value": 10
   }
 }
