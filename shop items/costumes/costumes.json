@@ -16,5 +16,11 @@
     "dataFormat": "png",
     "rotationCenterX": 63,
     "rotationCenterY": 64
+  },
+  {
+    "name": "generic kit",
+    "dataFormat": "png",
+    "rotationCenterX": 63,
+    "rotationCenterY": 64
   }
 ]

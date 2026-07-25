@@ -49,7 +49,9 @@
     "name": "Parts",
     "type": "list",
     "isCloud": false,
-    "value": [],
+    "value": [
+      "{\"Name\":\"generic\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}"
+    ],
     "_monitorUpToDate": false
   },
   "]l,zbY}0x)-[ceE+6JG:": {
@@ -57,7 +59,11 @@
     "name": "Kits",
     "type": "list",
     "isCloud": false,
-    "value": []
+    "value": [
+      "{\"Name\":\"generic\",\"Amount\":0,\"Unlocked\":true,\"Cost\":\"\",\"Costume\":\"\"}",
+      "{\"Name\":\"generic2\",\"Amount\":0,\"Unlocked\":false,\"Cost\":\"\",\"Costume\":\"generic kit\"}"
+    ],
+    "_monitorUpToDate": false
   },
   "0A][[Y=]Bc/QhAT9X])!": {
     "id": "0A][[Y=]Bc/QhAT9X])!",
@@ -98,13 +104,13 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "3x Advertising Panels",
+      "1x Advertising Panels",
       "1x Body",
       "1x Cargo Bay",
-      "2x Fins",
-      "3x Fuel Tank",
+      "3x Fins",
+      "2x Fuel Tank",
       "1x Nose Cone",
-      "2x Thrusters",
+      "3x Thrusters",
       "2x Windows"
     ],
     "_monitorUpToDate": false
@@ -115,13 +121,13 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":3,\"type\":\"AdvertisingPanels\"}",
+      "{\"amount\":1,\"type\":\"AdvertisingPanels\"}",
       "{\"amount\":1,\"type\":\"Body\"}",
       "{\"amount\":1,\"type\":\"CargoBay\"}",
-      "{\"amount\":2,\"type\":\"Fins\"}",
-      "{\"amount\":3,\"type\":\"FuelTank\"}",
+      "{\"amount\":3,\"type\":\"Fins\"}",
+      "{\"amount\":2,\"type\":\"FuelTank\"}",
       "{\"amount\":1,\"type\":\"NoseCone\"}",
-      "{\"amount\":2,\"type\":\"Thrusters\"}",
+      "{\"amount\":3,\"type\":\"Thrusters\"}",
       "{\"amount\":2,\"type\":\"Windows\"}"
     ],
     "_monitorUpToDate": false

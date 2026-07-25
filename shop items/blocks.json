@@ -18,10 +18,10 @@
       "y": 298,
       "id": "looks_costume1"
     },
-    "looks_costume4": {
+    "looks_costume6": {
       "opcode": "looks_costume",
       "next": null,
-      "parent": "looks_switchcostumeto5",
+      "parent": "looks_switchcostumeto8",
       "inputs": {},
       "fields": {
         "COSTUME": {
@@ -32,31 +32,77 @@
       },
       "shadow": true,
       "topLevel": false,
-      "id": "looks_costume4"
+      "id": "looks_costume6"
     },
     "event_whenbroadcastreceived1": {
+      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
-      "next": "control_if1",
-      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY part refund",
           "id": "M.gA(ATr6?gr=ji,!9R!",
+          "value": "INVENTORY part refund",
           "variableType": "broadcast_msg"
         }
       },
-      "shadow": false,
+      "next": "control_if1",
       "topLevel": true,
-      "x": 613,
-      "y": -683,
-      "id": "event_whenbroadcastreceived1"
+      "parent": null,
+      "shadow": false,
+      "x": 611.0093440324493,
+      "y": -943.7759317491391
+    },
+    "control_if1": {
+      "id": "control_if1",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "procedures_call1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "event_broadcast1",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
+      "shadow": false
+    },
+    "operator_not1": {
+      "id": "operator_not1",
+      "opcode": "operator_not",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "lmsclonesplus_isClone1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "lmsclonesplus_isClone1": {
+      "id": "lmsclonesplus_isClone1",
+      "opcode": "lmsclonesplus_isClone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_not1",
+      "shadow": false
     },
     "procedures_call1": {
+      "id": "procedures_call1",
       "opcode": "procedures_call",
-      "next": null,
-      "parent": "control_if1",
       "inputs": {
         "pEDQU(KNHOr2[X%BE|3Y": {
           "name": "pEDQU(KNHOr2[X%BE|3Y",
@@ -70,21 +116,21 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "change # of part %s by %s",
         "argumentids": "[\"pEDQU(KNHOr2[X%BE|3Y\",\"m!o=?h|_4Ofh(ucFe.P`\"]",
         "warp": "true"
-      },
-      "id": "procedures_call1"
+      }
     },
     "skyhigh173JSON_json_get1": {
+      "id": "skyhigh173JSON_json_get1",
       "opcode": "skyhigh173JSON_json_get",
-      "next": null,
-      "parent": "procedures_call1",
       "inputs": {
         "item": {
           "name": "item",
@@ -98,71 +144,84 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "skyhigh173JSON_json_get1"
+      "parent": "procedures_call1",
+      "shadow": false
+    },
+    "text1": {
+      "id": "text1",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Name"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get1",
+      "shadow": true
     },
     "lmsMoreEvents_receivedData1": {
+      "id": "lmsMoreEvents_receivedData1",
       "opcode": "lmsMoreEvents_receivedData",
+      "inputs": {},
+      "fields": {},
       "next": null,
+      "topLevel": false,
       "parent": "skyhigh173JSON_json_get1",
-      "inputs": {},
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "lmsMoreEvents_receivedData1"
+      "shadow": false
     },
-    "lmsclonesplus_isClone1": {
-      "opcode": "lmsclonesplus_isClone",
-      "next": null,
-      "parent": "operator_not1",
+    "text2": {
+      "id": "text2",
+      "opcode": "text",
       "inputs": {},
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "lmsclonesplus_isClone1"
-    },
-    "control_if1": {
-      "opcode": "control_if",
-      "next": "event_broadcast1",
-      "parent": "event_whenbroadcastreceived1",
-      "inputs": {
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "procedures_call1",
-          "shadow": null
-        },
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_not1",
-          "shadow": null
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "{\"key\":\"value\"}"
         }
       },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "control_if1"
-    },
-    "operator_not1": {
-      "opcode": "operator_not",
       "next": null,
-      "parent": "control_if1",
-      "inputs": {
-        "OPERAND": {
-          "name": "OPERAND",
-          "block": "lmsclonesplus_isClone1",
-          "shadow": null
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get1",
+      "shadow": true
+    },
+    "text3": {
+      "id": "text3",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
         }
       },
-      "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "operator_not1"
+      "parent": "procedures_call1",
+      "shadow": true
+    },
+    "text4": {
+      "id": "text4",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call1",
+      "shadow": true
     },
     "event_broadcast1": {
+      "id": "event_broadcast1",
       "opcode": "event_broadcast",
-      "next": null,
-      "parent": "control_if1",
       "inputs": {
         "BROADCAST_INPUT": {
           "name": "BROADCAST_INPUT",
@@ -171,86 +230,27 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": null,
       "topLevel": false,
-      "id": "event_broadcast1"
-    },
-    "text3": {
-      "id": "text3",
-      "next": null,
-      "parent": "procedures_call1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "topLevel": false
-    },
-    "text4": {
-      "id": "text4",
-      "next": null,
-      "parent": "procedures_call1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "topLevel": false
-    },
-    "text1": {
-      "id": "text1",
-      "next": null,
-      "parent": "skyhigh173JSON_json_get1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "Name"
-        }
-      },
-      "topLevel": false
-    },
-    "text2": {
-      "id": "text2",
-      "next": null,
-      "parent": "skyhigh173JSON_json_get1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "{\"key\":\"value\"}"
-        }
-      },
-      "topLevel": false
+      "parent": "control_if1",
+      "shadow": false
     },
     "event_broadcast_menu1": {
       "id": "event_broadcast_menu1",
-      "next": null,
-      "parent": "event_broadcast1",
-      "shadow": true,
-      "inputs": {},
       "opcode": "event_broadcast_menu",
+      "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "INVENTORY page refresh",
           "id": ")1W_C~aD`ARD+yfD~n2n",
+          "value": "INVENTORY page refresh",
           "variableType": "broadcast_msg"
         }
       },
-      "topLevel": false
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcast1",
+      "shadow": true
     },
     "procedures_definition1": {
       "id": "procedures_definition1",
@@ -1296,8 +1296,8 @@
       "topLevel": true,
       "parent": null,
       "shadow": false,
-      "x": 630.1759296520966,
-      "y": -135.61111252611263
+      "x": 630,
+      "y": -136
     },
     "data_setvariableto1": {
       "id": "data_setvariableto1",
@@ -1979,8 +1979,8 @@
       "topLevel": true,
       "parent": null,
       "shadow": false,
-      "x": -381.5740741684075,
-      "y": -751.0123461192351
+      "x": -382,
+      "y": -751
     },
     "procedures_prototype3": {
       "id": "procedures_prototype3",
@@ -2058,8 +2058,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text39",
-          "shadow": "text39"
+          "block": "text31",
+          "shadow": "text31"
         }
       },
       "fields": {
@@ -2075,8 +2075,8 @@
       "parent": "motion_gotoxy1",
       "shadow": false
     },
-    "text39": {
-      "id": "text39",
+    "text31": {
+      "id": "text31",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2096,8 +2096,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text38",
-          "shadow": "text38"
+          "block": "text30",
+          "shadow": "text30"
         }
       },
       "fields": {
@@ -2113,8 +2113,8 @@
       "parent": "data_setvariableto2",
       "shadow": false
     },
-    "text38": {
-      "id": "text38",
+    "text30": {
+      "id": "text30",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2183,8 +2183,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "data_variable10",
-          "shadow": "data_variable10"
+          "block": "data_variable8",
+          "shadow": "data_variable8"
         }
       },
       "fields": {},
@@ -2199,8 +2199,8 @@
       "inputs": {
         "NUM1": {
           "name": "NUM1",
-          "block": "data_variable9",
-          "shadow": "data_variable9"
+          "block": "data_variable7",
+          "shadow": "data_variable7"
         },
         "NUM2": {
           "name": "NUM2",
@@ -2214,8 +2214,8 @@
       "parent": "operator_multiply1",
       "shadow": false
     },
-    "data_variable9": {
-      "id": "data_variable9",
+    "data_variable7": {
+      "id": "data_variable7",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -2246,8 +2246,8 @@
       "parent": "operator_subtract1",
       "shadow": true
     },
-    "data_variable10": {
-      "id": "data_variable10",
+    "data_variable8": {
+      "id": "data_variable8",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -2284,8 +2284,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text37",
-          "shadow": "text37"
+          "block": "text29",
+          "shadow": "text29"
         }
       },
       "fields": {
@@ -2301,8 +2301,8 @@
       "parent": "data_setvariableto4",
       "shadow": false
     },
-    "text37": {
-      "id": "text37",
+    "text29": {
+      "id": "text29",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2322,8 +2322,8 @@
       "inputs": {
         "TIMES": {
           "name": "TIMES",
-          "block": "data_variable8",
-          "shadow": "data_variable8"
+          "block": "data_variable6",
+          "shadow": "data_variable6"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
@@ -2332,13 +2332,13 @@
         }
       },
       "fields": {},
-      "next": "control_if5",
+      "next": null,
       "topLevel": false,
       "parent": "data_setvariableto5",
       "shadow": false
     },
-    "data_variable8": {
-      "id": "data_variable8",
+    "data_variable6": {
+      "id": "data_variable6",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -2360,8 +2360,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text36",
-          "shadow": "text36"
+          "block": "text28",
+          "shadow": "text28"
         }
       },
       "fields": {
@@ -2375,8 +2375,8 @@
       "parent": "control_repeat1",
       "shadow": false
     },
-    "text36": {
-      "id": "text36",
+    "text28": {
+      "id": "text28",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2396,8 +2396,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text35",
-          "shadow": "text35"
+          "block": "text27",
+          "shadow": "text27"
         }
       },
       "fields": {
@@ -2411,8 +2411,8 @@
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
       "shadow": false
     },
-    "text35": {
-      "id": "text35",
+    "text27": {
+      "id": "text27",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2437,7 +2437,7 @@
         }
       },
       "fields": {},
-      "next": "control_if7",
+      "next": "control_if5",
       "topLevel": false,
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
       "shadow": false
@@ -2457,8 +2457,8 @@
       "parent": "motion_changexby1",
       "shadow": true
     },
-    "control_if7": {
-      "id": "control_if7",
+    "control_if5": {
+      "id": "control_if5",
       "opcode": "control_if",
       "inputs": {
         "CONDITION": {
@@ -2489,14 +2489,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text34",
-          "shadow": "text34"
+          "block": "text26",
+          "shadow": "text26"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if7",
+      "parent": "control_if5",
       "shadow": false
     },
     "motion_xposition1": {
@@ -2509,8 +2509,8 @@
       "parent": "operator_gt2",
       "shadow": false
     },
-    "text34": {
-      "id": "text34",
+    "text26": {
+      "id": "text26",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2537,7 +2537,7 @@
       "fields": {},
       "next": "motion_changeyby1",
       "topLevel": false,
-      "parent": "control_if7",
+      "parent": "control_if5",
       "shadow": false
     },
     "math_number5": {
@@ -2606,7 +2606,7 @@
       },
       "next": "data_changevariableby2",
       "topLevel": false,
-      "parent": "control_if7",
+      "parent": "control_if5",
       "shadow": false
     },
     "math_number3": {
@@ -2674,55 +2674,57 @@
       "x": -1163,
       "y": -14
     },
-    "control_if_else2": {
-      "id": "control_if_else2",
+    "control_if_else3": {
+      "id": "control_if_else3",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals8",
+          "block": "operator_equals4",
           "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else3",
+          "block": "control_if_else4",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "control_if_else5",
+          "block": "control_if_else6",
           "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_start_as_clone1",
-      "shadow": false
-    },
-    "operator_equals8": {
-      "id": "operator_equals8",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable11",
-          "shadow": "data_variable11"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text40",
-          "shadow": "text40"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
       "parent": "control_if_else2",
+      "shadow": false,
+      "x": -1162.9999999999998,
+      "y": 34
+    },
+    "operator_equals4": {
+      "id": "operator_equals4",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable9",
+          "shadow": "data_variable9"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text32",
+          "shadow": "text32"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else3",
       "shadow": false
     },
-    "data_variable11": {
-      "id": "data_variable11",
+    "data_variable9": {
+      "id": "data_variable9",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -2735,11 +2737,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals8",
+      "parent": "operator_equals4",
       "shadow": true
     },
-    "text40": {
-      "id": "text40",
+    "text32": {
+      "id": "text32",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2750,16 +2752,16 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals8",
+      "parent": "operator_equals4",
       "shadow": true
     },
-    "control_if_else3": {
-      "id": "control_if_else3",
+    "control_if_else4": {
+      "id": "control_if_else4",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals9",
+          "block": "operator_equals5",
           "shadow": null
         },
         "SUBSTACK": {
@@ -2776,11 +2778,11 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else2",
+      "parent": "control_if_else3",
       "shadow": false
     },
-    "operator_equals9": {
-      "id": "operator_equals9",
+    "operator_equals5": {
+      "id": "operator_equals5",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
@@ -2790,14 +2792,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text41",
-          "shadow": "text41"
+          "block": "text33",
+          "shadow": "text33"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else3",
+      "parent": "control_if_else4",
       "shadow": false
     },
     "data_itemoflist7": {
@@ -2806,8 +2808,8 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable12",
-          "shadow": "data_variable12"
+          "block": "data_variable10",
+          "shadow": "data_variable10"
         }
       },
       "fields": {
@@ -2820,11 +2822,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals9",
+      "parent": "operator_equals5",
       "shadow": false
     },
-    "data_variable12": {
-      "id": "data_variable12",
+    "data_variable10": {
+      "id": "data_variable10",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -2840,8 +2842,8 @@
       "parent": "data_itemoflist7",
       "shadow": true
     },
-    "text41": {
-      "id": "text41",
+    "text33": {
+      "id": "text33",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2852,7 +2854,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals9",
+      "parent": "operator_equals5",
       "shadow": true
     },
     "looks_hide2": {
@@ -2862,7 +2864,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else3",
+      "parent": "control_if_else4",
       "shadow": false
     },
     "looks_switchcostumeto1": {
@@ -2876,9 +2878,9 @@
         }
       },
       "fields": {},
-      "next": "control_if_else4",
+      "next": "control_if_else5",
       "topLevel": false,
-      "parent": "control_if_else3",
+      "parent": "control_if_else4",
       "shadow": false
     },
     "looks_costume2": {
@@ -2896,13 +2898,13 @@
       "parent": "looks_switchcostumeto1",
       "shadow": true
     },
-    "control_if_else4": {
-      "id": "control_if_else4",
+    "control_if_else5": {
+      "id": "control_if_else5",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals10",
+          "block": "operator_equals6",
           "shadow": null
         },
         "SUBSTACK": {
@@ -2922,8 +2924,8 @@
       "parent": "looks_switchcostumeto1",
       "shadow": false
     },
-    "operator_equals10": {
-      "id": "operator_equals10",
+    "operator_equals6": {
+      "id": "operator_equals6",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
@@ -2933,14 +2935,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text43",
-          "shadow": "text43"
+          "block": "text35",
+          "shadow": "text35"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
     "skyhigh173JSON_json_get6": {
@@ -2949,8 +2951,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text42",
-          "shadow": "text42"
+          "block": "text34",
+          "shadow": "text34"
         },
         "json": {
           "name": "json",
@@ -2961,11 +2963,11 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals10",
+      "parent": "operator_equals6",
       "shadow": false
     },
-    "text42": {
-      "id": "text42",
+    "text34": {
+      "id": "text34",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -2985,8 +2987,8 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable13",
-          "shadow": "data_variable13"
+          "block": "data_variable11",
+          "shadow": "data_variable11"
         }
       },
       "fields": {
@@ -3002,8 +3004,8 @@
       "parent": "skyhigh173JSON_json_get6",
       "shadow": false
     },
-    "data_variable13": {
-      "id": "data_variable13",
+    "data_variable11": {
+      "id": "data_variable11",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3019,8 +3021,8 @@
       "parent": "data_itemoflist8",
       "shadow": true
     },
-    "text43": {
-      "id": "text43",
+    "text35": {
+      "id": "text35",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -3031,7 +3033,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals10",
+      "parent": "operator_equals6",
       "shadow": true
     },
     "looks_switchcostumeto2": {
@@ -3047,7 +3049,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
     "skyhigh173JSON_json_get7": {
@@ -3056,8 +3058,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text44",
-          "shadow": "text44"
+          "block": "text36",
+          "shadow": "text36"
         },
         "json": {
           "name": "json",
@@ -3071,8 +3073,8 @@
       "parent": "looks_switchcostumeto2",
       "shadow": false
     },
-    "text44": {
-      "id": "text44",
+    "text36": {
+      "id": "text36",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -3092,8 +3094,8 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable14",
-          "shadow": "data_variable14"
+          "block": "data_variable12",
+          "shadow": "data_variable12"
         }
       },
       "fields": {
@@ -3109,8 +3111,8 @@
       "parent": "skyhigh173JSON_json_get7",
       "shadow": false
     },
-    "data_variable14": {
-      "id": "data_variable14",
+    "data_variable12": {
+      "id": "data_variable12",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3139,7 +3141,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
     "skyhigh173JSON_json_get8": {
@@ -3148,8 +3150,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text45",
-          "shadow": "text45"
+          "block": "text37",
+          "shadow": "text37"
         },
         "json": {
           "name": "json",
@@ -3163,8 +3165,8 @@
       "parent": "looks_switchcostumeto3",
       "shadow": false
     },
-    "text45": {
-      "id": "text45",
+    "text37": {
+      "id": "text37",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -3184,8 +3186,8 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable15",
-          "shadow": "data_variable15"
+          "block": "data_variable13",
+          "shadow": "data_variable13"
         }
       },
       "fields": {
@@ -3201,8 +3203,8 @@
       "parent": "skyhigh173JSON_json_get8",
       "shadow": false
     },
-    "data_variable15": {
-      "id": "data_variable15",
+    "data_variable13": {
+      "id": "data_variable13",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3225,16 +3227,16 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
-    "control_if_else5": {
-      "id": "control_if_else5",
+    "control_if_else6": {
+      "id": "control_if_else6",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals11",
+          "block": "operator_equals7",
           "shadow": null
         },
         "SUBSTACK": {
@@ -3251,11 +3253,11 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else2",
+      "parent": "control_if_else3",
       "shadow": false
     },
-    "operator_equals11": {
-      "id": "operator_equals11",
+    "operator_equals7": {
+      "id": "operator_equals7",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
@@ -3265,14 +3267,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text46",
-          "shadow": "text46"
+          "block": "text38",
+          "shadow": "text38"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
     "data_itemoflist11": {
@@ -3281,8 +3283,8 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable16",
-          "shadow": "data_variable16"
+          "block": "data_variable14",
+          "shadow": "data_variable14"
         }
       },
       "fields": {
@@ -3295,11 +3297,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals11",
+      "parent": "operator_equals7",
       "shadow": false
     },
-    "data_variable16": {
-      "id": "data_variable16",
+    "data_variable14": {
+      "id": "data_variable14",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3315,8 +3317,8 @@
       "parent": "data_itemoflist11",
       "shadow": true
     },
-    "text46": {
-      "id": "text46",
+    "text38": {
+      "id": "text38",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -3327,7 +3329,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals11",
+      "parent": "operator_equals7",
       "shadow": true
     },
     "looks_hide3": {
@@ -3337,7 +3339,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
     "motion_changeyby2": {
@@ -3353,7 +3355,7 @@
       "fields": {},
       "next": "looks_setsizeto2",
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
     "math_number14": {
@@ -3599,8 +3601,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text47",
-          "shadow": "text47"
+          "block": "text39",
+          "shadow": "text39"
         },
         "json": {
           "name": "json",
@@ -3614,8 +3616,8 @@
       "parent": "text_setText1",
       "shadow": false
     },
-    "text47": {
-      "id": "text47",
+    "text39": {
+      "id": "text39",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -3635,8 +3637,8 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable17",
-          "shadow": "data_variable17"
+          "block": "data_variable15",
+          "shadow": "data_variable15"
         }
       },
       "fields": {
@@ -3652,8 +3654,8 @@
       "parent": "skyhigh173JSON_json_get9",
       "shadow": false
     },
-    "data_variable17": {
-      "id": "data_variable17",
+    "data_variable15": {
+      "id": "data_variable15",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3695,8 +3697,8 @@
       "topLevel": true,
       "parent": null,
       "shadow": false,
-      "x": 617,
-      "y": -343
+      "x": 620.350015997033,
+      "y": -607.632828066534
     },
     "data_deletealloflist1": {
       "id": "data_deletealloflist1",
@@ -3710,7 +3712,7 @@
           "variableType": "list"
         }
       },
-      "next": "procedures_call4",
+      "next": "data_deletealloflist2",
       "topLevel": false,
       "parent": "event_whenbroadcastreceived2",
       "shadow": false
@@ -3720,9 +3722,9 @@
       "opcode": "procedures_call",
       "inputs": {},
       "fields": {},
-      "next": null,
+      "next": "procedures_call5",
       "topLevel": false,
-      "parent": "data_deletealloflist1",
+      "parent": "data_deletealloflist2",
       "shadow": false,
       "mutation": {
         "tagName": "mutation",
@@ -3744,15 +3746,15 @@
           "variableType": "broadcast_msg"
         }
       },
-      "next": "control_if_else6",
+      "next": "control_if_else11",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": -406,
       "y": 505
     },
-    "control_if_else6": {
-      "id": "control_if_else6",
+    "control_if_else11": {
+      "id": "control_if_else11",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -3767,7 +3769,7 @@
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "control_if8",
+          "block": "control_if6",
           "shadow": null
         }
       },
@@ -3775,9 +3777,7 @@
       "next": null,
       "topLevel": false,
       "parent": "event_whenbroadcastreceived3",
-      "shadow": false,
-      "x": -397.3576439477597,
-      "y": 779.0999303074525
+      "shadow": false
     },
     "lmsclonesplus_isClone2": {
       "id": "lmsclonesplus_isClone2",
@@ -3786,10 +3786,8 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else6",
-      "shadow": false,
-      "x": -349.35764394775947,
-      "y": 783.0999303074525
+      "parent": "control_if_else11",
+      "shadow": false
     },
     "data_setvariableto6": {
       "id": "data_setvariableto6",
@@ -3809,9 +3807,9 @@
           "variableType": ""
         }
       },
-      "next": "control_if_else7",
+      "next": "control_if_else12",
       "topLevel": false,
-      "parent": "control_if_else6",
+      "parent": "control_if_else11",
       "shadow": false
     },
     "operator_add3": {
@@ -3825,8 +3823,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "data_variable28",
-          "shadow": "data_variable28"
+          "block": "data_variable41",
+          "shadow": "data_variable41"
         }
       },
       "fields": {},
@@ -3846,8 +3844,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number16",
-          "shadow": "math_number16"
+          "block": "math_number20",
+          "shadow": "math_number20"
         }
       },
       "fields": {},
@@ -3867,8 +3865,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "data_variable27",
-          "shadow": "data_variable27"
+          "block": "data_variable40",
+          "shadow": "data_variable40"
         }
       },
       "fields": {},
@@ -3883,13 +3881,13 @@
       "inputs": {
         "NUM1": {
           "name": "NUM1",
-          "block": "data_variable26",
-          "shadow": "data_variable26"
+          "block": "data_variable39",
+          "shadow": "data_variable39"
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number15",
-          "shadow": "math_number15"
+          "block": "math_number19",
+          "shadow": "math_number19"
         }
       },
       "fields": {},
@@ -3898,8 +3896,8 @@
       "parent": "operator_multiply2",
       "shadow": false
     },
-    "data_variable26": {
-      "id": "data_variable26",
+    "data_variable39": {
+      "id": "data_variable39",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3915,8 +3913,8 @@
       "parent": "operator_subtract2",
       "shadow": true
     },
-    "math_number15": {
-      "id": "math_number15",
+    "math_number19": {
+      "id": "math_number19",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -3930,8 +3928,8 @@
       "parent": "operator_subtract2",
       "shadow": true
     },
-    "data_variable27": {
-      "id": "data_variable27",
+    "data_variable40": {
+      "id": "data_variable40",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3947,8 +3945,8 @@
       "parent": "operator_multiply2",
       "shadow": true
     },
-    "math_number16": {
-      "id": "math_number16",
+    "math_number20": {
+      "id": "math_number20",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -3962,8 +3960,8 @@
       "parent": "operator_add4",
       "shadow": true
     },
-    "data_variable28": {
-      "id": "data_variable28",
+    "data_variable41": {
+      "id": "data_variable41",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -3979,23 +3977,23 @@
       "parent": "operator_add3",
       "shadow": true
     },
-    "control_if_else7": {
-      "id": "control_if_else7",
+    "control_if_else12": {
+      "id": "control_if_else12",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals12",
+          "block": "operator_equals13",
           "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else8",
+          "block": "control_if_else13",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "procedures_call5",
+          "block": "control_if_else17",
           "shadow": null
         }
       },
@@ -4005,29 +4003,29 @@
       "parent": "data_setvariableto6",
       "shadow": false
     },
-    "operator_equals12": {
-      "id": "operator_equals12",
+    "operator_equals13": {
+      "id": "operator_equals13",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
-          "block": "data_variable18",
-          "shadow": "data_variable18"
+          "block": "data_variable24",
+          "shadow": "data_variable24"
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text48",
-          "shadow": "text48"
+          "block": "text68",
+          "shadow": "text68"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else7",
+      "parent": "control_if_else12",
       "shadow": false
     },
-    "data_variable18": {
-      "id": "data_variable18",
+    "data_variable24": {
+      "id": "data_variable24",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4040,11 +4038,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals12",
+      "parent": "operator_equals13",
       "shadow": true
     },
-    "text48": {
-      "id": "text48",
+    "text68": {
+      "id": "text68",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4055,58 +4053,58 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals12",
+      "parent": "operator_equals13",
       "shadow": true
     },
-    "control_if_else8": {
-      "id": "control_if_else8",
+    "control_if_else13": {
+      "id": "control_if_else13",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals13",
+          "block": "operator_equals14",
           "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else9",
+          "block": "control_if_else14",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "control_if_else11",
+          "block": "control_if_else16",
           "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else7",
+      "parent": "control_if_else12",
       "shadow": false
     },
-    "operator_equals13": {
-      "id": "operator_equals13",
+    "operator_equals14": {
+      "id": "operator_equals14",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
-          "block": "data_variable19",
-          "shadow": "data_variable19"
+          "block": "data_variable25",
+          "shadow": "data_variable25"
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text49",
-          "shadow": "text49"
+          "block": "text69",
+          "shadow": "text69"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else8",
+      "parent": "control_if_else13",
       "shadow": false
     },
-    "data_variable19": {
-      "id": "data_variable19",
+    "data_variable25": {
+      "id": "data_variable25",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4119,11 +4117,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals13",
+      "parent": "operator_equals14",
       "shadow": true
     },
-    "text49": {
-      "id": "text49",
+    "text69": {
+      "id": "text69",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4134,16 +4132,2057 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals13",
+      "parent": "operator_equals14",
       "shadow": true
     },
-    "control_if_else9": {
-      "id": "control_if_else9",
+    "control_if_else14": {
+      "id": "control_if_else14",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals14",
+          "block": "operator_equals15",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_hide6",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "looks_switchcostumeto7",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else13",
+      "shadow": false
+    },
+    "operator_equals15": {
+      "id": "operator_equals15",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_itemoflist19",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text70",
+          "shadow": "text70"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else14",
+      "shadow": false
+    },
+    "data_itemoflist19": {
+      "id": "data_itemoflist19",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable26",
+          "shadow": "data_variable26"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals15",
+      "shadow": false
+    },
+    "data_variable26": {
+      "id": "data_variable26",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist19",
+      "shadow": true
+    },
+    "text70": {
+      "id": "text70",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals15",
+      "shadow": true
+    },
+    "looks_hide6": {
+      "id": "looks_hide6",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else14",
+      "shadow": false
+    },
+    "looks_switchcostumeto7": {
+      "id": "looks_switchcostumeto7",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume4",
+          "shadow": "looks_costume4"
+        }
+      },
+      "fields": {},
+      "next": "control_if_else15",
+      "topLevel": false,
+      "parent": "control_if_else14",
+      "shadow": false
+    },
+    "looks_costume4": {
+      "id": "looks_costume4",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "invalid part"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto7",
+      "shadow": true
+    },
+    "control_if_else15": {
+      "id": "control_if_else15",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals16",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_switchcostumeto8",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "looks_switchcostumeto9",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_show5",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto7",
+      "shadow": false
+    },
+    "operator_equals16": {
+      "id": "operator_equals16",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "skyhigh173JSON_json_get14",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text72",
+          "shadow": "text72"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else15",
+      "shadow": false
+    },
+    "skyhigh173JSON_json_get14": {
+      "id": "skyhigh173JSON_json_get14",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text71",
+          "shadow": "text71"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist20",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals16",
+      "shadow": false
+    },
+    "text71": {
+      "id": "text71",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Costume"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get14",
+      "shadow": true
+    },
+    "data_itemoflist20": {
+      "id": "data_itemoflist20",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable27",
+          "shadow": "data_variable27"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get14",
+      "shadow": false
+    },
+    "data_variable27": {
+      "id": "data_variable27",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist20",
+      "shadow": true
+    },
+    "text72": {
+      "id": "text72",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals16",
+      "shadow": true
+    },
+    "looks_switchcostumeto8": {
+      "id": "looks_switchcostumeto8",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "skyhigh173JSON_json_get15",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else15",
+      "shadow": false
+    },
+    "skyhigh173JSON_json_get15": {
+      "id": "skyhigh173JSON_json_get15",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text73",
+          "shadow": "text73"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist21",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto8",
+      "shadow": false
+    },
+    "text73": {
+      "id": "text73",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Name"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get15",
+      "shadow": true
+    },
+    "data_itemoflist21": {
+      "id": "data_itemoflist21",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable28",
+          "shadow": "data_variable28"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get15",
+      "shadow": false
+    },
+    "data_variable28": {
+      "id": "data_variable28",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist21",
+      "shadow": true
+    },
+    "looks_switchcostumeto9": {
+      "id": "looks_switchcostumeto9",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "skyhigh173JSON_json_get16",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else15",
+      "shadow": false
+    },
+    "skyhigh173JSON_json_get16": {
+      "id": "skyhigh173JSON_json_get16",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text74",
+          "shadow": "text74"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist22",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto9",
+      "shadow": false
+    },
+    "text74": {
+      "id": "text74",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Costume"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get16",
+      "shadow": true
+    },
+    "data_itemoflist22": {
+      "id": "data_itemoflist22",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable29",
+          "shadow": "data_variable29"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get16",
+      "shadow": false
+    },
+    "data_variable29": {
+      "id": "data_variable29",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist22",
+      "shadow": true
+    },
+    "looks_show5": {
+      "id": "looks_show5",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else15",
+      "shadow": false
+    },
+    "control_if_else16": {
+      "id": "control_if_else16",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals17",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_hide7",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "text_setText3",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else13",
+      "shadow": false
+    },
+    "operator_equals17": {
+      "id": "operator_equals17",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_itemoflist23",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text75",
+          "shadow": "text75"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else16",
+      "shadow": false
+    },
+    "data_itemoflist23": {
+      "id": "data_itemoflist23",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable30",
+          "shadow": "data_variable30"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals17",
+      "shadow": false
+    },
+    "data_variable30": {
+      "id": "data_variable30",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist23",
+      "shadow": true
+    },
+    "text75": {
+      "id": "text75",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals17",
+      "shadow": true
+    },
+    "looks_hide7": {
+      "id": "looks_hide7",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else16",
+      "shadow": false
+    },
+    "text_setText3": {
+      "id": "text_setText3",
+      "opcode": "text_setText",
+      "inputs": {
+        "TEXT": {
+          "name": "TEXT",
+          "block": "skyhigh173JSON_json_get17",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_show6",
+      "topLevel": false,
+      "parent": "control_if_else16",
+      "shadow": false
+    },
+    "skyhigh173JSON_json_get17": {
+      "id": "skyhigh173JSON_json_get17",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text76",
+          "shadow": "text76"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist24",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText3",
+      "shadow": false
+    },
+    "text76": {
+      "id": "text76",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Amount"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get17",
+      "shadow": true
+    },
+    "data_itemoflist24": {
+      "id": "data_itemoflist24",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable31",
+          "shadow": "data_variable31"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get17",
+      "shadow": false
+    },
+    "data_variable31": {
+      "id": "data_variable31",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist24",
+      "shadow": true
+    },
+    "looks_show6": {
+      "id": "looks_show6",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText3",
+      "shadow": false
+    },
+    "control_if6": {
+      "id": "control_if6",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_and2",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "event_broadcastandwait3",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "control_if7",
+      "topLevel": false,
+      "parent": "control_if_else11",
+      "shadow": false
+    },
+    "operator_and2": {
+      "id": "operator_and2",
+      "opcode": "operator_and",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "operator_equals24",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "operator_equals25",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if6",
+      "shadow": false
+    },
+    "operator_equals24": {
+      "id": "operator_equals24",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable43",
+          "shadow": "text91"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text92",
+          "shadow": "text92"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_and2",
+      "shadow": false
+    },
+    "data_variable43": {
+      "id": "data_variable43",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals24",
+      "shadow": false
+    },
+    "text91": {
+      "id": "text91",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals24",
+      "shadow": true
+    },
+    "text92": {
+      "id": "text92",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "kits"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals24",
+      "shadow": true
+    },
+    "operator_equals25": {
+      "id": "operator_equals25",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_lengthoflist3",
+          "shadow": "text93"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text94",
+          "shadow": "text94"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_and2",
+      "shadow": false
+    },
+    "data_lengthoflist3": {
+      "id": "data_lengthoflist3",
+      "opcode": "data_lengthoflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals25",
+      "shadow": false
+    },
+    "text93": {
+      "id": "text93",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals25",
+      "shadow": true
+    },
+    "text94": {
+      "id": "text94",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals25",
+      "shadow": true
+    },
+    "event_broadcastandwait3": {
+      "id": "event_broadcastandwait3",
+      "opcode": "event_broadcastandwait",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu5",
+          "shadow": "event_broadcast_menu5"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if6",
+      "shadow": false
+    },
+    "event_broadcast_menu5": {
+      "id": "event_broadcast_menu5",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "Q;JHx*HE()n/w|78wtw.",
+          "value": "INVENTORY empty",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcastandwait3",
+      "shadow": true
+    },
+    "control_if7": {
+      "id": "control_if7",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_and1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "event_broadcastandwait2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if6",
+      "shadow": false
+    },
+    "operator_and1": {
+      "id": "operator_and1",
+      "opcode": "operator_and",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "operator_equals22",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "operator_equals23",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if7",
+      "shadow": false
+    },
+    "operator_equals22": {
+      "id": "operator_equals22",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable42",
+          "shadow": "text87"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text88",
+          "shadow": "text88"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_and1",
+      "shadow": false
+    },
+    "data_variable42": {
+      "id": "data_variable42",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals22",
+      "shadow": false
+    },
+    "text87": {
+      "id": "text87",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals22",
+      "shadow": true
+    },
+    "text88": {
+      "id": "text88",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "parts"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals22",
+      "shadow": true
+    },
+    "operator_equals23": {
+      "id": "operator_equals23",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_lengthoflist2",
+          "shadow": "text89"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text90",
+          "shadow": "text90"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_and1",
+      "shadow": false
+    },
+    "data_lengthoflist2": {
+      "id": "data_lengthoflist2",
+      "opcode": "data_lengthoflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "w_bYE#_VOu%lcXO0`3Yh",
+          "value": "Parts",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals23",
+      "shadow": false
+    },
+    "text89": {
+      "id": "text89",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals23",
+      "shadow": true
+    },
+    "text90": {
+      "id": "text90",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals23",
+      "shadow": true
+    },
+    "event_broadcastandwait2": {
+      "id": "event_broadcastandwait2",
+      "opcode": "event_broadcastandwait",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu4",
+          "shadow": "event_broadcast_menu4"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if7",
+      "shadow": false
+    },
+    "event_broadcast_menu4": {
+      "id": "event_broadcast_menu4",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "Q;JHx*HE()n/w|78wtw.",
+          "value": "INVENTORY empty",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "event_broadcastandwait2",
+      "shadow": true
+    },
+    "procedures_definition4": {
+      "id": "procedures_definition4",
+      "opcode": "procedures_definition",
+      "inputs": {
+        "custom_block": {
+          "name": "custom_block",
+          "block": "procedures_prototype4",
+          "shadow": "procedures_prototype4"
+        }
+      },
+      "fields": {},
+      "next": "data_addtolist2",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 976.1593606838464,
+      "y": -94.19692793223581
+    },
+    "procedures_prototype4": {
+      "id": "procedures_prototype4",
+      "opcode": "procedures_prototype",
+      "inputs": {
+        "j5@@S{JaFdJ`n/a^hr!D": {
+          "name": "j5@@S{JaFdJ`n/a^hr!D",
+          "block": "argument_reporter_string_number19",
+          "shadow": "argument_reporter_string_number19"
+        },
+        "*)KqE)4QjhNqOBU`v(+b": {
+          "name": "*)KqE)4QjhNqOBU`v(+b",
+          "block": "argument_reporter_string_number20",
+          "shadow": "argument_reporter_string_number20"
+        },
+        "nlnOZH9ziz@n;HHj}$=y": {
+          "name": "nlnOZH9ziz@n;HHj}$=y",
+          "block": "argument_reporter_string_number21",
+          "shadow": "argument_reporter_string_number21"
+        },
+        "jU%Dqi%+N,Yx433{CLMM": {
+          "name": "jU%Dqi%+N,Yx433{CLMM",
+          "block": "argument_reporter_string_number22",
+          "shadow": "argument_reporter_string_number22"
+        },
+        "@gP_ViqOyW1,tG,-3/eh": {
+          "name": "@gP_ViqOyW1,tG,-3/eh",
+          "block": "argument_reporter_boolean2",
+          "shadow": "argument_reporter_boolean2"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_definition4",
+      "shadow": true,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "add kit %s x %s with costume %s cost: %s unlocked: %b",
+        "argumentids": "[\"j5@@S{JaFdJ`n/a^hr!D\",\"*)KqE)4QjhNqOBU`v(+b\",\"nlnOZH9ziz@n;HHj}$=y\",\"jU%Dqi%+N,Yx433{CLMM\",\"@gP_ViqOyW1,tG,-3/eh\"]",
+        "argumentnames": "[\"Kit\",\"Amount\",\"Costume\",\"Cost\",\"Unlocked\"]",
+        "argumentdefaults": "[\"false\",\"\",\"\",\"\",\"\",\"false\"]",
+        "warp": "true"
+      }
+    },
+    "argument_reporter_string_number19": {
+      "id": "argument_reporter_string_number19",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Kit"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype4",
+      "shadow": true,
+      "x": 1055.2427287491203,
+      "y": -54.47447650402302
+    },
+    "argument_reporter_string_number20": {
+      "id": "argument_reporter_string_number20",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Amount"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype4",
+      "shadow": true,
+      "x": 1127.230044880712,
+      "y": -54.47447650402302
+    },
+    "argument_reporter_string_number21": {
+      "id": "argument_reporter_string_number21",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Costume"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype4",
+      "shadow": true,
+      "x": "0",
+      "y": "0"
+    },
+    "argument_reporter_string_number22": {
+      "id": "argument_reporter_string_number22",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Cost"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype4",
+      "shadow": true,
+      "x": "0",
+      "y": "0"
+    },
+    "argument_reporter_boolean2": {
+      "id": "argument_reporter_boolean2",
+      "opcode": "argument_reporter_boolean",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Unlocked"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype4",
+      "shadow": true,
+      "x": "0",
+      "y": "0"
+    },
+    "data_addtolist2": {
+      "id": "data_addtolist2",
+      "opcode": "data_addtolist",
+      "inputs": {
+        "ITEM": {
+          "name": "ITEM",
+          "block": "skyhigh173JSON_json_set7",
+          "shadow": null
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_definition4",
+      "shadow": false,
+      "x": "650",
+      "y": "192"
+    },
+    "skyhigh173JSON_json_set7": {
+      "id": "skyhigh173JSON_json_set7",
+      "opcode": "skyhigh173JSON_json_set",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text95",
+          "shadow": "text95"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set8",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "argument_reporter_string_number18",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "data_addtolist2",
+      "shadow": false
+    },
+    "text95": {
+      "id": "text95",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Costume"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set7",
+      "shadow": true
+    },
+    "skyhigh173JSON_json_set8": {
+      "id": "skyhigh173JSON_json_set8",
+      "opcode": "skyhigh173JSON_json_set",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text96",
+          "shadow": "text96"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set9",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "argument_reporter_string_number17",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set7",
+      "shadow": false
+    },
+    "text96": {
+      "id": "text96",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Cost"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set8",
+      "shadow": true
+    },
+    "skyhigh173JSON_json_set9": {
+      "id": "skyhigh173JSON_json_set9",
+      "opcode": "skyhigh173JSON_json_set",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text97",
+          "shadow": "text97"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set10",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "argument_reporter_boolean1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set8",
+      "shadow": false
+    },
+    "text97": {
+      "id": "text97",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Unlocked"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set9",
+      "shadow": true
+    },
+    "skyhigh173JSON_json_set10": {
+      "id": "skyhigh173JSON_json_set10",
+      "opcode": "skyhigh173JSON_json_set",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text98",
+          "shadow": "text98"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_set11",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "argument_reporter_string_number16",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set9",
+      "shadow": false
+    },
+    "text98": {
+      "id": "text98",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Amount"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set10",
+      "shadow": true
+    },
+    "skyhigh173JSON_json_set11": {
+      "id": "skyhigh173JSON_json_set11",
+      "opcode": "skyhigh173JSON_json_set",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text99",
+          "shadow": "text99"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_new3",
+          "shadow": null
+        },
+        "value": {
+          "name": "value",
+          "block": "argument_reporter_string_number15",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set10",
+      "shadow": false
+    },
+    "text99": {
+      "id": "text99",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Name"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set11",
+      "shadow": true
+    },
+    "skyhigh173JSON_json_new3": {
+      "id": "skyhigh173JSON_json_new3",
+      "opcode": "skyhigh173JSON_json_new",
+      "inputs": {
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_menu_types3",
+          "shadow": "skyhigh173JSON_menu_types3"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set11",
+      "shadow": false
+    },
+    "skyhigh173JSON_menu_types3": {
+      "id": "skyhigh173JSON_menu_types3",
+      "opcode": "skyhigh173JSON_menu_types",
+      "inputs": {},
+      "fields": {
+        "types": {
+          "name": "types",
+          "value": "Object"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_new3",
+      "shadow": true
+    },
+    "data_deletealloflist2": {
+      "id": "data_deletealloflist2",
+      "opcode": "data_deletealloflist",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": "procedures_call4",
+      "topLevel": false,
+      "parent": "data_deletealloflist1",
+      "shadow": false,
+      "x": 629.671999896718,
+      "y": -231.06400052110453
+    },
+    "argument_reporter_string_number15": {
+      "id": "argument_reporter_string_number15",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Kit"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set11",
+      "shadow": false,
+      "x": 1553.644355012585,
+      "y": -169.82316663426303
+    },
+    "argument_reporter_string_number16": {
+      "id": "argument_reporter_string_number16",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Amount"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set10",
+      "shadow": false,
+      "x": 1547.9960884097004,
+      "y": -173.8044785693644
+    },
+    "argument_reporter_string_number18": {
+      "id": "argument_reporter_string_number18",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Costume"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set7",
+      "shadow": false,
+      "x": 2059.808169434293,
+      "y": -126.02873534814805
+    },
+    "argument_reporter_boolean1": {
+      "id": "argument_reporter_boolean1",
+      "opcode": "argument_reporter_boolean",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Unlocked"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set9",
+      "shadow": false,
+      "x": "1638",
+      "y": "-90"
+    },
+    "argument_reporter_string_number17": {
+      "id": "argument_reporter_string_number17",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Cost"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_set8",
+      "shadow": false,
+      "x": 2013.3977617534824,
+      "y": -111.09881559151795
+    },
+    "procedures_call5": {
+      "id": "procedures_call5",
+      "opcode": "procedures_call",
+      "inputs": {
+        "j5@@S{JaFdJ`n/a^hr!D": {
+          "name": "j5@@S{JaFdJ`n/a^hr!D",
+          "block": "text64",
+          "shadow": "text64"
+        },
+        "*)KqE)4QjhNqOBU`v(+b": {
+          "name": "*)KqE)4QjhNqOBU`v(+b",
+          "block": "text65",
+          "shadow": "text65"
+        },
+        "nlnOZH9ziz@n;HHj}$=y": {
+          "name": "nlnOZH9ziz@n;HHj}$=y",
+          "block": "text66",
+          "shadow": "text66"
+        },
+        "jU%Dqi%+N,Yx433{CLMM": {
+          "name": "jU%Dqi%+N,Yx433{CLMM",
+          "block": "text67",
+          "shadow": "text67"
+        },
+        "@gP_ViqOyW1,tG,-3/eh": {
+          "name": "@gP_ViqOyW1,tG,-3/eh",
+          "block": "utilities_trueBlock1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "procedures_call6",
+      "topLevel": false,
+      "parent": "procedures_call4",
+      "shadow": false,
+      "x": "380",
+      "y": "-485",
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "add kit %s x %s with costume %s cost: %s unlocked: %b",
+        "argumentids": "[\"j5@@S{JaFdJ`n/a^hr!D\",\"*)KqE)4QjhNqOBU`v(+b\",\"nlnOZH9ziz@n;HHj}$=y\",\"jU%Dqi%+N,Yx433{CLMM\",\"@gP_ViqOyW1,tG,-3/eh\"]",
+        "warp": "true"
+      }
+    },
+    "text64": {
+      "id": "text64",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "generic"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call5",
+      "shadow": true
+    },
+    "text65": {
+      "id": "text65",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call5",
+      "shadow": true
+    },
+    "text66": {
+      "id": "text66",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call5",
+      "shadow": true
+    },
+    "text67": {
+      "id": "text67",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call5",
+      "shadow": true
+    },
+    "utilities_trueBlock1": {
+      "id": "utilities_trueBlock1",
+      "opcode": "utilities_trueBlock",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call5",
+      "shadow": false,
+      "x": "834",
+      "y": "-495"
+    },
+    "procedures_call6": {
+      "id": "procedures_call6",
+      "opcode": "procedures_call",
+      "inputs": {
+        "j5@@S{JaFdJ`n/a^hr!D": {
+          "name": "j5@@S{JaFdJ`n/a^hr!D",
+          "block": "text60",
+          "shadow": "text60"
+        },
+        "*)KqE)4QjhNqOBU`v(+b": {
+          "name": "*)KqE)4QjhNqOBU`v(+b",
+          "block": "text61",
+          "shadow": "text61"
+        },
+        "nlnOZH9ziz@n;HHj}$=y": {
+          "name": "nlnOZH9ziz@n;HHj}$=y",
+          "block": "text62",
+          "shadow": "text62"
+        },
+        "jU%Dqi%+N,Yx433{CLMM": {
+          "name": "jU%Dqi%+N,Yx433{CLMM",
+          "block": "text63",
+          "shadow": "text63"
+        },
+        "@gP_ViqOyW1,tG,-3/eh": {
+          "name": "@gP_ViqOyW1,tG,-3/eh",
+          "block": "utilities_falseBlock1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "procedures_call7",
+      "topLevel": false,
+      "parent": "procedures_call5",
+      "shadow": false,
+      "x": "620",
+      "y": "-416",
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "add kit %s x %s with costume %s cost: %s unlocked: %b",
+        "argumentids": "[\"j5@@S{JaFdJ`n/a^hr!D\",\"*)KqE)4QjhNqOBU`v(+b\",\"nlnOZH9ziz@n;HHj}$=y\",\"jU%Dqi%+N,Yx433{CLMM\",\"@gP_ViqOyW1,tG,-3/eh\"]",
+        "warp": "true"
+      }
+    },
+    "text60": {
+      "id": "text60",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "generic2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call6",
+      "shadow": true
+    },
+    "text61": {
+      "id": "text61",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call6",
+      "shadow": true
+    },
+    "text62": {
+      "id": "text62",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "generic kit"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call6",
+      "shadow": true
+    },
+    "text63": {
+      "id": "text63",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call6",
+      "shadow": true
+    },
+    "utilities_falseBlock1": {
+      "id": "utilities_falseBlock1",
+      "opcode": "utilities_falseBlock",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call6",
+      "shadow": false,
+      "x": "849",
+      "y": "-445"
+    },
+    "control_if_else2": {
+      "id": "control_if_else2",
+      "opcode": "control_if_else",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_if_else3",
+          "shadow": null
+        },
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals8",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "control_if_else7",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_start_as_clone1",
+      "shadow": false,
+      "x": -1948.20139636507,
+      "y": 53.484035406509804
+    },
+    "operator_equals8": {
+      "id": "operator_equals8",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable16",
+          "shadow": "text40"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text41",
+          "shadow": "text41"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else2",
+      "shadow": false,
+      "x": "-1654",
+      "y": "217"
+    },
+    "text40": {
+      "id": "text40",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": -1095,
+      "y": 42
+    },
+    "text41": {
+      "id": "text41",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "parts"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals8",
+      "shadow": true
+    },
+    "data_variable16": {
+      "id": "data_variable16",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "x4gtq9]`+z%F4A@UJ1}N",
+          "value": "PartsFilter",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals8",
+      "shadow": false,
+      "x": -1086.0827837315721,
+      "y": 31.10352765226647
+    },
+    "control_if_else7": {
+      "id": "control_if_else7",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals9",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_if_else8",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "control_if_else10",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else2",
+      "shadow": false,
+      "x": -1221.7938826778204,
+      "y": 940.6408746343171
+    },
+    "operator_equals9": {
+      "id": "operator_equals9",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable17",
+          "shadow": "data_variable17"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text42",
+          "shadow": "text42"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else7",
+      "shadow": false
+    },
+    "data_variable17": {
+      "id": "data_variable17",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "I$=n{B:W7ZVgSApu(#U7",
+          "value": "CloneType",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals9",
+      "shadow": true
+    },
+    "text42": {
+      "id": "text42",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals9",
+      "shadow": true
+    },
+    "control_if_else8": {
+      "id": "control_if_else8",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals10",
           "shadow": null
         },
         "SUBSTACK": {
@@ -4160,11 +6199,11 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else8",
+      "parent": "control_if_else7",
       "shadow": false
     },
-    "operator_equals14": {
-      "id": "operator_equals14",
+    "operator_equals10": {
+      "id": "operator_equals10",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
@@ -4174,14 +6213,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text50",
-          "shadow": "text50"
+          "block": "text43",
+          "shadow": "text43"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else9",
+      "parent": "control_if_else8",
       "shadow": false
     },
     "data_itemoflist13": {
@@ -4190,25 +6229,25 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable20",
-          "shadow": "data_variable20"
+          "block": "data_variable18",
+          "shadow": "data_variable18"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
           "variableType": "list"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals14",
+      "parent": "operator_equals10",
       "shadow": false
     },
-    "data_variable20": {
-      "id": "data_variable20",
+    "data_variable18": {
+      "id": "data_variable18",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4224,8 +6263,8 @@
       "parent": "data_itemoflist13",
       "shadow": true
     },
-    "text50": {
-      "id": "text50",
+    "text43": {
+      "id": "text43",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4236,7 +6275,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals14",
+      "parent": "operator_equals10",
       "shadow": true
     },
     "looks_hide4": {
@@ -4246,7 +6285,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else9",
+      "parent": "control_if_else8",
       "shadow": false
     },
     "looks_switchcostumeto4": {
@@ -4260,9 +6299,9 @@
         }
       },
       "fields": {},
-      "next": "control_if_else10",
+      "next": "control_if_else9",
       "topLevel": false,
-      "parent": "control_if_else9",
+      "parent": "control_if_else8",
       "shadow": false
     },
     "looks_costume3": {
@@ -4272,7 +6311,7 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "invalid part"
+          "value": "invalid kit"
         }
       },
       "next": null,
@@ -4280,13 +6319,13 @@
       "parent": "looks_switchcostumeto4",
       "shadow": true
     },
-    "control_if_else10": {
-      "id": "control_if_else10",
+    "control_if_else9": {
+      "id": "control_if_else9",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals15",
+          "block": "operator_equals11",
           "shadow": null
         },
         "SUBSTACK": {
@@ -4306,8 +6345,8 @@
       "parent": "looks_switchcostumeto4",
       "shadow": false
     },
-    "operator_equals15": {
-      "id": "operator_equals15",
+    "operator_equals11": {
+      "id": "operator_equals11",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
@@ -4317,14 +6356,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text52",
-          "shadow": "text52"
+          "block": "text45",
+          "shadow": "text45"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else10",
+      "parent": "control_if_else9",
       "shadow": false
     },
     "skyhigh173JSON_json_get10": {
@@ -4333,8 +6372,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text51",
-          "shadow": "text51"
+          "block": "text44",
+          "shadow": "text44"
         },
         "json": {
           "name": "json",
@@ -4345,11 +6384,11 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals15",
+      "parent": "operator_equals11",
       "shadow": false
     },
-    "text51": {
-      "id": "text51",
+    "text44": {
+      "id": "text44",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4369,15 +6408,15 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable21",
-          "shadow": "data_variable21"
+          "block": "data_variable19",
+          "shadow": "data_variable19"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
           "variableType": "list"
         }
       },
@@ -4386,8 +6425,8 @@
       "parent": "skyhigh173JSON_json_get10",
       "shadow": false
     },
-    "data_variable21": {
-      "id": "data_variable21",
+    "data_variable19": {
+      "id": "data_variable19",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4403,8 +6442,8 @@
       "parent": "data_itemoflist14",
       "shadow": true
     },
-    "text52": {
-      "id": "text52",
+    "text45": {
+      "id": "text45",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4415,7 +6454,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals15",
+      "parent": "operator_equals11",
       "shadow": true
     },
     "looks_switchcostumeto5": {
@@ -4424,14 +6463,14 @@
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "skyhigh173JSON_json_get11",
+          "block": "operator_join1",
           "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else10",
+      "parent": "control_if_else9",
       "shadow": false
     },
     "skyhigh173JSON_json_get11": {
@@ -4440,8 +6479,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text53",
-          "shadow": "text53"
+          "block": "text46",
+          "shadow": "text46"
         },
         "json": {
           "name": "json",
@@ -4452,11 +6491,13 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto5",
-      "shadow": false
+      "parent": "operator_join1",
+      "shadow": false,
+      "x": -922.9335230015506,
+      "y": 1693.2301117367774
     },
-    "text53": {
-      "id": "text53",
+    "text46": {
+      "id": "text46",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4476,15 +6517,15 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable22",
-          "shadow": "data_variable22"
+          "block": "data_variable20",
+          "shadow": "data_variable20"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
           "variableType": "list"
         }
       },
@@ -4493,8 +6534,8 @@
       "parent": "skyhigh173JSON_json_get11",
       "shadow": false
     },
-    "data_variable22": {
-      "id": "data_variable22",
+    "data_variable20": {
+      "id": "data_variable20",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4523,7 +6564,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else10",
+      "parent": "control_if_else9",
       "shadow": false
     },
     "skyhigh173JSON_json_get12": {
@@ -4532,8 +6573,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text54",
-          "shadow": "text54"
+          "block": "text49",
+          "shadow": "text49"
         },
         "json": {
           "name": "json",
@@ -4547,8 +6588,8 @@
       "parent": "looks_switchcostumeto6",
       "shadow": false
     },
-    "text54": {
-      "id": "text54",
+    "text49": {
+      "id": "text49",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4568,15 +6609,15 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable23",
-          "shadow": "data_variable23"
+          "block": "data_variable21",
+          "shadow": "data_variable21"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
           "variableType": "list"
         }
       },
@@ -4585,8 +6626,8 @@
       "parent": "skyhigh173JSON_json_get12",
       "shadow": false
     },
-    "data_variable23": {
-      "id": "data_variable23",
+    "data_variable21": {
+      "id": "data_variable21",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4609,16 +6650,16 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else10",
+      "parent": "control_if_else9",
       "shadow": false
     },
-    "control_if_else11": {
-      "id": "control_if_else11",
+    "control_if_else10": {
+      "id": "control_if_else10",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals16",
+          "block": "operator_equals12",
           "shadow": null
         },
         "SUBSTACK": {
@@ -4628,18 +6669,18 @@
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "text_setText2",
+          "block": "motion_changeyby3",
           "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else8",
+      "parent": "control_if_else7",
       "shadow": false
     },
-    "operator_equals16": {
-      "id": "operator_equals16",
+    "operator_equals12": {
+      "id": "operator_equals12",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
@@ -4649,14 +6690,14 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text55",
-          "shadow": "text55"
+          "block": "text50",
+          "shadow": "text50"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else11",
+      "parent": "control_if_else10",
       "shadow": false
     },
     "data_itemoflist17": {
@@ -4665,25 +6706,25 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable24",
-          "shadow": "data_variable24"
+          "block": "data_variable22",
+          "shadow": "data_variable22"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
           "variableType": "list"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals16",
+      "parent": "operator_equals12",
       "shadow": false
     },
-    "data_variable24": {
-      "id": "data_variable24",
+    "data_variable22": {
+      "id": "data_variable22",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4699,8 +6740,8 @@
       "parent": "data_itemoflist17",
       "shadow": true
     },
-    "text55": {
-      "id": "text55",
+    "text50": {
+      "id": "text50",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4711,7 +6752,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals16",
+      "parent": "operator_equals12",
       "shadow": true
     },
     "looks_hide5": {
@@ -4721,8 +6762,245 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else11",
+      "parent": "control_if_else10",
       "shadow": false
+    },
+    "motion_changeyby3": {
+      "id": "motion_changeyby3",
+      "opcode": "motion_changeyby",
+      "inputs": {
+        "DY": {
+          "name": "DY",
+          "block": "math_number18",
+          "shadow": "math_number18"
+        }
+      },
+      "fields": {},
+      "next": "looks_setsizeto3",
+      "topLevel": false,
+      "parent": "control_if_else10",
+      "shadow": false
+    },
+    "math_number18": {
+      "id": "math_number18",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-32"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_changeyby3",
+      "shadow": true
+    },
+    "looks_setsizeto3": {
+      "id": "looks_setsizeto3",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number17",
+          "shadow": "math_number17"
+        }
+      },
+      "fields": {},
+      "next": "text_setFontInput2",
+      "topLevel": false,
+      "parent": "motion_changeyby3",
+      "shadow": false
+    },
+    "math_number17": {
+      "id": "math_number17",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "100"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto3",
+      "shadow": true
+    },
+    "text_setFontInput2": {
+      "id": "text_setFontInput2",
+      "opcode": "text_setFontInput",
+      "inputs": {
+        "FONT": {
+          "name": "FONT",
+          "block": "text_menu_twFont2",
+          "shadow": "text_menu_twFont2"
+        }
+      },
+      "fields": {},
+      "next": "text_setColor2",
+      "topLevel": false,
+      "parent": "looks_setsizeto3",
+      "shadow": false
+    },
+    "text_menu_twFont2": {
+      "id": "text_menu_twFont2",
+      "opcode": "text_menu_twFont",
+      "inputs": {},
+      "fields": {
+        "twFont": {
+          "name": "twFont",
+          "value": "\"BillJilly\", Pixel"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setFontInput2",
+      "shadow": true
+    },
+    "text_setColor2": {
+      "id": "text_setColor2",
+      "opcode": "text_setColor",
+      "inputs": {
+        "COLOR": {
+          "name": "COLOR",
+          "block": "colour_picker4",
+          "shadow": "colour_picker4"
+        }
+      },
+      "fields": {},
+      "next": "text_setOutlineWidth2",
+      "topLevel": false,
+      "parent": "text_setFontInput2",
+      "shadow": false
+    },
+    "colour_picker4": {
+      "id": "colour_picker4",
+      "opcode": "colour_picker",
+      "inputs": {},
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#9966ff"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor2",
+      "shadow": true
+    },
+    "text_setOutlineWidth2": {
+      "id": "text_setOutlineWidth2",
+      "opcode": "text_setOutlineWidth",
+      "inputs": {
+        "WIDTH": {
+          "name": "WIDTH",
+          "block": "math_number16",
+          "shadow": "math_number16"
+        }
+      },
+      "fields": {},
+      "next": "text_setWidthInput2",
+      "topLevel": false,
+      "parent": "text_setColor2",
+      "shadow": false
+    },
+    "math_number16": {
+      "id": "math_number16",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setOutlineWidth2",
+      "shadow": true
+    },
+    "text_setWidthInput2": {
+      "id": "text_setWidthInput2",
+      "opcode": "text_setWidthInput",
+      "inputs": {
+        "WIDTH": {
+          "name": "WIDTH",
+          "block": "math_number15",
+          "shadow": "math_number15"
+        },
+        "ALIGN": {
+          "name": "ALIGN",
+          "block": "text_menu_twAlign2",
+          "shadow": "text_menu_twAlign2"
+        }
+      },
+      "fields": {},
+      "next": "text_setOutlineColor2",
+      "topLevel": false,
+      "parent": "text_setOutlineWidth2",
+      "shadow": false
+    },
+    "math_number15": {
+      "id": "math_number15",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "64"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setWidthInput2",
+      "shadow": true
+    },
+    "text_menu_twAlign2": {
+      "id": "text_menu_twAlign2",
+      "opcode": "text_menu_twAlign",
+      "inputs": {},
+      "fields": {
+        "twAlign": {
+          "name": "twAlign",
+          "value": "right"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setWidthInput2",
+      "shadow": true
+    },
+    "text_setOutlineColor2": {
+      "id": "text_setOutlineColor2",
+      "opcode": "text_setOutlineColor",
+      "inputs": {
+        "COLOR": {
+          "name": "COLOR",
+          "block": "colour_picker3",
+          "shadow": "colour_picker3"
+        }
+      },
+      "fields": {},
+      "next": "text_setText2",
+      "topLevel": false,
+      "parent": "text_setWidthInput2",
+      "shadow": false
+    },
+    "colour_picker3": {
+      "id": "colour_picker3",
+      "opcode": "colour_picker",
+      "inputs": {},
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#ffffff"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setOutlineColor2",
+      "shadow": true
     },
     "text_setText2": {
       "id": "text_setText2",
@@ -4737,7 +7015,7 @@
       "fields": {},
       "next": "looks_show4",
       "topLevel": false,
-      "parent": "control_if_else11",
+      "parent": "text_setOutlineColor2",
       "shadow": false
     },
     "skyhigh173JSON_json_get13": {
@@ -4746,8 +7024,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text56",
-          "shadow": "text56"
+          "block": "text51",
+          "shadow": "text51"
         },
         "json": {
           "name": "json",
@@ -4761,8 +7039,8 @@
       "parent": "text_setText2",
       "shadow": false
     },
-    "text56": {
-      "id": "text56",
+    "text51": {
+      "id": "text51",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -4782,15 +7060,15 @@
       "inputs": {
         "INDEX": {
           "name": "INDEX",
-          "block": "data_variable25",
-          "shadow": "data_variable25"
+          "block": "data_variable23",
+          "shadow": "data_variable23"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
           "variableType": "list"
         }
       },
@@ -4799,8 +7077,8 @@
       "parent": "skyhigh173JSON_json_get13",
       "shadow": false
     },
-    "data_variable25": {
-      "id": "data_variable25",
+    "data_variable23": {
+      "id": "data_variable23",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
@@ -4826,211 +7104,125 @@
       "parent": "text_setText2",
       "shadow": false
     },
-    "procedures_call5": {
-      "id": "procedures_call5",
-      "opcode": "procedures_call",
+    "operator_join1": {
+      "id": "operator_join1",
+      "opcode": "operator_join",
       "inputs": {
-        "arg0": {
-          "name": "arg0",
-          "block": "text57",
-          "shadow": "text57"
+        "STRING1": {
+          "name": "STRING1",
+          "block": "skyhigh173JSON_json_get11",
+          "shadow": "text47"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "text48",
+          "shadow": "text48"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else7",
+      "parent": "looks_switchcostumeto5",
       "shadow": false,
+      "x": -835.213689760101,
+      "y": 1864.40833290513
+    },
+    "text47": {
+      "id": "text47",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "apple "
+        }
+      },
+      "next": null,
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": -911.1770896911622,
+      "y": 1690.0000000000002
+    },
+    "text48": {
+      "id": "text48",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": " kit"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": true,
+      "x": -716.81091494931,
+      "y": 1868.40833290513
+    },
+    "procedures_call7": {
+      "id": "procedures_call7",
+      "opcode": "procedures_call",
+      "inputs": {
+        "QaTQE+*zS[5g?P=r46ch": {
+          "name": "QaTQE+*zS[5g?P=r46ch",
+          "block": "text52",
+          "shadow": "text52"
+        },
+        "ld9FB_X=+22@6ct*6vEp": {
+          "name": "ld9FB_X=+22@6ct*6vEp",
+          "block": "text53",
+          "shadow": "text53"
+        },
+        "5^_c!5l5?Pt[~lXMr=2M": {
+          "name": "5^_c!5l5?Pt[~lXMr=2M",
+          "block": "text54",
+          "shadow": "text54"
+        },
+        "6gN(/xU}lZeWD9:4cQQH": {
+          "name": "6gN(/xU}lZeWD9:4cQQH",
+          "block": "text55",
+          "shadow": "text55"
+        },
+        "D~nhEnoHjY!0#UC}]o44": {
+          "name": "D~nhEnoHjY!0#UC}]o44",
+          "block": "skyhigh173JSON_json_array_push1",
+          "shadow": "text59"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call6",
+      "shadow": false,
+      "x": "350",
+      "y": "-408",
       "mutation": {
         "tagName": "mutation",
         "children": [],
-        "proccode": "​​warn​​ %s",
-        "argumentids": "[\"arg0\"]",
-        "warp": "false"
+        "proccode": "add part %s x %s restricted to %s with costume %s with pattern %s",
+        "argumentids": "[\"QaTQE+*zS[5g?P=r46ch\",\"ld9FB_X=+22@6ct*6vEp\",\"5^_c!5l5?Pt[~lXMr=2M\",\"6gN(/xU}lZeWD9:4cQQH\",\"D~nhEnoHjY!0#UC}]o44\"]",
+        "warp": "true"
       }
     },
-    "text57": {
-      "id": "text57",
+    "text52": {
+      "id": "text52",
       "opcode": "text",
       "inputs": {},
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "patience; the kits will come in time."
+          "value": "generic"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "procedures_call5",
+      "parent": "procedures_call7",
       "shadow": true
     },
-    "control_if8": {
-      "id": "control_if8",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_and4",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "event_broadcastandwait5",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "control_if9",
-      "topLevel": false,
-      "parent": "control_if_else6",
-      "shadow": false
-    },
-    "operator_and4": {
-      "id": "operator_and4",
-      "opcode": "operator_and",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "operator_equals19",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "operator_equals20",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if8",
-      "shadow": false
-    },
-    "operator_equals19": {
-      "id": "operator_equals19",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable30",
-          "shadow": "text62"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text63",
-          "shadow": "text63"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_and4",
-      "shadow": false
-    },
-    "data_variable30": {
-      "id": "data_variable30",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
-          "value": "PartsFilter",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals19",
-      "shadow": false
-    },
-    "text62": {
-      "id": "text62",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals19",
-      "shadow": true
-    },
-    "text63": {
-      "id": "text63",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "kits"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals19",
-      "shadow": true
-    },
-    "operator_equals20": {
-      "id": "operator_equals20",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_lengthoflist5",
-          "shadow": "text64"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text65",
-          "shadow": "text65"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_and4",
-      "shadow": false
-    },
-    "data_lengthoflist5": {
-      "id": "data_lengthoflist5",
-      "opcode": "data_lengthoflist",
-      "inputs": {},
-      "fields": {
-        "LIST": {
-          "name": "LIST",
-          "id": "]l,zbY}0x)-[ceE+6JG:",
-          "value": "Kits",
-          "variableType": "list"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals20",
-      "shadow": false
-    },
-    "text64": {
-      "id": "text64",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals20",
-      "shadow": true,
-      "x": "-1.8573963040182093",
-      "y": "1927.49118995252"
-    },
-    "text65": {
-      "id": "text65",
+    "text53": {
+      "id": "text53",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -5041,124 +7233,26 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals20",
+      "parent": "procedures_call7",
       "shadow": true
     },
-    "event_broadcastandwait5": {
-      "id": "event_broadcastandwait5",
-      "opcode": "event_broadcastandwait",
-      "inputs": {
-        "BROADCAST_INPUT": {
-          "name": "BROADCAST_INPUT",
-          "block": "event_broadcast_menu7",
-          "shadow": "event_broadcast_menu7"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if8",
-      "shadow": false
-    },
-    "event_broadcast_menu7": {
-      "id": "event_broadcast_menu7",
-      "opcode": "event_broadcast_menu",
+    "text54": {
+      "id": "text54",
+      "opcode": "text",
       "inputs": {},
       "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "Q;JHx*HE()n/w|78wtw.",
-          "value": "INVENTORY empty",
-          "variableType": "broadcast_msg"
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "event_broadcastandwait5",
+      "parent": "procedures_call7",
       "shadow": true
     },
-    "control_if9": {
-      "id": "control_if9",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_and3",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "event_broadcastandwait4",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if8",
-      "shadow": false
-    },
-    "operator_and3": {
-      "id": "operator_and3",
-      "opcode": "operator_and",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "operator_equals17",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "operator_equals18",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if9",
-      "shadow": false
-    },
-    "operator_equals17": {
-      "id": "operator_equals17",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable29",
-          "shadow": "text58"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text59",
-          "shadow": "text59"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_and3",
-      "shadow": false
-    },
-    "data_variable29": {
-      "id": "data_variable29",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
-          "value": "PartsFilter",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals17",
-      "shadow": false
-    },
-    "text58": {
-      "id": "text58",
+    "text55": {
+      "id": "text55",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -5169,7 +7263,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals17",
+      "parent": "procedures_call7",
       "shadow": true
     },
     "text59": {
@@ -5179,13 +7273,166 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": 1220.755258916955,
+      "y": -311.632828066534
+    },
+    "skyhigh173JSON_json_new2": {
+      "id": "skyhigh173JSON_json_new2",
+      "opcode": "skyhigh173JSON_json_new",
+      "inputs": {
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_menu_types2",
+          "shadow": "skyhigh173JSON_menu_types2"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_array_push1",
+      "shadow": false,
+      "x": 1518.4024346070614,
+      "y": -298.88985139708956
+    },
+    "skyhigh173JSON_menu_types2": {
+      "id": "skyhigh173JSON_menu_types2",
+      "opcode": "skyhigh173JSON_menu_types",
+      "inputs": {},
+      "fields": {
+        "types": {
+          "name": "types",
+          "value": "Array"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals17",
+      "parent": "skyhigh173JSON_json_new2",
       "shadow": true
+    },
+    "skyhigh173JSON_json_array_from1": {
+      "id": "skyhigh173JSON_json_array_from1",
+      "opcode": "skyhigh173JSON_json_array_from",
+      "inputs": {
+        "json": {
+          "name": "json",
+          "block": "text56",
+          "shadow": "text56"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_array_push1",
+      "shadow": false,
+      "x": 1250.3031604545615,
+      "y": -301.79694762827035
+    },
+    "text56": {
+      "id": "text56",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_array_from1",
+      "shadow": true
+    },
+    "skyhigh173JSON_json_array_push1": {
+      "id": "skyhigh173JSON_json_array_push1",
+      "opcode": "skyhigh173JSON_json_array_push",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "skyhigh173JSON_json_array_from1",
+          "shadow": "text57"
+        },
+        "json": {
+          "name": "json",
+          "block": "skyhigh173JSON_json_new2",
+          "shadow": "text58"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_call7",
+      "shadow": false,
+      "x": 1238.1978622955514,
+      "y": -304.0044258141364
+    },
+    "text57": {
+      "id": "text57",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "TurboWarp"
+        }
+      },
+      "next": null,
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": 1267.404564260583,
+      "y": -311.632828066534
+    },
+    "text58": {
+      "id": "text58",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "[\"scratch\"]"
+        }
+      },
+      "next": null,
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": 1521.1869662991571,
+      "y": -307.632828066534
+    },
+    "control_if_else17": {
+      "id": "control_if_else17",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals18",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_if_else18",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "control_if_else20",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else12",
+      "shadow": false,
+      "x": 673.2393797177016,
+      "y": 1992.6210257858834
     },
     "operator_equals18": {
       "id": "operator_equals18",
@@ -5193,238 +7440,110 @@
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
-          "block": "data_lengthoflist4",
-          "shadow": "text60"
+          "block": "data_variable32",
+          "shadow": "data_variable32"
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text61",
-          "shadow": "text61"
+          "block": "text77",
+          "shadow": "text77"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "operator_and3",
+      "parent": "control_if_else17",
       "shadow": false
     },
-    "data_lengthoflist4": {
-      "id": "data_lengthoflist4",
-      "opcode": "data_lengthoflist",
-      "inputs": {},
-      "fields": {
-        "LIST": {
-          "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
-          "variableType": "list"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals18",
-      "shadow": false
-    },
-    "text60": {
-      "id": "text60",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals18",
-      "shadow": true
-    },
-    "text61": {
-      "id": "text61",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals18",
-      "shadow": true
-    },
-    "event_broadcastandwait4": {
-      "id": "event_broadcastandwait4",
-      "opcode": "event_broadcastandwait",
-      "inputs": {
-        "BROADCAST_INPUT": {
-          "name": "BROADCAST_INPUT",
-          "block": "event_broadcast_menu6",
-          "shadow": "event_broadcast_menu6"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if9",
-      "shadow": false
-    },
-    "event_broadcast_menu6": {
-      "id": "event_broadcast_menu6",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "Q;JHx*HE()n/w|78wtw.",
-          "value": "INVENTORY empty",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "event_broadcastandwait4",
-      "shadow": true
-    },
-    "control_if5": {
-      "id": "control_if5",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_and2",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "event_broadcastandwait3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "control_if6",
-      "topLevel": false,
-      "parent": "control_repeat1",
-      "shadow": false,
-      "x": 96.66666666666669,
-      "y": 329.6666666666665
-    },
-    "operator_and2": {
-      "id": "operator_and2",
-      "opcode": "operator_and",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "operator_equals6",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "operator_equals7",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if5",
-      "shadow": false
-    },
-    "operator_equals6": {
-      "id": "operator_equals6",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable7",
-          "shadow": "text30"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text31",
-          "shadow": "text31"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_and2",
-      "shadow": false
-    },
-    "data_variable7": {
-      "id": "data_variable7",
+    "data_variable32": {
+      "id": "data_variable32",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
-          "value": "PartsFilter",
+          "id": "I$=n{B:W7ZVgSApu(#U7",
+          "value": "CloneType",
           "variableType": ""
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals6",
-      "shadow": false
+      "parent": "operator_equals18",
+      "shadow": true
     },
-    "text30": {
-      "id": "text30",
+    "text77": {
+      "id": "text77",
       "opcode": "text",
       "inputs": {},
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": ""
+          "value": "1"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals6",
+      "parent": "operator_equals18",
       "shadow": true
     },
-    "text31": {
-      "id": "text31",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "kits"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals6",
-      "shadow": true
-    },
-    "operator_equals7": {
-      "id": "operator_equals7",
-      "opcode": "operator_equals",
+    "control_if_else18": {
+      "id": "control_if_else18",
+      "opcode": "control_if_else",
       "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_lengthoflist3",
-          "shadow": "text32"
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals19",
+          "shadow": null
         },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text33",
-          "shadow": "text33"
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_hide8",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "looks_switchcostumeto10",
+          "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "operator_and2",
+      "parent": "control_if_else17",
       "shadow": false
     },
-    "data_lengthoflist3": {
-      "id": "data_lengthoflist3",
-      "opcode": "data_lengthoflist",
-      "inputs": {},
+    "operator_equals19": {
+      "id": "operator_equals19",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_itemoflist25",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text78",
+          "shadow": "text78"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else18",
+      "shadow": false
+    },
+    "data_itemoflist25": {
+      "id": "data_itemoflist25",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable33",
+          "shadow": "data_variable33"
+        }
+      },
       "fields": {
         "LIST": {
           "name": "LIST",
@@ -5435,156 +7554,28 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals7",
+      "parent": "operator_equals19",
       "shadow": false
     },
-    "text32": {
-      "id": "text32",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals7",
-      "shadow": true,
-      "x": "-1.8573963040182093",
-      "y": "1927.49118995252"
-    },
-    "text33": {
-      "id": "text33",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals7",
-      "shadow": true
-    },
-    "event_broadcastandwait3": {
-      "id": "event_broadcastandwait3",
-      "opcode": "event_broadcastandwait",
-      "inputs": {
-        "BROADCAST_INPUT": {
-          "name": "BROADCAST_INPUT",
-          "block": "event_broadcast_menu5",
-          "shadow": "event_broadcast_menu5"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if5",
-      "shadow": false
-    },
-    "event_broadcast_menu5": {
-      "id": "event_broadcast_menu5",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "Q;JHx*HE()n/w|78wtw.",
-          "value": "INVENTORY empty",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "event_broadcastandwait3",
-      "shadow": true
-    },
-    "control_if6": {
-      "id": "control_if6",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_and1",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "event_broadcastandwait2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if5",
-      "shadow": false
-    },
-    "operator_and1": {
-      "id": "operator_and1",
-      "opcode": "operator_and",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "operator_equals4",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "operator_equals5",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if6",
-      "shadow": false
-    },
-    "operator_equals4": {
-      "id": "operator_equals4",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable6",
-          "shadow": "text26"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text27",
-          "shadow": "text27"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_and1",
-      "shadow": false
-    },
-    "data_variable6": {
-      "id": "data_variable6",
+    "data_variable33": {
+      "id": "data_variable33",
       "opcode": "data_variable",
       "inputs": {},
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "x4gtq9]`+z%F4A@UJ1}N",
-          "value": "PartsFilter",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
           "variableType": ""
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals4",
-      "shadow": false
+      "parent": "data_itemoflist25",
+      "shadow": true
     },
-    "text26": {
-      "id": "text26",
+    "text78": {
+      "id": "text78",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -5595,64 +7586,175 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals4",
+      "parent": "operator_equals19",
       "shadow": true
     },
-    "text27": {
-      "id": "text27",
-      "opcode": "text",
+    "looks_hide8": {
+      "id": "looks_hide8",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else18",
+      "shadow": false
+    },
+    "looks_switchcostumeto10": {
+      "id": "looks_switchcostumeto10",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume5",
+          "shadow": "looks_costume5"
+        }
+      },
+      "fields": {},
+      "next": "control_if_else19",
+      "topLevel": false,
+      "parent": "control_if_else18",
+      "shadow": false
+    },
+    "looks_costume5": {
+      "id": "looks_costume5",
+      "opcode": "looks_costume",
       "inputs": {},
       "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "parts"
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "invalid kit"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals4",
+      "parent": "looks_switchcostumeto10",
       "shadow": true
     },
-    "operator_equals5": {
-      "id": "operator_equals5",
+    "control_if_else19": {
+      "id": "control_if_else19",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals20",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_switchcostumeto11",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "looks_switchcostumeto12",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_show7",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto10",
+      "shadow": false
+    },
+    "operator_equals20": {
+      "id": "operator_equals20",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
-          "block": "data_lengthoflist2",
-          "shadow": "text28"
+          "block": "skyhigh173JSON_json_get18",
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text29",
-          "shadow": "text29"
+          "block": "text80",
+          "shadow": "text80"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "operator_and1",
+      "parent": "control_if_else19",
       "shadow": false
     },
-    "data_lengthoflist2": {
-      "id": "data_lengthoflist2",
-      "opcode": "data_lengthoflist",
+    "skyhigh173JSON_json_get18": {
+      "id": "skyhigh173JSON_json_get18",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text79",
+          "shadow": "text79"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist26",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals20",
+      "shadow": false
+    },
+    "text79": {
+      "id": "text79",
+      "opcode": "text",
       "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Costume"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get18",
+      "shadow": true
+    },
+    "data_itemoflist26": {
+      "id": "data_itemoflist26",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable34",
+          "shadow": "data_variable34"
+        }
+      },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "w_bYE#_VOu%lcXO0`3Yh",
-          "value": "Parts",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
           "variableType": "list"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals5",
+      "parent": "skyhigh173JSON_json_get18",
       "shadow": false
     },
-    "text28": {
-      "id": "text28",
+    "data_variable34": {
+      "id": "data_variable34",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist26",
+      "shadow": true
+    },
+    "text80": {
+      "id": "text80",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -5663,55 +7765,474 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals5",
+      "parent": "operator_equals20",
       "shadow": true
     },
-    "text29": {
-      "id": "text29",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals5",
-      "shadow": true
-    },
-    "event_broadcastandwait2": {
-      "id": "event_broadcastandwait2",
-      "opcode": "event_broadcastandwait",
+    "looks_switchcostumeto11": {
+      "id": "looks_switchcostumeto11",
+      "opcode": "looks_switchcostumeto",
       "inputs": {
-        "BROADCAST_INPUT": {
-          "name": "BROADCAST_INPUT",
-          "block": "event_broadcast_menu4",
-          "shadow": "event_broadcast_menu4"
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "operator_join2",
+          "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if6",
+      "parent": "control_if_else19",
       "shadow": false
     },
-    "event_broadcast_menu4": {
-      "id": "event_broadcast_menu4",
-      "opcode": "event_broadcast_menu",
+    "skyhigh173JSON_json_get19": {
+      "id": "skyhigh173JSON_json_get19",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text81",
+          "shadow": "text81"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist27",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": false,
+      "x": 917.7978865867758,
+      "y": 2297.789204564727
+    },
+    "text81": {
+      "id": "text81",
+      "opcode": "text",
       "inputs": {},
       "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "Q;JHx*HE()n/w|78wtw.",
-          "value": "INVENTORY empty",
-          "variableType": "broadcast_msg"
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Name"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "event_broadcastandwait2",
+      "parent": "skyhigh173JSON_json_get19",
+      "shadow": true
+    },
+    "data_itemoflist27": {
+      "id": "data_itemoflist27",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable35",
+          "shadow": "data_variable35"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get19",
+      "shadow": false
+    },
+    "data_variable35": {
+      "id": "data_variable35",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist27",
+      "shadow": true
+    },
+    "looks_switchcostumeto12": {
+      "id": "looks_switchcostumeto12",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "skyhigh173JSON_json_get20",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else19",
+      "shadow": false
+    },
+    "skyhigh173JSON_json_get20": {
+      "id": "skyhigh173JSON_json_get20",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text84",
+          "shadow": "text84"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist28",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto12",
+      "shadow": false
+    },
+    "text84": {
+      "id": "text84",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Costume"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get20",
+      "shadow": true
+    },
+    "data_itemoflist28": {
+      "id": "data_itemoflist28",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable36",
+          "shadow": "data_variable36"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get20",
+      "shadow": false
+    },
+    "data_variable36": {
+      "id": "data_variable36",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist28",
+      "shadow": true
+    },
+    "looks_show7": {
+      "id": "looks_show7",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else19",
+      "shadow": false
+    },
+    "control_if_else20": {
+      "id": "control_if_else20",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals21",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_hide9",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "text_setText4",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else17",
+      "shadow": false
+    },
+    "operator_equals21": {
+      "id": "operator_equals21",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_itemoflist29",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text85",
+          "shadow": "text85"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else20",
+      "shadow": false
+    },
+    "data_itemoflist29": {
+      "id": "data_itemoflist29",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable37",
+          "shadow": "data_variable37"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals21",
+      "shadow": false
+    },
+    "data_variable37": {
+      "id": "data_variable37",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist29",
+      "shadow": true
+    },
+    "text85": {
+      "id": "text85",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals21",
+      "shadow": true
+    },
+    "looks_hide9": {
+      "id": "looks_hide9",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else20",
+      "shadow": false
+    },
+    "text_setText4": {
+      "id": "text_setText4",
+      "opcode": "text_setText",
+      "inputs": {
+        "TEXT": {
+          "name": "TEXT",
+          "block": "skyhigh173JSON_json_get21",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_show8",
+      "topLevel": false,
+      "parent": "control_if_else20",
+      "shadow": false
+    },
+    "skyhigh173JSON_json_get21": {
+      "id": "skyhigh173JSON_json_get21",
+      "opcode": "skyhigh173JSON_json_get",
+      "inputs": {
+        "item": {
+          "name": "item",
+          "block": "text86",
+          "shadow": "text86"
+        },
+        "json": {
+          "name": "json",
+          "block": "data_itemoflist30",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText4",
+      "shadow": false
+    },
+    "text86": {
+      "id": "text86",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "Amount"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get21",
+      "shadow": true
+    },
+    "data_itemoflist30": {
+      "id": "data_itemoflist30",
+      "opcode": "data_itemoflist",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "data_variable38",
+          "shadow": "data_variable38"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "id": "]l,zbY}0x)-[ceE+6JG:",
+          "value": "Kits",
+          "variableType": "list"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "skyhigh173JSON_json_get21",
+      "shadow": false,
+      "x": 1027.2013490933118,
+      "y": 2728.6210257858834
+    },
+    "data_variable38": {
+      "id": "data_variable38",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "l~p4.A??J%6;KUUKM]$9",
+          "value": "MyItem",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_itemoflist30",
+      "shadow": true
+    },
+    "looks_show8": {
+      "id": "looks_show8",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText4",
+      "shadow": false
+    },
+    "operator_join2": {
+      "id": "operator_join2",
+      "opcode": "operator_join",
+      "inputs": {
+        "STRING1": {
+          "name": "STRING1",
+          "block": "skyhigh173JSON_json_get19",
+          "shadow": "text82"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "text83",
+          "shadow": "text83"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto11",
+      "shadow": false,
+      "x": "633",
+      "y": "2459"
+    },
+    "text82": {
+      "id": "text82",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "apple "
+        }
+      },
+      "next": null,
+      "topLevel": true,
+      "parent": null,
+      "shadow": true,
+      "x": 909.0622900265395,
+      "y": 2296.621025785883
+    },
+    "text83": {
+      "id": "text83",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": " kit"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
       "shadow": true
     }
   },
@@ -5725,6 +8246,13 @@
     "procedures_definition3",
     "control_start_as_clone1",
     "event_whenbroadcastreceived2",
-    "event_whenbroadcastreceived3"
+    "event_whenbroadcastreceived3",
+    "procedures_definition4",
+    "text40",
+    "text47",
+    "text59",
+    "text57",
+    "text58",
+    "text82"
   ]
 }
