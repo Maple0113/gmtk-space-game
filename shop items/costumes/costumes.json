@@ -22,5 +22,59 @@
     "dataFormat": "png",
     "rotationCenterX": 63,
     "rotationCenterY": 64
+  },
+  {
+    "name": "body",
+    "dataFormat": "png",
+    "rotationCenterX": 38,
+    "rotationCenterY": 58
+  },
+  {
+    "name": "nosecone",
+    "dataFormat": "png",
+    "rotationCenterX": 42,
+    "rotationCenterY": 42
+  },
+  {
+    "name": "fin",
+    "dataFormat": "png",
+    "rotationCenterX": 48,
+    "rotationCenterY": 56
+  },
+  {
+    "name": "fueltank",
+    "dataFormat": "png",
+    "rotationCenterX": 52,
+    "rotationCenterY": 55
+  },
+  {
+    "name": "thruster",
+    "dataFormat": "png",
+    "rotationCenterX": 56,
+    "rotationCenterY": 44
+  },
+  {
+    "name": "advertisement",
+    "dataFormat": "png",
+    "rotationCenterX": 49,
+    "rotationCenterY": 53
+  },
+  {
+    "name": "window",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 64
+  },
+  {
+    "name": "cargobay",
+    "dataFormat": "png",
+    "rotationCenterX": 60,
+    "rotationCenterY": 59
+  },
+  {
+    "name": "ShopSheet",
+    "dataFormat": "png",
+    "rotationCenterX": 548,
+    "rotationCenterY": 72
   }
 ]

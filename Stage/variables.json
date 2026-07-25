@@ -25,21 +25,21 @@
     "name": "MaxPages",
     "type": "",
     "isCloud": false,
-    "value": 1
+    "value": 2
   },
   "j-wNVw^8ze)1w}ZzY,L$": {
     "id": "j-wNVw^8ze)1w}ZzY,L$",
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[0,0,0],[0,1,0],[1,0,0]]"
+    "value": "[[1,1,1,1]]"
   },
   "Pt.1X5RCAbK=Tm1JiWs^": {
     "id": "Pt.1X5RCAbK=Tm1JiWs^",
     "name": "Money",
     "type": "",
     "isCloud": false,
-    "value": 1897.4
+    "value": 1780
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -48,10 +48,10 @@
     "isCloud": false,
     "value": [
       "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":2}}",
-      "{\"Top\":{\"Width\":1,\"Length\":1},\"Middle\":{\"Width\":2,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
+      "{\"Top\":{\"Width\":2,\"Length\":1},\"Middle\":{\"Width\":2,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
       "{\"Top\":{\"Width\":4,\"Length\":1},\"Middle\":{\"Width\":4,\"Length\":4},\"Bottom\":{\"Width\":4,\"Length\":2}}",
       "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
-      "{\"Top\":{\"Width\":1,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":4},\"Bottom\":{\"Width\":2,\"Length\":1}}",
+      "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":4},\"Bottom\":{\"Width\":2,\"Length\":1}}",
       "{\"Top\":{\"Width\":3,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
       "{\"Top\":{\"Width\":4,\"Length\":1},\"Middle\":{\"Width\":5,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
       "{\"Top\":{\"Width\":4,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
@@ -68,7 +68,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"generic\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}"
+      "{\"Name\":\"body\",\"Amount\":998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
+      "{\"Name\":\"nosecone\",\"Amount\":997,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"fin\",\"Amount\":997,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"fueltank\",\"Amount\":998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"thruster\",\"Amount\":995,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"advertisement\",\"Amount\":996,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"window\",\"Amount\":997,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"cargobay\",\"Amount\":998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -77,9 +84,7 @@
     "name": "Kits",
     "type": "list",
     "isCloud": false,
-    "value": [
-      "{\"Name\":\"generic\",\"Amount\":0,\"Unlocked\":true,\"Cost\":100,\"Costume\":\"\"}"
-    ],
+    "value": [],
     "_monitorUpToDate": false
   },
   "0A][[Y=]Bc/QhAT9X])!": {
@@ -99,8 +104,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0]",
-      "[0,0]"
+      "[0,0,0]",
+      "[0,0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -110,8 +115,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0]",
-      "[0,0]"
+      "[0,0,0,0]",
+      "[0,0,0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -121,7 +126,9 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "1x Generic"
+      "1x Body",
+      "1x Nose Cone",
+      "2x Fin"
     ],
     "_monitorUpToDate": false
   },
@@ -131,7 +138,9 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":1,\"type\":\"Generic\"}"
+      "{\"amount\":1,\"type\":\"Body\"}",
+      "{\"amount\":1,\"type\":\"NoseCone\"}",
+      "{\"amount\":2,\"type\":\"Fin\"}"
     ],
     "_monitorUpToDate": false
   },

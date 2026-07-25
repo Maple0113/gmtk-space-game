@@ -1,20 +1,21 @@
 {
   "blocks": {
     "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
       "opcode": "event_whenflagclicked",
+      "next": "data_setvariableto1",
+      "parent": null,
       "inputs": {},
       "fields": {},
-      "next": "data_setvariableto1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 16,
-      "y": 141
+      "y": 141,
+      "id": "event_whenflagclicked1"
     },
     "motion_gotoxy1": {
-      "id": "motion_gotoxy1",
       "opcode": "motion_gotoxy",
+      "next": "looks_setsizeto1",
+      "parent": "data_setvariableto1",
       "inputs": {
         "X": {
           "name": "X",
@@ -28,44 +29,14 @@
         }
       },
       "fields": {},
-      "next": "looks_setsizeto1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "data_setvariableto1",
-      "shadow": false
-    },
-    "math_number2": {
-      "id": "math_number2",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "265"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "math_number3": {
-      "id": "math_number3",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "-150"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
+      "id": "motion_gotoxy1"
     },
     "looks_setsizeto1": {
-      "id": "looks_setsizeto1",
       "opcode": "looks_setsizeto",
+      "next": "looks_hide1",
+      "parent": "motion_gotoxy1",
       "inputs": {
         "SIZE": {
           "name": "SIZE",
@@ -74,68 +45,53 @@
         }
       },
       "fields": {},
-      "next": "looks_hide1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": false
-    },
-    "math_number1": {
-      "id": "math_number1",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "150"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": true
+      "id": "looks_setsizeto1"
     },
     "looks_hide1": {
-      "id": "looks_hide1",
       "opcode": "looks_hide",
+      "next": null,
+      "parent": "looks_setsizeto1",
       "inputs": {},
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": false
+      "id": "looks_hide1"
     },
     "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
+      "next": "looks_show1",
+      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
           "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "looks_show1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 350,
-      "y": 137
+      "y": 137,
+      "id": "event_whenbroadcastreceived1"
     },
     "looks_show1": {
-      "id": "looks_show1",
       "opcode": "looks_show",
+      "next": "control_forever1",
+      "parent": "event_whenbroadcastreceived1",
       "inputs": {},
       "fields": {},
-      "next": "control_forever1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false
+      "id": "looks_show1"
     },
     "control_forever1": {
-      "id": "control_forever1",
       "opcode": "control_forever",
+      "next": null,
+      "parent": "looks_show1",
       "inputs": {
         "SUBSTACK": {
           "name": "SUBSTACK",
@@ -144,26 +100,26 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "looks_show1",
-      "shadow": false
+      "id": "control_forever1"
     },
     "event_whenthisspriteclicked1": {
-      "id": "event_whenthisspriteclicked1",
       "opcode": "event_whenthisspriteclicked",
+      "next": "control_if1",
+      "parent": null,
       "inputs": {},
       "fields": {},
-      "next": "control_if1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 822,
-      "y": 125
+      "y": 125,
+      "id": "event_whenthisspriteclicked1"
     },
     "control_if1": {
-      "id": "control_if1",
       "opcode": "control_if",
+      "next": null,
+      "parent": "event_whenthisspriteclicked1",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -177,14 +133,14 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "event_whenthisspriteclicked1",
-      "shadow": false
+      "id": "control_if1"
     },
     "operator_equals2": {
-      "id": "operator_equals2",
       "opcode": "operator_equals",
+      "next": null,
+      "parent": "control_if1",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -198,46 +154,14 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false
-    },
-    "text6": {
-      "id": "text6",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "next": null,
-      "topLevel": true,
-      "parent": null,
-      "shadow": true,
-      "x": 890.0186705972831,
-      "y": 181.24773183173494
-    },
-    "text7": {
-      "id": "text7",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "true"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals2",
-      "shadow": true
+      "id": "operator_equals2"
     },
     "looks_switchcostumeto1": {
-      "id": "looks_switchcostumeto1",
       "opcode": "looks_switchcostumeto",
+      "next": "control_wait_until1",
+      "parent": "control_if1",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
@@ -246,29 +170,30 @@
         }
       },
       "fields": {},
-      "next": "control_wait_until1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false
+      "id": "looks_switchcostumeto1"
     },
     "looks_costume2": {
-      "id": "looks_costume2",
       "opcode": "looks_costume",
+      "next": null,
+      "parent": "looks_switchcostumeto1",
       "inputs": {},
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "pressed"
+          "value": "pressed",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "looks_switchcostumeto1",
-      "shadow": true
+      "id": "looks_costume2"
     },
     "control_wait_until1": {
-      "id": "control_wait_until1",
       "opcode": "control_wait_until",
+      "next": "looks_switchcostumeto2",
+      "parent": "looks_switchcostumeto1",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -277,14 +202,14 @@
         }
       },
       "fields": {},
-      "next": "looks_switchcostumeto2",
+      "shadow": false,
       "topLevel": false,
-      "parent": "looks_switchcostumeto1",
-      "shadow": false
+      "id": "control_wait_until1"
     },
     "operator_not1": {
-      "id": "operator_not1",
       "opcode": "operator_not",
+      "next": null,
+      "parent": "control_wait_until1",
       "inputs": {
         "OPERAND": {
           "name": "OPERAND",
@@ -293,24 +218,24 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_wait_until1",
-      "shadow": false
+      "id": "operator_not1"
     },
     "sensing_mousedown1": {
-      "id": "sensing_mousedown1",
       "opcode": "sensing_mousedown",
+      "next": null,
+      "parent": "operator_not1",
       "inputs": {},
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "operator_not1",
-      "shadow": false
+      "id": "sensing_mousedown1"
     },
     "looks_switchcostumeto2": {
-      "id": "looks_switchcostumeto2",
       "opcode": "looks_switchcostumeto",
+      "next": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "parent": "control_wait_until1",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
@@ -319,29 +244,30 @@
         }
       },
       "fields": {},
-      "next": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_wait_until1",
-      "shadow": false
+      "id": "looks_switchcostumeto2"
     },
     "looks_costume1": {
-      "id": "looks_costume1",
       "opcode": "looks_costume",
+      "next": null,
+      "parent": "looks_switchcostumeto2",
       "inputs": {},
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "button"
+          "value": "button",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "looks_switchcostumeto2",
-      "shadow": true
+      "id": "looks_costume1"
     },
     "lmsMoreEvents_broadcastToTargetAndWait1": {
-      "id": "lmsMoreEvents_broadcastToTargetAndWait1",
       "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
+      "next": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "parent": "looks_switchcostumeto2",
       "inputs": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
@@ -355,46 +281,30 @@
         }
       },
       "fields": {},
-      "next": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "shadow": false,
       "topLevel": false,
-      "parent": "looks_switchcostumeto2",
-      "shadow": false
-    },
-    "event_broadcast_menu3": {
-      "id": "event_broadcast_menu3",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "=9Rd9n:vJm=CO$~p|E1n",
-          "value": "GAME rocket submit",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
-      "shadow": true
+      "id": "lmsMoreEvents_broadcastToTargetAndWait1"
     },
     "lmsMoreEvents_menu_targetMenu3": {
-      "id": "lmsMoreEvents_menu_targetMenu3",
       "opcode": "lmsMoreEvents_menu_targetMenu",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
       "inputs": {},
       "fields": {
         "targetMenu": {
           "name": "targetMenu",
-          "value": "Investors"
+          "value": "Investors",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
-      "shadow": true
+      "id": "lmsMoreEvents_menu_targetMenu3"
     },
     "data_setvariableto1": {
-      "id": "data_setvariableto1",
       "opcode": "data_setvariableto",
+      "next": "motion_gotoxy1",
+      "parent": "event_whenflagclicked1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -405,36 +315,19 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
           "value": "CanSubmit",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
           "variableType": ""
         }
       },
-      "next": "motion_gotoxy1",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
       "shadow": false,
-      "x": 68.57857845623299,
-      "y": 192.28673482176671
-    },
-    "text1": {
-      "id": "text1",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "false"
-        }
-      },
-      "next": null,
       "topLevel": false,
-      "parent": "data_setvariableto1",
-      "shadow": true
+      "id": "data_setvariableto1"
     },
     "control_if_else1": {
-      "id": "control_if_else1",
       "opcode": "control_if_else",
+      "next": null,
+      "parent": "control_forever1",
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
@@ -453,16 +346,14 @@
         }
       },
       "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_forever1",
       "shadow": false,
-      "x": 366,
-      "y": 280.99999999999994
+      "topLevel": false,
+      "id": "control_if_else1"
     },
     "operator_equals1": {
-      "id": "operator_equals1",
       "opcode": "operator_equals",
+      "next": null,
+      "parent": "control_if_else1",
       "inputs": {
         "OPERAND1": {
           "name": "OPERAND1",
@@ -476,63 +367,31 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_if_else1",
-      "shadow": false
+      "id": "operator_equals1"
     },
     "data_lengthoflist1": {
-      "id": "data_lengthoflist1",
       "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "operator_equals1",
       "inputs": {},
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "variableType": "list"
         }
       },
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "operator_equals1",
-      "shadow": false
-    },
-    "text2": {
-      "id": "text2",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals1",
-      "shadow": true,
-      "x": "755",
-      "y": "389"
-    },
-    "text3": {
-      "id": "text3",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals1",
-      "shadow": true
+      "id": "data_lengthoflist1"
     },
     "data_setvariableto2": {
-      "id": "data_setvariableto2",
       "opcode": "data_setvariableto",
+      "next": "looks_seteffectto1",
+      "parent": "control_if_else1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -543,36 +402,19 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
           "value": "CanSubmit",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
           "variableType": ""
         }
       },
-      "next": "looks_seteffectto1",
-      "topLevel": false,
-      "parent": "control_if_else1",
       "shadow": false,
-      "x": 629.9719983080936,
-      "y": 506.2535956365014
-    },
-    "text4": {
-      "id": "text4",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "false"
-        }
-      },
-      "next": null,
       "topLevel": false,
-      "parent": "data_setvariableto2",
-      "shadow": true
+      "id": "data_setvariableto2"
     },
     "looks_seteffectto1": {
-      "id": "looks_seteffectto1",
       "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "data_setvariableto2",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -583,53 +425,18 @@
       "fields": {
         "EFFECT": {
           "name": "EFFECT",
-          "value": "BRIGHTNESS"
+          "value": "BRIGHTNESS",
+          "id": null
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto2",
       "shadow": false,
-      "x": 594.4407692035454,
-      "y": 540.7511918732253
-    },
-    "math_number4": {
-      "id": "math_number4",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "-50"
-        }
-      },
-      "next": null,
       "topLevel": false,
-      "parent": "looks_seteffectto1",
-      "shadow": true
-    },
-    "data_variable1": {
-      "id": "data_variable1",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
-          "value": "CanSubmit",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals2",
-      "shadow": false,
-      "x": 898.7011442492649,
-      "y": 199.2637761732053
+      "id": "looks_seteffectto1"
     },
     "data_setvariableto3": {
-      "id": "data_setvariableto3",
       "opcode": "data_setvariableto",
+      "next": "looks_seteffectto2",
+      "parent": "control_if_else1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -640,36 +447,19 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
           "value": "CanSubmit",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
           "variableType": ""
         }
       },
-      "next": "looks_seteffectto2",
-      "topLevel": false,
-      "parent": "control_if_else1",
       "shadow": false,
-      "x": "382",
-      "y": "337"
-    },
-    "text5": {
-      "id": "text5",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "true"
-        }
-      },
-      "next": null,
       "topLevel": false,
-      "parent": "data_setvariableto3",
-      "shadow": true
+      "id": "data_setvariableto3"
     },
     "looks_seteffectto2": {
-      "id": "looks_seteffectto2",
       "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "data_setvariableto3",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -680,32 +470,18 @@
       "fields": {
         "EFFECT": {
           "name": "EFFECT",
-          "value": "BRIGHTNESS"
+          "value": "BRIGHTNESS",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "data_setvariableto3",
-      "shadow": false
-    },
-    "math_number5": {
-      "id": "math_number5",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_seteffectto2",
-      "shadow": true
+      "id": "looks_seteffectto2"
     },
     "lmsMoreEvents_broadcastToTargetAndWait2": {
-      "id": "lmsMoreEvents_broadcastToTargetAndWait2",
       "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
+      "next": "lmsMoreEvents_broadcastToTargetAndWait3",
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
       "inputs": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
@@ -719,48 +495,30 @@
         }
       },
       "fields": {},
-      "next": "lmsMoreEvents_broadcastToTargetAndWait3",
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
       "shadow": false,
-      "x": "838",
-      "y": "381"
-    },
-    "event_broadcast_menu2": {
-      "id": "event_broadcast_menu2",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "=9Rd9n:vJm=CO$~p|E1n",
-          "value": "GAME rocket submit",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
       "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
-      "shadow": true
+      "id": "lmsMoreEvents_broadcastToTargetAndWait2"
     },
     "lmsMoreEvents_menu_targetMenu2": {
-      "id": "lmsMoreEvents_menu_targetMenu2",
       "opcode": "lmsMoreEvents_menu_targetMenu",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
       "inputs": {},
       "fields": {
         "targetMenu": {
           "name": "targetMenu",
-          "value": "grid items"
+          "value": "grid items",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
-      "shadow": true
+      "id": "lmsMoreEvents_menu_targetMenu2"
     },
     "lmsMoreEvents_broadcastToTargetAndWait3": {
-      "id": "lmsMoreEvents_broadcastToTargetAndWait3",
       "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
       "inputs": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
@@ -774,50 +532,277 @@
         }
       },
       "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
       "shadow": false,
-      "x": "838",
-      "y": "381"
-    },
-    "event_broadcast_menu1": {
-      "id": "event_broadcast_menu1",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "=9Rd9n:vJm=CO$~p|E1n",
-          "value": "GAME rocket submit",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
       "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
-      "shadow": true
+      "id": "lmsMoreEvents_broadcastToTargetAndWait3"
     },
     "lmsMoreEvents_menu_targetMenu1": {
-      "id": "lmsMoreEvents_menu_targetMenu1",
       "opcode": "lmsMoreEvents_menu_targetMenu",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
       "inputs": {},
       "fields": {
         "targetMenu": {
           "name": "targetMenu",
-          "value": "rocket grid"
+          "value": "rocket grid",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
+      "id": "lmsMoreEvents_menu_targetMenu1"
+    },
+    "math_number2": {
+      "id": "math_number2",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "265"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-150"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number1": {
+      "id": "math_number1",
+      "next": null,
+      "parent": "looks_setsizeto1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "150"
+        }
+      },
+      "topLevel": false
+    },
+    "data_variable1": {
+      "id": "data_variable1",
+      "next": null,
+      "parent": "operator_equals2",
+      "shadow": false,
+      "inputs": {},
+      "opcode": "data_variable",
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CanSubmit",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
+          "variableType": ""
+        }
+      }
+    },
+    "text6": {
+      "id": "text6",
+      "next": null,
+      "parent": "operator_equals2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "topLevel": false
+    },
+    "text7": {
+      "id": "text7",
+      "next": null,
+      "parent": "operator_equals2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "true"
+        }
+      },
+      "topLevel": false
+    },
+    "event_broadcast_menu3": {
+      "id": "event_broadcast_menu3",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "event_broadcast_menu",
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME rocket submit",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "topLevel": false
+    },
+    "text1": {
+      "id": "text1",
+      "next": null,
+      "parent": "data_setvariableto1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "false"
+        }
+      },
+      "topLevel": false
+    },
+    "text2": {
+      "id": "text2",
+      "next": null,
+      "parent": "operator_equals1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "topLevel": false
+    },
+    "text3": {
+      "id": "text3",
+      "next": null,
+      "parent": "operator_equals1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "topLevel": false
+    },
+    "text4": {
+      "id": "text4",
+      "next": null,
+      "parent": "data_setvariableto2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "false"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number4": {
+      "id": "math_number4",
+      "next": null,
+      "parent": "looks_seteffectto1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-50"
+        }
+      },
+      "topLevel": false
+    },
+    "text5": {
+      "id": "text5",
+      "next": null,
+      "parent": "data_setvariableto3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "true"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number5": {
+      "id": "math_number5",
+      "next": null,
+      "parent": "looks_seteffectto2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0"
+        }
+      },
+      "topLevel": false
+    },
+    "event_broadcast_menu2": {
+      "id": "event_broadcast_menu2",
+      "next": null,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "event_broadcast_menu",
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME rocket submit",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "topLevel": false
+    },
+    "event_broadcast_menu1": {
+      "id": "event_broadcast_menu1",
+      "next": null,
       "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
-      "shadow": true
+      "shadow": true,
+      "inputs": {},
+      "opcode": "event_broadcast_menu",
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME rocket submit",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "topLevel": false
     }
   },
   "scripts": [
     "event_whenflagclicked1",
     "event_whenbroadcastreceived1",
-    "event_whenthisspriteclicked1",
-    "text6"
+    "event_whenthisspriteclicked1"
   ]
 }

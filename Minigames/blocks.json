@@ -888,6 +888,320 @@
       "topLevel": false,
       "id": "iframe_displayHTML6"
     },
+    "event_whenflagclicked1": {
+      "opcode": "event_whenflagclicked",
+      "next": "looks_setsizeto1",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64,
+      "id": "event_whenflagclicked1"
+    },
+    "looks_setsizeto1": {
+      "opcode": "looks_setsizeto",
+      "next": "motion_gotoxy2",
+      "parent": "event_whenflagclicked1",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number13",
+          "shadow": "math_number13"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_setsizeto1"
+    },
+    "motion_gotoxy2": {
+      "opcode": "motion_gotoxy",
+      "next": "looks_hide2",
+      "parent": "looks_setsizeto1",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number11",
+          "shadow": "math_number11"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number12",
+          "shadow": "math_number12"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_gotoxy2"
+    },
+    "looks_hide2": {
+      "opcode": "looks_hide",
+      "next": "theshovelcanvaseffects_seteffect8",
+      "parent": "motion_gotoxy2",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide2"
+    },
+    "theshovelcanvaseffects_seteffect8": {
+      "opcode": "theshovelcanvaseffects_seteffect",
+      "next": "iframe_close2",
+      "parent": "looks_hide2",
+      "inputs": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU8",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU8"
+        },
+        "NUMBER": {
+          "name": "NUMBER",
+          "block": "math_number10",
+          "shadow": "math_number10"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "theshovelcanvaseffects_seteffect8"
+    },
+    "theshovelcanvaseffects_menu_EFFECTMENU8": {
+      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
+      "next": null,
+      "parent": "theshovelcanvaseffects_seteffect8",
+      "inputs": {},
+      "fields": {
+        "EFFECTMENU": {
+          "name": "EFFECTMENU",
+          "value": "blur",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU8"
+    },
+    "iframe_close2": {
+      "opcode": "iframe_close",
+      "next": null,
+      "parent": "theshovelcanvaseffects_seteffect8",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "iframe_close2"
+    },
+    "event_whenbroadcastreceived7": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "theshovelcanvaseffects_seteffect9",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "MINIGAME Windows",
+          "id": "c?L#51.#1:Q{u9h1$T@0",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 1328,
+      "id": "event_whenbroadcastreceived7"
+    },
+    "theshovelcanvaseffects_seteffect9": {
+      "opcode": "theshovelcanvaseffects_seteffect",
+      "next": "iframe_setInteractive8",
+      "parent": "event_whenbroadcastreceived7",
+      "inputs": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU9",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU9"
+        },
+        "NUMBER": {
+          "name": "NUMBER",
+          "block": "math_number14",
+          "shadow": "math_number14"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "theshovelcanvaseffects_seteffect9"
+    },
+    "theshovelcanvaseffects_menu_EFFECTMENU9": {
+      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
+      "next": null,
+      "parent": "theshovelcanvaseffects_seteffect9",
+      "inputs": {},
+      "fields": {
+        "EFFECTMENU": {
+          "name": "EFFECTMENU",
+          "value": "blur",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU9"
+    },
+    "iframe_setInteractive8": {
+      "opcode": "iframe_setInteractive",
+      "next": "iframe_displayHTML7",
+      "parent": "theshovelcanvaseffects_seteffect9",
+      "inputs": {
+        "INTERACTIVE": {
+          "name": "INTERACTIVE",
+          "block": "iframe_menu_interactiveMenu8",
+          "shadow": "iframe_menu_interactiveMenu8"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "iframe_setInteractive8"
+    },
+    "iframe_menu_interactiveMenu8": {
+      "opcode": "iframe_menu_interactiveMenu",
+      "next": null,
+      "parent": "iframe_setInteractive8",
+      "inputs": {},
+      "fields": {
+        "interactiveMenu": {
+          "name": "interactiveMenu",
+          "value": "true",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "iframe_menu_interactiveMenu8"
+    },
+    "iframe_displayHTML7": {
+      "opcode": "iframe_displayHTML",
+      "next": null,
+      "parent": "iframe_setInteractive8",
+      "inputs": {
+        "HTML": {
+          "name": "HTML",
+          "block": "text9",
+          "shadow": "text9"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "iframe_displayHTML7"
+    },
+    "event_whenbroadcastreceived8": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "theshovelcanvaseffects_seteffect10",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "MINIGAME Body",
+          "id": "^y%zj*[2)y-pS@YA|+tu",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 1056,
+      "id": "event_whenbroadcastreceived8"
+    },
+    "theshovelcanvaseffects_seteffect10": {
+      "opcode": "theshovelcanvaseffects_seteffect",
+      "next": "iframe_setInteractive9",
+      "parent": "event_whenbroadcastreceived8",
+      "inputs": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "block": "theshovelcanvaseffects_menu_EFFECTMENU10",
+          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU10"
+        },
+        "NUMBER": {
+          "name": "NUMBER",
+          "block": "math_number15",
+          "shadow": "math_number15"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "theshovelcanvaseffects_seteffect10"
+    },
+    "theshovelcanvaseffects_menu_EFFECTMENU10": {
+      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
+      "next": null,
+      "parent": "theshovelcanvaseffects_seteffect10",
+      "inputs": {},
+      "fields": {
+        "EFFECTMENU": {
+          "name": "EFFECTMENU",
+          "value": "blur",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "theshovelcanvaseffects_menu_EFFECTMENU10"
+    },
+    "iframe_setInteractive9": {
+      "opcode": "iframe_setInteractive",
+      "next": "iframe_displayHTML8",
+      "parent": "theshovelcanvaseffects_seteffect10",
+      "inputs": {
+        "INTERACTIVE": {
+          "name": "INTERACTIVE",
+          "block": "iframe_menu_interactiveMenu9",
+          "shadow": "iframe_menu_interactiveMenu9"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "iframe_setInteractive9"
+    },
+    "iframe_menu_interactiveMenu9": {
+      "opcode": "iframe_menu_interactiveMenu",
+      "next": null,
+      "parent": "iframe_setInteractive9",
+      "inputs": {},
+      "fields": {
+        "interactiveMenu": {
+          "name": "interactiveMenu",
+          "value": "true",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "iframe_menu_interactiveMenu9"
+    },
+    "iframe_displayHTML8": {
+      "opcode": "iframe_displayHTML",
+      "next": null,
+      "parent": "iframe_setInteractive9",
+      "inputs": {
+        "HTML": {
+          "name": "HTML",
+          "block": "text10",
+          "shadow": "text10"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "iframe_displayHTML8"
+    },
     "math_positive_number2": {
       "id": "math_positive_number2",
       "next": null,
@@ -1173,434 +1487,125 @@
       },
       "topLevel": false
     },
-    "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
-      "opcode": "event_whenflagclicked",
-      "inputs": {},
-      "fields": {},
-      "next": "looks_setsizeto1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 48,
-      "y": 64
-    },
-    "looks_setsizeto1": {
-      "id": "looks_setsizeto1",
-      "opcode": "looks_setsizeto",
-      "inputs": {
-        "SIZE": {
-          "name": "SIZE",
-          "block": "math_number13",
-          "shadow": "math_number13"
-        }
-      },
-      "fields": {},
-      "next": "motion_gotoxy2",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false
-    },
     "math_number13": {
       "id": "math_number13",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "looks_setsizeto1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "500"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": true
-    },
-    "motion_gotoxy2": {
-      "id": "motion_gotoxy2",
-      "opcode": "motion_gotoxy",
-      "inputs": {
-        "X": {
-          "name": "X",
-          "block": "math_number11",
-          "shadow": "math_number11"
-        },
-        "Y": {
-          "name": "Y",
-          "block": "math_number12",
-          "shadow": "math_number12"
-        }
-      },
-      "fields": {},
-      "next": "looks_hide2",
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": false
+      "topLevel": false
     },
     "math_number11": {
       "id": "math_number11",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "motion_gotoxy2",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "0"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": true
+      "topLevel": false
     },
     "math_number12": {
       "id": "math_number12",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "motion_gotoxy2",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "0"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": true
-    },
-    "looks_hide2": {
-      "id": "looks_hide2",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": "theshovelcanvaseffects_seteffect8",
-      "topLevel": false,
-      "parent": "motion_gotoxy2",
-      "shadow": false
-    },
-    "theshovelcanvaseffects_seteffect8": {
-      "id": "theshovelcanvaseffects_seteffect8",
-      "opcode": "theshovelcanvaseffects_seteffect",
-      "inputs": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU8",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU8"
-        },
-        "NUMBER": {
-          "name": "NUMBER",
-          "block": "math_number10",
-          "shadow": "math_number10"
-        }
-      },
-      "fields": {},
-      "next": "iframe_close2",
-      "topLevel": false,
-      "parent": "looks_hide2",
-      "shadow": false
-    },
-    "theshovelcanvaseffects_menu_EFFECTMENU8": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU8",
-      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
-      "inputs": {},
-      "fields": {
-        "EFFECTMENU": {
-          "name": "EFFECTMENU",
-          "value": "blur"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect8",
-      "shadow": true
+      "topLevel": false
     },
     "math_number10": {
       "id": "math_number10",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "theshovelcanvaseffects_seteffect8",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "0"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect8",
-      "shadow": true
-    },
-    "iframe_close2": {
-      "id": "iframe_close2",
-      "opcode": "iframe_close",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect8",
-      "shadow": false
-    },
-    "event_whenbroadcastreceived7": {
-      "id": "event_whenbroadcastreceived7",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "c?L#51.#1:Q{u9h1$T@0",
-          "value": "MINIGAME Windows",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "theshovelcanvaseffects_seteffect9",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 48,
-      "y": 1328
-    },
-    "theshovelcanvaseffects_seteffect9": {
-      "id": "theshovelcanvaseffects_seteffect9",
-      "opcode": "theshovelcanvaseffects_seteffect",
-      "inputs": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU9",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU9"
-        },
-        "NUMBER": {
-          "name": "NUMBER",
-          "block": "math_number14",
-          "shadow": "math_number14"
-        }
-      },
-      "fields": {},
-      "next": "iframe_setInteractive8",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived7",
-      "shadow": false
-    },
-    "theshovelcanvaseffects_menu_EFFECTMENU9": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU9",
-      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
-      "inputs": {},
-      "fields": {
-        "EFFECTMENU": {
-          "name": "EFFECTMENU",
-          "value": "blur"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
-      "shadow": true
+      "topLevel": false
     },
     "math_number14": {
       "id": "math_number14",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "theshovelcanvaseffects_seteffect9",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
-      "shadow": true
-    },
-    "iframe_setInteractive8": {
-      "id": "iframe_setInteractive8",
-      "opcode": "iframe_setInteractive",
-      "inputs": {
-        "INTERACTIVE": {
-          "name": "INTERACTIVE",
-          "block": "iframe_menu_interactiveMenu8",
-          "shadow": "iframe_menu_interactiveMenu8"
-        }
-      },
-      "fields": {},
-      "next": "iframe_displayHTML7",
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect9",
-      "shadow": false
-    },
-    "iframe_menu_interactiveMenu8": {
-      "id": "iframe_menu_interactiveMenu8",
-      "opcode": "iframe_menu_interactiveMenu",
-      "inputs": {},
-      "fields": {
-        "interactiveMenu": {
-          "name": "interactiveMenu",
-          "value": "true"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "iframe_setInteractive8",
-      "shadow": true
-    },
-    "iframe_displayHTML7": {
-      "id": "iframe_displayHTML7",
-      "opcode": "iframe_displayHTML",
-      "inputs": {
-        "HTML": {
-          "name": "HTML",
-          "block": "text9",
-          "shadow": "text9"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "iframe_setInteractive8",
-      "shadow": false
+      "topLevel": false
     },
     "text9": {
       "id": "text9",
-      "opcode": "text",
+      "next": null,
+      "parent": "iframe_displayHTML7",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;border:3px solid #555;overflow:hidden;color:white;font-family:sans-serif;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} canvas{position:absolute;top:0;left:0;} </style> </head> <body>  <div id=\"panel\">   <canvas id=\"c\" width=\"300\" height=\"300\"></canvas>   <div id=\"msg\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let c=document.getElementById(\"c\"); let ctx=c.getContext(\"2d\"); let msg=document.getElementById(\"msg\"); let painting=false; let cleaned=0; let total=0; let gridSize=10; let cols=300/gridSize; let rows=300/gridSize; let grid=[]; let lastX=0; let lastY=0; let ended=false;  for(let y=0;y<rows;y++){   grid[y]=[];   for(let x=0;x<cols;x++){     grid[y][x]=0;     total++;   } }  ctx.fillStyle=\"#8b5a2b\"; ctx.fillRect(0,0,300,300);  function markCell(x,y){   let gx=Math.floor(x/gridSize);   let gy=Math.floor(y/gridSize);   if(gx>=0&&gx<cols&&gy>=0&&gy<rows){     if(grid[gy][gx]===0){       grid[gy][gx]=1;       cleaned++;     }   } }  function paintLine(x1,y1,x2,y2){   ctx.strokeStyle=\"#88ccee\";   ctx.lineWidth=48;   ctx.lineCap=\"round\";   ctx.beginPath();   ctx.moveTo(x1,y1);   ctx.lineTo(x2,y2);   ctx.stroke();   let steps=20;   for(let i=0;i<=steps;i++){     let t=i/steps;     let x=x1+(x2-x1)*t;     let y=y1+(y2-y1)*t;     markCell(x,y);   } }  function finish(){   if(ended)return;   ended=true;   let ratio=cleaned/total;   let score=ratio>0.8?3:ratio>0.6?2:ratio>0.4?1:0;   window.parent.postMessage({type:\"windowsScore\",score:score},\"*\"); }  c.onmousedown=e=>{   painting=true;   let r=c.getBoundingClientRect();   lastX=e.clientX-r.left;   lastY=e.clientY-r.top;   paintLine(lastX,lastY,lastX,lastY); };  c.onmouseup=e=>{   painting=false;   finish(); };  c.onmousemove=e=>{   if(!painting)return;   let r=c.getBoundingClientRect();   let x=e.clientX-r.left;   let y=e.clientY-r.top;   paintLine(lastX,lastY,x,y);   lastX=x;   lastY=y; };  setTimeout(()=>{finish();},7000); </script>  </body> </html>"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "iframe_displayHTML7",
-      "shadow": true
-    },
-    "event_whenbroadcastreceived8": {
-      "id": "event_whenbroadcastreceived8",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "^y%zj*[2)y-pS@YA|+tu",
-          "value": "MINIGAME Body",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "theshovelcanvaseffects_seteffect10",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 48,
-      "y": 1056
-    },
-    "theshovelcanvaseffects_seteffect10": {
-      "id": "theshovelcanvaseffects_seteffect10",
-      "opcode": "theshovelcanvaseffects_seteffect",
-      "inputs": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "block": "theshovelcanvaseffects_menu_EFFECTMENU10",
-          "shadow": "theshovelcanvaseffects_menu_EFFECTMENU10"
-        },
-        "NUMBER": {
-          "name": "NUMBER",
-          "block": "math_number15",
-          "shadow": "math_number15"
-        }
-      },
-      "fields": {},
-      "next": "iframe_setInteractive9",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived8",
-      "shadow": false
-    },
-    "theshovelcanvaseffects_menu_EFFECTMENU10": {
-      "id": "theshovelcanvaseffects_menu_EFFECTMENU10",
-      "opcode": "theshovelcanvaseffects_menu_EFFECTMENU",
-      "inputs": {},
-      "fields": {
-        "EFFECTMENU": {
-          "name": "EFFECTMENU",
-          "value": "blur"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
-      "shadow": true
+      "topLevel": false
     },
     "math_number15": {
       "id": "math_number15",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "theshovelcanvaseffects_seteffect10",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
-      "shadow": true
-    },
-    "iframe_setInteractive9": {
-      "id": "iframe_setInteractive9",
-      "opcode": "iframe_setInteractive",
-      "inputs": {
-        "INTERACTIVE": {
-          "name": "INTERACTIVE",
-          "block": "iframe_menu_interactiveMenu9",
-          "shadow": "iframe_menu_interactiveMenu9"
-        }
-      },
-      "fields": {},
-      "next": "iframe_displayHTML8",
-      "topLevel": false,
-      "parent": "theshovelcanvaseffects_seteffect10",
-      "shadow": false
-    },
-    "iframe_menu_interactiveMenu9": {
-      "id": "iframe_menu_interactiveMenu9",
-      "opcode": "iframe_menu_interactiveMenu",
-      "inputs": {},
-      "fields": {
-        "interactiveMenu": {
-          "name": "interactiveMenu",
-          "value": "true"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "iframe_setInteractive9",
-      "shadow": true
-    },
-    "iframe_displayHTML8": {
-      "id": "iframe_displayHTML8",
-      "opcode": "iframe_displayHTML",
-      "inputs": {
-        "HTML": {
-          "name": "HTML",
-          "block": "text10",
-          "shadow": "text10"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "iframe_setInteractive9",
-      "shadow": false
+      "topLevel": false
     },
     "text10": {
       "id": "text10",
-      "opcode": "text",
+      "next": null,
+      "parent": "iframe_displayHTML8",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "<!DOCTYPE html> <html> <head> <style> html,body{margin:0;padding:0;height:100%;display:flex;justify-content:center;align-items:center;background:transparent;} #panel{width:300px;height:300px;background:#222;position:relative;overflow:hidden;border:3px solid #555;color:white;font-family:sans-serif;} .block{width:80px;height:20px;background:#4aa3ff;position:absolute;} #msg{position:absolute;bottom:5px;width:100%;text-align:center;} </style> </head> <body>  <div id=\"panel\">   <div id=\"msg\"></div> </div>  <script> let panel=document.getElementById(\"panel\"); let msg=document.getElementById(\"msg\"); let blocks=[]; let current=null; let dir=1; let speed=2; let baseY=260; let dropping=false; let dropV=6;  function spawnBlock(){   current=document.createElement(\"div\");   current.className=\"block\";   current.style.top=\"20px\";   current.style.left=\"10px\";   panel.appendChild(current);   dir=1;   dropping=false; }  function moveBlock(){   if(current){     if(!dropping){       let x=current.offsetLeft+speed*dir;       if(x<0){x=0;dir=1;}       if(x>220){x=220;dir=-1;}       current.style.left=x+\"px\";     }else{       let y=current.offsetTop+dropV;       if(y>=baseY){         y=baseY;         current.style.top=y+\"px\";         blocks.push(current);         baseY-=22;         current=null;         if(blocks.length>=3){finish();}         else{spawnBlock();}       }else{         current.style.top=y+\"px\";       }     }   }   requestAnimationFrame(moveBlock); }  function finish(){   let score=3;   for(let i=1;i<blocks.length;i++){     let a=blocks[i].offsetLeft;     let b=blocks[i-1].offsetLeft;     let diff=Math.abs(a-b);     if(diff>40){score=0;break;}     if(diff>25&&score>1){score=1;}     if(diff>15&&score>2){score=2;}   }   window.parent.postMessage({type:\"bodyScore\",score:score},\"*\"); }  panel.onclick=()=>{   if(current&&!dropping){dropping=true;} };  spawnBlock(); moveBlock(); </script>  </body> </html>"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "iframe_displayHTML8",
-      "shadow": true
+      "topLevel": false
     }
   },
   "scripts": [

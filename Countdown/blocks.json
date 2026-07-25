@@ -3,7 +3,7 @@
     "control_create_clone_of_menu2": {
       "opcode": "control_create_clone_of_menu",
       "next": null,
-      "parent": "m{",
+      "parent": "nH",
       "inputs": {},
       "fields": {
         "CLONE_OPTION": {
@@ -17,20 +17,21 @@
       "id": "control_create_clone_of_menu2"
     },
     "control_start_as_clone1": {
-      "id": "control_start_as_clone1",
       "opcode": "control_start_as_clone",
+      "next": "looks_setsizeto1",
+      "parent": null,
       "inputs": {},
       "fields": {},
-      "next": "looks_setsizeto1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 739,
-      "y": 140
+      "y": 140,
+      "id": "control_start_as_clone1"
     },
     "looks_setsizeto1": {
-      "id": "looks_setsizeto1",
       "opcode": "looks_setsizeto",
+      "next": "motion_changeyby1",
+      "parent": "control_start_as_clone1",
       "inputs": {
         "SIZE": {
           "name": "SIZE",
@@ -39,29 +40,14 @@
         }
       },
       "fields": {},
-      "next": "motion_changeyby1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_start_as_clone1",
-      "shadow": false
-    },
-    "math_number2": {
-      "id": "math_number2",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "450"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": true
+      "id": "looks_setsizeto1"
     },
     "motion_changeyby1": {
-      "id": "motion_changeyby1",
       "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "looks_setsizeto1",
       "inputs": {
         "DY": {
           "name": "DY",
@@ -70,58 +56,43 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": false
-    },
-    "math_number1": {
-      "id": "math_number1",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "8"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_changeyby1",
-      "shadow": true
+      "id": "motion_changeyby1"
     },
     "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
+      "next": "sensing_resettimer1",
+      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
           "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "sensing_resettimer1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 180,
-      "y": 139
+      "y": 139,
+      "id": "event_whenbroadcastreceived1"
     },
     "sensing_resettimer1": {
-      "id": "sensing_resettimer1",
       "opcode": "sensing_resettimer",
+      "next": "looks_setsizeto2",
+      "parent": "event_whenbroadcastreceived1",
       "inputs": {},
       "fields": {},
-      "next": "looks_setsizeto2",
+      "shadow": false,
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false
+      "id": "sensing_resettimer1"
     },
     "looks_setsizeto2": {
-      "id": "looks_setsizeto2",
       "opcode": "looks_setsizeto",
+      "next": "motion_gotoxy1",
+      "parent": "sensing_resettimer1",
       "inputs": {
         "SIZE": {
           "name": "SIZE",
@@ -130,29 +101,14 @@
         }
       },
       "fields": {},
-      "next": "motion_gotoxy1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "sensing_resettimer1",
-      "shadow": false
-    },
-    "math_number10": {
-      "id": "math_number10",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "100"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto2",
-      "shadow": true
+      "id": "looks_setsizeto2"
     },
     "motion_gotoxy1": {
-      "id": "motion_gotoxy1",
       "opcode": "motion_gotoxy",
+      "next": "control_create_clone_of1",
+      "parent": "looks_setsizeto2",
       "inputs": {
         "X": {
           "name": "X",
@@ -166,44 +122,14 @@
         }
       },
       "fields": {},
-      "next": "control_create_clone_of1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "looks_setsizeto2",
-      "shadow": false
-    },
-    "math_number8": {
-      "id": "math_number8",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "math_number9": {
-      "id": "math_number9",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "150"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
+      "id": "motion_gotoxy1"
     },
     "control_create_clone_of1": {
-      "id": "control_create_clone_of1",
       "opcode": "control_create_clone_of",
+      "next": "text_setFontInput1",
+      "parent": "motion_gotoxy1",
       "inputs": {
         "CLONE_OPTION": {
           "name": "CLONE_OPTION",
@@ -212,29 +138,30 @@
         }
       },
       "fields": {},
-      "next": "text_setFontInput1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": false
+      "id": "control_create_clone_of1"
     },
     "control_create_clone_of_menu1": {
-      "id": "control_create_clone_of_menu1",
       "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "control_create_clone_of1",
       "inputs": {},
       "fields": {
         "CLONE_OPTION": {
           "name": "CLONE_OPTION",
-          "value": "_myself_"
+          "value": "_myself_",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "control_create_clone_of1",
-      "shadow": true
+      "id": "control_create_clone_of_menu1"
     },
     "text_setFontInput1": {
-      "id": "text_setFontInput1",
       "opcode": "text_setFontInput",
+      "next": "text_setWidthInput1",
+      "parent": "control_create_clone_of1",
       "inputs": {
         "FONT": {
           "name": "FONT",
@@ -243,29 +170,30 @@
         }
       },
       "fields": {},
-      "next": "text_setWidthInput1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_create_clone_of1",
-      "shadow": false
+      "id": "text_setFontInput1"
     },
     "text_menu_twFont1": {
-      "id": "text_menu_twFont1",
       "opcode": "text_menu_twFont",
+      "next": null,
+      "parent": "text_setFontInput1",
       "inputs": {},
       "fields": {
         "twFont": {
           "name": "twFont",
-          "value": "\"BillJilly\", Pixel"
+          "value": "\"BillJilly\", Pixel",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "text_setFontInput1",
-      "shadow": true
+      "id": "text_menu_twFont1"
     },
     "text_setWidthInput1": {
-      "id": "text_setWidthInput1",
       "opcode": "text_setWidthInput",
+      "next": "text_setColor1",
+      "parent": "text_setFontInput1",
       "inputs": {
         "WIDTH": {
           "name": "WIDTH",
@@ -279,44 +207,30 @@
         }
       },
       "fields": {},
-      "next": "text_setColor1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "text_setFontInput1",
-      "shadow": false
-    },
-    "math_number7": {
-      "id": "math_number7",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "200"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setWidthInput1",
-      "shadow": true
+      "id": "text_setWidthInput1"
     },
     "text_menu_twAlign1": {
-      "id": "text_menu_twAlign1",
       "opcode": "text_menu_twAlign",
+      "next": null,
+      "parent": "text_setWidthInput1",
       "inputs": {},
       "fields": {
         "twAlign": {
           "name": "twAlign",
-          "value": "center"
+          "value": "center",
+          "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "text_setWidthInput1",
-      "shadow": true
+      "id": "text_menu_twAlign1"
     },
     "text_setColor1": {
-      "id": "text_setColor1",
       "opcode": "text_setColor",
+      "next": "control_forever1",
+      "parent": "text_setWidthInput1",
       "inputs": {
         "COLOR": {
           "name": "COLOR",
@@ -325,29 +239,14 @@
         }
       },
       "fields": {},
-      "next": "control_forever1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "text_setWidthInput1",
-      "shadow": false
-    },
-    "colour_picker1": {
-      "id": "colour_picker1",
-      "opcode": "colour_picker",
-      "inputs": {},
-      "fields": {
-        "COLOUR": {
-          "name": "COLOUR",
-          "value": "#ffffff"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setColor1",
-      "shadow": true
+      "id": "text_setColor1"
     },
     "control_forever1": {
-      "id": "control_forever1",
       "opcode": "control_forever",
+      "next": null,
+      "parent": "text_setColor1",
       "inputs": {
         "SUBSTACK": {
           "name": "SUBSTACK",
@@ -356,14 +255,14 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "text_setColor1",
-      "shadow": false
+      "id": "control_forever1"
     },
     "text_setText1": {
-      "id": "text_setText1",
       "opcode": "text_setText",
+      "next": null,
+      "parent": "control_forever1",
       "inputs": {
         "TEXT": {
           "name": "TEXT",
@@ -372,14 +271,16 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_forever1",
-      "shadow": false
+      "id": "text_setText1",
+      "x": 214.85351603155675,
+      "y": 686.2907092054327
     },
     "operator_join1": {
-      "id": "operator_join1",
       "opcode": "operator_join",
+      "next": null,
+      "parent": "text_setText1",
       "inputs": {
         "STRING1": {
           "name": "STRING1",
@@ -393,29 +294,14 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "text_setText1",
-      "shadow": false
-    },
-    "text1": {
-      "id": "text1",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "T-"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_join1",
-      "shadow": true
+      "id": "operator_join1"
     },
     "strings_letters_of1": {
-      "id": "strings_letters_of1",
       "opcode": "strings_letters_of",
+      "next": null,
+      "parent": "operator_join1",
       "inputs": {
         "LETTER1": {
           "name": "LETTER1",
@@ -434,44 +320,14 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "operator_join1",
-      "shadow": false
-    },
-    "math_number3": {
-      "id": "math_number3",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "4"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "strings_letters_of1",
-      "shadow": true
-    },
-    "math_number4": {
-      "id": "math_number4",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "99"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "strings_letters_of1",
-      "shadow": true
+      "id": "strings_letters_of1"
     },
     "sipctime_formatTime1": {
-      "id": "sipctime_formatTime1",
       "opcode": "sipctime_formatTime",
+      "next": null,
+      "parent": "strings_letters_of1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -485,14 +341,16 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "strings_letters_of1",
-      "shadow": false
+      "id": "sipctime_formatTime1",
+      "x": 554.1997324666554,
+      "y": 718.1365155544398
     },
     "operator_subtract1": {
-      "id": "operator_subtract1",
       "opcode": "operator_subtract",
+      "next": null,
+      "parent": "sipctime_formatTime1",
       "inputs": {
         "NUM1": {
           "name": "NUM1",
@@ -506,14 +364,14 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "sipctime_formatTime1",
-      "shadow": false
+      "id": "operator_subtract1"
     },
     "operator_multiply1": {
-      "id": "operator_multiply1",
       "opcode": "operator_multiply",
+      "next": null,
+      "parent": "operator_subtract1",
       "inputs": {
         "NUM1": {
           "name": "NUM1",
@@ -527,65 +385,215 @@
         }
       },
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "operator_subtract1",
-      "shadow": false
+      "id": "operator_multiply1"
     },
-    "math_number5": {
-      "id": "math_number5",
-      "opcode": "math_number",
+    "sensing_timer1": {
+      "opcode": "sensing_timer",
+      "next": null,
+      "parent": "operator_subtract1",
       "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "sensing_timer1"
+    },
+    "sipctime_menu_TimeFormat1": {
+      "opcode": "sipctime_menu_TimeFormat",
+      "next": null,
+      "parent": "sipctime_formatTime1",
+      "inputs": {},
+      "fields": {
+        "TimeFormat": {
+          "name": "TimeFormat",
+          "value": "rounded",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "sipctime_menu_TimeFormat1"
+    },
+    "math_number2": {
+      "id": "math_number2",
+      "next": null,
+      "parent": "looks_setsizeto1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "60"
+          "value": "450"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply1",
-      "shadow": true
+      "topLevel": false
     },
-    "math_number6": {
-      "id": "math_number6",
-      "opcode": "math_number",
+    "math_number1": {
+      "id": "math_number1",
+      "next": null,
+      "parent": "motion_changeyby1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "8"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number10": {
+      "id": "math_number10",
+      "next": null,
+      "parent": "looks_setsizeto2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "100"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number8": {
+      "id": "math_number8",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number9": {
+      "id": "math_number9",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "150"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number7": {
+      "id": "math_number7",
+      "next": null,
+      "parent": "text_setWidthInput1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "200"
+        }
+      },
+      "topLevel": false
+    },
+    "colour_picker1": {
+      "id": "colour_picker1",
+      "next": null,
+      "parent": "text_setColor1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "colour_picker",
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#ffffff"
+        }
+      },
+      "topLevel": false
+    },
+    "text1": {
+      "id": "text1",
+      "next": null,
+      "parent": "operator_join1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "T-"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "next": null,
+      "parent": "strings_letters_of1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "5"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply1",
-      "shadow": true
+      "topLevel": false
     },
-    "sensing_timer1": {
-      "id": "sensing_timer1",
-      "opcode": "sensing_timer",
-      "inputs": {},
-      "fields": {},
+    "math_number4": {
+      "id": "math_number4",
       "next": null,
-      "topLevel": false,
-      "parent": "operator_subtract1",
-      "shadow": false
-    },
-    "sipctime_menu_TimeFormat1": {
-      "id": "sipctime_menu_TimeFormat1",
-      "opcode": "sipctime_menu_TimeFormat",
+      "parent": "strings_letters_of1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
-        "TimeFormat": {
-          "name": "TimeFormat",
-          "value": "rounded"
+        "NUM": {
+          "name": "NUM",
+          "value": "99"
         }
       },
+      "topLevel": false
+    },
+    "math_number5": {
+      "id": "math_number5",
       "next": null,
-      "topLevel": false,
-      "parent": "sipctime_formatTime1",
-      "shadow": true
+      "parent": "operator_multiply1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "60"
+        }
+      },
+      "topLevel": false
+    },
+    "math_number6": {
+      "id": "math_number6",
+      "next": null,
+      "parent": "operator_multiply1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_number",
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "1"
+        }
+      },
+      "topLevel": false
     }
   },
   "scripts": [
