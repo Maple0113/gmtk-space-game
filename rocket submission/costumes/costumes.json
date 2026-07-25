@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SubmitButton-Sheet",
+    "dataFormat": "png",
+    "rotationCenterX": 140,
+    "rotationCenterY": 40
+  },
+  {
+    "name": "button",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 32
+  },
+  {
+    "name": "pressed",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 32
+  }
+]

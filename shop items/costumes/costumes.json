@@ -1,5 +1,29 @@
 [
   {
+    "name": "ass to subtotal",
+    "dataFormat": "png",
+    "rotationCenterX": -73,
+    "rotationCenterY": 64
+  },
+  {
+    "name": "add to subtotal pressed",
+    "dataFormat": "png",
+    "rotationCenterX": -73,
+    "rotationCenterY": 64
+  },
+  {
+    "name": "remove from subtotaluttons-Sheet3",
+    "dataFormat": "png",
+    "rotationCenterX": -73,
+    "rotationCenterY": -31
+  },
+  {
+    "name": "remove from subtotal pressed",
+    "dataFormat": "png",
+    "rotationCenterX": -73,
+    "rotationCenterY": -31
+  },
+  {
     "name": "invalid part",
     "dataFormat": "png",
     "rotationCenterX": 63,

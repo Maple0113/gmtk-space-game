@@ -70,5 +70,17 @@
     "dataFormat": "png",
     "rotationCenterX": -132,
     "rotationCenterY": -192
+  },
+  {
+    "name": "ShopButtons-Sheet",
+    "dataFormat": "png",
+    "rotationCenterX": 84,
+    "rotationCenterY": 24
+  },
+  {
+    "name": "BuyButton-Sheet",
+    "dataFormat": "png",
+    "rotationCenterX": 140,
+    "rotationCenterY": 40
   }
 ]

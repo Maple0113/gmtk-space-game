@@ -1,0 +1,149 @@
+{
+  "blocks": {
+    "event_whenflagclicked1": {
+      "id": "event_whenflagclicked1",
+      "opcode": "event_whenflagclicked",
+      "inputs": {},
+      "fields": {},
+      "next": "motion_gotoxy1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 84,
+      "y": 148
+    },
+    "motion_gotoxy1": {
+      "id": "motion_gotoxy1",
+      "opcode": "motion_gotoxy",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number2",
+          "shadow": "math_number2"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number3",
+          "shadow": "math_number3"
+        }
+      },
+      "fields": {},
+      "next": "looks_setsizeto1",
+      "topLevel": false,
+      "parent": "event_whenflagclicked1",
+      "shadow": false,
+      "x": 81.33333333333334,
+      "y": 271
+    },
+    "math_number2": {
+      "id": "math_number2",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "265"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "-150"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
+    },
+    "looks_hide1": {
+      "id": "looks_hide1",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": false,
+      "x": "-113",
+      "y": "402"
+    },
+    "looks_setsizeto1": {
+      "id": "looks_setsizeto1",
+      "opcode": "looks_setsizeto",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number1",
+          "shadow": "math_number1"
+        }
+      },
+      "fields": {},
+      "next": "looks_hide1",
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": false,
+      "x": 60.63628366003343,
+      "y": 232.292953398084
+    },
+    "math_number1": {
+      "id": "math_number1",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "150"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": true
+    },
+    "event_whenbroadcastreceived1": {
+      "id": "event_whenbroadcastreceived1",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "value": "GAME begin",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "looks_show1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 349.78828130332647,
+      "y": 137.22415288547364
+    },
+    "looks_show1": {
+      "id": "looks_show1",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
+      "shadow": false,
+      "x": "192",
+      "y": "256"
+    }
+  },
+  "scripts": [
+    "event_whenflagclicked1",
+    "event_whenbroadcastreceived1"
+  ]
+}

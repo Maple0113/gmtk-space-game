@@ -40,7 +40,18 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":2}}"
+      "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":2}}",
+      "{\"Top\":{\"Width\":1,\"Length\":1},\"Middle\":{\"Width\":2,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
+      "{\"Top\":{\"Width\":4,\"Length\":1},\"Middle\":{\"Width\":4,\"Length\":4},\"Bottom\":{\"Width\":4,\"Length\":2}}",
+      "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
+      "{\"Top\":{\"Width\":1,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":4},\"Bottom\":{\"Width\":2,\"Length\":1}}",
+      "{\"Top\":{\"Width\":3,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
+      "{\"Top\":{\"Width\":4,\"Length\":1},\"Middle\":{\"Width\":5,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
+      "{\"Top\":{\"Width\":4,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
+      "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":4,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
+      "{\"Top\":{\"Width\":3,\"Length\":3},\"Middle\":{\"Width\":3,\"Length\":1},\"Bottom\":{\"Width\":3,\"Length\":3}}",
+      "{\"Top\":{\"Width\":3,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":3}}",
+      "{\"Top\":{\"Width\":3,\"Length\":3},\"Middle\":{\"Width\":3,\"Length\":3},\"Bottom\":{\"Width\":3,\"Length\":1}}"
     ],
     "_monitorUpToDate": false
   },
@@ -60,8 +71,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"generic\",\"Amount\":0,\"Unlocked\":true,\"Cost\":\"\",\"Costume\":\"\"}",
-      "{\"Name\":\"generic2\",\"Amount\":0,\"Unlocked\":false,\"Cost\":\"\",\"Costume\":\"generic kit\"}"
+      "{\"Name\":\"generic\",\"Amount\":0,\"Unlocked\":true,\"Cost\":100,\"Costume\":\"\"}"
     ],
     "_monitorUpToDate": false
   },
@@ -104,14 +114,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "1x Advertising Panels",
+      "3x Advertising Panels",
       "1x Body",
       "1x Cargo Bay",
-      "2x Fins",
+      "3x Fins",
       "2x Fuel Tank",
       "1x Nose Cone",
-      "1x Thrusters",
-      "1x Windows"
+      "2x Thrusters",
+      "3x Windows"
     ],
     "_monitorUpToDate": false
   },
@@ -121,14 +131,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":1,\"type\":\"AdvertisingPanels\"}",
+      "{\"amount\":3,\"type\":\"AdvertisingPanels\"}",
       "{\"amount\":1,\"type\":\"Body\"}",
       "{\"amount\":1,\"type\":\"CargoBay\"}",
-      "{\"amount\":2,\"type\":\"Fins\"}",
+      "{\"amount\":3,\"type\":\"Fins\"}",
       "{\"amount\":2,\"type\":\"FuelTank\"}",
       "{\"amount\":1,\"type\":\"NoseCone\"}",
-      "{\"amount\":1,\"type\":\"Thrusters\"}",
-      "{\"amount\":1,\"type\":\"Windows\"}"
+      "{\"amount\":2,\"type\":\"Thrusters\"}",
+      "{\"amount\":3,\"type\":\"Windows\"}"
     ],
     "_monitorUpToDate": false
   },
@@ -250,5 +260,12 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "INVENTORY empty"
+  },
+  "Pt.1X5RCAbK=Tm1JiWs^": {
+    "id": "Pt.1X5RCAbK=Tm1JiWs^",
+    "name": "Money",
+    "type": "",
+    "isCloud": false,
+    "value": 500
   }
 }
