@@ -4,7 +4,7 @@
     "name": "PartsFilter",
     "type": "",
     "isCloud": false,
-    "value": "parts"
+    "value": "kits"
   },
   "bV=j0c)Z7B_Di/e/upE(": {
     "id": "bV=j0c)Z7B_Di/e/upE(",
@@ -32,7 +32,7 @@
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[0,0,0,0],[0,0,0,0]]"
+    "value": "[[0,0,0,0],[1,0,0,0]]"
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -49,10 +49,7 @@
     "name": "Parts",
     "type": "list",
     "isCloud": false,
-    "value": [
-      "{\"Name\":\"generic\",\"Amount\":9999,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"invalid\",\"Amount\":9999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}"
-    ],
+    "value": [],
     "_monitorUpToDate": false
   },
   "]l,zbY}0x)-[ceE+6JG:": {
@@ -101,14 +98,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "2x Advertising Panels",
+      "3x Advertising Panels",
       "1x Body",
       "1x Cargo Bay",
       "2x Fins",
       "3x Fuel Tank",
       "1x Nose Cone",
-      "1x Thrusters",
-      "1x Windows"
+      "2x Thrusters",
+      "2x Windows"
     ],
     "_monitorUpToDate": false
   },
@@ -118,14 +115,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":2,\"type\":\"AdvertisingPanels\"}",
+      "{\"amount\":3,\"type\":\"AdvertisingPanels\"}",
       "{\"amount\":1,\"type\":\"Body\"}",
       "{\"amount\":1,\"type\":\"CargoBay\"}",
       "{\"amount\":2,\"type\":\"Fins\"}",
       "{\"amount\":3,\"type\":\"FuelTank\"}",
       "{\"amount\":1,\"type\":\"NoseCone\"}",
-      "{\"amount\":1,\"type\":\"Thrusters\"}",
-      "{\"amount\":1,\"type\":\"Windows\"}"
+      "{\"amount\":2,\"type\":\"Thrusters\"}",
+      "{\"amount\":2,\"type\":\"Windows\"}"
     ],
     "_monitorUpToDate": false
   },
@@ -240,5 +237,12 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "INVENTORY deplace"
+  },
+  "Q;JHx*HE()n/w|78wtw.": {
+    "id": "Q;JHx*HE()n/w|78wtw.",
+    "name": "INVENTORY empty",
+    "type": "broadcast_msg",
+    "isCloud": false,
+    "value": "INVENTORY empty"
   }
 }

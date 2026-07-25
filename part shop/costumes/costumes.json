@@ -6,6 +6,18 @@
     "rotationCenterY": 133.23781
   },
   {
+    "name": "no kits",
+    "dataFormat": "svg",
+    "rotationCenterX": 76.30350000000001,
+    "rotationCenterY": 30.99096
+  },
+  {
+    "name": "no parts",
+    "dataFormat": "svg",
+    "rotationCenterX": 67.70457499999998,
+    "rotationCenterY": 26.452020000000005
+  },
+  {
     "name": "base",
     "dataFormat": "svg",
     "rotationCenterX": 92.60026999999997,
