@@ -1,26 +1,26 @@
 {
-  "im": {
-    "id": "im",
+  "i.": {
+    "id": "i.",
     "text": "binarify grid",
     "x": -525.1183707137926,
     "y": 4488.540825891456,
     "width": 118.6011962890625,
     "height": 85.654052734375,
     "minimized": false,
-    "blockId": "jN"
+    "blockId": "kV"
   },
-  "in": {
-    "id": "in",
+  "i/": {
+    "id": "i/",
     "text": "binarify pattern",
     "x": -346.1183707137926,
     "y": 4283.540825891456,
     "width": 156.71649169921875,
     "height": 80.48587036132812,
     "minimized": false,
-    "blockId": "jO"
+    "blockId": "kW"
   },
-  "d?": {
-    "id": "d?",
+  "ej": {
+    "id": "ej",
     "text": "make part an easy-to-use object",
     "x": -502.4989085796237,
     "y": 602.978830429526,
@@ -29,8 +29,8 @@
     "minimized": false,
     "blockId": "lmsTempVars2_forEachThreadVariable1"
   },
-  "d]": {
-    "id": "d]",
+  "em": {
+    "id": "em",
     "text": "get grid",
     "x": -413,
     "y": 923,
@@ -39,8 +39,8 @@
     "minimized": true,
     "blockId": "control_if_else1"
   },
-  "g#": {
-    "id": "g#",
+  "hz": {
+    "id": "hz",
     "text": "get number of 1s needed",
     "x": -292.0000000000002,
     "y": 3164,
@@ -49,8 +49,8 @@
     "minimized": false,
     "blockId": "lmsTempVars2_forEachThreadVariable3"
   },
-  "jP": {
-    "id": "jP",
+  "kX": {
+    "id": "kX",
     "text": "fit pattern to grid",
     "x": -692.3443797284216,
     "y": 1657.2658771778556,
@@ -59,8 +59,8 @@
     "minimized": false,
     "blockId": "control_repeat3"
   },
-  "gz": {
-    "id": "gz",
+  "g|": {
+    "id": "g|",
     "text": "move pattern",
     "x": -285.09650802612305,
     "y": 1547,
@@ -69,8 +69,8 @@
     "minimized": false,
     "blockId": "lmsTempVars2_setThreadVariable1"
   },
-  "jQ": {
-    "id": "jQ",
+  "kY": {
+    "id": "kY",
     "text": "make placed array",
     "x": -696.0736418512419,
     "y": 4377.4068379375185,
@@ -79,8 +79,8 @@
     "minimized": false,
     "blockId": "lmsTempVars2_setThreadVariable6"
   },
-  "g=": {
-    "id": "g=",
+  "hL": {
+    "id": "hL",
     "text": "Try placing",
     "x": -571.0000000000002,
     "y": 4019,
@@ -89,8 +89,8 @@
     "minimized": true,
     "blockId": "lmsTempVars2_setThreadVariable6"
   },
-  "g[": {
-    "id": "g[",
+  "hO": {
+    "id": "hO",
     "text": "count 1s in modified grid",
     "x": -431.0000000000002,
     "y": 4945,
@@ -99,38 +99,38 @@
     "minimized": false,
     "blockId": "lmsTempVars2_setThreadVariable7"
   },
-  "jR": {
-    "id": "jR",
+  "kZ": {
+    "id": "kZ",
     "text": "t h i c k e n\nthe affected grid",
     "x": -239.09796714169158,
     "y": 5966.289850706262,
     "width": 141.85797119140625,
     "height": 106.32675170898438,
     "minimized": false,
-    "blockId": "jS"
+    "blockId": "k!"
   },
-  "jT": {
-    "id": "jT",
+  "k#": {
+    "id": "k#",
     "text": "Try placing",
     "x": -665.3192627138915,
     "y": 4153.858513989175,
     "width": 200,
     "height": 200,
     "minimized": true,
-    "blockId": "jU"
+    "blockId": "k%"
   },
-  "jV": {
-    "id": "jV",
+  "k(": {
+    "id": "k(",
     "text": "count 1s in modified grid",
     "x": -525.3192627138915,
     "y": 5303.858513989175,
     "width": 117,
     "height": 98,
     "minimized": false,
-    "blockId": "jW"
+    "blockId": "k)"
   },
-  "hc": {
-    "id": "hc",
+  "hZ": {
+    "id": "hZ",
     "text": "Deleting this will make turbowarp crash",
     "x": -518,
     "y": 5187,
@@ -139,8 +139,8 @@
     "minimized": false,
     "blockId": "lmsTempVars2_getThreadVariable3"
   },
-  "hK": {
-    "id": "hK",
+  "ii": {
+    "id": "ii",
     "text": "",
     "x": 626,
     "y": -1430,
