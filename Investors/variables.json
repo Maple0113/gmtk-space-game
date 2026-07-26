@@ -4,20 +4,20 @@
     "name": "InitialBonus",
     "type": "",
     "isCloud": false,
-    "value": 150
+    "value": 117
   },
   "I=PdxQtWR!iUx/3PK=Hw": {
     "id": "I=PdxQtWR!iUx/3PK=Hw",
     "name": "InvestorTolerance",
     "type": "",
     "isCloud": false,
-    "value": 126
+    "value": 66
   },
   "f[MDhi4^zy`#d/VtF`8#": {
     "id": "f[MDhi4^zy`#d/VtF`8#",
     "name": "InvestorSatisfaction",
     "type": "",
     "isCloud": false,
-    "value": 630
+    "value": 264
   }
 }

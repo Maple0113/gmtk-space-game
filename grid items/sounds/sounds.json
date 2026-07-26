@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "name": "pickup",
+    "sampleCount": 52662,
+    "rate": 48000
+  },
+  {
+    "name": "drop",
+    "sampleCount": 37616,
+    "rate": 48000
+  }
+]
