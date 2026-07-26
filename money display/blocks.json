@@ -391,8 +391,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "value": "GAME begin",
           "id": "X$b7KhkWBuw^}6#}%6`n",
+          "value": "GAME begin",
           "variableType": "broadcast_msg"
         }
       },
@@ -426,8 +426,7 @@
       "fields": {
         "COLOUR": {
           "name": "COLOUR",
-          "value": "#ffffff",
-          "id": null
+          "value": "#ffffff"
         }
       },
       "next": null,
@@ -442,8 +441,7 @@
       "fields": {
         "FONT": {
           "name": "FONT",
-          "value": "\"BillJilly\", Pixel",
-          "id": null
+          "value": "\"BillJilly\", Pixel"
         }
       },
       "next": "text_setWidth1",
@@ -464,8 +462,7 @@
       "fields": {
         "ALIGN": {
           "name": "ALIGN",
-          "value": "right",
-          "id": null
+          "value": "right"
         }
       },
       "next": "text_setText1",
@@ -480,8 +477,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "150",
-          "id": null
+          "value": "150"
         }
       },
       "next": null,
@@ -496,7 +492,7 @@
         "TEXT": {
           "name": "TEXT",
           "block": "operator_join2",
-          "shadow": "operator_join2"
+          "shadow": null
         }
       },
       "fields": {},
@@ -517,7 +513,7 @@
         "STRING2": {
           "name": "STRING2",
           "block": "dogeiscutformatnumbers_formatNumber2",
-          "shadow": "dogeiscutformatnumbers_formatNumber2"
+          "shadow": null
         }
       },
       "fields": {},
@@ -533,8 +529,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "$",
-          "id": null
+          "value": "$"
         }
       },
       "next": null,
@@ -549,7 +544,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_multiply2",
-          "shadow": "operator_multiply2"
+          "shadow": null
         },
         "DECIMALS": {
           "name": "DECIMALS",
@@ -560,8 +555,7 @@
       "fields": {
         "NOTATION": {
           "name": "NOTATION",
-          "value": "AD standard",
-          "id": null
+          "value": "AD standard"
         }
       },
       "next": null,
@@ -576,7 +570,7 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_variable7",
-          "shadow": "data_variable7"
+          "shadow": null
         },
         "NUM2": {
           "name": "NUM2",
@@ -597,8 +591,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "Money",
           "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
@@ -614,8 +608,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "1000",
-          "id": null
+          "value": "1000"
         }
       },
       "next": null,
@@ -630,8 +623,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
       "next": null,
@@ -656,7 +648,7 @@
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "text_setText2",
-          "shadow": "text_setText2"
+          "shadow": null
         }
       },
       "fields": {},
@@ -672,7 +664,7 @@
         "TEXT": {
           "name": "TEXT",
           "block": "operator_join1",
-          "shadow": "operator_join1"
+          "shadow": null
         }
       },
       "fields": {},
@@ -693,7 +685,7 @@
         "STRING2": {
           "name": "STRING2",
           "block": "dogeiscutformatnumbers_formatNumber1",
-          "shadow": "dogeiscutformatnumbers_formatNumber1"
+          "shadow": null
         }
       },
       "fields": {},
@@ -709,8 +701,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "$",
-          "id": null
+          "value": "$"
         }
       },
       "next": null,
@@ -725,7 +716,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_multiply1",
-          "shadow": "operator_multiply1"
+          "shadow": null
         },
         "DECIMALS": {
           "name": "DECIMALS",
@@ -736,8 +727,7 @@
       "fields": {
         "NOTATION": {
           "name": "NOTATION",
-          "value": "AD standard",
-          "id": null
+          "value": "AD standard"
         }
       },
       "next": null,
@@ -752,7 +742,7 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_variable6",
-          "shadow": "data_variable6"
+          "shadow": null
         },
         "NUM2": {
           "name": "NUM2",
@@ -773,8 +763,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "Money",
           "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
@@ -790,8 +780,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "1000",
-          "id": null
+          "value": "1000"
         }
       },
       "next": null,
@@ -806,8 +795,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
       "next": null,
@@ -822,12 +810,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_not1",
-          "shadow": "operator_not1"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "lmsclonesplus_createCloneOfMyselfWithVar1",
-          "shadow": "lmsclonesplus_createCloneOfMyselfWithVar1"
+          "shadow": null
         }
       },
       "fields": {},
@@ -843,7 +831,7 @@
         "OPERAND": {
           "name": "OPERAND",
           "block": "operator_equals1",
-          "shadow": "operator_equals1"
+          "shadow": null
         }
       },
       "fields": {},
@@ -859,12 +847,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable2",
-          "shadow": "data_variable2"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
           "block": "data_variable3",
-          "shadow": "data_variable3"
+          "shadow": null
         }
       },
       "fields": {},
@@ -880,8 +868,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "Money",
           "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
@@ -897,8 +885,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyOnLastFrame",
           "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
           "variableType": ""
         }
       },
@@ -914,14 +902,13 @@
         "INPUTB": {
           "name": "INPUTB",
           "block": "operator_subtract1",
-          "shadow": "operator_subtract1"
+          "shadow": null
         }
       },
       "fields": {
         "INPUTA": {
           "name": "INPUTA",
-          "value": "a5x6#]MeH,|Mrof4A|+A",
-          "id": null
+          "value": "a5x6#]MeH,|Mrof4A|+A"
         }
       },
       "next": null,
@@ -936,12 +923,12 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_variable4",
-          "shadow": "data_variable4"
+          "shadow": null
         },
         "NUM2": {
           "name": "NUM2",
           "block": "data_variable5",
-          "shadow": "data_variable5"
+          "shadow": null
         }
       },
       "fields": {},
@@ -957,8 +944,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "Money",
           "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
@@ -974,8 +961,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyOnLastFrame",
           "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
           "variableType": ""
         }
       },
@@ -991,14 +978,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "data_variable1",
-          "shadow": "data_variable1"
+          "shadow": null
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyOnLastFrame",
           "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
           "variableType": ""
         }
       },
@@ -1014,8 +1001,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "Money",
           "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
@@ -1046,6 +1033,37 @@
       "parent": "control_start_as_clone1",
       "shadow": false
     },
+    "sound_play1": {
+      "id": "sound_play1",
+      "opcode": "sound_play",
+      "inputs": {
+        "SOUND_MENU": {
+          "name": "SOUND_MENU",
+          "block": "sound_sounds_menu1",
+          "shadow": "sound_sounds_menu1"
+        }
+      },
+      "fields": {},
+      "next": "text_setFont2",
+      "topLevel": false,
+      "parent": "looks_hide1",
+      "shadow": false
+    },
+    "sound_sounds_menu1": {
+      "id": "sound_sounds_menu1",
+      "opcode": "sound_sounds_menu",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": {
+          "name": "SOUND_MENU",
+          "value": "money"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "sound_play1",
+      "shadow": true
+    },
     "text_setFont2": {
       "id": "text_setFont2",
       "opcode": "text_setFont",
@@ -1053,8 +1071,7 @@
       "fields": {
         "FONT": {
           "name": "FONT",
-          "value": "\"BillJilly\", Pixel",
-          "id": null
+          "value": "\"BillJilly\", Pixel"
         }
       },
       "next": "text_setWidth2",
@@ -1075,8 +1092,7 @@
       "fields": {
         "ALIGN": {
           "name": "ALIGN",
-          "value": "right",
-          "id": null
+          "value": "right"
         }
       },
       "next": "control_if_else1",
@@ -1091,8 +1107,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "150",
-          "id": null
+          "value": "150"
         }
       },
       "next": null,
@@ -1107,17 +1122,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_gt1",
-          "shadow": "operator_gt1"
+          "shadow": null
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "text_setColor2",
-          "shadow": "text_setColor2"
+          "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "text_setColor3",
-          "shadow": "text_setColor3"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1133,7 +1148,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable8",
-          "shadow": "data_variable8"
+          "shadow": null
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1154,8 +1169,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyDifference",
           "id": "a5x6#]MeH,|Mrof4A|+A",
+          "value": "MoneyDifference",
           "variableType": ""
         }
       },
@@ -1171,8 +1186,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "0",
-          "id": null
+          "value": "0"
         }
       },
       "next": null,
@@ -1203,8 +1217,7 @@
       "fields": {
         "COLOUR": {
           "name": "COLOUR",
-          "value": "#75ff2b",
-          "id": null
+          "value": "#75ff2b"
         }
       },
       "next": null,
@@ -1219,7 +1232,7 @@
         "TEXT": {
           "name": "TEXT",
           "block": "operator_join3",
-          "shadow": "operator_join3"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1240,7 +1253,7 @@
         "STRING2": {
           "name": "STRING2",
           "block": "dogeiscutformatnumbers_formatNumber3",
-          "shadow": "dogeiscutformatnumbers_formatNumber3"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1256,8 +1269,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "+$",
-          "id": null
+          "value": "+$"
         }
       },
       "next": null,
@@ -1272,7 +1284,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_multiply3",
-          "shadow": "operator_multiply3"
+          "shadow": null
         },
         "DECIMALS": {
           "name": "DECIMALS",
@@ -1283,8 +1295,7 @@
       "fields": {
         "NOTATION": {
           "name": "NOTATION",
-          "value": "AD standard",
-          "id": null
+          "value": "AD standard"
         }
       },
       "next": null,
@@ -1299,7 +1310,7 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_variable9",
-          "shadow": "data_variable9"
+          "shadow": null
         },
         "NUM2": {
           "name": "NUM2",
@@ -1320,8 +1331,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyDifference",
           "id": "a5x6#]MeH,|Mrof4A|+A",
+          "value": "MoneyDifference",
           "variableType": ""
         }
       },
@@ -1337,8 +1348,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "1000",
-          "id": null
+          "value": "1000"
         }
       },
       "next": null,
@@ -1353,8 +1363,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
       "next": null,
@@ -1385,8 +1394,7 @@
       "fields": {
         "COLOUR": {
           "name": "COLOUR",
-          "value": "#ff2a2a",
-          "id": null
+          "value": "#ff2a2a"
         }
       },
       "next": null,
@@ -1401,7 +1409,7 @@
         "TEXT": {
           "name": "TEXT",
           "block": "operator_join4",
-          "shadow": "operator_join4"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1422,7 +1430,7 @@
         "STRING2": {
           "name": "STRING2",
           "block": "dogeiscutformatnumbers_formatNumber4",
-          "shadow": "dogeiscutformatnumbers_formatNumber4"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1438,8 +1446,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "-$",
-          "id": null
+          "value": "-$"
         }
       },
       "next": null,
@@ -1454,7 +1461,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_multiply4",
-          "shadow": "operator_multiply4"
+          "shadow": null
         },
         "DECIMALS": {
           "name": "DECIMALS",
@@ -1465,8 +1472,7 @@
       "fields": {
         "NOTATION": {
           "name": "NOTATION",
-          "value": "AD standard",
-          "id": null
+          "value": "AD standard"
         }
       },
       "next": null,
@@ -1481,7 +1487,7 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_variable10",
-          "shadow": "data_variable10"
+          "shadow": null
         },
         "NUM2": {
           "name": "NUM2",
@@ -1502,8 +1508,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyDifference",
           "id": "a5x6#]MeH,|Mrof4A|+A",
+          "value": "MoneyDifference",
           "variableType": ""
         }
       },
@@ -1519,8 +1525,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "1000",
-          "id": null
+          "value": "1000"
         }
       },
       "next": null,
@@ -1535,8 +1540,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
       "next": null,
@@ -1566,7 +1570,7 @@
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "motion_changeyby2",
-          "shadow": "motion_changeyby2"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1582,8 +1586,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "5",
-          "id": null
+          "value": "5"
         }
       },
       "next": null,
@@ -1614,8 +1617,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
       "next": null,
@@ -1635,7 +1637,7 @@
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "motion_changeyby1",
-          "shadow": "motion_changeyby1"
+          "shadow": null
         }
       },
       "fields": {},
@@ -1651,8 +1653,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "15",
-          "id": null
+          "value": "15"
         }
       },
       "next": null,
@@ -1683,8 +1684,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
       "next": null,
@@ -1699,14 +1699,13 @@
         "CHANGE": {
           "name": "CHANGE",
           "block": "operator_divide1",
-          "shadow": "operator_divide1"
+          "shadow": null
         }
       },
       "fields": {
         "EFFECT": {
           "name": "EFFECT",
-          "value": "GHOST",
-          "id": null
+          "value": "GHOST"
         }
       },
       "next": null,
@@ -1742,8 +1741,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "100",
-          "id": null
+          "value": "100"
         }
       },
       "next": null,
@@ -1758,8 +1756,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "15",
-          "id": null
+          "value": "15"
         }
       },
       "next": null,
@@ -1802,8 +1799,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "Money",
           "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
@@ -1819,8 +1816,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1000",
-          "id": null
+          "value": "0"
         }
       },
       "next": null,
@@ -1841,8 +1837,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyOnLastFrame",
           "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
           "variableType": ""
         }
       },
@@ -1858,8 +1854,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "0",
-          "id": null
+          "value": "0"
         }
       },
       "next": null,
@@ -1895,8 +1890,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "225",
-          "id": null
+          "value": "225"
         }
       },
       "next": null,
@@ -1911,8 +1905,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-115",
-          "id": null
+          "value": "-115"
         }
       },
       "next": null,
@@ -1929,40 +1922,6 @@
       "topLevel": false,
       "parent": "motion_gotoxy1",
       "shadow": false
-    },
-    "sound_play1": {
-      "id": "sound_play1",
-      "opcode": "sound_play",
-      "inputs": {
-        "SOUND_MENU": {
-          "name": "SOUND_MENU",
-          "block": "sound_sounds_menu1",
-          "shadow": "sound_sounds_menu1"
-        }
-      },
-      "fields": {},
-      "next": "text_setFont2",
-      "topLevel": false,
-      "parent": "looks_hide1",
-      "shadow": false,
-      "x": 1824.074074074074,
-      "y": 342.4814814814814
-    },
-    "sound_sounds_menu1": {
-      "id": "sound_sounds_menu1",
-      "opcode": "sound_sounds_menu",
-      "inputs": {},
-      "fields": {
-        "SOUND_MENU": {
-          "name": "SOUND_MENU",
-          "value": "money",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "sound_play1",
-      "shadow": true
     }
   },
   "scripts": [

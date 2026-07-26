@@ -4,7 +4,7 @@
     "name": "PartsFilter",
     "type": "",
     "isCloud": false,
-    "value": "parts"
+    "value": "kits"
   },
   "bV=j0c)Z7B_Di/e/upE(": {
     "id": "bV=j0c)Z7B_Di/e/upE(",
@@ -25,7 +25,7 @@
     "name": "MaxPages",
     "type": "",
     "isCloud": false,
-    "value": 2
+    "value": 1
   },
   "j-wNVw^8ze)1w}ZzY,L$": {
     "id": "j-wNVw^8ze)1w}ZzY,L$",
@@ -39,7 +39,7 @@
     "name": "Money",
     "type": "",
     "isCloud": false,
-    "value": 1381
+    "value": 500
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -51,14 +51,14 @@
       "{\"Top\":{\"Width\":2,\"Length\":1},\"Middle\":{\"Width\":2,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
       "{\"Top\":{\"Width\":4,\"Length\":1},\"Middle\":{\"Width\":4,\"Length\":4},\"Bottom\":{\"Width\":4,\"Length\":2}}",
       "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
-      "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":4},\"Bottom\":{\"Width\":2,\"Length\":1}}",
+      "{\"Top\":{\"Width\":2,\"Length\":1},\"Middle\":{\"Width\":2,\"Length\":4},\"Bottom\":{\"Width\":2,\"Length\":2}}",
       "{\"Top\":{\"Width\":3,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
       "{\"Top\":{\"Width\":4,\"Length\":1},\"Middle\":{\"Width\":5,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
       "{\"Top\":{\"Width\":4,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":3},\"Bottom\":{\"Width\":4,\"Length\":2}}",
       "{\"Top\":{\"Width\":2,\"Length\":2},\"Middle\":{\"Width\":4,\"Length\":2},\"Bottom\":{\"Width\":2,\"Length\":2}}",
       "{\"Top\":{\"Width\":3,\"Length\":3},\"Middle\":{\"Width\":3,\"Length\":1},\"Bottom\":{\"Width\":3,\"Length\":3}}",
       "{\"Top\":{\"Width\":3,\"Length\":2},\"Middle\":{\"Width\":2,\"Length\":2},\"Bottom\":{\"Width\":4,\"Length\":3}}",
-      "{\"Top\":{\"Width\":3,\"Length\":3},\"Middle\":{\"Width\":3,\"Length\":3},\"Bottom\":{\"Width\":3,\"Length\":1}}"
+      "{\"Top\":{\"Width\":3,\"Length\":2},\"Middle\":{\"Width\":3,\"Length\":3},\"Bottom\":{\"Width\":3,\"Length\":2}}"
     ],
     "_monitorUpToDate": false
   },
@@ -68,14 +68,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"body\",\"Amount\":998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
-      "{\"Name\":\"nosecone\",\"Amount\":997,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"fin\",\"Amount\":997,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"fueltank\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"thruster\",\"Amount\":999,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"advertisement\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"window\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"cargobay\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
+      "{\"Name\":\"body\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
+      "{\"Name\":\"nosecone\",\"Amount\":0,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"fin\",\"Amount\":0,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"fueltank\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"thruster\",\"Amount\":0,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"advertisement\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"window\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"cargobay\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -92,7 +92,6 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0]",
       "[0,0,0]",
       "[0,0,0]"
     ],
@@ -116,6 +115,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
+      "[0,0,0]",
       "[0,0,0]"
     ],
     "_monitorUpToDate": false
@@ -277,5 +277,12 @@
     "type": "broadcast_msg",
     "isCloud": false,
     "value": "GAME rocket submit"
+  },
+  "-^NLK5G$)gq,B2ak`[1C": {
+    "id": "-^NLK5G$)gq,B2ak`[1C",
+    "name": "Tutorial",
+    "type": "",
+    "isCloud": false,
+    "value": "false"
   }
 }

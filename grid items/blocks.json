@@ -325,12 +325,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "lmsclonesplus_isClone1",
-          "shadow": null
+          "shadow": "lmsclonesplus_isClone1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "lmsMoreEvents_broadcastData1",
-          "shadow": null
+          "shadow": "lmsMoreEvents_broadcastData1"
         }
       },
       "fields": {},
@@ -361,7 +361,7 @@
         "DATA": {
           "name": "DATA",
           "block": "data_variable6",
-          "shadow": null
+          "shadow": "data_variable6"
         }
       },
       "fields": {},
@@ -377,8 +377,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "Y/EZv}ooFZdQ!jA{@ey/",
           "value": "INVENTORY deplace",
+          "id": "Y/EZv}ooFZdQ!jA{@ey/",
           "variableType": "broadcast_msg"
         }
       },
@@ -394,8 +394,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -417,8 +417,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "0Cv@|H_/Yp!mKHn]?M:~",
           "value": "BeingDragged?",
+          "id": "0Cv@|H_/Yp!mKHn]?M:~",
           "variableType": ""
         }
       },
@@ -434,7 +434,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -449,12 +450,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_not1",
-          "shadow": null
+          "shadow": "operator_not1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "motion_goto1",
-          "shadow": null
+          "shadow": "motion_goto1"
         }
       },
       "fields": {},
@@ -470,7 +471,7 @@
         "OPERAND": {
           "name": "OPERAND",
           "block": "sensing_mousedown1",
-          "shadow": null
+          "shadow": "sensing_mousedown1"
         }
       },
       "fields": {},
@@ -512,7 +513,8 @@
       "fields": {
         "TO": {
           "name": "TO",
-          "value": "_mouse_"
+          "value": "_mouse_",
+          "id": null
         }
       },
       "next": null,
@@ -527,17 +529,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "sensing_touchingobject1",
-          "shadow": null
+          "shadow": "sensing_touchingobject1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "lmsMoreEvents_broadcastDataAndWait1",
-          "shadow": null
+          "shadow": "lmsMoreEvents_broadcastDataAndWait1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "motion_glidesecstoxy1",
-          "shadow": null
+          "shadow": "motion_glidesecstoxy1"
         }
       },
       "fields": {},
@@ -569,7 +571,8 @@
       "fields": {
         "TOUCHINGOBJECTMENU": {
           "name": "TOUCHINGOBJECTMENU",
-          "value": "rocket grid"
+          "value": "rocket grid",
+          "id": null
         }
       },
       "next": null,
@@ -605,8 +608,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "Ru%mq|.pumO68=fh;0B9",
           "value": "INVENTORY attempt placement",
+          "id": "Ru%mq|.pumO68=fh;0B9",
           "variableType": "broadcast_msg"
         }
       },
@@ -622,8 +625,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -644,12 +647,12 @@
         "X": {
           "name": "X",
           "block": "data_variable4",
-          "shadow": null
+          "shadow": "data_variable4"
         },
         "Y": {
           "name": "Y",
           "block": "data_variable5",
-          "shadow": null
+          "shadow": "data_variable5"
         }
       },
       "fields": {},
@@ -665,7 +668,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "0.1"
+          "value": "0.1",
+          "id": null
         }
       },
       "next": null,
@@ -680,8 +684,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "3y+3{3t^btg^fPDkAklY",
           "value": "HomeX",
+          "id": "3y+3{3t^btg^fPDkAklY",
           "variableType": ""
         }
       },
@@ -697,8 +701,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "value": "HomeY",
+          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "variableType": ""
         }
       },
@@ -719,7 +723,7 @@
         "DATA": {
           "name": "DATA",
           "block": "data_variable3",
-          "shadow": null
+          "shadow": "data_variable3"
         }
       },
       "fields": {},
@@ -735,8 +739,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "M.gA(ATr6?gr=ji,!9R!",
           "value": "INVENTORY part refund",
+          "id": "M.gA(ATr6?gr=ji,!9R!",
           "variableType": "broadcast_msg"
         }
       },
@@ -752,8 +756,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -769,14 +773,14 @@
         "INDEX": {
           "name": "INDEX",
           "block": "data_itemnumoflist1",
-          "shadow": null
+          "shadow": "data_itemnumoflist1"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "variableType": "list"
         }
       },
@@ -792,14 +796,14 @@
         "ITEM": {
           "name": "ITEM",
           "block": "skyhigh173JSON_json_get1",
-          "shadow": null
+          "shadow": "skyhigh173JSON_json_get1"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "variableType": "list"
         }
       },
@@ -820,7 +824,7 @@
         "json": {
           "name": "json",
           "block": "data_variable2",
-          "shadow": null
+          "shadow": "data_variable2"
         }
       },
       "fields": {},
@@ -836,7 +840,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "Name"
+          "value": "Name",
+          "id": null
         }
       },
       "next": null,
@@ -851,8 +856,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -906,7 +911,8 @@
       "fields": {
         "COSTUME": {
           "name": "COSTUME",
-          "value": "invalid"
+          "value": "invalid",
+          "id": null
         }
       },
       "next": null,
@@ -921,7 +927,7 @@
         "COSTUME": {
           "name": "COSTUME",
           "block": "skyhigh173JSON_json_get2",
-          "shadow": null
+          "shadow": "skyhigh173JSON_json_get2"
         }
       },
       "fields": {},
@@ -958,7 +964,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "Name"
+          "value": "Name",
+          "id": null
         }
       },
       "next": null,
@@ -973,8 +980,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -1006,7 +1013,8 @@
       "fields": {
         "TO": {
           "name": "TO",
-          "value": "_mouse_"
+          "value": "_mouse_",
+          "id": null
         }
       },
       "next": null,
@@ -1021,14 +1029,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "motion_xposition1",
-          "shadow": null
+          "shadow": "motion_xposition1"
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "3y+3{3t^btg^fPDkAklY",
           "value": "HomeX",
+          "id": "3y+3{3t^btg^fPDkAklY",
           "variableType": ""
         }
       },
@@ -1054,14 +1062,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "motion_yposition1",
-          "shadow": null
+          "shadow": "motion_yposition1"
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "value": "HomeY",
+          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "variableType": ""
         }
       },
@@ -1087,7 +1095,8 @@
       "fields": {
         "FRONT_BACK": {
           "name": "FRONT_BACK",
-          "value": "front"
+          "value": "front",
+          "id": null
         }
       },
       "next": "looks_show1",
@@ -1112,12 +1121,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_not2",
-          "shadow": null
+          "shadow": "operator_not2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "motion_goto3",
-          "shadow": null
+          "shadow": "motion_goto3"
         }
       },
       "fields": {},
@@ -1133,7 +1142,7 @@
         "OPERAND": {
           "name": "OPERAND",
           "block": "sensing_mousedown2",
-          "shadow": null
+          "shadow": "sensing_mousedown2"
         }
       },
       "fields": {},
@@ -1175,7 +1184,8 @@
       "fields": {
         "TO": {
           "name": "TO",
-          "value": "_mouse_"
+          "value": "_mouse_",
+          "id": null
         }
       },
       "next": null,
@@ -1190,17 +1200,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "sensing_touchingobject2",
-          "shadow": null
+          "shadow": "sensing_touchingobject2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "lmsMoreEvents_broadcastDataAndWait2",
-          "shadow": null
+          "shadow": "lmsMoreEvents_broadcastDataAndWait2"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "motion_glidesecstoxy2",
-          "shadow": null
+          "shadow": "motion_glidesecstoxy2"
         }
       },
       "fields": {},
@@ -1232,7 +1242,8 @@
       "fields": {
         "TOUCHINGOBJECTMENU": {
           "name": "TOUCHINGOBJECTMENU",
-          "value": "rocket grid"
+          "value": "rocket grid",
+          "id": null
         }
       },
       "next": null,
@@ -1268,8 +1279,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "Ru%mq|.pumO68=fh;0B9",
           "value": "INVENTORY attempt placement",
+          "id": "Ru%mq|.pumO68=fh;0B9",
           "variableType": "broadcast_msg"
         }
       },
@@ -1285,8 +1296,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -1307,12 +1318,12 @@
         "X": {
           "name": "X",
           "block": "data_variable9",
-          "shadow": null
+          "shadow": "data_variable9"
         },
         "Y": {
           "name": "Y",
           "block": "data_variable10",
-          "shadow": null
+          "shadow": "data_variable10"
         }
       },
       "fields": {},
@@ -1328,7 +1339,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "0.1"
+          "value": "0.1",
+          "id": null
         }
       },
       "next": null,
@@ -1343,8 +1355,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "3y+3{3t^btg^fPDkAklY",
           "value": "HomeX",
+          "id": "3y+3{3t^btg^fPDkAklY",
           "variableType": ""
         }
       },
@@ -1360,8 +1372,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "value": "HomeY",
+          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "variableType": ""
         }
       },
@@ -1382,7 +1394,7 @@
         "DATA": {
           "name": "DATA",
           "block": "data_variable8",
-          "shadow": null
+          "shadow": "data_variable8"
         }
       },
       "fields": {},
@@ -1398,8 +1410,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "M.gA(ATr6?gr=ji,!9R!",
           "value": "INVENTORY part refund",
+          "id": "M.gA(ATr6?gr=ji,!9R!",
           "variableType": "broadcast_msg"
         }
       },
@@ -1415,8 +1427,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -1442,8 +1454,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "_h:aT2aen|@d{!*.]aoI",
           "value": "INVENTORY placement results",
+          "id": "_h:aT2aen|@d{!*.]aoI",
           "variableType": "broadcast_msg"
         }
       },
@@ -1461,12 +1473,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals1",
-          "shadow": null
+          "shadow": "operator_equals1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto4",
-          "shadow": null
+          "shadow": "data_setvariableto4"
         }
       },
       "fields": {},
@@ -1482,7 +1494,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable12",
-          "shadow": null
+          "shadow": "data_variable12"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1503,8 +1515,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "0Cv@|H_/Yp!mKHn]?M:~",
           "value": "BeingDragged?",
+          "id": "0Cv@|H_/Yp!mKHn]?M:~",
           "variableType": ""
         }
       },
@@ -1520,7 +1532,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -1541,8 +1554,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "0Cv@|H_/Yp!mKHn]?M:~",
           "value": "BeingDragged?",
+          "id": "0Cv@|H_/Yp!mKHn]?M:~",
           "variableType": ""
         }
       },
@@ -1558,7 +1571,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "false"
+          "value": "false",
+          "id": null
         }
       },
       "next": null,
@@ -1573,17 +1587,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals2",
-          "shadow": null
+          "shadow": "operator_equals2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_addtolist1",
-          "shadow": null
+          "shadow": "data_addtolist1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "motion_glidesecstoxy3",
-          "shadow": null
+          "shadow": "motion_glidesecstoxy3"
         }
       },
       "fields": {},
@@ -1599,7 +1613,7 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "skyhigh173JSON_json_get3",
-          "shadow": null
+          "shadow": "skyhigh173JSON_json_get3"
         },
         "OPERAND2": {
           "name": "OPERAND2",
@@ -1625,7 +1639,7 @@
         "json": {
           "name": "json",
           "block": "lmsMoreEvents_receivedData1",
-          "shadow": null
+          "shadow": "lmsMoreEvents_receivedData1"
         }
       },
       "fields": {},
@@ -1641,7 +1655,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "Passed"
+          "value": "Passed",
+          "id": null
         }
       },
       "next": null,
@@ -1666,7 +1681,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -1681,14 +1697,14 @@
         "ITEM": {
           "name": "ITEM",
           "block": "skyhigh173JSON_json_get6",
-          "shadow": null
+          "shadow": "skyhigh173JSON_json_get6"
         }
       },
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "variableType": "list"
         }
       },
@@ -1709,7 +1725,7 @@
         "json": {
           "name": "json",
           "block": "data_variable13",
-          "shadow": null
+          "shadow": "data_variable13"
         }
       },
       "fields": {},
@@ -1725,7 +1741,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "Name"
+          "value": "Name",
+          "id": null
         }
       },
       "next": null,
@@ -1740,8 +1757,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -1757,12 +1774,12 @@
         "X": {
           "name": "X",
           "block": "skyhigh173JSON_json_get4",
-          "shadow": null
+          "shadow": "skyhigh173JSON_json_get4"
         },
         "Y": {
           "name": "Y",
           "block": "skyhigh173JSON_json_get5",
-          "shadow": null
+          "shadow": "skyhigh173JSON_json_get5"
         }
       },
       "fields": {},
@@ -1783,7 +1800,7 @@
         "json": {
           "name": "json",
           "block": "lmsMoreEvents_receivedData2",
-          "shadow": null
+          "shadow": "lmsMoreEvents_receivedData2"
         }
       },
       "fields": {},
@@ -1799,7 +1816,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "X"
+          "value": "X",
+          "id": null
         }
       },
       "next": null,
@@ -1829,7 +1847,7 @@
         "json": {
           "name": "json",
           "block": "lmsMoreEvents_receivedData3",
-          "shadow": null
+          "shadow": "lmsMoreEvents_receivedData3"
         }
       },
       "fields": {},
@@ -1845,7 +1863,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "Y"
+          "value": "Y",
+          "id": null
         }
       },
       "next": null,
@@ -1875,12 +1894,12 @@
         "X": {
           "name": "X",
           "block": "data_variable15",
-          "shadow": null
+          "shadow": "data_variable15"
         },
         "Y": {
           "name": "Y",
           "block": "data_variable16",
-          "shadow": null
+          "shadow": "data_variable16"
         }
       },
       "fields": {},
@@ -1896,7 +1915,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "0.1"
+          "value": "0.1",
+          "id": null
         }
       },
       "next": null,
@@ -1911,8 +1931,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "3y+3{3t^btg^fPDkAklY",
           "value": "HomeX",
+          "id": "3y+3{3t^btg^fPDkAklY",
           "variableType": ""
         }
       },
@@ -1928,8 +1948,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "value": "HomeY",
+          "id": "[iph^3L7HVi)Yq+ZW{%$",
           "variableType": ""
         }
       },
@@ -1950,7 +1970,7 @@
         "DATA": {
           "name": "DATA",
           "block": "data_variable14",
-          "shadow": null
+          "shadow": "data_variable14"
         }
       },
       "fields": {},
@@ -1966,8 +1986,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "M.gA(ATr6?gr=ji,!9R!",
           "value": "INVENTORY part refund",
+          "id": "M.gA(ATr6?gr=ji,!9R!",
           "variableType": "broadcast_msg"
         }
       },
@@ -1983,8 +2003,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -2010,8 +2030,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "=9Rd9n:vJm=CO$~p|E1n",
           "value": "GAME rocket submit",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
           "variableType": "broadcast_msg"
         }
       },
@@ -2029,17 +2049,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "lmsclonesplus_isClone2",
-          "shadow": null
+          "shadow": "lmsclonesplus_isClone2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_delete_this_clone4",
-          "shadow": null
+          "shadow": "control_delete_this_clone4"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "data_deletealloflist1",
-          "shadow": null
+          "shadow": "data_deletealloflist1"
         }
       },
       "fields": {},
@@ -2075,8 +2095,8 @@
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "variableType": "list"
         }
       },
@@ -2120,7 +2140,8 @@
       "fields": {
         "spriteMenu": {
           "name": "spriteMenu",
-          "value": "grid item"
+          "value": "grid item",
+          "id": null
         }
       },
       "next": null,
@@ -2145,8 +2166,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "-4?$B(lcX?sZrOT8swK!",
           "value": "INVENTORY dragging item",
+          "id": "-4?$B(lcX?sZrOT8swK!",
           "variableType": "broadcast_msg"
         }
       },
@@ -2164,12 +2185,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_not3",
-          "shadow": null
+          "shadow": "operator_not3"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto5",
-          "shadow": null
+          "shadow": "data_setvariableto5"
         }
       },
       "fields": {},
@@ -2185,7 +2206,7 @@
         "OPERAND": {
           "name": "OPERAND",
           "block": "lmsclonesplus_isClone3",
-          "shadow": null
+          "shadow": "lmsclonesplus_isClone3"
         }
       },
       "fields": {},
@@ -2211,14 +2232,14 @@
         "VALUE": {
           "name": "VALUE",
           "block": "lmsMoreEvents_receivedData4",
-          "shadow": null
+          "shadow": "lmsMoreEvents_receivedData4"
         }
       },
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "[wpz18`o.^R2]}4_GrwE",
           "value": "CurrentItem",
+          "id": "[wpz18`o.^R2]}4_GrwE",
           "variableType": ""
         }
       },
@@ -2250,7 +2271,8 @@
       "fields": {
         "INPUTA": {
           "name": "INPUTA",
-          "value": "0Cv@|H_/Yp!mKHn]?M:~"
+          "value": "0Cv@|H_/Yp!mKHn]?M:~",
+          "id": null
         }
       },
       "next": null,
@@ -2265,7 +2287,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "next": null,
@@ -2280,8 +2303,8 @@
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
           "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
           "variableType": "broadcast_msg"
         }
       },
@@ -2299,8 +2322,8 @@
       "fields": {
         "LIST": {
           "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
           "variableType": "list"
         }
       },
@@ -2332,7 +2355,8 @@
       "fields": {
         "spriteMenu": {
           "name": "spriteMenu",
-          "value": "grid item"
+          "value": "grid item",
+          "id": null
         }
       },
       "next": null,
@@ -2365,8 +2389,8 @@
       "topLevel": false,
       "parent": "lmsMoreEvents_broadcastDataAndWait2",
       "shadow": false,
-      "x": "554",
-      "y": "553"
+      "x": 554,
+      "y": 553
     },
     "sound_sounds_menu1": {
       "id": "sound_sounds_menu1",
@@ -2375,7 +2399,8 @@
       "fields": {
         "SOUND_MENU": {
           "name": "SOUND_MENU",
-          "value": "drop"
+          "value": "drop",
+          "id": null
         }
       },
       "next": null,
@@ -2408,7 +2433,8 @@
       "fields": {
         "SOUND_MENU": {
           "name": "SOUND_MENU",
-          "value": "pickup"
+          "value": "pickup",
+          "id": null
         }
       },
       "next": null,
