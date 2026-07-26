@@ -4,7 +4,7 @@
     "name": "PartsFilter",
     "type": "",
     "isCloud": false,
-    "value": "parts"
+    "value": "kits"
   },
   "bV=j0c)Z7B_Di/e/upE(": {
     "id": "bV=j0c)Z7B_Di/e/upE(",
@@ -25,7 +25,7 @@
     "name": "MaxPages",
     "type": "",
     "isCloud": false,
-    "value": 2
+    "value": 1
   },
   "j-wNVw^8ze)1w}ZzY,L$": {
     "id": "j-wNVw^8ze)1w}ZzY,L$",
@@ -39,7 +39,7 @@
     "name": "Money",
     "type": "",
     "isCloud": false,
-    "value": 1780
+    "value": 1000
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -68,14 +68,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"body\",\"Amount\":998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
-      "{\"Name\":\"nosecone\",\"Amount\":997,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"fin\",\"Amount\":997,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"fueltank\",\"Amount\":998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"thruster\",\"Amount\":995,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"advertisement\",\"Amount\":996,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"window\",\"Amount\":997,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"cargobay\",\"Amount\":998,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
+      "{\"Name\":\"body\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
+      "{\"Name\":\"nosecone\",\"Amount\":999,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"fin\",\"Amount\":999,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"fueltank\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"thruster\",\"Amount\":999,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"advertisement\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"window\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"cargobay\",\"Amount\":999,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -84,8 +84,7 @@
     "name": "Kits",
     "type": "list",
     "isCloud": false,
-    "value": [],
-    "_monitorUpToDate": false
+    "value": []
   },
   "0A][[Y=]Bc/QhAT9X])!": {
     "id": "0A][[Y=]Bc/QhAT9X])!",
@@ -93,8 +92,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0]",
-      "[0,0]"
+      "[0,0,0,0]",
+      "[0,0,0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -104,6 +103,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
+      "[0,0,0]",
       "[0,0,0]",
       "[0,0,0]"
     ],
@@ -128,7 +128,7 @@
     "value": [
       "1x Body",
       "1x Nose Cone",
-      "2x Fin"
+      "3x Fin"
     ],
     "_monitorUpToDate": false
   },
@@ -140,7 +140,7 @@
     "value": [
       "{\"amount\":1,\"type\":\"Body\"}",
       "{\"amount\":1,\"type\":\"NoseCone\"}",
-      "{\"amount\":2,\"type\":\"Fin\"}"
+      "{\"amount\":3,\"type\":\"Fin\"}"
     ],
     "_monitorUpToDate": false
   },
@@ -149,8 +149,7 @@
     "name": "Rocket",
     "type": "list",
     "isCloud": false,
-    "value": [],
-    "_monitorUpToDate": false
+    "value": []
   },
   "X$b7KhkWBuw^}6#}%6`n": {
     "id": "X$b7KhkWBuw^}6#}%6`n",

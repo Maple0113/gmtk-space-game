@@ -27,12 +27,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_not1",
-          "shadow": null
+          "shadow": "operator_not1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "lmsclonesplus_createCloneOfMyselfWithVar1",
-          "shadow": null
+          "shadow": "lmsclonesplus_createCloneOfMyselfWithVar1"
         }
       },
       "fields": {},
@@ -48,7 +48,7 @@
         "OPERAND": {
           "name": "OPERAND",
           "block": "lmsclonesplus_isClone1",
-          "shadow": null
+          "shadow": "lmsclonesplus_isClone1"
         }
       },
       "fields": {},
@@ -95,8 +95,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text6",
-          "shadow": "text6"
+          "block": "text4",
+          "shadow": "text4"
         }
       },
       "fields": {
@@ -120,12 +120,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals2",
-          "shadow": null
+          "shadow": "operator_equals2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto2",
-          "shadow": null
+          "shadow": "looks_switchcostumeto2"
         }
       },
       "fields": {},
@@ -141,12 +141,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable2",
-          "shadow": "text4"
+          "shadow": "data_variable2"
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text5",
-          "shadow": "text5"
+          "block": "text3",
+          "shadow": "text3"
         }
       },
       "fields": {},
@@ -194,12 +194,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals1",
-          "shadow": null
+          "shadow": "operator_equals1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto1",
-          "shadow": null
+          "shadow": "looks_switchcostumeto1"
         }
       },
       "fields": {},
@@ -215,12 +215,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable1",
-          "shadow": "text2"
+          "shadow": "data_variable1"
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text3",
-          "shadow": "text3"
+          "block": "text2",
+          "shadow": "text2"
         }
       },
       "fields": {},
@@ -306,17 +306,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals3",
-          "shadow": null
+          "shadow": "operator_equals3"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto1",
-          "shadow": null
+          "shadow": "data_setvariableto1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else2",
-          "shadow": null
+          "shadow": "control_if_else2"
         }
       },
       "fields": {},
@@ -336,8 +336,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text7",
-          "shadow": "text7"
+          "block": "text5",
+          "shadow": "text5"
         }
       },
       "fields": {},
@@ -352,8 +352,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text10",
-          "shadow": "text10"
+          "block": "text8",
+          "shadow": "text8"
         }
       },
       "fields": {
@@ -375,8 +375,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text9",
-          "shadow": "text9"
+          "block": "text7",
+          "shadow": "text7"
         }
       },
       "fields": {
@@ -398,8 +398,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text8",
-          "shadow": "text8"
+          "block": "text6",
+          "shadow": "text6"
         }
       },
       "fields": {
@@ -437,17 +437,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals4",
-          "shadow": null
+          "shadow": "operator_equals4"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto3",
-          "shadow": null
+          "shadow": "data_setvariableto3"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if_else3",
-          "shadow": null
+          "shadow": "control_if_else3"
         }
       },
       "fields": {},
@@ -467,8 +467,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text11",
-          "shadow": "text11"
+          "block": "text9",
+          "shadow": "text9"
         }
       },
       "fields": {},
@@ -483,8 +483,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text14",
-          "shadow": "text14"
+          "block": "text12",
+          "shadow": "text12"
         }
       },
       "fields": {
@@ -506,8 +506,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text13",
-          "shadow": "text13"
+          "block": "text11",
+          "shadow": "text11"
         }
       },
       "fields": {
@@ -529,8 +529,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text12",
-          "shadow": "text12"
+          "block": "text10",
+          "shadow": "text10"
         }
       },
       "fields": {
@@ -568,17 +568,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals5",
-          "shadow": null
+          "shadow": "operator_equals5"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby1",
-          "shadow": null
+          "shadow": "data_changevariableby1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "control_if5",
-          "shadow": null
+          "shadow": "control_if5"
         }
       },
       "fields": {},
@@ -598,8 +598,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text15",
-          "shadow": "text15"
+          "block": "text13",
+          "shadow": "text13"
         }
       },
       "fields": {},
@@ -638,12 +638,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_gt1",
-          "shadow": null
+          "shadow": "operator_gt1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto5",
-          "shadow": null
+          "shadow": "data_setvariableto5"
         }
       },
       "fields": {},
@@ -679,8 +679,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text16",
-          "shadow": "text16"
+          "block": "text14",
+          "shadow": "text14"
         }
       },
       "fields": {
@@ -719,12 +719,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals6",
-          "shadow": null
+          "shadow": "operator_equals6"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_changevariableby2",
-          "shadow": null
+          "shadow": "data_changevariableby2"
         }
       },
       "fields": {},
@@ -744,8 +744,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text17",
-          "shadow": "text17"
+          "block": "text15",
+          "shadow": "text15"
         }
       },
       "fields": {},
@@ -784,12 +784,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_lt1",
-          "shadow": null
+          "shadow": "operator_lt1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto6",
-          "shadow": null
+          "shadow": "data_setvariableto6"
         }
       },
       "fields": {},
@@ -809,8 +809,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text18",
-          "shadow": "text18"
+          "block": "text16",
+          "shadow": "text16"
         }
       },
       "fields": {},
@@ -893,12 +893,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals11",
-          "shadow": null
+          "shadow": "operator_equals11"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else6",
-          "shadow": null
+          "shadow": "control_if_else6"
         }
       },
       "fields": {},
@@ -918,8 +918,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text26",
-          "shadow": "text26"
+          "block": "text24",
+          "shadow": "text24"
         }
       },
       "fields": {},
@@ -935,17 +935,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals12",
-          "shadow": null
+          "shadow": "operator_equals12"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto5",
-          "shadow": null
+          "shadow": "looks_switchcostumeto5"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto6",
-          "shadow": null
+          "shadow": "looks_switchcostumeto6"
         }
       },
       "fields": {},
@@ -965,8 +965,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text27",
-          "shadow": "text27"
+          "block": "text25",
+          "shadow": "text25"
         }
       },
       "fields": {},
@@ -1046,12 +1046,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals9",
-          "shadow": null
+          "shadow": "operator_equals9"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else5",
-          "shadow": null
+          "shadow": "control_if_else5"
         }
       },
       "fields": {},
@@ -1071,8 +1071,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text24",
-          "shadow": "text24"
+          "block": "text22",
+          "shadow": "text22"
         }
       },
       "fields": {},
@@ -1088,17 +1088,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals10",
-          "shadow": null
+          "shadow": "operator_equals10"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto3",
-          "shadow": null
+          "shadow": "looks_switchcostumeto3"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto4",
-          "shadow": null
+          "shadow": "looks_switchcostumeto4"
         }
       },
       "fields": {},
@@ -1118,8 +1118,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text25",
-          "shadow": "text25"
+          "block": "text23",
+          "shadow": "text23"
         }
       },
       "fields": {},
@@ -1199,12 +1199,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals7",
-          "shadow": null
+          "shadow": "operator_equals7"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_forever1",
-          "shadow": null
+          "shadow": "control_forever1"
         }
       },
       "fields": {},
@@ -1224,8 +1224,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text19",
-          "shadow": "text19"
+          "block": "text17",
+          "shadow": "text17"
         }
       },
       "fields": {},
@@ -1241,7 +1241,7 @@
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_setsizeto1",
-          "shadow": null
+          "shadow": "looks_setsizeto1"
         }
       },
       "fields": {},
@@ -1343,17 +1343,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals8",
-          "shadow": null
+          "shadow": "operator_equals8"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto7",
-          "shadow": null
+          "shadow": "data_setvariableto7"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "data_setvariableto8",
-          "shadow": null
+          "shadow": "data_setvariableto8"
         }
       },
       "fields": {},
@@ -1373,8 +1373,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text21",
-          "shadow": "text21"
+          "block": "text19",
+          "shadow": "text19"
         }
       },
       "fields": {},
@@ -1390,7 +1390,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "procedures_call1",
-          "shadow": null
+          "shadow": "procedures_call1"
         }
       },
       "fields": {
@@ -1413,12 +1413,12 @@
         ":CrV_7X(R8(}#0lw(7nU": {
           "name": ":CrV_7X(R8(}#0lw(7nU",
           "block": "operator_mathop1",
-          "shadow": null
+          "shadow": "operator_mathop1"
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
-          "block": "text22",
-          "shadow": "text22"
+          "block": "text20",
+          "shadow": "text20"
         }
       },
       "fields": {},
@@ -1442,7 +1442,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_divide1",
-          "shadow": null
+          "shadow": "operator_divide1"
         }
       },
       "fields": {
@@ -1464,7 +1464,7 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_lengthoflist1",
-          "shadow": null
+          "shadow": "data_lengthoflist1"
         },
         "NUM2": {
           "name": "NUM2",
@@ -1502,7 +1502,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "procedures_call2",
-          "shadow": null
+          "shadow": "procedures_call2"
         }
       },
       "fields": {
@@ -1525,12 +1525,12 @@
         ":CrV_7X(R8(}#0lw(7nU": {
           "name": ":CrV_7X(R8(}#0lw(7nU",
           "block": "operator_mathop2",
-          "shadow": null
+          "shadow": "operator_mathop2"
         },
         "M3wcRZ-GrYWV9qe,PUsL": {
           "name": "M3wcRZ-GrYWV9qe,PUsL",
-          "block": "text23",
-          "shadow": "text23"
+          "block": "text21",
+          "shadow": "text21"
         }
       },
       "fields": {},
@@ -1554,7 +1554,7 @@
         "NUM": {
           "name": "NUM",
           "block": "operator_divide2",
-          "shadow": null
+          "shadow": "operator_divide2"
         }
       },
       "fields": {
@@ -1576,7 +1576,7 @@
         "NUM1": {
           "name": "NUM1",
           "block": "data_lengthoflist2",
-          "shadow": null
+          "shadow": "data_lengthoflist2"
         },
         "NUM2": {
           "name": "NUM2",
@@ -1614,7 +1614,7 @@
         "TEXT": {
           "name": "TEXT",
           "block": "operator_join1",
-          "shadow": null
+          "shadow": "operator_join1"
         }
       },
       "fields": {},
@@ -1635,7 +1635,7 @@
         "STRING2": {
           "name": "STRING2",
           "block": "operator_join2",
-          "shadow": null
+          "shadow": "operator_join2"
         }
       },
       "fields": {},
@@ -1650,8 +1650,8 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "text20",
-          "shadow": "text20"
+          "block": "text18",
+          "shadow": "text18"
         },
         "STRING2": {
           "name": "STRING2",
@@ -1691,12 +1691,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals15",
-          "shadow": null
+          "shadow": "operator_equals15"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else8",
-          "shadow": null
+          "shadow": "control_if_else8"
         }
       },
       "fields": {},
@@ -1716,8 +1716,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text30",
-          "shadow": "text30"
+          "block": "text28",
+          "shadow": "text28"
         }
       },
       "fields": {},
@@ -1733,17 +1733,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals16",
-          "shadow": null
+          "shadow": "operator_equals16"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto9",
-          "shadow": null
+          "shadow": "looks_switchcostumeto9"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto10",
-          "shadow": null
+          "shadow": "looks_switchcostumeto10"
         }
       },
       "fields": {},
@@ -1763,8 +1763,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text31",
-          "shadow": "text31"
+          "block": "text29",
+          "shadow": "text29"
         }
       },
       "fields": {},
@@ -1844,12 +1844,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals13",
-          "shadow": null
+          "shadow": "operator_equals13"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else7",
-          "shadow": null
+          "shadow": "control_if_else7"
         }
       },
       "fields": {},
@@ -1869,8 +1869,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text28",
-          "shadow": "text28"
+          "block": "text26",
+          "shadow": "text26"
         }
       },
       "fields": {},
@@ -1886,17 +1886,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals14",
-          "shadow": null
+          "shadow": "operator_equals14"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto7",
-          "shadow": null
+          "shadow": "looks_switchcostumeto7"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "looks_switchcostumeto8",
-          "shadow": null
+          "shadow": "looks_switchcostumeto8"
         }
       },
       "fields": {},
@@ -1916,8 +1916,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text29",
-          "shadow": "text29"
+          "block": "text27",
+          "shadow": "text27"
         }
       },
       "fields": {},
@@ -2068,8 +2068,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text36",
-          "shadow": "text36"
+          "block": "text34",
+          "shadow": "text34"
         }
       },
       "fields": {
@@ -2122,8 +2122,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text35",
-          "shadow": "text35"
+          "block": "text33",
+          "shadow": "text33"
         }
       },
       "fields": {
@@ -2176,8 +2176,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text34",
-          "shadow": "text34"
+          "block": "text32",
+          "shadow": "text32"
         }
       },
       "fields": {
@@ -2230,8 +2230,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text33",
-          "shadow": "text33"
+          "block": "text31",
+          "shadow": "text31"
         }
       },
       "fields": {
@@ -2252,8 +2252,8 @@
       "inputs": {
         "INPUTB": {
           "name": "INPUTB",
-          "block": "text32",
-          "shadow": "text32"
+          "block": "text30",
+          "shadow": "text30"
         }
       },
       "fields": {
@@ -2309,13 +2309,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "6"
+          "value": "6",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text6": {
-      "id": "text6",
+    "text4": {
+      "id": "text4",
       "next": null,
       "parent": "lmsclonesplus_whenCloneStartsWithVar1",
       "shadow": true,
@@ -2324,7 +2325,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "6"
+          "value": "6",
+          "id": null
         }
       },
       "topLevel": false
@@ -2343,10 +2345,11 @@
           "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text4": {
-      "id": "text4",
+    "text35": {
+      "id": "text35",
       "next": null,
       "parent": "operator_equals2",
       "shadow": true,
@@ -2355,13 +2358,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": ""
+          "value": "",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text5": {
-      "id": "text5",
+    "text3": {
+      "id": "text3",
       "next": null,
       "parent": "operator_equals2",
       "shadow": true,
@@ -2370,7 +2374,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "topLevel": false
@@ -2389,7 +2394,24 @@
           "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
+    },
+    "text36": {
+      "id": "text36",
+      "next": null,
+      "parent": "operator_equals1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "",
+          "id": null
+        }
+      },
+      "topLevel": false
     },
     "text2": {
       "id": "text2",
@@ -2401,22 +2423,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": ""
-        }
-      },
-      "topLevel": false
-    },
-    "text3": {
-      "id": "text3",
-      "next": null,
-      "parent": "operator_equals1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "topLevel": false
@@ -2435,10 +2443,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text7": {
-      "id": "text7",
+    "text5": {
+      "id": "text5",
       "next": null,
       "parent": "operator_equals3",
       "shadow": true,
@@ -2447,13 +2456,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text10": {
-      "id": "text10",
+    "text8": {
+      "id": "text8",
       "next": null,
       "parent": "data_setvariableto1",
       "shadow": true,
@@ -2462,13 +2472,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text9": {
-      "id": "text9",
+    "text7": {
+      "id": "text7",
       "next": null,
       "parent": "data_setvariableto2",
       "shadow": true,
@@ -2477,13 +2488,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text8": {
-      "id": "text8",
+    "text6": {
+      "id": "text6",
       "next": null,
       "parent": "lmsclonesplus_deleteCloneWithVar1",
       "shadow": true,
@@ -2492,7 +2504,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "6"
+          "value": "6",
+          "id": null
         }
       },
       "topLevel": false
@@ -2528,10 +2541,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text11": {
-      "id": "text11",
+    "text9": {
+      "id": "text9",
       "next": null,
       "parent": "operator_equals4",
       "shadow": true,
@@ -2540,13 +2554,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text14": {
-      "id": "text14",
+    "text12": {
+      "id": "text12",
       "next": null,
       "parent": "data_setvariableto3",
       "shadow": true,
@@ -2555,13 +2570,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text13": {
-      "id": "text13",
+    "text11": {
+      "id": "text11",
       "next": null,
       "parent": "data_setvariableto4",
       "shadow": true,
@@ -2570,13 +2586,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text12": {
-      "id": "text12",
+    "text10": {
+      "id": "text10",
       "next": null,
       "parent": "lmsclonesplus_deleteCloneWithVar2",
       "shadow": true,
@@ -2585,7 +2602,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "6"
+          "value": "6",
+          "id": null
         }
       },
       "topLevel": false
@@ -2621,10 +2639,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text15": {
-      "id": "text15",
+    "text13": {
+      "id": "text13",
       "next": null,
       "parent": "operator_equals5",
       "shadow": true,
@@ -2633,7 +2652,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3"
+          "value": "3",
+          "id": null
         }
       },
       "topLevel": false
@@ -2648,7 +2668,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
@@ -2667,7 +2688,8 @@
           "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
     "data_variable7": {
       "id": "data_variable7",
@@ -2683,10 +2705,11 @@
           "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text16": {
-      "id": "text16",
+    "text14": {
+      "id": "text14",
       "next": null,
       "parent": "data_setvariableto5",
       "shadow": true,
@@ -2695,7 +2718,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
@@ -2731,10 +2755,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text17": {
-      "id": "text17",
+    "text15": {
+      "id": "text15",
       "next": null,
       "parent": "operator_equals6",
       "shadow": true,
@@ -2743,7 +2768,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "4"
+          "value": "4",
+          "id": null
         }
       },
       "topLevel": false
@@ -2758,7 +2784,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-1"
+          "value": "-1",
+          "id": null
         }
       },
       "topLevel": false
@@ -2777,10 +2804,11 @@
           "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text18": {
-      "id": "text18",
+    "text16": {
+      "id": "text16",
       "next": null,
       "parent": "operator_lt1",
       "shadow": true,
@@ -2789,7 +2817,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
@@ -2808,7 +2837,8 @@
           "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
     "event_broadcast_menu4": {
       "id": "event_broadcast_menu4",
@@ -2841,10 +2871,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text26": {
-      "id": "text26",
+    "text24": {
+      "id": "text24",
       "next": null,
       "parent": "operator_equals11",
       "shadow": true,
@@ -2853,7 +2884,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
@@ -2872,10 +2904,11 @@
           "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text27": {
-      "id": "text27",
+    "text25": {
+      "id": "text25",
       "next": null,
       "parent": "operator_equals12",
       "shadow": true,
@@ -2884,7 +2917,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "topLevel": false
@@ -2903,10 +2937,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text24": {
-      "id": "text24",
+    "text22": {
+      "id": "text22",
       "next": null,
       "parent": "operator_equals9",
       "shadow": true,
@@ -2915,7 +2950,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "topLevel": false
@@ -2934,10 +2970,11 @@
           "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text25": {
-      "id": "text25",
+    "text23": {
+      "id": "text23",
       "next": null,
       "parent": "operator_equals10",
       "shadow": true,
@@ -2946,7 +2983,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "topLevel": false
@@ -2965,10 +3003,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text19": {
-      "id": "text19",
+    "text17": {
+      "id": "text17",
       "next": null,
       "parent": "operator_equals7",
       "shadow": true,
@@ -2977,7 +3016,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "5"
+          "value": "5",
+          "id": null
         }
       },
       "topLevel": false
@@ -2992,7 +3032,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "90"
+          "value": "90",
+          "id": null
         }
       },
       "topLevel": false
@@ -3007,7 +3048,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-92"
+          "value": "-92",
+          "id": null
         }
       },
       "topLevel": false
@@ -3022,7 +3064,8 @@
       "fields": {
         "COLOUR": {
           "name": "COLOUR",
-          "value": "#000000"
+          "value": "#000000",
+          "id": null
         }
       },
       "topLevel": false
@@ -3037,7 +3080,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "120"
+          "value": "120",
+          "id": null
         }
       },
       "topLevel": false
@@ -3056,10 +3100,11 @@
           "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text21": {
-      "id": "text21",
+    "text19": {
+      "id": "text19",
       "next": null,
       "parent": "operator_equals8",
       "shadow": true,
@@ -3068,13 +3113,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text22": {
-      "id": "text22",
+    "text20": {
+      "id": "text20",
       "next": null,
       "parent": "procedures_call1",
       "shadow": true,
@@ -3083,7 +3129,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
@@ -3102,10 +3149,11 @@
           "id": "N^9khw,V+T2T#{O;t`$j",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text23": {
-      "id": "text23",
+    "text21": {
+      "id": "text21",
       "next": null,
       "parent": "procedures_call2",
       "shadow": true,
@@ -3114,7 +3162,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
@@ -3133,7 +3182,8 @@
           "id": "N^9khw,V+T2T#{O;t`$j",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
     "data_variable12": {
       "id": "data_variable12",
@@ -3149,10 +3199,11 @@
           "id": "bV=j0c)Z7B_Di/e/upE(",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text20": {
-      "id": "text20",
+    "text18": {
+      "id": "text18",
       "next": null,
       "parent": "operator_join2",
       "shadow": true,
@@ -3161,7 +3212,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "/"
+          "value": "/",
+          "id": null
         }
       },
       "topLevel": false
@@ -3180,7 +3232,8 @@
           "id": "J4$f=e6$W|%Pb~%bF5i@",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
     "data_variable23": {
       "id": "data_variable23",
@@ -3196,10 +3249,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text30": {
-      "id": "text30",
+    "text28": {
+      "id": "text28",
       "next": null,
       "parent": "operator_equals15",
       "shadow": true,
@@ -3208,7 +3262,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
@@ -3227,10 +3282,11 @@
           "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text31": {
-      "id": "text31",
+    "text29": {
+      "id": "text29",
       "next": null,
       "parent": "operator_equals16",
       "shadow": true,
@@ -3239,7 +3295,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "kits"
+          "value": "kits",
+          "id": null
         }
       },
       "topLevel": false
@@ -3258,10 +3315,11 @@
           "id": "]]0kojU6yhlk/-W+|:,y",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text28": {
-      "id": "text28",
+    "text26": {
+      "id": "text26",
       "next": null,
       "parent": "operator_equals13",
       "shadow": true,
@@ -3270,7 +3328,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "topLevel": false
@@ -3289,10 +3348,11 @@
           "id": "x4gtq9]`+z%F4A@UJ1}N",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
-    "text29": {
-      "id": "text29",
+    "text27": {
+      "id": "text27",
       "next": null,
       "parent": "operator_equals14",
       "shadow": true,
@@ -3301,7 +3361,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "parts"
+          "value": "parts",
+          "id": null
         }
       },
       "topLevel": false
@@ -3316,7 +3377,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-200"
+          "value": "-200",
+          "id": null
         }
       },
       "topLevel": false
@@ -3331,13 +3393,14 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "20"
+          "value": "20",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text36": {
-      "id": "text36",
+    "text34": {
+      "id": "text34",
       "next": null,
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar2",
       "shadow": true,
@@ -3346,13 +3409,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "1"
+          "value": "1",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text35": {
-      "id": "text35",
+    "text33": {
+      "id": "text33",
       "next": null,
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar3",
       "shadow": true,
@@ -3361,13 +3425,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2"
+          "value": "2",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text34": {
-      "id": "text34",
+    "text32": {
+      "id": "text32",
       "next": null,
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar4",
       "shadow": true,
@@ -3376,13 +3441,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3"
+          "value": "3",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text33": {
-      "id": "text33",
+    "text31": {
+      "id": "text31",
       "next": null,
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar5",
       "shadow": true,
@@ -3391,13 +3457,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "4"
+          "value": "4",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text32": {
-      "id": "text32",
+    "text30": {
+      "id": "text30",
       "next": null,
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar6",
       "shadow": true,
@@ -3406,7 +3473,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "5"
+          "value": "5",
+          "id": null
         }
       },
       "topLevel": false
@@ -3466,7 +3534,8 @@
       "fields": {
         "VALUE": {
           "name": "VALUE",
-          "value": "Num1"
+          "value": "Num1",
+          "id": null
         }
       },
       "next": null,
@@ -3481,7 +3550,8 @@
       "fields": {
         "VALUE": {
           "name": "VALUE",
-          "value": "Num2"
+          "value": "Num2",
+          "id": null
         }
       },
       "next": null,
@@ -3496,17 +3566,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_gt2",
-          "shadow": null
+          "shadow": "operator_gt2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "procedures_return1",
-          "shadow": null
+          "shadow": "procedures_return1"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "procedures_return2",
-          "shadow": null
+          "shadow": "procedures_return2"
         }
       },
       "fields": {},
@@ -3522,12 +3592,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "argument_reporter_string_number1",
-          "shadow": null
+          "shadow": "argument_reporter_string_number1"
         },
         "OPERAND2": {
           "name": "OPERAND2",
           "block": "argument_reporter_string_number2",
-          "shadow": null
+          "shadow": "argument_reporter_string_number2"
         }
       },
       "fields": {},
@@ -3543,7 +3613,8 @@
       "fields": {
         "VALUE": {
           "name": "VALUE",
-          "value": "Num1"
+          "value": "Num1",
+          "id": null
         }
       },
       "next": null,
@@ -3558,7 +3629,8 @@
       "fields": {
         "VALUE": {
           "name": "VALUE",
-          "value": "Num2"
+          "value": "Num2",
+          "id": null
         }
       },
       "next": null,
@@ -3573,7 +3645,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "argument_reporter_string_number3",
-          "shadow": null
+          "shadow": "argument_reporter_string_number3"
         }
       },
       "fields": {},
@@ -3589,7 +3661,8 @@
       "fields": {
         "VALUE": {
           "name": "VALUE",
-          "value": "Num1"
+          "value": "Num1",
+          "id": null
         }
       },
       "next": null,
@@ -3604,7 +3677,7 @@
         "VALUE": {
           "name": "VALUE",
           "block": "argument_reporter_string_number4",
-          "shadow": null
+          "shadow": "argument_reporter_string_number4"
         }
       },
       "fields": {},
@@ -3620,7 +3693,8 @@
       "fields": {
         "VALUE": {
           "name": "VALUE",
-          "value": "Num2"
+          "value": "Num2",
+          "id": null
         }
       },
       "next": null,
@@ -3661,8 +3735,8 @@
       "topLevel": false,
       "parent": "event_whenflagclicked1",
       "shadow": false,
-      "x": "98",
-      "y": "-139"
+      "x": 98,
+      "y": -139
     }
   },
   "scripts": [

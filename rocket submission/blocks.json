@@ -96,7 +96,7 @@
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "control_if_else1",
-          "shadow": null
+          "shadow": "control_if_else1"
         }
       },
       "fields": {},
@@ -124,12 +124,12 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals2",
-          "shadow": null
+          "shadow": "operator_equals2"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "looks_switchcostumeto1",
-          "shadow": null
+          "shadow": "looks_switchcostumeto1"
         }
       },
       "fields": {},
@@ -145,12 +145,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_variable1",
-          "shadow": "text6"
+          "shadow": "data_variable1"
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text7",
-          "shadow": "text7"
+          "block": "text5",
+          "shadow": "text5"
         }
       },
       "fields": {},
@@ -198,7 +198,7 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_not1",
-          "shadow": null
+          "shadow": "operator_not1"
         }
       },
       "fields": {},
@@ -214,7 +214,7 @@
         "OPERAND": {
           "name": "OPERAND",
           "block": "sensing_mousedown1",
-          "shadow": null
+          "shadow": "sensing_mousedown1"
         }
       },
       "fields": {},
@@ -332,17 +332,17 @@
         "CONDITION": {
           "name": "CONDITION",
           "block": "operator_equals1",
-          "shadow": null
+          "shadow": "operator_equals1"
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
           "block": "data_setvariableto2",
-          "shadow": null
+          "shadow": "data_setvariableto2"
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
           "block": "data_setvariableto3",
-          "shadow": null
+          "shadow": "data_setvariableto3"
         }
       },
       "fields": {},
@@ -358,12 +358,12 @@
         "OPERAND1": {
           "name": "OPERAND1",
           "block": "data_lengthoflist1",
-          "shadow": "text2"
+          "shadow": "data_lengthoflist1"
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text3",
-          "shadow": "text3"
+          "block": "text2",
+          "shadow": "text2"
         }
       },
       "fields": {},
@@ -395,8 +395,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text4",
-          "shadow": "text4"
+          "block": "text3",
+          "shadow": "text3"
         }
       },
       "fields": {
@@ -440,8 +440,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text5",
-          "shadow": "text5"
+          "block": "text4",
+          "shadow": "text4"
         }
       },
       "fields": {
@@ -562,7 +562,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "265"
+          "value": "265",
+          "id": null
         }
       },
       "topLevel": false
@@ -577,7 +578,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-150"
+          "value": "-150",
+          "id": null
         }
       },
       "topLevel": false
@@ -592,7 +594,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "150"
+          "value": "150",
+          "id": null
         }
       },
       "topLevel": false
@@ -611,7 +614,8 @@
           "id": "Gxw:NMf:o*eF{eqpLVqX",
           "variableType": ""
         }
-      }
+      },
+      "topLevel": false
     },
     "text6": {
       "id": "text6",
@@ -623,13 +627,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": ""
+          "value": "",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text7": {
-      "id": "text7",
+    "text5": {
+      "id": "text5",
       "next": null,
       "parent": "operator_equals2",
       "shadow": true,
@@ -638,7 +643,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "topLevel": false
@@ -670,7 +676,24 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "false"
+          "value": "false",
+          "id": null
+        }
+      },
+      "topLevel": false
+    },
+    "text7": {
+      "id": "text7",
+      "next": null,
+      "parent": "operator_equals1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "",
+          "id": null
         }
       },
       "topLevel": false
@@ -685,28 +708,14 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": ""
+          "value": "0",
+          "id": null
         }
       },
       "topLevel": false
     },
     "text3": {
       "id": "text3",
-      "next": null,
-      "parent": "operator_equals1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "topLevel": false
-    },
-    "text4": {
-      "id": "text4",
       "next": null,
       "parent": "data_setvariableto2",
       "shadow": true,
@@ -715,7 +724,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "false"
+          "value": "false",
+          "id": null
         }
       },
       "topLevel": false
@@ -730,13 +740,14 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "-50"
+          "value": "-50",
+          "id": null
         }
       },
       "topLevel": false
     },
-    "text5": {
-      "id": "text5",
+    "text4": {
+      "id": "text4",
       "next": null,
       "parent": "data_setvariableto3",
       "shadow": true,
@@ -745,7 +756,8 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "true"
+          "value": "true",
+          "id": null
         }
       },
       "topLevel": false
@@ -760,7 +772,8 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "0"
+          "value": "0",
+          "id": null
         }
       },
       "topLevel": false
