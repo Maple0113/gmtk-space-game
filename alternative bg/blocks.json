@@ -19,8 +19,7 @@
       "fields": {
         "FRONT_BACK": {
           "name": "FRONT_BACK",
-          "value": "back",
-          "id": null
+          "value": "back"
         }
       },
       "next": "looks_setsizeto1",
@@ -51,8 +50,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "500",
-          "id": null
+          "value": "500"
         }
       },
       "next": null,

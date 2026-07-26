@@ -271,11 +271,324 @@
       "topLevel": false,
       "id": "lmsMoreEvents_menu_targetMenu1"
     },
+    "event_whenflagclicked1": {
+      "opcode": "event_whenflagclicked",
+      "next": "data_setvariableto1",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 16,
+      "y": 141,
+      "id": "event_whenflagclicked1"
+    },
+    "data_setvariableto1": {
+      "opcode": "data_setvariableto",
+      "next": "looks_switchcostumeto3",
+      "parent": "event_whenflagclicked1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text2",
+          "shadow": "text2"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CanSubmit",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto1"
+    },
+    "motion_gotoxy1": {
+      "opcode": "motion_gotoxy",
+      "next": "looks_setsizeto1",
+      "parent": "looks_switchcostumeto3",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number2",
+          "shadow": "math_number2"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number3",
+          "shadow": "math_number3"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_gotoxy1"
+    },
+    "looks_setsizeto1": {
+      "opcode": "looks_setsizeto",
+      "next": "looks_hide1",
+      "parent": "motion_gotoxy1",
+      "inputs": {
+        "SIZE": {
+          "name": "SIZE",
+          "block": "math_number1",
+          "shadow": "math_number1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_setsizeto1"
+    },
+    "looks_hide1": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "looks_setsizeto1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
+    },
+    "event_whenbroadcastreceived1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "looks_show1",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 350,
+      "y": 137,
+      "id": "event_whenbroadcastreceived1"
+    },
+    "looks_show1": {
+      "opcode": "looks_show",
+      "next": "control_forever1",
+      "parent": "event_whenbroadcastreceived1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_show1"
+    },
+    "control_forever1": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "looks_show1",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_if_else1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_forever1"
+    },
+    "control_if_else1": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "control_forever1",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals2",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_setvariableto2",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "data_setvariableto3",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_if_else1"
+    },
+    "operator_equals2": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "control_if_else1",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_lengthoflist1",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text3",
+          "shadow": "text3"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "operator_equals2"
+    },
+    "data_lengthoflist1": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "operator_equals2",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
+          "variableType": "list"
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_lengthoflist1"
+    },
+    "data_setvariableto2": {
+      "opcode": "data_setvariableto",
+      "next": "looks_seteffectto1",
+      "parent": "control_if_else1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text4",
+          "shadow": "text4"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CanSubmit",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto2"
+    },
+    "looks_seteffectto1": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "data_setvariableto2",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "math_number4",
+          "shadow": "math_number4"
+        }
+      },
+      "fields": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "value": "BRIGHTNESS",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_seteffectto1"
+    },
+    "data_setvariableto3": {
+      "opcode": "data_setvariableto",
+      "next": "looks_seteffectto2",
+      "parent": "control_if_else1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text5",
+          "shadow": "text5"
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "CanSubmit",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
+          "variableType": ""
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto3"
+    },
+    "looks_seteffectto2": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "data_setvariableto3",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "math_number5",
+          "shadow": "math_number5"
+        }
+      },
+      "fields": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "value": "BRIGHTNESS",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_seteffectto2"
+    },
+    "looks_switchcostumeto3": {
+      "opcode": "looks_switchcostumeto",
+      "next": "motion_gotoxy1",
+      "parent": "data_setvariableto1",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume3",
+          "shadow": "looks_costume3"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_switchcostumeto3"
+    },
+    "looks_costume3": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "looks_switchcostumeto3",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "button",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "looks_costume3"
+    },
     "data_variable1": {
       "id": "data_variable1",
       "next": null,
       "parent": "operator_equals1",
-      "shadow": false,
+      "shadow": true,
       "inputs": {},
       "opcode": "data_variable",
       "fields": {
@@ -285,24 +598,7 @@
           "id": "Gxw:NMf:o*eF{eqpLVqX",
           "variableType": ""
         }
-      },
-      "topLevel": false
-    },
-    "text6": {
-      "id": "text6",
-      "next": null,
-      "parent": "operator_equals1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "",
-          "id": null
-        }
-      },
-      "topLevel": false
+      }
     },
     "text1": {
       "id": "text1",
@@ -314,8 +610,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "true",
-          "id": null
+          "value": "true"
         }
       },
       "topLevel": false
@@ -333,22 +628,6 @@
           "value": "GAME rocket submit",
           "id": "=9Rd9n:vJm=CO$~p|E1n",
           "variableType": "broadcast_msg"
-        }
-      },
-      "topLevel": false
-    },
-    "text7": {
-      "id": "text7",
-      "next": null,
-      "parent": "operator_equals2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "",
-          "id": null
         }
       },
       "topLevel": false
@@ -387,452 +666,140 @@
       },
       "topLevel": false
     },
-    "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
-      "opcode": "event_whenflagclicked",
-      "inputs": {},
-      "fields": {},
-      "next": "data_setvariableto1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 16,
-      "y": 141
-    },
-    "data_setvariableto1": {
-      "id": "data_setvariableto1",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text2",
-          "shadow": "text2"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
-          "value": "CanSubmit",
-          "variableType": ""
-        }
-      },
-      "next": "looks_switchcostumeto3",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false
-    },
     "text2": {
       "id": "text2",
-      "opcode": "text",
+      "next": null,
+      "parent": "data_setvariableto1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "false"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto1",
-      "shadow": true
-    },
-    "motion_gotoxy1": {
-      "id": "motion_gotoxy1",
-      "opcode": "motion_gotoxy",
-      "inputs": {
-        "X": {
-          "name": "X",
-          "block": "math_number2",
-          "shadow": "math_number2"
-        },
-        "Y": {
-          "name": "Y",
-          "block": "math_number3",
-          "shadow": "math_number3"
-        }
-      },
-      "fields": {},
-      "next": "looks_setsizeto1",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto3",
-      "shadow": false
+      "topLevel": false
     },
     "math_number2": {
       "id": "math_number2",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "265"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
+      "topLevel": false
     },
     "math_number3": {
       "id": "math_number3",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "motion_gotoxy1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "-150"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "looks_setsizeto1": {
-      "id": "looks_setsizeto1",
-      "opcode": "looks_setsizeto",
-      "inputs": {
-        "SIZE": {
-          "name": "SIZE",
-          "block": "math_number1",
-          "shadow": "math_number1"
-        }
-      },
-      "fields": {},
-      "next": "looks_hide1",
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": false
+      "topLevel": false
     },
     "math_number1": {
       "id": "math_number1",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "looks_setsizeto1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "150"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": true
-    },
-    "looks_hide1": {
-      "id": "looks_hide1",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_setsizeto1",
-      "shadow": false
-    },
-    "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
-          "value": "GAME begin",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "looks_show1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 350,
-      "y": 137
-    },
-    "looks_show1": {
-      "id": "looks_show1",
-      "opcode": "looks_show",
-      "inputs": {},
-      "fields": {},
-      "next": "control_forever1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false
-    },
-    "control_forever1": {
-      "id": "control_forever1",
-      "opcode": "control_forever",
-      "inputs": {
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "control_if_else1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_show1",
-      "shadow": false
-    },
-    "control_if_else1": {
-      "id": "control_if_else1",
-      "opcode": "control_if_else",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_equals2",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "data_setvariableto2",
-          "shadow": null
-        },
-        "SUBSTACK2": {
-          "name": "SUBSTACK2",
-          "block": "data_setvariableto3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_forever1",
-      "shadow": false
-    },
-    "operator_equals2": {
-      "id": "operator_equals2",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_lengthoflist1",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text3",
-          "shadow": "text3"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else1",
-      "shadow": false
-    },
-    "data_lengthoflist1": {
-      "id": "data_lengthoflist1",
-      "opcode": "data_lengthoflist",
-      "inputs": {},
-      "fields": {
-        "LIST": {
-          "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
-          "value": "Rocket",
-          "variableType": "list"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals2",
-      "shadow": false
+      "topLevel": false
     },
     "text3": {
       "id": "text3",
-      "opcode": "text",
+      "next": null,
+      "parent": "operator_equals2",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "0"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals2",
-      "shadow": true
-    },
-    "data_setvariableto2": {
-      "id": "data_setvariableto2",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text4",
-          "shadow": "text4"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
-          "value": "CanSubmit",
-          "variableType": ""
-        }
-      },
-      "next": "looks_seteffectto1",
-      "topLevel": false,
-      "parent": "control_if_else1",
-      "shadow": false
+      "topLevel": false
     },
     "text4": {
       "id": "text4",
-      "opcode": "text",
+      "next": null,
+      "parent": "data_setvariableto2",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "false"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto2",
-      "shadow": true
-    },
-    "looks_seteffectto1": {
-      "id": "looks_seteffectto1",
-      "opcode": "looks_seteffectto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "math_number4",
-          "shadow": "math_number4"
-        }
-      },
-      "fields": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "value": "BRIGHTNESS"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto2",
-      "shadow": false
+      "topLevel": false
     },
     "math_number4": {
       "id": "math_number4",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "looks_seteffectto1",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "-50"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_seteffectto1",
-      "shadow": true
-    },
-    "data_setvariableto3": {
-      "id": "data_setvariableto3",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text5",
-          "shadow": "text5"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
-          "value": "CanSubmit",
-          "variableType": ""
-        }
-      },
-      "next": "looks_seteffectto2",
-      "topLevel": false,
-      "parent": "control_if_else1",
-      "shadow": false
+      "topLevel": false
     },
     "text5": {
       "id": "text5",
-      "opcode": "text",
+      "next": null,
+      "parent": "data_setvariableto3",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
           "value": "true"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto3",
-      "shadow": true
-    },
-    "looks_seteffectto2": {
-      "id": "looks_seteffectto2",
-      "opcode": "looks_seteffectto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "math_number5",
-          "shadow": "math_number5"
-        }
-      },
-      "fields": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "value": "BRIGHTNESS"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto3",
-      "shadow": false
+      "topLevel": false
     },
     "math_number5": {
       "id": "math_number5",
-      "opcode": "math_number",
+      "next": null,
+      "parent": "looks_seteffectto2",
+      "shadow": true,
       "inputs": {},
+      "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "0"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_seteffectto2",
-      "shadow": true
-    },
-    "looks_switchcostumeto3": {
-      "id": "looks_switchcostumeto3",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume3",
-          "shadow": "looks_costume3"
-        }
-      },
-      "fields": {},
-      "next": "motion_gotoxy1",
-      "topLevel": false,
-      "parent": "data_setvariableto1",
-      "shadow": false,
-      "x": 23.96742908688617,
-      "y": 218.60863813180055
-    },
-    "looks_costume3": {
-      "id": "looks_costume3",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "button"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto3",
-      "shadow": true
+      "topLevel": false
     }
   },
   "scripts": [

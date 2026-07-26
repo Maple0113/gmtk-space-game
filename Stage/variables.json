@@ -4,7 +4,7 @@
     "name": "PartsFilter",
     "type": "",
     "isCloud": false,
-    "value": "kits"
+    "value": "parts"
   },
   "bV=j0c)Z7B_Di/e/upE(": {
     "id": "bV=j0c)Z7B_Di/e/upE(",
@@ -25,21 +25,28 @@
     "name": "MaxPages",
     "type": "",
     "isCloud": false,
-    "value": 1
+    "value": 2
   },
   "j-wNVw^8ze)1w}ZzY,L$": {
     "id": "j-wNVw^8ze)1w}ZzY,L$",
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[1,1],[1,1]]"
+    "value": "[[0,1],[0,1]]"
   },
   "Pt.1X5RCAbK=Tm1JiWs^": {
     "id": "Pt.1X5RCAbK=Tm1JiWs^",
     "name": "Money",
     "type": "",
     "isCloud": false,
-    "value": 500
+    "value": 0
+  },
+  "-^NLK5G$)gq,B2ak`[1C": {
+    "id": "-^NLK5G$)gq,B2ak`[1C",
+    "name": "Tutorial",
+    "type": "",
+    "isCloud": false,
+    "value": "true"
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -68,10 +75,10 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"body\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
+      "{\"Name\":\"body\",\"Amount\":1,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
       "{\"Name\":\"nosecone\",\"Amount\":0,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"fin\",\"Amount\":0,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"fueltank\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"fin\",\"Amount\":1,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"fueltank\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
       "{\"Name\":\"thruster\",\"Amount\":0,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
       "{\"Name\":\"advertisement\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
       "{\"Name\":\"window\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
@@ -84,7 +91,17 @@
     "name": "Kits",
     "type": "list",
     "isCloud": false,
-    "value": []
+    "value": [
+      "{\"Name\":\"body\",\"Amount\":\"this\",\"Unlocked\":true,\"Cost\":150,\"Costume\":\"\"}",
+      "{\"Name\":\"nosecone\",\"Amount\":\"value\",\"Unlocked\":true,\"Cost\":75,\"Costume\":\"\"}",
+      "{\"Name\":\"fin\",\"Amount\":\"does\",\"Unlocked\":true,\"Cost\":50,\"Costume\":\"\"}",
+      "{\"Name\":\"fueltank\",\"Amount\":\"nothing\",\"Unlocked\":false,\"Cost\":100,\"Costume\":\"\"}",
+      "{\"Name\":\"thruster\",\"Amount\":\"this\",\"Unlocked\":false,\"Cost\":75,\"Costume\":\"\"}",
+      "{\"Name\":\"advertisement\",\"Amount\":\"value\",\"Unlocked\":false,\"Cost\":25,\"Costume\":\"\"}",
+      "{\"Name\":\"window\",\"Amount\":\"does\",\"Unlocked\":false,\"Cost\":50,\"Costume\":\"\"}",
+      "{\"Name\":\"cargobay\",\"Amount\":\"nothing\",\"Unlocked\":false,\"Cost\":300,\"Costume\":\"\"}"
+    ],
+    "_monitorUpToDate": false
   },
   "0A][[Y=]Bc/QhAT9X])!": {
     "id": "0A][[Y=]Bc/QhAT9X])!",
@@ -92,8 +109,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0]",
-      "[0,0,0]"
+      "[1,1]"
     ],
     "_monitorUpToDate": false
   },
@@ -103,9 +119,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0]",
-      "[0,0,0]",
-      "[0,0,0]"
+      "[0,0]",
+      "[0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -115,8 +130,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,0,0]",
-      "[0,0,0]"
+      "[0,1]",
+      "[0,1]"
     ],
     "_monitorUpToDate": false
   },
@@ -126,8 +141,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "1x Body",
       "1x Nose Cone",
+      "1x Body",
       "2x Fin"
     ],
     "_monitorUpToDate": false
@@ -138,8 +153,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"amount\":1,\"type\":\"Body\"}",
       "{\"amount\":1,\"type\":\"NoseCone\"}",
+      "{\"amount\":1,\"type\":\"Body\"}",
       "{\"amount\":2,\"type\":\"Fin\"}"
     ],
     "_monitorUpToDate": false
@@ -149,7 +164,27 @@
     "name": "Rocket",
     "type": "list",
     "isCloud": false,
-    "value": [],
+    "value": [
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "nosecone",
+      "fin",
+      "fin",
+      "fin",
+      "fin",
+      "fin",
+      "fin",
+      "fin",
+      "fin"
+    ],
     "_monitorUpToDate": false
   },
   "X$b7KhkWBuw^}6#}%6`n": {
@@ -278,11 +313,11 @@
     "isCloud": false,
     "value": "GAME rocket submit"
   },
-  "-^NLK5G$)gq,B2ak`[1C": {
-    "id": "-^NLK5G$)gq,B2ak`[1C",
-    "name": "Tutorial",
+  "hydVEoo-,a|a1S{TMQ1[": {
+    "id": "hydVEoo-,a|a1S{TMQ1[",
+    "name": "Progress",
     "type": "",
     "isCloud": false,
-    "value": "false"
+    "value": 0
   }
 }

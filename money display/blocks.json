@@ -1,135 +1,96 @@
 {
   "blocks": {
-    "text8": {
-      "id": "text8",
-      "next": null,
-      "parent": "text_setText2",
-      "shadow": true,
+    "event_whenflagclicked1": {
+      "opcode": "event_whenflagclicked",
+      "next": "data_setvariableto1",
+      "parent": null,
       "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-          "id": null
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 370,
+      "y": 249,
+      "id": "event_whenflagclicked1"
+    },
+    "data_setvariableto1": {
+      "opcode": "data_setvariableto",
+      "next": "data_setvariableto2",
+      "parent": "event_whenflagclicked1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text2",
+          "shadow": "text2"
         }
       },
-      "topLevel": false
-    },
-    "text9": {
-      "id": "text9",
-      "next": null,
-      "parent": "operator_join1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
       "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "banana",
-          "id": null
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "Money",
+          "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "variableType": ""
         }
       },
-      "topLevel": false
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto1"
     },
-    "math_number17": {
-      "id": "math_number17",
-      "next": null,
-      "parent": "dogeiscutformatnumbers_formatNumber1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1000",
-          "id": null
+    "data_setvariableto2": {
+      "opcode": "data_setvariableto",
+      "next": "motion_gotoxy1",
+      "parent": "data_setvariableto1",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "text1",
+          "shadow": "text1"
         }
       },
-      "topLevel": false
-    },
-    "math_number18": {
-      "id": "math_number18",
-      "next": null,
-      "parent": "operator_multiply1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
       "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "",
-          "id": null
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "MoneyOnLastFrame",
+          "id": "JcCwdCqPkN6E2Daw|a1T",
+          "variableType": ""
         }
       },
-      "topLevel": false
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_setvariableto2"
     },
-    "text10": {
-      "id": "text10",
-      "next": null,
-      "parent": "text_setText1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "$100K",
-          "id": null
+    "motion_gotoxy1": {
+      "opcode": "motion_gotoxy",
+      "next": "looks_hide1",
+      "parent": "data_setvariableto2",
+      "inputs": {
+        "X": {
+          "name": "X",
+          "block": "math_number1",
+          "shadow": "math_number1"
+        },
+        "Y": {
+          "name": "Y",
+          "block": "math_number2",
+          "shadow": "math_number2"
         }
       },
-      "topLevel": false
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "motion_gotoxy1"
     },
-    "text11": {
-      "id": "text11",
+    "looks_hide1": {
+      "opcode": "looks_hide",
       "next": null,
-      "parent": "operator_join2",
-      "shadow": true,
+      "parent": "motion_gotoxy1",
       "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "banana",
-          "id": null
-        }
-      },
-      "topLevel": false
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
     },
-    "math_number19": {
-      "id": "math_number19",
-      "next": null,
-      "parent": "dogeiscutformatnumbers_formatNumber2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1000",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number20": {
-      "id": "math_number20",
-      "next": null,
-      "parent": "operator_multiply2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "text12": {
-      "id": "text12",
+    "text2": {
+      "id": "text2",
       "next": null,
       "parent": "data_setvariableto1",
       "shadow": true,
@@ -138,248 +99,52 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "0",
-          "id": null
+          "value": "0"
         }
       },
       "topLevel": false
     },
-    "text13": {
-      "id": "text13",
+    "text1": {
+      "id": "text1",
       "next": null,
-      "parent": "operator_equals1",
+      "parent": "data_setvariableto2",
       "shadow": true,
       "inputs": {},
       "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "",
-          "id": null
+          "value": "0"
         }
       },
       "topLevel": false
     },
-    "text14": {
-      "id": "text14",
+    "math_number1": {
+      "id": "math_number1",
       "next": null,
-      "parent": "operator_equals1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "50",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "text15": {
-      "id": "text15",
-      "next": null,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number21": {
-      "id": "math_number21",
-      "next": null,
-      "parent": "operator_subtract1",
+      "parent": "motion_gotoxy1",
       "shadow": true,
       "inputs": {},
       "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "",
-          "id": null
+          "value": "225"
         }
       },
       "topLevel": false
     },
-    "math_number22": {
-      "id": "math_number22",
+    "math_number2": {
+      "id": "math_number2",
       "next": null,
-      "parent": "operator_subtract1",
+      "parent": "motion_gotoxy1",
       "shadow": true,
       "inputs": {},
       "opcode": "math_number",
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "text16": {
-      "id": "text16",
-      "next": null,
-      "parent": "text_setText3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "$100K",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "text17": {
-      "id": "text17",
-      "next": null,
-      "parent": "operator_gt1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "text18": {
-      "id": "text18",
-      "next": null,
-      "parent": "operator_join3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "banana",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number23": {
-      "id": "math_number23",
-      "next": null,
-      "parent": "dogeiscutformatnumbers_formatNumber3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1000",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number24": {
-      "id": "math_number24",
-      "next": null,
-      "parent": "operator_multiply3",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "text19": {
-      "id": "text19",
-      "next": null,
-      "parent": "text_setText4",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "$100K",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "text20": {
-      "id": "text20",
-      "next": null,
-      "parent": "operator_join4",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "banana",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number25": {
-      "id": "math_number25",
-      "next": null,
-      "parent": "dogeiscutformatnumbers_formatNumber4",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1000",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number26": {
-      "id": "math_number26",
-      "next": null,
-      "parent": "operator_multiply4",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number27": {
-      "id": "math_number27",
-      "next": null,
-      "parent": "looks_changeeffectby1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "25",
-          "id": null
+          "value": "-115"
         }
       },
       "topLevel": false
@@ -455,8 +220,8 @@
       "inputs": {
         "WIDTH": {
           "name": "WIDTH",
-          "block": "math_number5",
-          "shadow": "math_number5"
+          "block": "math_number7",
+          "shadow": "math_number7"
         }
       },
       "fields": {
@@ -470,8 +235,8 @@
       "parent": "text_setFont1",
       "shadow": false
     },
-    "math_number5": {
-      "id": "math_number5",
+    "math_number7": {
+      "id": "math_number7",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -507,8 +272,8 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "text2",
-          "shadow": "text2"
+          "block": "text4",
+          "shadow": "text4"
         },
         "STRING2": {
           "name": "STRING2",
@@ -522,8 +287,8 @@
       "parent": "text_setText1",
       "shadow": false
     },
-    "text2": {
-      "id": "text2",
+    "text4": {
+      "id": "text4",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -548,8 +313,8 @@
         },
         "DECIMALS": {
           "name": "DECIMALS",
-          "block": "math_number4",
-          "shadow": "math_number4"
+          "block": "math_number6",
+          "shadow": "math_number6"
         }
       },
       "fields": {
@@ -574,8 +339,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number3",
-          "shadow": "math_number3"
+          "block": "math_number5",
+          "shadow": "math_number5"
         }
       },
       "fields": {},
@@ -601,8 +366,8 @@
       "parent": "operator_multiply2",
       "shadow": false
     },
-    "math_number3": {
-      "id": "math_number3",
+    "math_number5": {
+      "id": "math_number5",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -616,8 +381,8 @@
       "parent": "operator_multiply2",
       "shadow": true
     },
-    "math_number4": {
-      "id": "math_number4",
+    "math_number6": {
+      "id": "math_number6",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -679,8 +444,8 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "text1",
-          "shadow": "text1"
+          "block": "text3",
+          "shadow": "text3"
         },
         "STRING2": {
           "name": "STRING2",
@@ -694,8 +459,8 @@
       "parent": "text_setText2",
       "shadow": false
     },
-    "text1": {
-      "id": "text1",
+    "text3": {
+      "id": "text3",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -720,8 +485,8 @@
         },
         "DECIMALS": {
           "name": "DECIMALS",
-          "block": "math_number2",
-          "shadow": "math_number2"
+          "block": "math_number4",
+          "shadow": "math_number4"
         }
       },
       "fields": {
@@ -746,8 +511,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number1",
-          "shadow": "math_number1"
+          "block": "math_number3",
+          "shadow": "math_number3"
         }
       },
       "fields": {},
@@ -773,8 +538,8 @@
       "parent": "operator_multiply1",
       "shadow": false
     },
-    "math_number1": {
-      "id": "math_number1",
+    "math_number3": {
+      "id": "math_number3",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -788,8 +553,8 @@
       "parent": "operator_multiply1",
       "shadow": true
     },
-    "math_number2": {
-      "id": "math_number2",
+    "math_number4": {
+      "id": "math_number4",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -819,7 +584,7 @@
         }
       },
       "fields": {},
-      "next": "data_setvariableto1",
+      "next": "data_setvariableto3",
       "topLevel": false,
       "parent": "text_setText2",
       "shadow": false
@@ -971,8 +736,8 @@
       "parent": "operator_subtract1",
       "shadow": false
     },
-    "data_setvariableto1": {
-      "id": "data_setvariableto1",
+    "data_setvariableto3": {
+      "id": "data_setvariableto3",
       "opcode": "data_setvariableto",
       "inputs": {
         "VALUE": {
@@ -1008,7 +773,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "data_setvariableto1",
+      "parent": "data_setvariableto3",
       "shadow": false
     },
     "control_start_as_clone1": {
@@ -1016,15 +781,15 @@
       "opcode": "control_start_as_clone",
       "inputs": {},
       "fields": {},
-      "next": "looks_hide1",
+      "next": "looks_hide2",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 1862,
       "y": 250
     },
-    "looks_hide1": {
-      "id": "looks_hide1",
+    "looks_hide2": {
+      "id": "looks_hide2",
       "opcode": "looks_hide",
       "inputs": {},
       "fields": {},
@@ -1046,7 +811,7 @@
       "fields": {},
       "next": "text_setFont2",
       "topLevel": false,
-      "parent": "looks_hide1",
+      "parent": "looks_hide2",
       "shadow": false
     },
     "sound_sounds_menu1": {
@@ -1085,8 +850,8 @@
       "inputs": {
         "WIDTH": {
           "name": "WIDTH",
-          "block": "math_number14",
-          "shadow": "math_number14"
+          "block": "math_number16",
+          "shadow": "math_number16"
         }
       },
       "fields": {
@@ -1100,8 +865,8 @@
       "parent": "text_setFont2",
       "shadow": false
     },
-    "math_number14": {
-      "id": "math_number14",
+    "math_number16": {
+      "id": "math_number16",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1152,8 +917,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text3",
-          "shadow": "text3"
+          "block": "text5",
+          "shadow": "text5"
         }
       },
       "fields": {},
@@ -1179,8 +944,8 @@
       "parent": "operator_gt1",
       "shadow": false
     },
-    "text3": {
-      "id": "text3",
+    "text5": {
+      "id": "text5",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1247,8 +1012,8 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "text4",
-          "shadow": "text4"
+          "block": "text6",
+          "shadow": "text6"
         },
         "STRING2": {
           "name": "STRING2",
@@ -1262,8 +1027,8 @@
       "parent": "text_setText3",
       "shadow": false
     },
-    "text4": {
-      "id": "text4",
+    "text6": {
+      "id": "text6",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1288,8 +1053,8 @@
         },
         "DECIMALS": {
           "name": "DECIMALS",
-          "block": "math_number11",
-          "shadow": "math_number11"
+          "block": "math_number13",
+          "shadow": "math_number13"
         }
       },
       "fields": {
@@ -1314,8 +1079,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number10",
-          "shadow": "math_number10"
+          "block": "math_number12",
+          "shadow": "math_number12"
         }
       },
       "fields": {},
@@ -1341,8 +1106,8 @@
       "parent": "operator_multiply3",
       "shadow": false
     },
-    "math_number10": {
-      "id": "math_number10",
+    "math_number12": {
+      "id": "math_number12",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1356,8 +1121,8 @@
       "parent": "operator_multiply3",
       "shadow": true
     },
-    "math_number11": {
-      "id": "math_number11",
+    "math_number13": {
+      "id": "math_number13",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1424,8 +1189,8 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "text5",
-          "shadow": "text5"
+          "block": "text7",
+          "shadow": "text7"
         },
         "STRING2": {
           "name": "STRING2",
@@ -1439,8 +1204,8 @@
       "parent": "text_setText4",
       "shadow": false
     },
-    "text5": {
-      "id": "text5",
+    "text7": {
+      "id": "text7",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1465,8 +1230,8 @@
         },
         "DECIMALS": {
           "name": "DECIMALS",
-          "block": "math_number13",
-          "shadow": "math_number13"
+          "block": "math_number15",
+          "shadow": "math_number15"
         }
       },
       "fields": {
@@ -1491,8 +1256,8 @@
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number12",
-          "shadow": "math_number12"
+          "block": "math_number14",
+          "shadow": "math_number14"
         }
       },
       "fields": {},
@@ -1518,8 +1283,8 @@
       "parent": "operator_multiply4",
       "shadow": false
     },
-    "math_number12": {
-      "id": "math_number12",
+    "math_number14": {
+      "id": "math_number14",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1533,8 +1298,8 @@
       "parent": "operator_multiply4",
       "shadow": true
     },
-    "math_number13": {
-      "id": "math_number13",
+    "math_number15": {
+      "id": "math_number15",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1600,8 +1365,8 @@
       "inputs": {
         "DY": {
           "name": "DY",
-          "block": "math_number9",
-          "shadow": "math_number9"
+          "block": "math_number11",
+          "shadow": "math_number11"
         }
       },
       "fields": {},
@@ -1610,8 +1375,8 @@
       "parent": "control_repeat1",
       "shadow": false
     },
-    "math_number9": {
-      "id": "math_number9",
+    "math_number11": {
+      "id": "math_number11",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1667,8 +1432,8 @@
       "inputs": {
         "DY": {
           "name": "DY",
-          "block": "math_number8",
-          "shadow": "math_number8"
+          "block": "math_number10",
+          "shadow": "math_number10"
         }
       },
       "fields": {},
@@ -1677,8 +1442,8 @@
       "parent": "control_repeat2",
       "shadow": false
     },
-    "math_number8": {
-      "id": "math_number8",
+    "math_number10": {
+      "id": "math_number10",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1719,13 +1484,13 @@
       "inputs": {
         "NUM1": {
           "name": "NUM1",
-          "block": "math_number6",
-          "shadow": "math_number6"
+          "block": "math_number8",
+          "shadow": "math_number8"
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number7",
-          "shadow": "math_number7"
+          "block": "math_number9",
+          "shadow": "math_number9"
         }
       },
       "fields": {},
@@ -1734,8 +1499,8 @@
       "parent": "looks_changeeffectby1",
       "shadow": false
     },
-    "math_number6": {
-      "id": "math_number6",
+    "math_number8": {
+      "id": "math_number8",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1749,8 +1514,8 @@
       "parent": "operator_divide1",
       "shadow": true
     },
-    "math_number7": {
-      "id": "math_number7",
+    "math_number9": {
+      "id": "math_number9",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
@@ -1773,160 +1538,11 @@
       "topLevel": false,
       "parent": "control_repeat2",
       "shadow": false
-    },
-    "event_whenflagclicked1": {
-      "id": "event_whenflagclicked1",
-      "opcode": "event_whenflagclicked",
-      "inputs": {},
-      "fields": {},
-      "next": "data_setvariableto2",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 370,
-      "y": 249
-    },
-    "data_setvariableto2": {
-      "id": "data_setvariableto2",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text7",
-          "shadow": "text7"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Pt.1X5RCAbK=Tm1JiWs^",
-          "value": "Money",
-          "variableType": ""
-        }
-      },
-      "next": "data_setvariableto3",
-      "topLevel": false,
-      "parent": "event_whenflagclicked1",
-      "shadow": false
-    },
-    "text7": {
-      "id": "text7",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto2",
-      "shadow": true
-    },
-    "data_setvariableto3": {
-      "id": "data_setvariableto3",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "text6",
-          "shadow": "text6"
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "JcCwdCqPkN6E2Daw|a1T",
-          "value": "MoneyOnLastFrame",
-          "variableType": ""
-        }
-      },
-      "next": "motion_gotoxy1",
-      "topLevel": false,
-      "parent": "data_setvariableto2",
-      "shadow": false
-    },
-    "text6": {
-      "id": "text6",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto3",
-      "shadow": true
-    },
-    "motion_gotoxy1": {
-      "id": "motion_gotoxy1",
-      "opcode": "motion_gotoxy",
-      "inputs": {
-        "X": {
-          "name": "X",
-          "block": "math_number15",
-          "shadow": "math_number15"
-        },
-        "Y": {
-          "name": "Y",
-          "block": "math_number16",
-          "shadow": "math_number16"
-        }
-      },
-      "fields": {},
-      "next": "looks_hide2",
-      "topLevel": false,
-      "parent": "data_setvariableto3",
-      "shadow": false
-    },
-    "math_number15": {
-      "id": "math_number15",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "225"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "math_number16": {
-      "id": "math_number16",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "-115"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": true
-    },
-    "looks_hide2": {
-      "id": "looks_hide2",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_gotoxy1",
-      "shadow": false
     }
   },
   "scripts": [
+    "event_whenflagclicked1",
     "event_whenbroadcastreceived1",
-    "control_start_as_clone1",
-    "event_whenflagclicked1"
+    "control_start_as_clone1"
   ]
 }

@@ -60,91 +60,10 @@
       "topLevel": false,
       "id": "operator_join2"
     },
-    "data_variable1": {
-      "id": "data_variable1",
-      "next": null,
-      "parent": "operator_join1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "MyX",
-          "id": "]A|chi[eLS`j],BDmBX%",
-          "variableType": ""
-        }
-      },
-      "topLevel": false
-    },
-    "text1": {
-      "id": "text1",
-      "next": null,
-      "parent": "operator_join2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ", ",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "data_variable2": {
-      "id": "data_variable2",
-      "next": null,
-      "parent": "operator_join2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "data_variable",
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "value": "MyY",
-          "id": "z8BocKD*c?.{=)E^WUYD",
-          "variableType": ""
-        }
-      },
-      "topLevel": false
-    },
-    "text335": {
-      "id": "text335",
-      "next": null,
-      "parent": "procedures_call25",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "12",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
-    "math_number28": {
-      "id": "math_number28",
-      "next": null,
-      "parent": "operator_random1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "math_number",
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "8",
-          "id": null
-        }
-      },
-      "topLevel": false
-    },
     "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
+      "next": "data_deletealloflist1",
+      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
@@ -154,16 +73,16 @@
           "variableType": "broadcast_msg"
         }
       },
-      "next": "data_deletealloflist1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 265,
-      "y": -2409
+      "y": -2409,
+      "id": "event_whenbroadcastreceived1"
     },
     "data_deletealloflist1": {
-      "id": "data_deletealloflist1",
       "opcode": "data_deletealloflist",
+      "next": "lmsclonesplus_deleteClonesInSprite1",
+      "parent": "event_whenbroadcastreceived1",
       "inputs": {},
       "fields": {
         "LIST": {
@@ -173,14 +92,14 @@
           "variableType": "list"
         }
       },
-      "next": "lmsclonesplus_deleteClonesInSprite1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false
+      "id": "data_deletealloflist1"
     },
     "lmsclonesplus_deleteClonesInSprite1": {
-      "id": "lmsclonesplus_deleteClonesInSprite1",
       "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "procedures_call1",
+      "parent": "data_deletealloflist1",
       "inputs": {
         "INPUT": {
           "name": "INPUT",
@@ -189,14 +108,14 @@
         }
       },
       "fields": {},
-      "next": "procedures_call1",
+      "shadow": false,
       "topLevel": false,
-      "parent": "data_deletealloflist1",
-      "shadow": false
+      "id": "lmsclonesplus_deleteClonesInSprite1"
     },
     "lmsclonesplus_menu_spriteMenu1": {
-      "id": "lmsclonesplus_menu_spriteMenu1",
       "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
       "inputs": {},
       "fields": {
         "spriteMenu": {
@@ -205,14 +124,14 @@
           "id": null
         }
       },
-      "next": null,
+      "shadow": true,
       "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite1",
-      "shadow": true
+      "id": "lmsclonesplus_menu_spriteMenu1"
     },
     "procedures_call1": {
-      "id": "procedures_call1",
       "opcode": "procedures_call",
+      "next": "procedures_call2",
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -246,117 +165,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call2",
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite1",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text77": {
-      "id": "text77",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call1",
-      "shadow": true
-    },
-    "text78": {
-      "id": "text78",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call1",
-      "shadow": true
-    },
-    "text79": {
-      "id": "text79",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call1",
-      "shadow": true
-    },
-    "text80": {
-      "id": "text80",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call1",
-      "shadow": true
-    },
-    "text81": {
-      "id": "text81",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call1",
-      "shadow": true
-    },
-    "text82": {
-      "id": "text82",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call1",
-      "shadow": true
+      "id": "procedures_call1"
     },
     "procedures_call2": {
-      "id": "procedures_call2",
       "opcode": "procedures_call",
+      "next": "procedures_call3",
+      "parent": "procedures_call1",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -390,117 +213,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call3",
-      "topLevel": false,
-      "parent": "procedures_call1",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text71": {
-      "id": "text71",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call2",
-      "shadow": true
-    },
-    "text72": {
-      "id": "text72",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call2",
-      "shadow": true
-    },
-    "text73": {
-      "id": "text73",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call2",
-      "shadow": true
-    },
-    "text74": {
-      "id": "text74",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call2",
-      "shadow": true
-    },
-    "text75": {
-      "id": "text75",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call2",
-      "shadow": true
-    },
-    "text76": {
-      "id": "text76",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call2",
-      "shadow": true
+      "id": "procedures_call2"
     },
     "procedures_call3": {
-      "id": "procedures_call3",
       "opcode": "procedures_call",
+      "next": "procedures_call4",
+      "parent": "procedures_call2",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -534,117 +261,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call4",
-      "topLevel": false,
-      "parent": "procedures_call2",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text65": {
-      "id": "text65",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call3",
-      "shadow": true
-    },
-    "text66": {
-      "id": "text66",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call3",
-      "shadow": true
-    },
-    "text67": {
-      "id": "text67",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call3",
-      "shadow": true
-    },
-    "text68": {
-      "id": "text68",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call3",
-      "shadow": true
-    },
-    "text69": {
-      "id": "text69",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call3",
-      "shadow": true
-    },
-    "text70": {
-      "id": "text70",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call3",
-      "shadow": true
+      "id": "procedures_call3"
     },
     "procedures_call4": {
-      "id": "procedures_call4",
       "opcode": "procedures_call",
+      "next": "procedures_call5",
+      "parent": "procedures_call3",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -678,117 +309,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call5",
-      "topLevel": false,
-      "parent": "procedures_call3",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text59": {
-      "id": "text59",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call4",
-      "shadow": true
-    },
-    "text60": {
-      "id": "text60",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call4",
-      "shadow": true
-    },
-    "text61": {
-      "id": "text61",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call4",
-      "shadow": true
-    },
-    "text62": {
-      "id": "text62",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call4",
-      "shadow": true
-    },
-    "text63": {
-      "id": "text63",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call4",
-      "shadow": true
-    },
-    "text64": {
-      "id": "text64",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call4",
-      "shadow": true
+      "id": "procedures_call4"
     },
     "procedures_call5": {
-      "id": "procedures_call5",
       "opcode": "procedures_call",
+      "next": "procedures_call6",
+      "parent": "procedures_call4",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -822,117 +357,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call6",
-      "topLevel": false,
-      "parent": "procedures_call4",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text53": {
-      "id": "text53",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call5",
-      "shadow": true
-    },
-    "text54": {
-      "id": "text54",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call5",
-      "shadow": true
-    },
-    "text55": {
-      "id": "text55",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call5",
-      "shadow": true
-    },
-    "text56": {
-      "id": "text56",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call5",
-      "shadow": true
-    },
-    "text57": {
-      "id": "text57",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call5",
-      "shadow": true
-    },
-    "text58": {
-      "id": "text58",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call5",
-      "shadow": true
+      "id": "procedures_call5"
     },
     "procedures_call6": {
-      "id": "procedures_call6",
       "opcode": "procedures_call",
+      "next": "procedures_call7",
+      "parent": "procedures_call5",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -966,117 +405,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call7",
-      "topLevel": false,
-      "parent": "procedures_call5",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text47": {
-      "id": "text47",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call6",
-      "shadow": true
-    },
-    "text48": {
-      "id": "text48",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call6",
-      "shadow": true
-    },
-    "text49": {
-      "id": "text49",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call6",
-      "shadow": true
-    },
-    "text50": {
-      "id": "text50",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call6",
-      "shadow": true
-    },
-    "text51": {
-      "id": "text51",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call6",
-      "shadow": true
-    },
-    "text52": {
-      "id": "text52",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call6",
-      "shadow": true
+      "id": "procedures_call6"
     },
     "procedures_call7": {
-      "id": "procedures_call7",
       "opcode": "procedures_call",
+      "next": "procedures_call8",
+      "parent": "procedures_call6",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -1110,117 +453,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call8",
-      "topLevel": false,
-      "parent": "procedures_call6",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text41": {
-      "id": "text41",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call7",
-      "shadow": true
-    },
-    "text42": {
-      "id": "text42",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call7",
-      "shadow": true
-    },
-    "text43": {
-      "id": "text43",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "5",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call7",
-      "shadow": true
-    },
-    "text44": {
-      "id": "text44",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call7",
-      "shadow": true
-    },
-    "text45": {
-      "id": "text45",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call7",
-      "shadow": true
-    },
-    "text46": {
-      "id": "text46",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call7",
-      "shadow": true
+      "id": "procedures_call7"
     },
     "procedures_call8": {
-      "id": "procedures_call8",
       "opcode": "procedures_call",
+      "next": "procedures_call9",
+      "parent": "procedures_call7",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -1254,117 +501,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call9",
-      "topLevel": false,
-      "parent": "procedures_call7",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text35": {
-      "id": "text35",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call8",
-      "shadow": true
-    },
-    "text36": {
-      "id": "text36",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call8",
-      "shadow": true
-    },
-    "text37": {
-      "id": "text37",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call8",
-      "shadow": true
-    },
-    "text38": {
-      "id": "text38",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call8",
-      "shadow": true
-    },
-    "text39": {
-      "id": "text39",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call8",
-      "shadow": true
-    },
-    "text40": {
-      "id": "text40",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call8",
-      "shadow": true
+      "id": "procedures_call8"
     },
     "procedures_call9": {
-      "id": "procedures_call9",
       "opcode": "procedures_call",
+      "next": "procedures_call10",
+      "parent": "procedures_call8",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -1398,117 +549,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call10",
-      "topLevel": false,
-      "parent": "procedures_call8",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text29": {
-      "id": "text29",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
-    },
-    "text30": {
-      "id": "text30",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
-    },
-    "text31": {
-      "id": "text31",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
-    },
-    "text32": {
-      "id": "text32",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
-    },
-    "text33": {
-      "id": "text33",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
-    },
-    "text34": {
-      "id": "text34",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call9",
-      "shadow": true
+      "id": "procedures_call9"
     },
     "procedures_call10": {
-      "id": "procedures_call10",
       "opcode": "procedures_call",
+      "next": "procedures_call11",
+      "parent": "procedures_call9",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -1542,117 +597,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call11",
-      "topLevel": false,
-      "parent": "procedures_call9",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text23": {
-      "id": "text23",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": true
-    },
-    "text24": {
-      "id": "text24",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": true
-    },
-    "text25": {
-      "id": "text25",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": true
-    },
-    "text26": {
-      "id": "text26",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": true
-    },
-    "text27": {
-      "id": "text27",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": true
-    },
-    "text28": {
-      "id": "text28",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call10",
-      "shadow": true
+      "id": "procedures_call10"
     },
     "procedures_call11": {
-      "id": "procedures_call11",
       "opcode": "procedures_call",
+      "next": "procedures_call12",
+      "parent": "procedures_call10",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -1686,117 +645,21 @@
         }
       },
       "fields": {},
-      "next": "procedures_call12",
-      "topLevel": false,
-      "parent": "procedures_call10",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
-      }
-    },
-    "text17": {
-      "id": "text17",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
-    },
-    "text18": {
-      "id": "text18",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
-    },
-    "text19": {
-      "id": "text19",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
-    },
-    "text20": {
-      "id": "text20",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
-    },
-    "text21": {
-      "id": "text21",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "4",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
-    },
-    "text22": {
-      "id": "text22",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "3",
-          "id": null
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call11",
-      "shadow": true
+      "id": "procedures_call11"
     },
     "procedures_call12": {
-      "id": "procedures_call12",
       "opcode": "procedures_call",
+      "next": "procedures_call13",
+      "parent": "procedures_call11",
       "inputs": {
         "jaS]87icDRKb8*y}?#cQ": {
           "name": "jaS]87icDRKb8*y}?#cQ",
@@ -1830,145 +693,1397 @@
         }
       },
       "fields": {},
-      "next": "procedures_call13",
-      "topLevel": false,
-      "parent": "procedures_call11",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
         "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
         "warp": "true"
+      },
+      "id": "procedures_call12"
+    },
+    "procedures_call13": {
+      "opcode": "procedures_call",
+      "next": "procedures_call14",
+      "parent": "procedures_call12",
+      "inputs": {
+        "jaS]87icDRKb8*y}?#cQ": {
+          "name": "jaS]87icDRKb8*y}?#cQ",
+          "block": "text5",
+          "shadow": "text5"
+        },
+        "s81%EmP0Dr;whaQy*Y?T": {
+          "name": "s81%EmP0Dr;whaQy*Y?T",
+          "block": "text6",
+          "shadow": "text6"
+        },
+        "Y([KMET.%{JXEu,LI;(N": {
+          "name": "Y([KMET.%{JXEu,LI;(N",
+          "block": "text7",
+          "shadow": "text7"
+        },
+        "JpaW)i66=Hiq]2^nh|gA": {
+          "name": "JpaW)i66=Hiq]2^nh|gA",
+          "block": "text8",
+          "shadow": "text8"
+        },
+        "5]LZ=U9Z$;lY$h3BpL%r": {
+          "name": "5]LZ=U9Z$;lY$h3BpL%r",
+          "block": "text9",
+          "shadow": "text9"
+        },
+        "s{h5)mnN,C]28`WxBVg`": {
+          "name": "s{h5)mnN,C]28`WxBVg`",
+          "block": "text10",
+          "shadow": "text10"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
+        "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
+        "warp": "true"
+      },
+      "id": "procedures_call13"
+    },
+    "data_deleteoflist1": {
+      "opcode": "data_deleteoflist",
+      "next": null,
+      "parent": "procedures_call14",
+      "inputs": {
+        "INDEX": {
+          "name": "INDEX",
+          "block": "math_integer1",
+          "shadow": "math_integer1"
+        }
+      },
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "value": "Bodies",
+          "id": "mY!n(%JOZe1++Q$MH;WY",
+          "variableType": "list"
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_deleteoflist1"
+    },
+    "procedures_call14": {
+      "opcode": "procedures_call",
+      "next": "data_deleteoflist1",
+      "parent": "procedures_call13",
+      "inputs": {
+        "+RAmS(uuJDU8?V!o3+mH": {
+          "name": "+RAmS(uuJDU8?V!o3+mH",
+          "block": "text2",
+          "shadow": "text2"
+        },
+        "q2%Kl0|274sQ{fF`b8;,": {
+          "name": "q2%Kl0|274sQ{fF`b8;,",
+          "block": "text3",
+          "shadow": "text3"
+        },
+        "+J7QmGF#fzIaV/}akx(1": {
+          "name": "+J7QmGF#fzIaV/}akx(1",
+          "block": "text4",
+          "shadow": "text4"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "draw body %s at x: %s y: %s",
+        "argumentids": "[\"+RAmS(uuJDU8?V!o3+mH\",\"q2%Kl0|274sQ{fF`b8;,\",\"+J7QmGF#fzIaV/}akx(1\"]",
+        "warp": "true"
+      },
+      "id": "procedures_call14"
+    },
+    "data_variable1": {
+      "id": "data_variable1",
+      "next": null,
+      "parent": "operator_join1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "data_variable",
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "MyX",
+          "id": "]A|chi[eLS`j],BDmBX%",
+          "variableType": ""
+        }
       }
+    },
+    "text1": {
+      "id": "text1",
+      "next": null,
+      "parent": "operator_join2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ", "
+        }
+      },
+      "topLevel": false
+    },
+    "data_variable2": {
+      "id": "data_variable2",
+      "next": null,
+      "parent": "operator_join2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "data_variable",
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "value": "MyY",
+          "id": "z8BocKD*c?.{=)E^WUYD",
+          "variableType": ""
+        }
+      }
+    },
+    "text77": {
+      "id": "text77",
+      "next": null,
+      "parent": "procedures_call1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text78": {
+      "id": "text78",
+      "next": null,
+      "parent": "procedures_call1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text79": {
+      "id": "text79",
+      "next": null,
+      "parent": "procedures_call1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text80": {
+      "id": "text80",
+      "next": null,
+      "parent": "procedures_call1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text81": {
+      "id": "text81",
+      "next": null,
+      "parent": "procedures_call1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text82": {
+      "id": "text82",
+      "next": null,
+      "parent": "procedures_call1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text71": {
+      "id": "text71",
+      "next": null,
+      "parent": "procedures_call2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text72": {
+      "id": "text72",
+      "next": null,
+      "parent": "procedures_call2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "topLevel": false
+    },
+    "text73": {
+      "id": "text73",
+      "next": null,
+      "parent": "procedures_call2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text74": {
+      "id": "text74",
+      "next": null,
+      "parent": "procedures_call2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text75": {
+      "id": "text75",
+      "next": null,
+      "parent": "procedures_call2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text76": {
+      "id": "text76",
+      "next": null,
+      "parent": "procedures_call2",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text65": {
+      "id": "text65",
+      "next": null,
+      "parent": "procedures_call3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text66": {
+      "id": "text66",
+      "next": null,
+      "parent": "procedures_call3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "topLevel": false
+    },
+    "text67": {
+      "id": "text67",
+      "next": null,
+      "parent": "procedures_call3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text68": {
+      "id": "text68",
+      "next": null,
+      "parent": "procedures_call3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text69": {
+      "id": "text69",
+      "next": null,
+      "parent": "procedures_call3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text70": {
+      "id": "text70",
+      "next": null,
+      "parent": "procedures_call3",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text59": {
+      "id": "text59",
+      "next": null,
+      "parent": "procedures_call4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text60": {
+      "id": "text60",
+      "next": null,
+      "parent": "procedures_call4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text61": {
+      "id": "text61",
+      "next": null,
+      "parent": "procedures_call4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text62": {
+      "id": "text62",
+      "next": null,
+      "parent": "procedures_call4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text63": {
+      "id": "text63",
+      "next": null,
+      "parent": "procedures_call4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text64": {
+      "id": "text64",
+      "next": null,
+      "parent": "procedures_call4",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text53": {
+      "id": "text53",
+      "next": null,
+      "parent": "procedures_call5",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text54": {
+      "id": "text54",
+      "next": null,
+      "parent": "procedures_call5",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "topLevel": false
+    },
+    "text55": {
+      "id": "text55",
+      "next": null,
+      "parent": "procedures_call5",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text56": {
+      "id": "text56",
+      "next": null,
+      "parent": "procedures_call5",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text57": {
+      "id": "text57",
+      "next": null,
+      "parent": "procedures_call5",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text58": {
+      "id": "text58",
+      "next": null,
+      "parent": "procedures_call5",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text47": {
+      "id": "text47",
+      "next": null,
+      "parent": "procedures_call6",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text48": {
+      "id": "text48",
+      "next": null,
+      "parent": "procedures_call6",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text49": {
+      "id": "text49",
+      "next": null,
+      "parent": "procedures_call6",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text50": {
+      "id": "text50",
+      "next": null,
+      "parent": "procedures_call6",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text51": {
+      "id": "text51",
+      "next": null,
+      "parent": "procedures_call6",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text52": {
+      "id": "text52",
+      "next": null,
+      "parent": "procedures_call6",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text41": {
+      "id": "text41",
+      "next": null,
+      "parent": "procedures_call7",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text42": {
+      "id": "text42",
+      "next": null,
+      "parent": "procedures_call7",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "topLevel": false
+    },
+    "text43": {
+      "id": "text43",
+      "next": null,
+      "parent": "procedures_call7",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "5"
+        }
+      },
+      "topLevel": false
+    },
+    "text44": {
+      "id": "text44",
+      "next": null,
+      "parent": "procedures_call7",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text45": {
+      "id": "text45",
+      "next": null,
+      "parent": "procedures_call7",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text46": {
+      "id": "text46",
+      "next": null,
+      "parent": "procedures_call7",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text35": {
+      "id": "text35",
+      "next": null,
+      "parent": "procedures_call8",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text36": {
+      "id": "text36",
+      "next": null,
+      "parent": "procedures_call8",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text37": {
+      "id": "text37",
+      "next": null,
+      "parent": "procedures_call8",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text38": {
+      "id": "text38",
+      "next": null,
+      "parent": "procedures_call8",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text39": {
+      "id": "text39",
+      "next": null,
+      "parent": "procedures_call8",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text40": {
+      "id": "text40",
+      "next": null,
+      "parent": "procedures_call8",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text29": {
+      "id": "text29",
+      "next": null,
+      "parent": "procedures_call9",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text30": {
+      "id": "text30",
+      "next": null,
+      "parent": "procedures_call9",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text31": {
+      "id": "text31",
+      "next": null,
+      "parent": "procedures_call9",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text32": {
+      "id": "text32",
+      "next": null,
+      "parent": "procedures_call9",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text33": {
+      "id": "text33",
+      "next": null,
+      "parent": "procedures_call9",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text34": {
+      "id": "text34",
+      "next": null,
+      "parent": "procedures_call9",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text23": {
+      "id": "text23",
+      "next": null,
+      "parent": "procedures_call10",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text24": {
+      "id": "text24",
+      "next": null,
+      "parent": "procedures_call10",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text25": {
+      "id": "text25",
+      "next": null,
+      "parent": "procedures_call10",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text26": {
+      "id": "text26",
+      "next": null,
+      "parent": "procedures_call10",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "topLevel": false
+    },
+    "text27": {
+      "id": "text27",
+      "next": null,
+      "parent": "procedures_call10",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text28": {
+      "id": "text28",
+      "next": null,
+      "parent": "procedures_call10",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text17": {
+      "id": "text17",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
+    },
+    "text18": {
+      "id": "text18",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text19": {
+      "id": "text19",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text20": {
+      "id": "text20",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text21": {
+      "id": "text21",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "4"
+        }
+      },
+      "topLevel": false
+    },
+    "text22": {
+      "id": "text22",
+      "next": null,
+      "parent": "procedures_call11",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "3"
+        }
+      },
+      "topLevel": false
     },
     "text11": {
       "id": "text11",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
     "text12": {
       "id": "text12",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2",
-          "id": null
+          "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
     "text13": {
       "id": "text13",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
     "text14": {
       "id": "text14",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
     "text15": {
       "id": "text15",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "3",
-          "id": null
+          "value": "3"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
     "text16": {
       "id": "text16",
-      "opcode": "text",
+      "next": null,
+      "parent": "procedures_call12",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2",
-          "id": null
+          "value": "2"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": true
+      "topLevel": false
     },
-    "math_number29": {
-      "id": "math_number29",
-      "opcode": "math_number",
+    "text5": {
+      "id": "text5",
+      "next": null,
+      "parent": "procedures_call13",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text6": {
+      "id": "text6",
+      "next": null,
+      "parent": "procedures_call13",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "1"
+        }
+      },
+      "topLevel": false
+    },
+    "text7": {
+      "id": "text7",
+      "next": null,
+      "parent": "procedures_call13",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text8": {
+      "id": "text8",
+      "next": null,
+      "parent": "procedures_call13",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text9": {
+      "id": "text9",
+      "next": null,
+      "parent": "procedures_call13",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "text10": {
+      "id": "text10",
+      "next": null,
+      "parent": "procedures_call13",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "2"
+        }
+      },
+      "topLevel": false
+    },
+    "math_integer1": {
+      "id": "math_integer1",
+      "next": null,
+      "parent": "data_deleteoflist1",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "math_integer",
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "8",
-          "id": null
+          "value": "13"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_random2",
-      "shadow": true
+      "topLevel": false
     },
-    "text336": {
-      "id": "text336",
-      "opcode": "text",
+    "text2": {
+      "id": "text2",
+      "next": null,
+      "parent": "procedures_call14",
+      "shadow": true,
       "inputs": {},
+      "opcode": "text",
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "12",
-          "id": null
+          "value": "13"
         }
       },
+      "topLevel": false
+    },
+    "text3": {
+      "id": "text3",
       "next": null,
-      "topLevel": false,
-      "parent": "procedures_call26",
-      "shadow": true
+      "parent": "procedures_call14",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "topLevel": false
+    },
+    "text4": {
+      "id": "text4",
+      "next": null,
+      "parent": "procedures_call14",
+      "shadow": true,
+      "inputs": {},
+      "opcode": "text",
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "-100"
+        }
+      },
+      "topLevel": false
     },
     "procedures_definition1": {
       "id": "procedures_definition1",
@@ -6324,7 +6439,7 @@
       "topLevel": false,
       "parent": "procedures_definition4",
       "shadow": false,
-      "comment": "e("
+      "comment": "fV"
     },
     "text291": {
       "id": "text291",
@@ -6620,7 +6735,7 @@
       "topLevel": false,
       "parent": "lmsTempVars2_forEachThreadVariable5",
       "shadow": false,
-      "comment": "e+"
+      "comment": "fX"
     },
     "operator_equals9": {
       "id": "operator_equals9",
@@ -7273,7 +7388,7 @@
       "topLevel": false,
       "parent": "control_if_else1",
       "shadow": false,
-      "comment": "i]"
+      "comment": "ii"
     },
     "text274": {
       "id": "text274",
@@ -10080,7 +10195,7 @@
       "topLevel": false,
       "parent": "lmsTempVars2_setThreadVariable12",
       "shadow": false,
-      "comment": "ju"
+      "comment": "iO"
     },
     "text217": {
       "id": "text217",
@@ -11188,7 +11303,7 @@
       "topLevel": false,
       "parent": "lmsTempVars2_setThreadVariable14",
       "shadow": false,
-      "comment": "jG"
+      "comment": "i*"
     },
     "text201": {
       "id": "text201",
@@ -12462,7 +12577,7 @@
       "topLevel": false,
       "parent": "lmsTempVars2_forEachThreadVariable9",
       "shadow": false,
-      "comment": "jJ"
+      "comment": "ja"
     },
     "text171": {
       "id": "text171",
@@ -13166,7 +13281,7 @@
       "topLevel": false,
       "parent": "data_setvariableto3",
       "shadow": false,
-      "comment": "jU"
+      "comment": "jc"
     },
     "text157": {
       "id": "text157",
@@ -17947,266 +18062,6 @@
       "next": null,
       "topLevel": false,
       "parent": "data_setvariableto10",
-      "shadow": true
-    },
-    "procedures_call13": {
-      "id": "procedures_call13",
-      "opcode": "procedures_call",
-      "inputs": {
-        "jaS]87icDRKb8*y}?#cQ": {
-          "name": "jaS]87icDRKb8*y}?#cQ",
-          "block": "text5",
-          "shadow": "text5"
-        },
-        "s81%EmP0Dr;whaQy*Y?T": {
-          "name": "s81%EmP0Dr;whaQy*Y?T",
-          "block": "text6",
-          "shadow": "text6"
-        },
-        "Y([KMET.%{JXEu,LI;(N": {
-          "name": "Y([KMET.%{JXEu,LI;(N",
-          "block": "text7",
-          "shadow": "text7"
-        },
-        "JpaW)i66=Hiq]2^nh|gA": {
-          "name": "JpaW)i66=Hiq]2^nh|gA",
-          "block": "text8",
-          "shadow": "text8"
-        },
-        "5]LZ=U9Z$;lY$h3BpL%r": {
-          "name": "5]LZ=U9Z$;lY$h3BpL%r",
-          "block": "text9",
-          "shadow": "text9"
-        },
-        "s{h5)mnN,C]28`WxBVg`": {
-          "name": "s{h5)mnN,C]28`WxBVg`",
-          "block": "text10",
-          "shadow": "text10"
-        }
-      },
-      "fields": {},
-      "next": "procedures_call14",
-      "topLevel": false,
-      "parent": "procedures_call12",
-      "shadow": false,
-      "x": 268.23011173677713,
-      "y": -1678.8579887380122,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "add body w/ top: %s %s mid: %s %s bottom: %s %s",
-        "argumentids": "[\"jaS]87icDRKb8*y}?#cQ\",\"s81%EmP0Dr;whaQy*Y?T\",\"Y([KMET.%{JXEu,LI;(N\",\"JpaW)i66=Hiq]2^nh|gA\",\"5]LZ=U9Z$;lY$h3BpL%r\",\"s{h5)mnN,C]28`WxBVg`\"]",
-        "warp": "true"
-      }
-    },
-    "text5": {
-      "id": "text5",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call13",
-      "shadow": true
-    },
-    "text6": {
-      "id": "text6",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call13",
-      "shadow": true
-    },
-    "text7": {
-      "id": "text7",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call13",
-      "shadow": true
-    },
-    "text8": {
-      "id": "text8",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call13",
-      "shadow": true
-    },
-    "text9": {
-      "id": "text9",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call13",
-      "shadow": true
-    },
-    "text10": {
-      "id": "text10",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call13",
-      "shadow": true
-    },
-    "data_deleteoflist1": {
-      "id": "data_deleteoflist1",
-      "opcode": "data_deleteoflist",
-      "inputs": {
-        "INDEX": {
-          "name": "INDEX",
-          "block": "math_integer1",
-          "shadow": "math_integer1"
-        }
-      },
-      "fields": {
-        "LIST": {
-          "name": "LIST",
-          "id": "mY!n(%JOZe1++Q$MH;WY",
-          "value": "Bodies",
-          "variableType": "list"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call14",
-      "shadow": false,
-      "x": 340.6470902032282,
-      "y": -1556.3815751075372
-    },
-    "math_integer1": {
-      "id": "math_integer1",
-      "opcode": "math_integer",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "13"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_deleteoflist1",
-      "shadow": true
-    },
-    "procedures_call14": {
-      "id": "procedures_call14",
-      "opcode": "procedures_call",
-      "inputs": {
-        "+RAmS(uuJDU8?V!o3+mH": {
-          "name": "+RAmS(uuJDU8?V!o3+mH",
-          "block": "text2",
-          "shadow": "text2"
-        },
-        "q2%Kl0|274sQ{fF`b8;,": {
-          "name": "q2%Kl0|274sQ{fF`b8;,",
-          "block": "text3",
-          "shadow": "text3"
-        },
-        "+J7QmGF#fzIaV/}akx(1": {
-          "name": "+J7QmGF#fzIaV/}akx(1",
-          "block": "text4",
-          "shadow": "text4"
-        }
-      },
-      "fields": {},
-      "next": "data_deleteoflist1",
-      "topLevel": false,
-      "parent": "procedures_call13",
-      "shadow": false,
-      "x": 453.0549786430715,
-      "y": -1625.5705685093028,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "draw body %s at x: %s y: %s",
-        "argumentids": "[\"+RAmS(uuJDU8?V!o3+mH\",\"q2%Kl0|274sQ{fF`b8;,\",\"+J7QmGF#fzIaV/}akx(1\"]",
-        "warp": "true"
-      }
-    },
-    "text2": {
-      "id": "text2",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "13"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call14",
-      "shadow": true
-    },
-    "text3": {
-      "id": "text3",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call14",
-      "shadow": true
-    },
-    "text4": {
-      "id": "text4",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "-100"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_call14",
       "shadow": true
     }
   },

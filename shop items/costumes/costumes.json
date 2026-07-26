@@ -76,5 +76,65 @@
     "dataFormat": "png",
     "rotationCenterX": 548,
     "rotationCenterY": 72
+  },
+  {
+    "name": "cargobay kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 49
+  },
+  {
+    "name": "window kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 52
+  },
+  {
+    "name": "advertisement kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 46
+  },
+  {
+    "name": "thruster kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 47
+  },
+  {
+    "name": "fueltank kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 49
+  },
+  {
+    "name": "fin kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 56
+  },
+  {
+    "name": "nosecone kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 47
+  },
+  {
+    "name": "body kit",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 50
+  },
+  {
+    "name": "box",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 44
+  },
+  {
+    "name": "ShopKitsSheet8",
+    "dataFormat": "png",
+    "rotationCenterX": 616,
+    "rotationCenterY": 72
   }
 ]

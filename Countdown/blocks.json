@@ -3,7 +3,7 @@
     "control_create_clone_of_menu2": {
       "opcode": "control_create_clone_of_menu",
       "next": null,
-      "parent": "nH",
+      "parent": "lg",
       "inputs": {},
       "fields": {
         "CLONE_OPTION": {
@@ -358,7 +358,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "2:30"
+          "value": "3:30"
         }
       },
       "next": null,
@@ -433,9 +433,7 @@
       "next": null,
       "topLevel": false,
       "parent": "operator_equals1",
-      "shadow": true,
-      "x": "278.24609375",
-      "y": "507"
+      "shadow": true
     },
     "text3": {
       "id": "text3",
@@ -671,7 +669,7 @@
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "2.5"
+          "value": "3.5"
         }
       },
       "next": null,
