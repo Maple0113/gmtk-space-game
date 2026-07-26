@@ -29,6 +29,16 @@
       "topLevel": false,
       "id": "control_delete_this_clone1"
     },
+    "looks_hide1": {
+      "opcode": "looks_hide",
+      "next": "control_delete_this_clone1",
+      "parent": "control_stop1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
+    },
     "control_stop1": {
       "opcode": "control_stop",
       "next": "looks_hide1",
@@ -50,365 +60,6 @@
       },
       "id": "control_stop1"
     },
-    "looks_hide1": {
-      "opcode": "looks_hide",
-      "next": "control_delete_this_clone1",
-      "parent": "control_stop1",
-      "inputs": {},
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "looks_hide1"
-    },
-    "event_whenthisspriteclicked1": {
-      "id": "event_whenthisspriteclicked1",
-      "opcode": "event_whenthisspriteclicked",
-      "inputs": {},
-      "fields": {},
-      "next": "control_if1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 822,
-      "y": 125
-    },
-    "control_if1": {
-      "id": "control_if1",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_equals1",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "looks_switchcostumeto1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "event_whenthisspriteclicked1",
-      "shadow": false
-    },
-    "operator_equals1": {
-      "id": "operator_equals1",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable1",
-          "shadow": "data_variable1"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text1",
-          "shadow": "text1"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false
-    },
-    "data_variable1": {
-      "id": "data_variable1",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Gxw:NMf:o*eF{eqpLVqX",
-          "value": "CanSubmit",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals1",
-      "shadow": true
-    },
-    "text1": {
-      "id": "text1",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "true"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals1",
-      "shadow": true
-    },
-    "looks_switchcostumeto1": {
-      "id": "looks_switchcostumeto1",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume2",
-          "shadow": "looks_costume2"
-        }
-      },
-      "fields": {},
-      "next": "control_wait_until1",
-      "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false
-    },
-    "looks_costume2": {
-      "id": "looks_costume2",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "pressed"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto1",
-      "shadow": true
-    },
-    "control_wait_until1": {
-      "id": "control_wait_until1",
-      "opcode": "control_wait_until",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_not1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "looks_switchcostumeto2",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto1",
-      "shadow": false
-    },
-    "operator_not1": {
-      "id": "operator_not1",
-      "opcode": "operator_not",
-      "inputs": {
-        "OPERAND": {
-          "name": "OPERAND",
-          "block": "sensing_mousedown1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_wait_until1",
-      "shadow": false
-    },
-    "sensing_mousedown1": {
-      "id": "sensing_mousedown1",
-      "opcode": "sensing_mousedown",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_not1",
-      "shadow": false
-    },
-    "looks_switchcostumeto2": {
-      "id": "looks_switchcostumeto2",
-      "opcode": "looks_switchcostumeto",
-      "inputs": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "block": "looks_costume1",
-          "shadow": "looks_costume1"
-        }
-      },
-      "fields": {},
-      "next": "lmsMoreEvents_broadcastToTargetAndWait1",
-      "topLevel": false,
-      "parent": "control_wait_until1",
-      "shadow": false
-    },
-    "looks_costume1": {
-      "id": "looks_costume1",
-      "opcode": "looks_costume",
-      "inputs": {},
-      "fields": {
-        "COSTUME": {
-          "name": "COSTUME",
-          "value": "button"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_switchcostumeto2",
-      "shadow": true
-    },
-    "lmsMoreEvents_broadcastToTargetAndWait1": {
-      "id": "lmsMoreEvents_broadcastToTargetAndWait1",
-      "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
-      "inputs": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "block": "event_broadcast_menu3",
-          "shadow": "event_broadcast_menu3"
-        },
-        "TARGET": {
-          "name": "TARGET",
-          "block": "lmsMoreEvents_menu_targetMenu3",
-          "shadow": "lmsMoreEvents_menu_targetMenu3"
-        }
-      },
-      "fields": {},
-      "next": "lmsMoreEvents_broadcastToTargetAndWait2",
-      "topLevel": false,
-      "parent": "looks_switchcostumeto2",
-      "shadow": false
-    },
-    "event_broadcast_menu3": {
-      "id": "event_broadcast_menu3",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "=9Rd9n:vJm=CO$~p|E1n",
-          "value": "GAME rocket submit",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
-      "shadow": true
-    },
-    "lmsMoreEvents_menu_targetMenu3": {
-      "id": "lmsMoreEvents_menu_targetMenu3",
-      "opcode": "lmsMoreEvents_menu_targetMenu",
-      "inputs": {},
-      "fields": {
-        "targetMenu": {
-          "name": "targetMenu",
-          "value": "Investors"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
-      "shadow": true
-    },
-    "lmsMoreEvents_broadcastToTargetAndWait2": {
-      "id": "lmsMoreEvents_broadcastToTargetAndWait2",
-      "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
-      "inputs": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "block": "event_broadcast_menu2",
-          "shadow": "event_broadcast_menu2"
-        },
-        "TARGET": {
-          "name": "TARGET",
-          "block": "lmsMoreEvents_menu_targetMenu2",
-          "shadow": "lmsMoreEvents_menu_targetMenu2"
-        }
-      },
-      "fields": {},
-      "next": "lmsMoreEvents_broadcastToTargetAndWait3",
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
-      "shadow": false
-    },
-    "event_broadcast_menu2": {
-      "id": "event_broadcast_menu2",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "=9Rd9n:vJm=CO$~p|E1n",
-          "value": "GAME rocket submit",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
-      "shadow": true
-    },
-    "lmsMoreEvents_menu_targetMenu2": {
-      "id": "lmsMoreEvents_menu_targetMenu2",
-      "opcode": "lmsMoreEvents_menu_targetMenu",
-      "inputs": {},
-      "fields": {
-        "targetMenu": {
-          "name": "targetMenu",
-          "value": "grid items"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
-      "shadow": true
-    },
-    "lmsMoreEvents_broadcastToTargetAndWait3": {
-      "id": "lmsMoreEvents_broadcastToTargetAndWait3",
-      "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
-      "inputs": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "block": "event_broadcast_menu1",
-          "shadow": "event_broadcast_menu1"
-        },
-        "TARGET": {
-          "name": "TARGET",
-          "block": "lmsMoreEvents_menu_targetMenu1",
-          "shadow": "lmsMoreEvents_menu_targetMenu1"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
-      "shadow": false
-    },
-    "event_broadcast_menu1": {
-      "id": "event_broadcast_menu1",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "=9Rd9n:vJm=CO$~p|E1n",
-          "value": "GAME rocket submit",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
-      "shadow": true
-    },
-    "lmsMoreEvents_menu_targetMenu1": {
-      "id": "lmsMoreEvents_menu_targetMenu1",
-      "opcode": "lmsMoreEvents_menu_targetMenu",
-      "inputs": {},
-      "fields": {
-        "targetMenu": {
-          "name": "targetMenu",
-          "value": "rocket grid"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
-      "shadow": true
-    },
     "event_whenflagclicked1": {
       "id": "event_whenflagclicked1",
       "opcode": "event_whenflagclicked",
@@ -427,8 +78,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text2",
-          "shadow": "text2"
+          "block": "text1",
+          "shadow": "text1"
         }
       },
       "fields": {
@@ -439,13 +90,13 @@
           "variableType": ""
         }
       },
-      "next": "looks_switchcostumeto3",
+      "next": "looks_switchcostumeto1",
       "topLevel": false,
       "parent": "event_whenflagclicked1",
       "shadow": false
     },
-    "text2": {
-      "id": "text2",
+    "text1": {
+      "id": "text1",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -459,14 +110,14 @@
       "parent": "data_setvariableto1",
       "shadow": true
     },
-    "looks_switchcostumeto3": {
-      "id": "looks_switchcostumeto3",
+    "looks_switchcostumeto1": {
+      "id": "looks_switchcostumeto1",
       "opcode": "looks_switchcostumeto",
       "inputs": {
         "COSTUME": {
           "name": "COSTUME",
-          "block": "looks_costume3",
-          "shadow": "looks_costume3"
+          "block": "looks_costume1",
+          "shadow": "looks_costume1"
         }
       },
       "fields": {},
@@ -475,8 +126,8 @@
       "parent": "data_setvariableto1",
       "shadow": false
     },
-    "looks_costume3": {
-      "id": "looks_costume3",
+    "looks_costume1": {
+      "id": "looks_costume1",
       "opcode": "looks_costume",
       "inputs": {},
       "fields": {
@@ -487,7 +138,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "looks_switchcostumeto3",
+      "parent": "looks_switchcostumeto1",
       "shadow": true
     },
     "motion_gotoxy1": {
@@ -508,7 +159,7 @@
       "fields": {},
       "next": "looks_setsizeto1",
       "topLevel": false,
-      "parent": "looks_switchcostumeto3",
+      "parent": "looks_switchcostumeto1",
       "shadow": false
     },
     "math_number2": {
@@ -633,7 +284,7 @@
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_equals2",
+          "block": "operator_equals1",
           "shadow": null
         },
         "SUBSTACK": {
@@ -653,8 +304,8 @@
       "parent": "control_forever1",
       "shadow": false
     },
-    "operator_equals2": {
-      "id": "operator_equals2",
+    "operator_equals1": {
+      "id": "operator_equals1",
       "opcode": "operator_equals",
       "inputs": {
         "OPERAND1": {
@@ -664,8 +315,8 @@
         },
         "OPERAND2": {
           "name": "OPERAND2",
-          "block": "text3",
-          "shadow": "text3"
+          "block": "text2",
+          "shadow": "text2"
         }
       },
       "fields": {},
@@ -688,11 +339,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals2",
+      "parent": "operator_equals1",
       "shadow": false
     },
-    "text3": {
-      "id": "text3",
+    "text2": {
+      "id": "text2",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -703,7 +354,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_equals2",
+      "parent": "operator_equals1",
       "shadow": true
     },
     "data_setvariableto2": {
@@ -712,8 +363,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text4",
-          "shadow": "text4"
+          "block": "text3",
+          "shadow": "text3"
         }
       },
       "fields": {
@@ -729,8 +380,8 @@
       "parent": "control_if_else1",
       "shadow": false
     },
-    "text4": {
-      "id": "text4",
+    "text3": {
+      "id": "text3",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -786,8 +437,8 @@
       "inputs": {
         "VALUE": {
           "name": "VALUE",
-          "block": "text5",
-          "shadow": "text5"
+          "block": "text4",
+          "shadow": "text4"
         }
       },
       "fields": {
@@ -803,8 +454,8 @@
       "parent": "control_if_else1",
       "shadow": false
     },
-    "text5": {
-      "id": "text5",
+    "text4": {
+      "id": "text4",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -853,12 +504,507 @@
       "topLevel": false,
       "parent": "looks_seteffectto2",
       "shadow": true
+    },
+    "control_if2": {
+      "id": "control_if2",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_equals2",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "looks_switchcostumeto2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false,
+      "x": 1103.7885223281733,
+      "y": 385.83928877768096
+    },
+    "operator_equals2": {
+      "id": "operator_equals2",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable1",
+          "shadow": "data_variable1"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text5",
+          "shadow": "text5"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if2",
+      "shadow": false
+    },
+    "data_variable1": {
+      "id": "data_variable1",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "Gxw:NMf:o*eF{eqpLVqX",
+          "value": "CanSubmit",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": true
+    },
+    "text5": {
+      "id": "text5",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "true"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals2",
+      "shadow": true
+    },
+    "looks_switchcostumeto2": {
+      "id": "looks_switchcostumeto2",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume3",
+          "shadow": "looks_costume3"
+        }
+      },
+      "fields": {},
+      "next": "control_wait_until2",
+      "topLevel": false,
+      "parent": "control_if2",
+      "shadow": false
+    },
+    "looks_costume3": {
+      "id": "looks_costume3",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "pressed"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": true
+    },
+    "control_wait_until2": {
+      "id": "control_wait_until2",
+      "opcode": "control_wait_until",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_switchcostumeto3",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto2",
+      "shadow": false
+    },
+    "operator_not1": {
+      "id": "operator_not1",
+      "opcode": "operator_not",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "sensing_mousedown1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_wait_until2",
+      "shadow": false
+    },
+    "sensing_mousedown1": {
+      "id": "sensing_mousedown1",
+      "opcode": "sensing_mousedown",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_not1",
+      "shadow": false
+    },
+    "looks_switchcostumeto3": {
+      "id": "looks_switchcostumeto3",
+      "opcode": "looks_switchcostumeto",
+      "inputs": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "block": "looks_costume2",
+          "shadow": "looks_costume2"
+        }
+      },
+      "fields": {},
+      "next": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "topLevel": false,
+      "parent": "control_wait_until2",
+      "shadow": false
+    },
+    "looks_costume2": {
+      "id": "looks_costume2",
+      "opcode": "looks_costume",
+      "inputs": {},
+      "fields": {
+        "COSTUME": {
+          "name": "COSTUME",
+          "value": "button"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_switchcostumeto3",
+      "shadow": true
+    },
+    "lmsMoreEvents_broadcastToTargetAndWait1": {
+      "id": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
+      "inputs": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "block": "event_broadcast_menu3",
+          "shadow": "event_broadcast_menu3"
+        },
+        "TARGET": {
+          "name": "TARGET",
+          "block": "lmsMoreEvents_menu_targetMenu3",
+          "shadow": "lmsMoreEvents_menu_targetMenu3"
+        }
+      },
+      "fields": {},
+      "next": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "topLevel": false,
+      "parent": "looks_switchcostumeto3",
+      "shadow": false
+    },
+    "event_broadcast_menu3": {
+      "id": "event_broadcast_menu3",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "value": "GAME rocket submit",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "shadow": true
+    },
+    "lmsMoreEvents_menu_targetMenu3": {
+      "id": "lmsMoreEvents_menu_targetMenu3",
+      "opcode": "lmsMoreEvents_menu_targetMenu",
+      "inputs": {},
+      "fields": {
+        "targetMenu": {
+          "name": "targetMenu",
+          "value": "Investors"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "shadow": true
+    },
+    "lmsMoreEvents_broadcastToTargetAndWait2": {
+      "id": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
+      "inputs": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "block": "event_broadcast_menu2",
+          "shadow": "event_broadcast_menu2"
+        },
+        "TARGET": {
+          "name": "TARGET",
+          "block": "lmsMoreEvents_menu_targetMenu2",
+          "shadow": "lmsMoreEvents_menu_targetMenu2"
+        }
+      },
+      "fields": {},
+      "next": "lmsMoreEvents_broadcastToTargetAndWait3",
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait1",
+      "shadow": false
+    },
+    "event_broadcast_menu2": {
+      "id": "event_broadcast_menu2",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "value": "GAME rocket submit",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "shadow": true
+    },
+    "lmsMoreEvents_menu_targetMenu2": {
+      "id": "lmsMoreEvents_menu_targetMenu2",
+      "opcode": "lmsMoreEvents_menu_targetMenu",
+      "inputs": {},
+      "fields": {
+        "targetMenu": {
+          "name": "targetMenu",
+          "value": "grid items"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "shadow": true
+    },
+    "lmsMoreEvents_broadcastToTargetAndWait3": {
+      "id": "lmsMoreEvents_broadcastToTargetAndWait3",
+      "opcode": "lmsMoreEvents_broadcastToTargetAndWait",
+      "inputs": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "block": "event_broadcast_menu1",
+          "shadow": "event_broadcast_menu1"
+        },
+        "TARGET": {
+          "name": "TARGET",
+          "block": "lmsMoreEvents_menu_targetMenu1",
+          "shadow": "lmsMoreEvents_menu_targetMenu1"
+        }
+      },
+      "fields": {},
+      "next": "control_wait1",
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait2",
+      "shadow": false
+    },
+    "event_broadcast_menu1": {
+      "id": "event_broadcast_menu1",
+      "opcode": "event_broadcast_menu",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "=9Rd9n:vJm=CO$~p|E1n",
+          "value": "GAME rocket submit",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
+      "shadow": true
+    },
+    "lmsMoreEvents_menu_targetMenu1": {
+      "id": "lmsMoreEvents_menu_targetMenu1",
+      "opcode": "lmsMoreEvents_menu_targetMenu",
+      "inputs": {},
+      "fields": {
+        "targetMenu": {
+          "name": "targetMenu",
+          "value": "rocket grid"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
+      "shadow": true
+    },
+    "event_whenbroadcastreceived3": {
+      "id": "event_whenbroadcastreceived3",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "value": "GAME begin",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "control_forever2",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 1087.7885223281733,
+      "y": 185.839288777681
+    },
+    "control_forever2": {
+      "id": "control_forever2",
+      "opcode": "control_forever",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_wait_until1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived3",
+      "shadow": false,
+      "x": 893.0437352610501,
+      "y": 267.14479620231293
+    },
+    "control_wait_until1": {
+      "id": "control_wait_until1",
+      "opcode": "control_wait_until",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "sensing_mousedown2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "control_if1",
+      "topLevel": false,
+      "parent": "control_forever2",
+      "shadow": false,
+      "x": 1096.9025171313806,
+      "y": 282.51884389021444
+    },
+    "sensing_mousedown2": {
+      "id": "sensing_mousedown2",
+      "opcode": "sensing_mousedown",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_wait_until1",
+      "shadow": false,
+      "x": "1042",
+      "y": "315"
+    },
+    "control_if1": {
+      "id": "control_if1",
+      "opcode": "control_if",
+      "inputs": {
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "control_if2",
+          "shadow": null
+        },
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "sensing_touchingobject1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_wait_until1",
+      "shadow": false,
+      "x": 1099.274237462263,
+      "y": 371.4309685131082
+    },
+    "sensing_touchingobject1": {
+      "id": "sensing_touchingobject1",
+      "opcode": "sensing_touchingobject",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "block": "sensing_touchingobjectmenu1",
+          "shadow": "sensing_touchingobjectmenu1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false,
+      "x": "884",
+      "y": "235"
+    },
+    "sensing_touchingobjectmenu1": {
+      "id": "sensing_touchingobjectmenu1",
+      "opcode": "sensing_touchingobjectmenu",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": {
+          "name": "TOUCHINGOBJECTMENU",
+          "value": "_mouse_"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "sensing_touchingobject1",
+      "shadow": true
+    },
+    "control_wait1": {
+      "id": "control_wait1",
+      "opcode": "control_wait",
+      "inputs": {
+        "DURATION": {
+          "name": "DURATION",
+          "block": "math_positive_number1",
+          "shadow": "math_positive_number1"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
+      "shadow": false,
+      "x": 1252.2989051596624,
+      "y": 862.6534465366644
+    },
+    "math_positive_number1": {
+      "id": "math_positive_number1",
+      "opcode": "math_positive_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_wait1",
+      "shadow": true
     }
   },
   "scripts": [
     "event_whenbroadcastreceived1",
-    "event_whenthisspriteclicked1",
     "event_whenflagclicked1",
-    "event_whenbroadcastreceived2"
+    "event_whenbroadcastreceived2",
+    "event_whenbroadcastreceived3"
   ]
 }

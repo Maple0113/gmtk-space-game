@@ -1,0 +1,14 @@
+[
+  {
+    "name": "big box",
+    "dataFormat": "svg",
+    "rotationCenterX": 180,
+    "rotationCenterY": 107.5
+  },
+  {
+    "name": "retry",
+    "dataFormat": "png",
+    "rotationCenterX": 64,
+    "rotationCenterY": 52
+  }
+]

@@ -32,7 +32,7 @@
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[0,0],[0,0]]"
+    "value": "[[0,1,0,0],[0,1,0,0],[0,0,0,0]]"
   },
   "Pt.1X5RCAbK=Tm1JiWs^": {
     "id": "Pt.1X5RCAbK=Tm1JiWs^",
@@ -51,6 +51,41 @@
   "hydVEoo-,a|a1S{TMQ1[": {
     "id": "hydVEoo-,a|a1S{TMQ1[",
     "name": "Progress",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "a[Ac=P]A2$I=u1^aRU2{": {
+    "id": "a[Ac=P]A2$I=u1^aRU2{",
+    "name": "Score",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "|X6QO5fce=({)Uw;c;OB": {
+    "id": "|X6QO5fce=({)Uw;c;OB",
+    "name": "HighScore",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "D7$B%uzj|_ZlN9$i`Xcb": {
+    "id": "D7$B%uzj|_ZlN9$i`Xcb",
+    "name": "TotalMoneyEarned",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "-ZoRy6LwD.3qV,]k2i#u": {
+    "id": "-ZoRy6LwD.3qV,]k2i#u",
+    "name": "TotalMoneyHighScore",
+    "type": "",
+    "isCloud": false,
+    "value": 0
+  },
+  "W,nd.hQ#6VbDZIRlk/I0": {
+    "id": "W,nd.hQ#6VbDZIRlk/I0",
+    "name": "MoneyHighScore",
     "type": "",
     "isCloud": false,
     "value": 0
@@ -82,14 +117,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"body\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
-      "{\"Name\":\"nosecone\",\"Amount\":99,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"fin\",\"Amount\":99,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"fueltank\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"thruster\",\"Amount\":99,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"advertisement\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"window\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"cargobay\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
+      "{\"Name\":\"body\",\"Amount\":1,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
+      "{\"Name\":\"nosecone\",\"Amount\":1,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"fin\",\"Amount\":2,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"fueltank\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"thruster\",\"Amount\":0,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"advertisement\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"window\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"cargobay\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -172,7 +207,7 @@
     "type": "list",
     "isCloud": false,
     "value": [],
-    "_monitorUpToDate": true
+    "_monitorUpToDate": false
   },
   "X$b7KhkWBuw^}6#}%6`n": {
     "id": "X$b7KhkWBuw^}6#}%6`n",
