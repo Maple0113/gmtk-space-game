@@ -198,6 +198,66 @@
       "topLevel": false,
       "id": "looks_show1"
     },
+    "event_whenbroadcastreceived1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "control_stop1",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME reset",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -151,
+      "y": 110,
+      "id": "event_whenbroadcastreceived1"
+    },
+    "control_delete_this_clone1": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "looks_hide1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_delete_this_clone1"
+    },
+    "control_stop1": {
+      "opcode": "control_stop",
+      "next": "looks_hide1",
+      "parent": "event_whenbroadcastreceived1",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": {
+          "name": "STOP_OPTION",
+          "value": "other scripts in sprite",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      },
+      "id": "control_stop1"
+    },
+    "looks_hide1": {
+      "opcode": "looks_hide",
+      "next": "control_delete_this_clone1",
+      "parent": "control_stop1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
+    },
     "text3": {
       "id": "text3",
       "next": null,
@@ -275,71 +335,237 @@
       },
       "topLevel": false
     },
-    "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "3.f=+dS@N]3^ITVh46Jv",
-          "value": "GAME reset",
-          "variableType": "broadcast_msg"
+    "procedures_definition1": {
+      "id": "procedures_definition1",
+      "opcode": "procedures_definition",
+      "inputs": {
+        "custom_block": {
+          "name": "custom_block",
+          "block": "procedures_prototype1",
+          "shadow": "procedures_prototype1"
         }
       },
-      "next": "control_stop1",
+      "fields": {},
+      "next": "control_if_else1",
       "topLevel": true,
       "parent": null,
       "shadow": false,
-      "x": -151,
-      "y": 110
+      "x": 2440,
+      "y": -200
     },
-    "control_delete_this_clone1": {
-      "id": "control_delete_this_clone1",
-      "opcode": "control_delete_this_clone",
-      "inputs": {},
+    "procedures_prototype1": {
+      "id": "procedures_prototype1",
+      "opcode": "procedures_prototype",
+      "inputs": {
+        ":CrV_7X(R8(}#0lw(7nU": {
+          "name": ":CrV_7X(R8(}#0lw(7nU",
+          "block": "argument_reporter_string_number5",
+          "shadow": "argument_reporter_string_number5"
+        },
+        "M3wcRZ-GrYWV9qe,PUsL": {
+          "name": "M3wcRZ-GrYWV9qe,PUsL",
+          "block": "argument_reporter_string_number6",
+          "shadow": "argument_reporter_string_number6"
+        }
+      },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "looks_hide1",
-      "shadow": false
-    },
-    "control_stop1": {
-      "id": "control_stop1",
-      "opcode": "control_stop",
-      "inputs": {},
-      "fields": {
-        "STOP_OPTION": {
-          "name": "STOP_OPTION",
-          "value": "other scripts in sprite"
-        }
-      },
-      "next": "looks_hide1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false,
-      "x": -128.84562115468032,
-      "y": 155.33373130187368,
+      "parent": "procedures_definition1",
+      "shadow": true,
       "mutation": {
         "tagName": "mutation",
         "children": [],
-        "hasnext": "true"
+        "proccode": "max %s %s",
+        "argumentids": "[\":CrV_7X(R8(}#0lw(7nU\",\"M3wcRZ-GrYWV9qe,PUsL\"]",
+        "argumentnames": "[\"Num1\",\"Num2\"]",
+        "argumentdefaults": "[\"\",\"\"]",
+        "warp": "true"
       }
+    },
+    "argument_reporter_string_number5": {
+      "id": "argument_reporter_string_number5",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype1",
+      "shadow": true
+    },
+    "argument_reporter_string_number6": {
+      "id": "argument_reporter_string_number6",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_prototype1",
+      "shadow": true
+    },
+    "control_if_else1": {
+      "id": "control_if_else1",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_gt1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "procedures_return1",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "procedures_return2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_definition1",
+      "shadow": false
+    },
+    "operator_gt1": {
+      "id": "operator_gt1",
+      "opcode": "operator_gt",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "argument_reporter_string_number1",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "argument_reporter_string_number2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "argument_reporter_string_number1": {
+      "id": "argument_reporter_string_number1",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": false
+    },
+    "argument_reporter_string_number2": {
+      "id": "argument_reporter_string_number2",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": false
+    },
+    "procedures_return1": {
+      "id": "procedures_return1",
+      "opcode": "procedures_return",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "argument_reporter_string_number3",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "argument_reporter_string_number3": {
+      "id": "argument_reporter_string_number3",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num1"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_return1",
+      "shadow": false
+    },
+    "procedures_return2": {
+      "id": "procedures_return2",
+      "opcode": "procedures_return",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "argument_reporter_string_number4",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "argument_reporter_string_number4": {
+      "id": "argument_reporter_string_number4",
+      "opcode": "argument_reporter_string_number",
+      "inputs": {},
+      "fields": {
+        "VALUE": {
+          "name": "VALUE",
+          "value": "Num2"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "procedures_return2",
+      "shadow": false
     },
     "event_whenthisspriteclicked1": {
       "id": "event_whenthisspriteclicked1",
       "opcode": "event_whenthisspriteclicked",
       "inputs": {},
       "fields": {},
-      "next": "control_if_else1",
+      "next": "control_if_else2",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 818,
       "y": -184
     },
-    "control_if_else1": {
-      "id": "control_if_else1",
+    "control_if_else2": {
+      "id": "control_if_else2",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -354,7 +580,7 @@
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "control_if_else2",
+          "block": "control_if_else3",
           "shadow": null
         }
       },
@@ -382,7 +608,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else1",
+      "parent": "control_if_else2",
       "shadow": false
     },
     "data_variable3": {
@@ -437,7 +663,7 @@
       },
       "next": "data_setvariableto2",
       "topLevel": false,
-      "parent": "control_if_else1",
+      "parent": "control_if_else2",
       "shadow": false
     },
     "text7": {
@@ -562,8 +788,8 @@
       "parent": "event_broadcast1",
       "shadow": true
     },
-    "control_if_else2": {
-      "id": "control_if_else2",
+    "control_if_else3": {
+      "id": "control_if_else3",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -578,14 +804,14 @@
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "control_if_else3",
+          "block": "control_if_else4",
           "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else1",
+      "parent": "control_if_else2",
       "shadow": false
     },
     "operator_equals4": {
@@ -606,7 +832,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else2",
+      "parent": "control_if_else3",
       "shadow": false
     },
     "data_variable4": {
@@ -661,7 +887,7 @@
       },
       "next": "data_setvariableto4",
       "topLevel": false,
-      "parent": "control_if_else2",
+      "parent": "control_if_else3",
       "shadow": false
     },
     "text11": {
@@ -786,8 +1012,8 @@
       "parent": "event_broadcast2",
       "shadow": true
     },
-    "control_if_else3": {
-      "id": "control_if_else3",
+    "control_if_else4": {
+      "id": "control_if_else4",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -809,7 +1035,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else2",
+      "parent": "control_if_else3",
       "shadow": false
     },
     "operator_equals5": {
@@ -830,7 +1056,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else3",
+      "parent": "control_if_else4",
       "shadow": false
     },
     "data_variable5": {
@@ -885,7 +1111,7 @@
       },
       "next": "control_if3",
       "topLevel": false,
-      "parent": "control_if_else3",
+      "parent": "control_if_else4",
       "shadow": false
     },
     "math_number1": {
@@ -909,7 +1135,7 @@
       "inputs": {
         "CONDITION": {
           "name": "CONDITION",
-          "block": "operator_gt1",
+          "block": "operator_gt2",
           "shadow": null
         },
         "SUBSTACK": {
@@ -924,8 +1150,8 @@
       "parent": "data_changevariableby1",
       "shadow": false
     },
-    "operator_gt1": {
-      "id": "operator_gt1",
+    "operator_gt2": {
+      "id": "operator_gt2",
       "opcode": "operator_gt",
       "inputs": {
         "OPERAND1": {
@@ -959,7 +1185,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_gt1",
+      "parent": "operator_gt2",
       "shadow": true
     },
     "data_variable7": {
@@ -976,7 +1202,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_gt1",
+      "parent": "operator_gt2",
       "shadow": true
     },
     "data_setvariableto5": {
@@ -1068,7 +1294,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else3",
+      "parent": "control_if_else4",
       "shadow": false
     },
     "operator_equals6": {
@@ -1339,7 +1565,7 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else5",
+          "block": "control_if_else6",
           "shadow": null
         }
       },
@@ -1402,8 +1628,8 @@
       "parent": "operator_equals9",
       "shadow": true
     },
-    "control_if_else5": {
-      "id": "control_if_else5",
+    "control_if_else6": {
+      "id": "control_if_else6",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -1446,7 +1672,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
     "data_variable14": {
@@ -1494,7 +1720,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
     "looks_costume5": {
@@ -1525,7 +1751,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else5",
+      "parent": "control_if_else6",
       "shadow": false
     },
     "looks_costume6": {
@@ -1554,7 +1780,7 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_if_else4",
+          "block": "control_if_else5",
           "shadow": null
         }
       },
@@ -1617,8 +1843,8 @@
       "parent": "operator_equals7",
       "shadow": true
     },
-    "control_if_else4": {
-      "id": "control_if_else4",
+    "control_if_else5": {
+      "id": "control_if_else5",
       "opcode": "control_if_else",
       "inputs": {
         "CONDITION": {
@@ -1661,7 +1887,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
     "data_variable12": {
@@ -1709,7 +1935,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
     "looks_costume3": {
@@ -1740,7 +1966,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_if_else4",
+      "parent": "control_if_else5",
       "shadow": false
     },
     "looks_costume4": {
@@ -2172,223 +2398,6 @@
       "topLevel": false,
       "parent": "looks_switchcostumeto11",
       "shadow": true
-    },
-    "procedures_definition1": {
-      "id": "procedures_definition1",
-      "opcode": "procedures_definition",
-      "inputs": {
-        "custom_block": {
-          "name": "custom_block",
-          "block": "procedures_prototype1",
-          "shadow": "procedures_prototype1"
-        }
-      },
-      "fields": {},
-      "next": "control_if_else6",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 2440,
-      "y": -200
-    },
-    "procedures_prototype1": {
-      "id": "procedures_prototype1",
-      "opcode": "procedures_prototype",
-      "inputs": {
-        ":CrV_7X(R8(}#0lw(7nU": {
-          "name": ":CrV_7X(R8(}#0lw(7nU",
-          "block": "argument_reporter_string_number5",
-          "shadow": "argument_reporter_string_number5"
-        },
-        "M3wcRZ-GrYWV9qe,PUsL": {
-          "name": "M3wcRZ-GrYWV9qe,PUsL",
-          "block": "argument_reporter_string_number6",
-          "shadow": "argument_reporter_string_number6"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_definition1",
-      "shadow": true,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "max %s %s",
-        "argumentids": "[\":CrV_7X(R8(}#0lw(7nU\",\"M3wcRZ-GrYWV9qe,PUsL\"]",
-        "argumentnames": "[\"Num1\",\"Num2\"]",
-        "argumentdefaults": "[\"\",\"\"]",
-        "warp": "true"
-      }
-    },
-    "argument_reporter_string_number5": {
-      "id": "argument_reporter_string_number5",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_prototype1",
-      "shadow": true
-    },
-    "argument_reporter_string_number6": {
-      "id": "argument_reporter_string_number6",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_prototype1",
-      "shadow": true
-    },
-    "control_if_else6": {
-      "id": "control_if_else6",
-      "opcode": "control_if_else",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_gt2",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "procedures_return1",
-          "shadow": null
-        },
-        "SUBSTACK2": {
-          "name": "SUBSTACK2",
-          "block": "procedures_return2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_definition1",
-      "shadow": false
-    },
-    "operator_gt2": {
-      "id": "operator_gt2",
-      "opcode": "operator_gt",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "argument_reporter_string_number1",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "argument_reporter_string_number2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else6",
-      "shadow": false
-    },
-    "argument_reporter_string_number1": {
-      "id": "argument_reporter_string_number1",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt2",
-      "shadow": false
-    },
-    "argument_reporter_string_number2": {
-      "id": "argument_reporter_string_number2",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt2",
-      "shadow": false
-    },
-    "procedures_return1": {
-      "id": "procedures_return1",
-      "opcode": "procedures_return",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "argument_reporter_string_number3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else6",
-      "shadow": false
-    },
-    "argument_reporter_string_number3": {
-      "id": "argument_reporter_string_number3",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num1"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_return1",
-      "shadow": false
-    },
-    "procedures_return2": {
-      "id": "procedures_return2",
-      "opcode": "procedures_return",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "argument_reporter_string_number4",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else6",
-      "shadow": false
-    },
-    "argument_reporter_string_number4": {
-      "id": "argument_reporter_string_number4",
-      "opcode": "argument_reporter_string_number",
-      "inputs": {},
-      "fields": {
-        "VALUE": {
-          "name": "VALUE",
-          "value": "Num2"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "procedures_return2",
-      "shadow": false
     },
     "event_whenflagclicked1": {
       "id": "event_whenflagclicked1",
@@ -3676,27 +3685,15 @@
       "topLevel": false,
       "parent": "operator_join2",
       "shadow": true
-    },
-    "looks_hide1": {
-      "id": "looks_hide1",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": "control_delete_this_clone1",
-      "topLevel": false,
-      "parent": "control_stop1",
-      "shadow": false,
-      "x": -159.5029175620536,
-      "y": 188.31551858602296
     }
   },
   "scripts": [
     "lmsclonesplus_whenCloneStartsWithVar1",
     "event_whenbroadcastreceived1",
+    "procedures_definition1",
     "event_whenthisspriteclicked1",
     "event_whenbroadcastreceived2",
     "event_whenbroadcastreceived3",
-    "procedures_definition1",
     "event_whenflagclicked1",
     "event_whenbroadcastreceived4",
     "control_start_as_clone1"

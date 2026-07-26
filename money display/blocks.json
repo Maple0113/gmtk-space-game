@@ -1,27 +1,28 @@
 {
   "blocks": {
     "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
+      "next": "looks_hide1",
+      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "3.f=+dS@N]3^ITVh46Jv",
           "value": "GAME reset",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "looks_hide1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 354,
-      "y": 572
+      "y": 572,
+      "id": "event_whenbroadcastreceived1"
     },
     "control_stop1": {
-      "id": "control_stop1",
       "opcode": "control_stop",
+      "next": "control_delete_this_clone1",
+      "parent": "looks_hide1",
       "inputs": {},
       "fields": {
         "STOP_OPTION": {
@@ -29,37 +30,34 @@
           "value": "other scripts in sprite"
         }
       },
-      "next": "control_delete_this_clone1",
-      "topLevel": false,
-      "parent": "looks_hide1",
       "shadow": false,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "hasnext": "true"
-      }
+      },
+      "id": "control_stop1"
     },
     "control_delete_this_clone1": {
-      "id": "control_delete_this_clone1",
       "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "control_stop1",
       "inputs": {},
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "control_stop1",
-      "shadow": false
+      "id": "control_delete_this_clone1"
     },
     "looks_hide1": {
-      "id": "looks_hide1",
       "opcode": "looks_hide",
+      "next": "control_stop1",
+      "parent": "event_whenbroadcastreceived1",
       "inputs": {},
       "fields": {},
-      "next": "control_stop1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
       "shadow": false,
-      "x": 364.34409666794113,
-      "y": 614.4717345541889
+      "topLevel": false,
+      "id": "looks_hide1"
     },
     "event_whenflagclicked1": {
       "id": "event_whenflagclicked1",

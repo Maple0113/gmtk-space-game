@@ -3,7 +3,7 @@
     "control_create_clone_of_menu2": {
       "opcode": "control_create_clone_of_menu",
       "next": null,
-      "parent": "ms",
+      "parent": "n}",
       "inputs": {},
       "fields": {
         "CLONE_OPTION": {
@@ -17,69 +17,64 @@
       "id": "control_create_clone_of_menu2"
     },
     "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
+      "next": "looks_hide1",
+      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "3.f=+dS@N]3^ITVh46Jv",
           "value": "GAME reset",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "looks_hide1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": 696,
-      "y": 408
+      "y": 408,
+      "id": "event_whenbroadcastreceived1"
     },
     "control_delete_this_clone1": {
-      "id": "control_delete_this_clone1",
       "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "control_stop1",
       "inputs": {},
       "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_stop1",
       "shadow": false,
-      "x": 554.0882803364057,
-      "y": 558.9466118439382
+      "topLevel": false,
+      "id": "control_delete_this_clone1"
     },
     "control_stop1": {
-      "id": "control_stop1",
       "opcode": "control_stop",
+      "next": "control_delete_this_clone1",
+      "parent": "looks_hide1",
       "inputs": {},
       "fields": {
         "STOP_OPTION": {
           "name": "STOP_OPTION",
-          "value": "other scripts in sprite"
+          "value": "other scripts in sprite",
+          "id": null
         }
       },
-      "next": "control_delete_this_clone1",
-      "topLevel": false,
-      "parent": "looks_hide1",
       "shadow": false,
-      "x": 673.6024145971586,
-      "y": 452.8046005819504,
+      "topLevel": false,
       "mutation": {
         "tagName": "mutation",
         "children": [],
         "hasnext": "true"
-      }
+      },
+      "id": "control_stop1"
     },
     "looks_hide1": {
-      "id": "looks_hide1",
       "opcode": "looks_hide",
+      "next": "control_stop1",
+      "parent": "event_whenbroadcastreceived1",
       "inputs": {},
       "fields": {},
-      "next": "control_stop1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
       "shadow": false,
-      "x": 694.6831713837206,
-      "y": 466.02143709682804
+      "topLevel": false,
+      "id": "looks_hide1"
     },
     "control_start_as_clone1": {
       "id": "control_start_as_clone1",
@@ -173,6 +168,16 @@
       "shadow": false,
       "x": 109,
       "y": 135
+    },
+    "looks_show1": {
+      "id": "looks_show1",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": "looks_setsizeto2",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived2",
+      "shadow": false
     },
     "looks_setsizeto2": {
       "id": "looks_setsizeto2",
@@ -766,18 +771,6 @@
       "topLevel": false,
       "parent": "sipctime_formatTime1",
       "shadow": true
-    },
-    "looks_show1": {
-      "id": "looks_show1",
-      "opcode": "looks_show",
-      "inputs": {},
-      "fields": {},
-      "next": "looks_setsizeto2",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived2",
-      "shadow": false,
-      "x": 90.68329808364541,
-      "y": 174.4823846359903
     }
   },
   "scripts": [

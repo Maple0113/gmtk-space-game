@@ -82,14 +82,14 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "{\"Name\":\"body\",\"Amount\":1,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
-      "{\"Name\":\"nosecone\",\"Amount\":1,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"fin\",\"Amount\":2,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
-      "{\"Name\":\"fueltank\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"thruster\",\"Amount\":0,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"advertisement\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"window\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
-      "{\"Name\":\"cargobay\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
+      "{\"Name\":\"body\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
+      "{\"Name\":\"nosecone\",\"Amount\":99,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"fin\",\"Amount\":99,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"fueltank\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"thruster\",\"Amount\":99,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"advertisement\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"window\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
+      "{\"Name\":\"cargobay\",\"Amount\":99,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}"
     ],
     "_monitorUpToDate": false
   },
@@ -172,7 +172,7 @@
     "type": "list",
     "isCloud": false,
     "value": [],
-    "_monitorUpToDate": false
+    "_monitorUpToDate": true
   },
   "X$b7KhkWBuw^}6#}%6`n": {
     "id": "X$b7KhkWBuw^}6#}%6`n",

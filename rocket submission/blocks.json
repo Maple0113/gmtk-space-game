@@ -1,33 +1,64 @@
 {
   "blocks": {
     "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
       "opcode": "event_whenbroadcastreceived",
+      "next": "control_stop1",
+      "parent": null,
       "inputs": {},
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "3.f=+dS@N]3^ITVh46Jv",
           "value": "GAME reset",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "control_stop1",
-      "topLevel": true,
-      "parent": null,
       "shadow": false,
+      "topLevel": true,
       "x": -90,
-      "y": -128
+      "y": -128,
+      "id": "event_whenbroadcastreceived1"
     },
     "control_delete_this_clone1": {
-      "id": "control_delete_this_clone1",
       "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "looks_hide1",
       "inputs": {},
       "fields": {},
-      "next": null,
+      "shadow": false,
       "topLevel": false,
-      "parent": "looks_hide1",
-      "shadow": false
+      "id": "control_delete_this_clone1"
+    },
+    "control_stop1": {
+      "opcode": "control_stop",
+      "next": "looks_hide1",
+      "parent": "event_whenbroadcastreceived1",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": {
+          "name": "STOP_OPTION",
+          "value": "other scripts in sprite",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      },
+      "id": "control_stop1"
+    },
+    "looks_hide1": {
+      "opcode": "looks_hide",
+      "next": "control_delete_this_clone1",
+      "parent": "control_stop1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
     },
     "event_whenthisspriteclicked1": {
       "id": "event_whenthisspriteclicked1",
@@ -378,28 +409,6 @@
       "parent": "lmsMoreEvents_broadcastToTargetAndWait3",
       "shadow": true
     },
-    "control_stop1": {
-      "id": "control_stop1",
-      "opcode": "control_stop",
-      "inputs": {},
-      "fields": {
-        "STOP_OPTION": {
-          "name": "STOP_OPTION",
-          "value": "other scripts in sprite"
-        }
-      },
-      "next": "looks_hide1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false,
-      "x": -68.11952050327068,
-      "y": -30.07468238913225,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "hasnext": "true"
-      }
-    },
     "event_whenflagclicked1": {
       "id": "event_whenflagclicked1",
       "opcode": "event_whenflagclicked",
@@ -572,18 +581,6 @@
       "topLevel": false,
       "parent": "looks_setsizeto1",
       "shadow": false
-    },
-    "looks_hide1": {
-      "id": "looks_hide1",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": "control_delete_this_clone1",
-      "topLevel": false,
-      "parent": "control_stop1",
-      "shadow": false,
-      "x": -44.70735399057605,
-      "y": 25.87367112191636
     },
     "event_whenbroadcastreceived2": {
       "id": "event_whenbroadcastreceived2",

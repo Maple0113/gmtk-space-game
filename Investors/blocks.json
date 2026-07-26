@@ -659,6 +659,95 @@
       "topLevel": false,
       "id": "argument_reporter_string_number5"
     },
+    "event_whenkeypressed1": {
+      "opcode": "event_whenkeypressed",
+      "next": "event_broadcastandwait1",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": {
+          "name": "KEY_OPTION",
+          "value": "r",
+          "id": null
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 800,
+      "y": 1052,
+      "id": "event_whenkeypressed1"
+    },
+    "event_broadcastandwait2": {
+      "opcode": "event_broadcastandwait",
+      "next": null,
+      "parent": "event_broadcastandwait1",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu1",
+          "shadow": "event_broadcast_menu1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "event_broadcastandwait2"
+    },
+    "event_broadcastandwait1": {
+      "opcode": "event_broadcastandwait",
+      "next": "event_broadcastandwait2",
+      "parent": "event_whenkeypressed1",
+      "inputs": {
+        "BROADCAST_INPUT": {
+          "name": "BROADCAST_INPUT",
+          "block": "event_broadcast_menu2",
+          "shadow": "event_broadcast_menu2"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "event_broadcastandwait1"
+    },
+    "event_whenbroadcastreceived1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "looks_hide1",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME reset",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1181,
+      "y": 1009,
+      "id": "event_whenbroadcastreceived1"
+    },
+    "looks_hide1": {
+      "opcode": "looks_hide",
+      "next": "control_delete_this_clone1",
+      "parent": "event_whenbroadcastreceived1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
+    },
+    "control_delete_this_clone1": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "looks_hide1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "control_delete_this_clone1"
+    },
     "text1": {
       "id": "text1",
       "next": null,
@@ -1049,131 +1138,39 @@
       },
       "topLevel": false
     },
-    "event_whenkeypressed1": {
-      "id": "event_whenkeypressed1",
-      "opcode": "event_whenkeypressed",
-      "inputs": {},
-      "fields": {
-        "KEY_OPTION": {
-          "name": "KEY_OPTION",
-          "value": "r"
-        }
-      },
-      "next": "event_broadcastandwait1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 800,
-      "y": 1052
-    },
-    "event_broadcastandwait2": {
-      "id": "event_broadcastandwait2",
-      "opcode": "event_broadcastandwait",
-      "inputs": {
-        "BROADCAST_INPUT": {
-          "name": "BROADCAST_INPUT",
-          "block": "event_broadcast_menu1",
-          "shadow": "event_broadcast_menu1"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "event_broadcastandwait1",
-      "shadow": false,
-      "x": 800,
-      "y": 1148
-    },
     "event_broadcast_menu1": {
       "id": "event_broadcast_menu1",
-      "opcode": "event_broadcast_menu",
+      "next": null,
+      "parent": "event_broadcastandwait2",
+      "shadow": true,
       "inputs": {},
+      "opcode": "event_broadcast_menu",
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
           "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
           "variableType": "broadcast_msg"
         }
       },
-      "next": null,
-      "topLevel": false,
-      "parent": "event_broadcastandwait2",
-      "shadow": true
-    },
-    "event_broadcastandwait1": {
-      "id": "event_broadcastandwait1",
-      "opcode": "event_broadcastandwait",
-      "inputs": {
-        "BROADCAST_INPUT": {
-          "name": "BROADCAST_INPUT",
-          "block": "event_broadcast_menu2",
-          "shadow": "event_broadcast_menu2"
-        }
-      },
-      "fields": {},
-      "next": "event_broadcastandwait2",
-      "topLevel": false,
-      "parent": "event_whenkeypressed1",
-      "shadow": false,
-      "x": 805.4469749830223,
-      "y": 1102.9230359814587
+      "topLevel": false
     },
     "event_broadcast_menu2": {
       "id": "event_broadcast_menu2",
-      "opcode": "event_broadcast_menu",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "3.f=+dS@N]3^ITVh46Jv",
-          "value": "GAME reset",
-          "variableType": "broadcast_msg"
-        }
-      },
       "next": null,
-      "topLevel": false,
       "parent": "event_broadcastandwait1",
-      "shadow": true
-    },
-    "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
-      "opcode": "event_whenbroadcastreceived",
+      "shadow": true,
       "inputs": {},
+      "opcode": "event_broadcast_menu",
       "fields": {
         "BROADCAST_OPTION": {
           "name": "BROADCAST_OPTION",
-          "id": "3.f=+dS@N]3^ITVh46Jv",
           "value": "GAME reset",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
           "variableType": "broadcast_msg"
         }
       },
-      "next": "looks_hide1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 1181,
-      "y": 1009
-    },
-    "looks_hide1": {
-      "id": "looks_hide1",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": "control_delete_this_clone1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false
-    },
-    "control_delete_this_clone1": {
-      "id": "control_delete_this_clone1",
-      "opcode": "control_delete_this_clone",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "looks_hide1",
-      "shadow": false
+      "topLevel": false
     },
     "procedures_definition3": {
       "id": "procedures_definition3",
@@ -1524,9 +1521,7 @@
       "next": null,
       "topLevel": false,
       "parent": "lmsTempVars2_setThreadVariable1",
-      "shadow": true,
-      "x": 773.6851806640625,
-      "y": 735
+      "shadow": true
     },
     "operator_random1": {
       "id": "operator_random1",
@@ -1579,6 +1574,109 @@
       "parent": "operator_random1",
       "shadow": false
     },
+    "control_if2": {
+      "id": "control_if2",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_gt2",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "data_addtolist2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsTempVars2_setThreadVariable1",
+      "shadow": false
+    },
+    "operator_gt2": {
+      "id": "operator_gt2",
+      "opcode": "operator_gt",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "lmsTempVars2_getThreadVariable4",
+          "shadow": "text24"
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text25",
+          "shadow": "text25"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if2",
+      "shadow": false
+    },
+    "lmsTempVars2_getThreadVariable4": {
+      "id": "lmsTempVars2_getThreadVariable4",
+      "opcode": "lmsTempVars2_getThreadVariable",
+      "inputs": {
+        "VAR": {
+          "name": "VAR",
+          "block": "text23",
+          "shadow": "text23"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt2",
+      "shadow": false
+    },
+    "text23": {
+      "id": "text23",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "amount"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsTempVars2_getThreadVariable4",
+      "shadow": true
+    },
+    "text24": {
+      "id": "text24",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt2",
+      "shadow": true
+    },
+    "text25": {
+      "id": "text25",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt2",
+      "shadow": true
+    },
     "data_addtolist2": {
       "id": "data_addtolist2",
       "opcode": "data_addtolist",
@@ -1600,9 +1698,7 @@
       "next": "data_addtolist3",
       "topLevel": false,
       "parent": "control_if2",
-      "shadow": false,
-      "x": 660,
-      "y": 779
+      "shadow": false
     },
     "skyhigh173JSON_json_set5": {
       "id": "skyhigh173JSON_json_set5",
@@ -1610,8 +1706,8 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text28",
-          "shadow": "text28"
+          "block": "text31",
+          "shadow": "text31"
         },
         "json": {
           "name": "json",
@@ -1630,8 +1726,8 @@
       "parent": "data_addtolist2",
       "shadow": false
     },
-    "text28": {
-      "id": "text28",
+    "text31": {
+      "id": "text31",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1651,17 +1747,17 @@
       "inputs": {
         "item": {
           "name": "item",
-          "block": "text29",
-          "shadow": "text29"
+          "block": "text32",
+          "shadow": "text32"
         },
         "json": {
           "name": "json",
-          "block": "text30",
-          "shadow": "text30"
+          "block": "text33",
+          "shadow": "text33"
         },
         "value": {
           "name": "value",
-          "block": "lmsTempVars2_getThreadVariable5",
+          "block": "lmsTempVars2_getThreadVariable6",
           "shadow": null
         }
       },
@@ -1671,8 +1767,8 @@
       "parent": "skyhigh173JSON_json_set5",
       "shadow": false
     },
-    "text29": {
-      "id": "text29",
+    "text32": {
+      "id": "text32",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1686,8 +1782,8 @@
       "parent": "skyhigh173JSON_json_set6",
       "shadow": true
     },
-    "text30": {
-      "id": "text30",
+    "text33": {
+      "id": "text33",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1701,14 +1797,14 @@
       "parent": "skyhigh173JSON_json_set6",
       "shadow": true
     },
-    "lmsTempVars2_getThreadVariable5": {
-      "id": "lmsTempVars2_getThreadVariable5",
+    "lmsTempVars2_getThreadVariable6": {
+      "id": "lmsTempVars2_getThreadVariable6",
       "opcode": "lmsTempVars2_getThreadVariable",
       "inputs": {
         "VAR": {
           "name": "VAR",
-          "block": "text31",
-          "shadow": "text31"
+          "block": "text34",
+          "shadow": "text34"
         }
       },
       "fields": {},
@@ -1717,8 +1813,8 @@
       "parent": "skyhigh173JSON_json_set6",
       "shadow": false
     },
-    "text31": {
-      "id": "text31",
+    "text34": {
+      "id": "text34",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1729,7 +1825,7 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "lmsTempVars2_getThreadVariable5",
+      "parent": "lmsTempVars2_getThreadVariable6",
       "shadow": true
     },
     "argument_reporter_string_number16": {
@@ -1797,13 +1893,13 @@
       "inputs": {
         "STRING1": {
           "name": "STRING1",
-          "block": "lmsTempVars2_getThreadVariable4",
+          "block": "lmsTempVars2_getThreadVariable5",
           "shadow": null
         },
         "STRING2": {
           "name": "STRING2",
-          "block": "text24",
-          "shadow": "text24"
+          "block": "text27",
+          "shadow": "text27"
         }
       },
       "fields": {},
@@ -1812,14 +1908,14 @@
       "parent": "operator_join1",
       "shadow": false
     },
-    "lmsTempVars2_getThreadVariable4": {
-      "id": "lmsTempVars2_getThreadVariable4",
+    "lmsTempVars2_getThreadVariable5": {
+      "id": "lmsTempVars2_getThreadVariable5",
       "opcode": "lmsTempVars2_getThreadVariable",
       "inputs": {
         "VAR": {
           "name": "VAR",
-          "block": "text23",
-          "shadow": "text23"
+          "block": "text26",
+          "shadow": "text26"
         }
       },
       "fields": {},
@@ -1828,8 +1924,8 @@
       "parent": "operator_join2",
       "shadow": false
     },
-    "text23": {
-      "id": "text23",
+    "text26": {
+      "id": "text26",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1840,11 +1936,11 @@
       },
       "next": null,
       "topLevel": false,
-      "parent": "lmsTempVars2_getThreadVariable4",
+      "parent": "lmsTempVars2_getThreadVariable5",
       "shadow": true
     },
-    "text24": {
-      "id": "text24",
+    "text27": {
+      "id": "text27",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1864,13 +1960,13 @@
       "inputs": {
         "REGEX": {
           "name": "REGEX",
-          "block": "text25",
-          "shadow": "text25"
+          "block": "text28",
+          "shadow": "text28"
         },
         "FLAGS": {
           "name": "FLAGS",
-          "block": "text26",
-          "shadow": "text26"
+          "block": "text29",
+          "shadow": "text29"
         },
         "STRING": {
           "name": "STRING",
@@ -1879,8 +1975,8 @@
         },
         "REPLACE": {
           "name": "REPLACE",
-          "block": "text27",
-          "shadow": "text27"
+          "block": "text30",
+          "shadow": "text30"
         }
       },
       "fields": {},
@@ -1889,8 +1985,8 @@
       "parent": "operator_join1",
       "shadow": false
     },
-    "text25": {
-      "id": "text25",
+    "text28": {
+      "id": "text28",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1904,8 +2000,8 @@
       "parent": "strings_replaceRegex1",
       "shadow": true
     },
-    "text26": {
-      "id": "text26",
+    "text29": {
+      "id": "text29",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -1934,8 +2030,8 @@
       "parent": "strings_replaceRegex1",
       "shadow": false
     },
-    "text27": {
-      "id": "text27",
+    "text30": {
+      "id": "text30",
       "opcode": "text",
       "inputs": {},
       "fields": {
@@ -6682,117 +6778,6 @@
       "topLevel": false,
       "parent": "data_setvariableto9",
       "shadow": false
-    },
-    "control_if2": {
-      "id": "control_if2",
-      "opcode": "control_if",
-      "inputs": {
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "data_addtolist2",
-          "shadow": null
-        },
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_gt2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsTempVars2_setThreadVariable1",
-      "shadow": false,
-      "x": 669.172196698739,
-      "y": 761.384626866369
-    },
-    "operator_gt2": {
-      "id": "operator_gt2",
-      "opcode": "operator_gt",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "lmsTempVars2_getThreadVariable6",
-          "shadow": "text33"
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text34",
-          "shadow": "text34"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if2",
-      "shadow": false,
-      "x": 773.6851806640625,
-      "y": 730.9999999999999
-    },
-    "text33": {
-      "id": "text33",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": ""
-        }
-      },
-      "next": null,
-      "topLevel": true,
-      "parent": null,
-      "shadow": true,
-      "x": 727.9999999999999,
-      "y": 786.9999999999999
-    },
-    "text34": {
-      "id": "text34",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt2",
-      "shadow": true
-    },
-    "lmsTempVars2_getThreadVariable6": {
-      "id": "lmsTempVars2_getThreadVariable6",
-      "opcode": "lmsTempVars2_getThreadVariable",
-      "inputs": {
-        "VAR": {
-          "name": "VAR",
-          "block": "text32",
-          "shadow": "text32"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt2",
-      "shadow": false,
-      "x": 727.7443796312451,
-      "y": 776.3358323065241
-    },
-    "text32": {
-      "id": "text32",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "amount"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsTempVars2_getThreadVariable6",
-      "shadow": true
     }
   },
   "scripts": [
@@ -6806,7 +6791,6 @@
     "event_whenbroadcastreceived3",
     "control_start_as_clone1",
     "event_whenbroadcastreceived4",
-    "event_whenflagclicked1",
-    "text33"
+    "event_whenflagclicked1"
   ]
 }

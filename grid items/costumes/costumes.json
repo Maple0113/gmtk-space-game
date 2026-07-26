@@ -16,5 +16,65 @@
     "dataFormat": "png",
     "rotationCenterX": 22,
     "rotationCenterY": 24
+  },
+  {
+    "name": "GridItems-Sheet",
+    "dataFormat": "png",
+    "rotationCenterX": 412,
+    "rotationCenterY": 72
+  },
+  {
+    "name": "SPECIL [[advertising only $9.99]]",
+    "dataFormat": "png",
+    "rotationCenterX": 29,
+    "rotationCenterY": 28
+  },
+  {
+    "name": "advertisement",
+    "dataFormat": "png",
+    "rotationCenterX": 27,
+    "rotationCenterY": 30
+  },
+  {
+    "name": "window",
+    "dataFormat": "png",
+    "rotationCenterX": 30,
+    "rotationCenterY": 30
+  },
+  {
+    "name": "thruster",
+    "dataFormat": "png",
+    "rotationCenterX": 32,
+    "rotationCenterY": 27
+  },
+  {
+    "name": "fin",
+    "dataFormat": "png",
+    "rotationCenterX": 26,
+    "rotationCenterY": 90
+  },
+  {
+    "name": "fueltank",
+    "dataFormat": "png",
+    "rotationCenterX": 32,
+    "rotationCenterY": 33
+  },
+  {
+    "name": "nosecone",
+    "dataFormat": "png",
+    "rotationCenterX": 26,
+    "rotationCenterY": 29
+  },
+  {
+    "name": "cargobay",
+    "dataFormat": "png",
+    "rotationCenterX": 22,
+    "rotationCenterY": 90
+  },
+  {
+    "name": "body",
+    "dataFormat": "png",
+    "rotationCenterX": 25,
+    "rotationCenterY": 97
   }
 ]

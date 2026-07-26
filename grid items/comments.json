@@ -1,12 +1,32 @@
 {
-  "mt": {
-    "id": "mt",
+  "n~": {
+    "id": "n~",
     "text": "for debugging",
     "x": 1498.2937877528814,
     "y": 765.8066473961228,
     "width": 200,
     "height": 200,
     "minimized": false,
-    "blockId": "mu"
+    "blockId": "oa"
+  },
+  "3?[nFaT;5OP9bkfTQPNK": {
+    "id": "3?[nFaT;5OP9bkfTQPNK",
+    "text": "ditto",
+    "x": 2435,
+    "y": 1319,
+    "width": 200,
+    "height": 200,
+    "minimized": true,
+    "blockId": "control_wait1"
+  },
+  ";Ox~QFkKl_I35C!3`Z+M": {
+    "id": ";Ox~QFkKl_I35C!3`Z+M",
+    "text": "will be stopeed by the \"stop other scripts in sprite\" block if the test actually passes (it's 1:02 AM pls help me)",
+    "x": 1325.6086811527896,
+    "y": 1265.6540445180906,
+    "width": 236.53070068359375,
+    "height": 143.7965850830078,
+    "minimized": false,
+    "blockId": "control_wait2"
   }
 }
