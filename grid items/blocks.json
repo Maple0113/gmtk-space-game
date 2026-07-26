@@ -18,6 +18,113 @@
       "y": 229,
       "id": "looks_costume1"
     },
+    "event_whenbroadcastreceived1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "data_deletealloflist1",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "value": "GAME begin",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 577,
+      "y": 125,
+      "id": "event_whenbroadcastreceived1"
+    },
+    "data_deletealloflist1": {
+      "opcode": "data_deletealloflist",
+      "next": "lmsclonesplus_deleteClonesInSprite1",
+      "parent": "event_whenbroadcastreceived1",
+      "inputs": {},
+      "fields": {
+        "LIST": {
+          "name": "LIST",
+          "value": "Rocket",
+          "id": "`Jp6(c{^ow3|dL:U9g_$",
+          "variableType": "list"
+        }
+      },
+      "shadow": false,
+      "topLevel": false,
+      "id": "data_deletealloflist1"
+    },
+    "lmsclonesplus_deleteClonesInSprite1": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "looks_hide1",
+      "parent": "data_deletealloflist1",
+      "inputs": {
+        "INPUT": {
+          "name": "INPUT",
+          "block": "lmsclonesplus_menu_spriteMenu1",
+          "shadow": "lmsclonesplus_menu_spriteMenu1"
+        }
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "lmsclonesplus_deleteClonesInSprite1"
+    },
+    "lmsclonesplus_menu_spriteMenu1": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": {
+          "name": "spriteMenu",
+          "value": "grid item",
+          "id": null
+        }
+      },
+      "shadow": true,
+      "topLevel": false,
+      "id": "lmsclonesplus_menu_spriteMenu1"
+    },
+    "looks_hide1": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "lmsclonesplus_deleteClonesInSprite1",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "id": "looks_hide1"
+    },
+    "event_whenbroadcastreceived2": {
+      "id": "event_whenbroadcastreceived2",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
+          "value": "GAME reset",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "looks_hide2",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": -60,
+      "y": 4
+    },
+    "control_delete_this_clone1": {
+      "id": "control_delete_this_clone1",
+      "opcode": "control_delete_this_clone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_stop1",
+      "shadow": false
+    },
     "event_whenthisspriteclicked1": {
       "id": "event_whenthisspriteclicked1",
       "opcode": "event_whenthisspriteclicked",
@@ -60,6 +167,37 @@
       "topLevel": false,
       "parent": "control_if1",
       "shadow": false
+    },
+    "sound_play1": {
+      "id": "sound_play1",
+      "opcode": "sound_play",
+      "inputs": {
+        "SOUND_MENU": {
+          "name": "SOUND_MENU",
+          "block": "sound_sounds_menu1",
+          "shadow": "sound_sounds_menu1"
+        }
+      },
+      "fields": {},
+      "next": "lmsMoreEvents_broadcastData1",
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "sound_sounds_menu1": {
+      "id": "sound_sounds_menu1",
+      "opcode": "sound_sounds_menu",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": {
+          "name": "SOUND_MENU",
+          "value": "pickup"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "sound_play1",
+      "shadow": true
     },
     "lmsMoreEvents_broadcastData1": {
       "id": "lmsMoreEvents_broadcastData1",
@@ -492,7 +630,7 @@
           "variableType": "list"
         }
       },
-      "next": "control_delete_this_clone1",
+      "next": "control_delete_this_clone2",
       "topLevel": false,
       "parent": "lmsMoreEvents_broadcastData2",
       "shadow": false
@@ -573,8 +711,8 @@
       "parent": "skyhigh173JSON_json_get1",
       "shadow": true
     },
-    "control_delete_this_clone1": {
-      "id": "control_delete_this_clone1",
+    "control_delete_this_clone2": {
+      "id": "control_delete_this_clone2",
       "opcode": "control_delete_this_clone",
       "inputs": {},
       "fields": {},
@@ -583,8 +721,8 @@
       "parent": "data_deleteoflist1",
       "shadow": false
     },
-    "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
+    "event_whenbroadcastreceived3": {
+      "id": "event_whenbroadcastreceived3",
       "opcode": "event_whenbroadcastreceived",
       "inputs": {},
       "fields": {
@@ -613,19 +751,19 @@
         },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "control_delete_this_clone2",
+          "block": "control_delete_this_clone3",
           "shadow": null
         },
         "SUBSTACK2": {
           "name": "SUBSTACK2",
-          "block": "data_deletealloflist1",
+          "block": "data_deletealloflist2",
           "shadow": null
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
+      "parent": "event_whenbroadcastreceived3",
       "shadow": false
     },
     "lmsclonesplus_isClone2": {
@@ -638,8 +776,8 @@
       "parent": "control_if_else2",
       "shadow": false
     },
-    "control_delete_this_clone2": {
-      "id": "control_delete_this_clone2",
+    "control_delete_this_clone3": {
+      "id": "control_delete_this_clone3",
       "opcode": "control_delete_this_clone",
       "inputs": {},
       "fields": {},
@@ -648,8 +786,8 @@
       "parent": "control_if_else2",
       "shadow": false
     },
-    "data_deletealloflist1": {
-      "id": "data_deletealloflist1",
+    "data_deletealloflist2": {
+      "id": "data_deletealloflist2",
       "opcode": "data_deletealloflist",
       "inputs": {},
       "fields": {
@@ -665,8 +803,8 @@
       "parent": "control_if_else2",
       "shadow": false
     },
-    "event_whenbroadcastreceived2": {
-      "id": "event_whenbroadcastreceived2",
+    "event_whenbroadcastreceived4": {
+      "id": "event_whenbroadcastreceived4",
       "opcode": "event_whenbroadcastreceived",
       "inputs": {},
       "fields": {
@@ -702,7 +840,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived2",
+      "parent": "event_whenbroadcastreceived4",
       "shadow": false
     },
     "operator_not2": {
@@ -800,82 +938,27 @@
       "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
       "shadow": true
     },
-    "event_whenbroadcastreceived3": {
-      "id": "event_whenbroadcastreceived3",
-      "opcode": "event_whenbroadcastreceived",
+    "control_stop1": {
+      "id": "control_stop1",
+      "opcode": "control_stop",
       "inputs": {},
       "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
-          "value": "GAME begin",
-          "variableType": "broadcast_msg"
+        "STOP_OPTION": {
+          "name": "STOP_OPTION",
+          "value": "other scripts in sprite"
         }
       },
-      "next": "data_deletealloflist2",
-      "topLevel": true,
-      "parent": null,
+      "next": "control_delete_this_clone1",
+      "topLevel": false,
+      "parent": "looks_hide2",
       "shadow": false,
-      "x": 577,
-      "y": 125
-    },
-    "data_deletealloflist2": {
-      "id": "data_deletealloflist2",
-      "opcode": "data_deletealloflist",
-      "inputs": {},
-      "fields": {
-        "LIST": {
-          "name": "LIST",
-          "id": "`Jp6(c{^ow3|dL:U9g_$",
-          "value": "Rocket",
-          "variableType": "list"
-        }
-      },
-      "next": "lmsclonesplus_deleteClonesInSprite1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived3",
-      "shadow": false
-    },
-    "lmsclonesplus_deleteClonesInSprite1": {
-      "id": "lmsclonesplus_deleteClonesInSprite1",
-      "opcode": "lmsclonesplus_deleteClonesInSprite",
-      "inputs": {
-        "INPUT": {
-          "name": "INPUT",
-          "block": "lmsclonesplus_menu_spriteMenu1",
-          "shadow": "lmsclonesplus_menu_spriteMenu1"
-        }
-      },
-      "fields": {},
-      "next": "looks_hide1",
-      "topLevel": false,
-      "parent": "data_deletealloflist2",
-      "shadow": false
-    },
-    "lmsclonesplus_menu_spriteMenu1": {
-      "id": "lmsclonesplus_menu_spriteMenu1",
-      "opcode": "lmsclonesplus_menu_spriteMenu",
-      "inputs": {},
-      "fields": {
-        "spriteMenu": {
-          "name": "spriteMenu",
-          "value": "grid item"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite1",
-      "shadow": true
-    },
-    "looks_hide1": {
-      "id": "looks_hide1",
-      "opcode": "looks_hide",
-      "inputs": {},
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_deleteClonesInSprite1",
-      "shadow": false
+      "x": 24.26167516855446,
+      "y": 86.20934013484361,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
     },
     "control_start_as_clone1": {
       "id": "control_start_as_clone1",
@@ -1332,39 +1415,6 @@
       "parent": "lmsMoreEvents_broadcastDataAndWait2",
       "shadow": true
     },
-    "sound_play3": {
-      "id": "sound_play3",
-      "opcode": "sound_play",
-      "inputs": {
-        "SOUND_MENU": {
-          "name": "SOUND_MENU",
-          "block": "sound_sounds_menu3",
-          "shadow": "sound_sounds_menu3"
-        }
-      },
-      "fields": {},
-      "next": "data_addtolist1",
-      "topLevel": false,
-      "parent": "control_if_else4",
-      "shadow": false,
-      "x": 1852.5878028501495,
-      "y": 315.21830697312834
-    },
-    "sound_sounds_menu3": {
-      "id": "sound_sounds_menu3",
-      "opcode": "sound_sounds_menu",
-      "inputs": {},
-      "fields": {
-        "SOUND_MENU": {
-          "name": "SOUND_MENU",
-          "value": "drop"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "sound_play3",
-      "shadow": true
-    },
     "motion_glidesecstoxy2": {
       "id": "motion_glidesecstoxy2",
       "opcode": "motion_glidesecstoxy",
@@ -1456,7 +1506,7 @@
         }
       },
       "fields": {},
-      "next": "control_delete_this_clone3",
+      "next": "control_delete_this_clone4",
       "topLevel": false,
       "parent": "motion_glidesecstoxy2",
       "shadow": false
@@ -1495,8 +1545,8 @@
       "parent": "lmsMoreEvents_broadcastData3",
       "shadow": true
     },
-    "control_delete_this_clone3": {
-      "id": "control_delete_this_clone3",
+    "control_delete_this_clone4": {
+      "id": "control_delete_this_clone4",
       "opcode": "control_delete_this_clone",
       "inputs": {},
       "fields": {},
@@ -1505,8 +1555,8 @@
       "parent": "lmsMoreEvents_broadcastData3",
       "shadow": false
     },
-    "event_whenbroadcastreceived4": {
-      "id": "event_whenbroadcastreceived4",
+    "event_whenbroadcastreceived5": {
+      "id": "event_whenbroadcastreceived5",
       "opcode": "event_whenbroadcastreceived",
       "inputs": {},
       "fields": {
@@ -1542,7 +1592,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived4",
+      "parent": "event_whenbroadcastreceived5",
       "shadow": false
     },
     "operator_equals1": {
@@ -1742,6 +1792,37 @@
       "next": null,
       "topLevel": false,
       "parent": "operator_equals2",
+      "shadow": true
+    },
+    "sound_play3": {
+      "id": "sound_play3",
+      "opcode": "sound_play",
+      "inputs": {
+        "SOUND_MENU": {
+          "name": "SOUND_MENU",
+          "block": "sound_sounds_menu3",
+          "shadow": "sound_sounds_menu3"
+        }
+      },
+      "fields": {},
+      "next": "data_addtolist1",
+      "topLevel": false,
+      "parent": "control_if_else4",
+      "shadow": false
+    },
+    "sound_sounds_menu3": {
+      "id": "sound_sounds_menu3",
+      "opcode": "sound_sounds_menu",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": {
+          "name": "SOUND_MENU",
+          "value": "drop"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "sound_play3",
       "shadow": true
     },
     "data_addtolist1": {
@@ -2024,7 +2105,7 @@
         }
       },
       "fields": {},
-      "next": "control_delete_this_clone4",
+      "next": "control_delete_this_clone5",
       "topLevel": false,
       "parent": "motion_glidesecstoxy3",
       "shadow": false
@@ -2063,8 +2144,8 @@
       "parent": "lmsMoreEvents_broadcastData4",
       "shadow": true
     },
-    "control_delete_this_clone4": {
-      "id": "control_delete_this_clone4",
+    "control_delete_this_clone5": {
+      "id": "control_delete_this_clone5",
       "opcode": "control_delete_this_clone",
       "inputs": {},
       "fields": {},
@@ -2096,7 +2177,7 @@
         }
       },
       "fields": {},
-      "next": "looks_hide2",
+      "next": "looks_hide3",
       "topLevel": false,
       "parent": "event_whenflagclicked1",
       "shadow": false
@@ -2116,8 +2197,8 @@
       "parent": "lmsclonesplus_deleteClonesInSprite2",
       "shadow": true
     },
-    "looks_hide2": {
-      "id": "looks_hide2",
+    "looks_hide3": {
+      "id": "looks_hide3",
       "opcode": "looks_hide",
       "inputs": {},
       "fields": {},
@@ -2126,48 +2207,28 @@
       "parent": "lmsclonesplus_deleteClonesInSprite2",
       "shadow": false
     },
-    "sound_play1": {
-      "id": "sound_play1",
-      "opcode": "sound_play",
-      "inputs": {
-        "SOUND_MENU": {
-          "name": "SOUND_MENU",
-          "block": "sound_sounds_menu1",
-          "shadow": "sound_sounds_menu1"
-        }
-      },
-      "fields": {},
-      "next": "lmsMoreEvents_broadcastData1",
-      "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false,
-      "x": 1919.7386325513442,
-      "y": 843.8303558517034
-    },
-    "sound_sounds_menu1": {
-      "id": "sound_sounds_menu1",
-      "opcode": "sound_sounds_menu",
+    "looks_hide2": {
+      "id": "looks_hide2",
+      "opcode": "looks_hide",
       "inputs": {},
-      "fields": {
-        "SOUND_MENU": {
-          "name": "SOUND_MENU",
-          "value": "pickup"
-        }
-      },
-      "next": null,
+      "fields": {},
+      "next": "control_stop1",
       "topLevel": false,
-      "parent": "sound_play1",
-      "shadow": true
+      "parent": "event_whenbroadcastreceived2",
+      "shadow": false,
+      "x": -36.462324478204664,
+      "y": 58.36147457221696
     }
   },
   "scripts": [
     "looks_costume1",
-    "event_whenthisspriteclicked1",
     "event_whenbroadcastreceived1",
     "event_whenbroadcastreceived2",
+    "event_whenthisspriteclicked1",
     "event_whenbroadcastreceived3",
-    "control_start_as_clone1",
     "event_whenbroadcastreceived4",
+    "control_start_as_clone1",
+    "event_whenbroadcastreceived5",
     "event_whenflagclicked1"
   ]
 }

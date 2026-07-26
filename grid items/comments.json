@@ -1,12 +1,12 @@
 {
-  "lh": {
-    "id": "lh",
+  "mt": {
+    "id": "mt",
     "text": "for debugging",
     "x": 1498.2937877528814,
     "y": 765.8066473961228,
     "width": 200,
     "height": 200,
     "minimized": false,
-    "blockId": "li"
+    "blockId": "mu"
   }
 }

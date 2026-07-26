@@ -3,7 +3,7 @@
     "control_create_clone_of_menu2": {
       "opcode": "control_create_clone_of_menu",
       "next": null,
-      "parent": "lg",
+      "parent": "ms",
       "inputs": {},
       "fields": {
         "CLONE_OPTION": {
@@ -15,6 +15,71 @@
       "shadow": true,
       "topLevel": false,
       "id": "control_create_clone_of_menu2"
+    },
+    "event_whenbroadcastreceived1": {
+      "id": "event_whenbroadcastreceived1",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
+          "value": "GAME reset",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "looks_hide1",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 696,
+      "y": 408
+    },
+    "control_delete_this_clone1": {
+      "id": "control_delete_this_clone1",
+      "opcode": "control_delete_this_clone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_stop1",
+      "shadow": false,
+      "x": 554.0882803364057,
+      "y": 558.9466118439382
+    },
+    "control_stop1": {
+      "id": "control_stop1",
+      "opcode": "control_stop",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": {
+          "name": "STOP_OPTION",
+          "value": "other scripts in sprite"
+        }
+      },
+      "next": "control_delete_this_clone1",
+      "topLevel": false,
+      "parent": "looks_hide1",
+      "shadow": false,
+      "x": 673.6024145971586,
+      "y": 452.8046005819504,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "looks_hide1": {
+      "id": "looks_hide1",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": "control_stop1",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
+      "shadow": false,
+      "x": 694.6831713837206,
+      "y": 466.02143709682804
     },
     "control_start_as_clone1": {
       "id": "control_start_as_clone1",
@@ -90,8 +155,8 @@
       "parent": "motion_changeyby1",
       "shadow": true
     },
-    "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
+    "event_whenbroadcastreceived2": {
+      "id": "event_whenbroadcastreceived2",
       "opcode": "event_whenbroadcastreceived",
       "inputs": {},
       "fields": {
@@ -102,12 +167,12 @@
           "variableType": "broadcast_msg"
         }
       },
-      "next": "looks_setsizeto2",
+      "next": "looks_show1",
       "topLevel": true,
       "parent": null,
       "shadow": false,
-      "x": 180,
-      "y": 139
+      "x": 109,
+      "y": 135
     },
     "looks_setsizeto2": {
       "id": "looks_setsizeto2",
@@ -122,7 +187,7 @@
       "fields": {},
       "next": "motion_gotoxy1",
       "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
+      "parent": "looks_show1",
       "shadow": false
     },
     "math_number10": {
@@ -701,10 +766,23 @@
       "topLevel": false,
       "parent": "sipctime_formatTime1",
       "shadow": true
+    },
+    "looks_show1": {
+      "id": "looks_show1",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": "looks_setsizeto2",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived2",
+      "shadow": false,
+      "x": 90.68329808364541,
+      "y": 174.4823846359903
     }
   },
   "scripts": [
+    "event_whenbroadcastreceived1",
     "control_start_as_clone1",
-    "event_whenbroadcastreceived1"
+    "event_whenbroadcastreceived2"
   ]
 }

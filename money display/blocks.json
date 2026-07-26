@@ -1,21 +1,81 @@
 {
   "blocks": {
-    "event_whenflagclicked1": {
-      "opcode": "event_whenflagclicked",
-      "next": "data_setvariableto1",
+    "event_whenbroadcastreceived1": {
+      "id": "event_whenbroadcastreceived1",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "3.f=+dS@N]3^ITVh46Jv",
+          "value": "GAME reset",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "looks_hide1",
+      "topLevel": true,
       "parent": null,
+      "shadow": false,
+      "x": 354,
+      "y": 572
+    },
+    "control_stop1": {
+      "id": "control_stop1",
+      "opcode": "control_stop",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": {
+          "name": "STOP_OPTION",
+          "value": "other scripts in sprite"
+        }
+      },
+      "next": "control_delete_this_clone1",
+      "topLevel": false,
+      "parent": "looks_hide1",
+      "shadow": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "control_delete_this_clone1": {
+      "id": "control_delete_this_clone1",
+      "opcode": "control_delete_this_clone",
       "inputs": {},
       "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_stop1",
+      "shadow": false
+    },
+    "looks_hide1": {
+      "id": "looks_hide1",
+      "opcode": "looks_hide",
+      "inputs": {},
+      "fields": {},
+      "next": "control_stop1",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived1",
       "shadow": false,
+      "x": 364.34409666794113,
+      "y": 614.4717345541889
+    },
+    "event_whenflagclicked1": {
+      "id": "event_whenflagclicked1",
+      "opcode": "event_whenflagclicked",
+      "inputs": {},
+      "fields": {},
+      "next": "data_setvariableto1",
       "topLevel": true,
+      "parent": null,
+      "shadow": false,
       "x": 370,
-      "y": 249,
-      "id": "event_whenflagclicked1"
+      "y": 249
     },
     "data_setvariableto1": {
+      "id": "data_setvariableto1",
       "opcode": "data_setvariableto",
-      "next": "data_setvariableto2",
-      "parent": "event_whenflagclicked1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -26,19 +86,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "Money",
           "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "data_setvariableto2",
       "topLevel": false,
-      "id": "data_setvariableto1"
+      "parent": "event_whenflagclicked1",
+      "shadow": false
+    },
+    "text2": {
+      "id": "text2",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto1",
+      "shadow": true
     },
     "data_setvariableto2": {
+      "id": "data_setvariableto2",
       "opcode": "data_setvariableto",
-      "next": "motion_gotoxy1",
-      "parent": "data_setvariableto1",
       "inputs": {
         "VALUE": {
           "name": "VALUE",
@@ -49,19 +124,34 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "value": "MoneyOnLastFrame",
           "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
           "variableType": ""
         }
       },
-      "shadow": false,
+      "next": "motion_gotoxy1",
       "topLevel": false,
-      "id": "data_setvariableto2"
+      "parent": "data_setvariableto1",
+      "shadow": false
+    },
+    "text1": {
+      "id": "text1",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto2",
+      "shadow": true
     },
     "motion_gotoxy1": {
+      "id": "motion_gotoxy1",
       "opcode": "motion_gotoxy",
-      "next": "looks_hide1",
-      "parent": "data_setvariableto2",
       "inputs": {
         "X": {
           "name": "X",
@@ -75,705 +165,49 @@
         }
       },
       "fields": {},
-      "shadow": false,
+      "next": "looks_hide2",
       "topLevel": false,
-      "id": "motion_gotoxy1"
-    },
-    "looks_hide1": {
-      "opcode": "looks_hide",
-      "next": null,
-      "parent": "motion_gotoxy1",
-      "inputs": {},
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "id": "looks_hide1"
-    },
-    "text2": {
-      "id": "text2",
-      "next": null,
-      "parent": "data_setvariableto1",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "topLevel": false
-    },
-    "text1": {
-      "id": "text1",
-      "next": null,
       "parent": "data_setvariableto2",
-      "shadow": true,
-      "inputs": {},
-      "opcode": "text",
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "topLevel": false
+      "shadow": false
     },
     "math_number1": {
       "id": "math_number1",
-      "next": null,
-      "parent": "motion_gotoxy1",
-      "shadow": true,
-      "inputs": {},
       "opcode": "math_number",
+      "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "225"
         }
       },
-      "topLevel": false
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_gotoxy1",
+      "shadow": true
     },
     "math_number2": {
       "id": "math_number2",
-      "next": null,
-      "parent": "motion_gotoxy1",
-      "shadow": true,
-      "inputs": {},
       "opcode": "math_number",
+      "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
           "value": "-115"
         }
       },
-      "topLevel": false
-    },
-    "event_whenbroadcastreceived1": {
-      "id": "event_whenbroadcastreceived1",
-      "opcode": "event_whenbroadcastreceived",
-      "inputs": {},
-      "fields": {
-        "BROADCAST_OPTION": {
-          "name": "BROADCAST_OPTION",
-          "id": "X$b7KhkWBuw^}6#}%6`n",
-          "value": "GAME begin",
-          "variableType": "broadcast_msg"
-        }
-      },
-      "next": "text_setColor1",
-      "topLevel": true,
-      "parent": null,
-      "shadow": false,
-      "x": 773,
-      "y": 243
-    },
-    "text_setColor1": {
-      "id": "text_setColor1",
-      "opcode": "text_setColor",
-      "inputs": {
-        "COLOR": {
-          "name": "COLOR",
-          "block": "colour_picker1",
-          "shadow": "colour_picker1"
-        }
-      },
-      "fields": {},
-      "next": "text_setFont1",
-      "topLevel": false,
-      "parent": "event_whenbroadcastreceived1",
-      "shadow": false
-    },
-    "colour_picker1": {
-      "id": "colour_picker1",
-      "opcode": "colour_picker",
-      "inputs": {},
-      "fields": {
-        "COLOUR": {
-          "name": "COLOUR",
-          "value": "#ffffff"
-        }
-      },
       "next": null,
       "topLevel": false,
-      "parent": "text_setColor1",
+      "parent": "motion_gotoxy1",
       "shadow": true
     },
-    "text_setFont1": {
-      "id": "text_setFont1",
-      "opcode": "text_setFont",
-      "inputs": {},
-      "fields": {
-        "FONT": {
-          "name": "FONT",
-          "value": "\"BillJilly\", Pixel"
-        }
-      },
-      "next": "text_setWidth1",
-      "topLevel": false,
-      "parent": "text_setColor1",
-      "shadow": false
-    },
-    "text_setWidth1": {
-      "id": "text_setWidth1",
-      "opcode": "text_setWidth",
-      "inputs": {
-        "WIDTH": {
-          "name": "WIDTH",
-          "block": "math_number7",
-          "shadow": "math_number7"
-        }
-      },
-      "fields": {
-        "ALIGN": {
-          "name": "ALIGN",
-          "value": "right"
-        }
-      },
-      "next": "text_setText1",
-      "topLevel": false,
-      "parent": "text_setFont1",
-      "shadow": false
-    },
-    "math_number7": {
-      "id": "math_number7",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "150"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setWidth1",
-      "shadow": true
-    },
-    "text_setText1": {
-      "id": "text_setText1",
-      "opcode": "text_setText",
-      "inputs": {
-        "TEXT": {
-          "name": "TEXT",
-          "block": "operator_join2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "looks_show1",
-      "topLevel": false,
-      "parent": "text_setWidth1",
-      "shadow": false
-    },
-    "operator_join2": {
-      "id": "operator_join2",
-      "opcode": "operator_join",
-      "inputs": {
-        "STRING1": {
-          "name": "STRING1",
-          "block": "text4",
-          "shadow": "text4"
-        },
-        "STRING2": {
-          "name": "STRING2",
-          "block": "dogeiscutformatnumbers_formatNumber2",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setText1",
-      "shadow": false
-    },
-    "text4": {
-      "id": "text4",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "$"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_join2",
-      "shadow": true
-    },
-    "dogeiscutformatnumbers_formatNumber2": {
-      "id": "dogeiscutformatnumbers_formatNumber2",
-      "opcode": "dogeiscutformatnumbers_formatNumber",
-      "inputs": {
-        "NUM": {
-          "name": "NUM",
-          "block": "operator_multiply2",
-          "shadow": null
-        },
-        "DECIMALS": {
-          "name": "DECIMALS",
-          "block": "math_number6",
-          "shadow": "math_number6"
-        }
-      },
-      "fields": {
-        "NOTATION": {
-          "name": "NOTATION",
-          "value": "AD standard"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_join2",
-      "shadow": false
-    },
-    "operator_multiply2": {
-      "id": "operator_multiply2",
-      "opcode": "operator_multiply",
-      "inputs": {
-        "NUM1": {
-          "name": "NUM1",
-          "block": "data_variable7",
-          "shadow": null
-        },
-        "NUM2": {
-          "name": "NUM2",
-          "block": "math_number5",
-          "shadow": "math_number5"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "dogeiscutformatnumbers_formatNumber2",
-      "shadow": false
-    },
-    "data_variable7": {
-      "id": "data_variable7",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Pt.1X5RCAbK=Tm1JiWs^",
-          "value": "Money",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply2",
-      "shadow": false
-    },
-    "math_number5": {
-      "id": "math_number5",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1000"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply2",
-      "shadow": true
-    },
-    "math_number6": {
-      "id": "math_number6",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "3"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "dogeiscutformatnumbers_formatNumber2",
-      "shadow": true
-    },
-    "looks_show1": {
-      "id": "looks_show1",
-      "opcode": "looks_show",
+    "looks_hide2": {
+      "id": "looks_hide2",
+      "opcode": "looks_hide",
       "inputs": {},
       "fields": {},
-      "next": "control_forever1",
-      "topLevel": false,
-      "parent": "text_setText1",
-      "shadow": false
-    },
-    "control_forever1": {
-      "id": "control_forever1",
-      "opcode": "control_forever",
-      "inputs": {
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "text_setText2",
-          "shadow": null
-        }
-      },
-      "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "looks_show1",
-      "shadow": false
-    },
-    "text_setText2": {
-      "id": "text_setText2",
-      "opcode": "text_setText",
-      "inputs": {
-        "TEXT": {
-          "name": "TEXT",
-          "block": "operator_join1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "control_if1",
-      "topLevel": false,
-      "parent": "control_forever1",
-      "shadow": false
-    },
-    "operator_join1": {
-      "id": "operator_join1",
-      "opcode": "operator_join",
-      "inputs": {
-        "STRING1": {
-          "name": "STRING1",
-          "block": "text3",
-          "shadow": "text3"
-        },
-        "STRING2": {
-          "name": "STRING2",
-          "block": "dogeiscutformatnumbers_formatNumber1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setText2",
-      "shadow": false
-    },
-    "text3": {
-      "id": "text3",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "$"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_join1",
-      "shadow": true
-    },
-    "dogeiscutformatnumbers_formatNumber1": {
-      "id": "dogeiscutformatnumbers_formatNumber1",
-      "opcode": "dogeiscutformatnumbers_formatNumber",
-      "inputs": {
-        "NUM": {
-          "name": "NUM",
-          "block": "operator_multiply1",
-          "shadow": null
-        },
-        "DECIMALS": {
-          "name": "DECIMALS",
-          "block": "math_number4",
-          "shadow": "math_number4"
-        }
-      },
-      "fields": {
-        "NOTATION": {
-          "name": "NOTATION",
-          "value": "AD standard"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_join1",
-      "shadow": false
-    },
-    "operator_multiply1": {
-      "id": "operator_multiply1",
-      "opcode": "operator_multiply",
-      "inputs": {
-        "NUM1": {
-          "name": "NUM1",
-          "block": "data_variable6",
-          "shadow": null
-        },
-        "NUM2": {
-          "name": "NUM2",
-          "block": "math_number3",
-          "shadow": "math_number3"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "dogeiscutformatnumbers_formatNumber1",
-      "shadow": false
-    },
-    "data_variable6": {
-      "id": "data_variable6",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Pt.1X5RCAbK=Tm1JiWs^",
-          "value": "Money",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply1",
-      "shadow": false
-    },
-    "math_number3": {
-      "id": "math_number3",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1000"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply1",
-      "shadow": true
-    },
-    "math_number4": {
-      "id": "math_number4",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "3"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "dogeiscutformatnumbers_formatNumber1",
-      "shadow": true
-    },
-    "control_if1": {
-      "id": "control_if1",
-      "opcode": "control_if",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_not1",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "lmsclonesplus_createCloneOfMyselfWithVar1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "data_setvariableto3",
-      "topLevel": false,
-      "parent": "text_setText2",
-      "shadow": false
-    },
-    "operator_not1": {
-      "id": "operator_not1",
-      "opcode": "operator_not",
-      "inputs": {
-        "OPERAND": {
-          "name": "OPERAND",
-          "block": "operator_equals1",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false
-    },
-    "operator_equals1": {
-      "id": "operator_equals1",
-      "opcode": "operator_equals",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable2",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "data_variable3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_not1",
-      "shadow": false
-    },
-    "data_variable2": {
-      "id": "data_variable2",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Pt.1X5RCAbK=Tm1JiWs^",
-          "value": "Money",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals1",
-      "shadow": false
-    },
-    "data_variable3": {
-      "id": "data_variable3",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "JcCwdCqPkN6E2Daw|a1T",
-          "value": "MoneyOnLastFrame",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_equals1",
-      "shadow": false
-    },
-    "lmsclonesplus_createCloneOfMyselfWithVar1": {
-      "id": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
-      "inputs": {
-        "INPUTB": {
-          "name": "INPUTB",
-          "block": "operator_subtract1",
-          "shadow": null
-        }
-      },
-      "fields": {
-        "INPUTA": {
-          "name": "INPUTA",
-          "value": "a5x6#]MeH,|Mrof4A|+A"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false
-    },
-    "operator_subtract1": {
-      "id": "operator_subtract1",
-      "opcode": "operator_subtract",
-      "inputs": {
-        "NUM1": {
-          "name": "NUM1",
-          "block": "data_variable4",
-          "shadow": null
-        },
-        "NUM2": {
-          "name": "NUM2",
-          "block": "data_variable5",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
-      "shadow": false
-    },
-    "data_variable4": {
-      "id": "data_variable4",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Pt.1X5RCAbK=Tm1JiWs^",
-          "value": "Money",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_subtract1",
-      "shadow": false
-    },
-    "data_variable5": {
-      "id": "data_variable5",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "JcCwdCqPkN6E2Daw|a1T",
-          "value": "MoneyOnLastFrame",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_subtract1",
-      "shadow": false
-    },
-    "data_setvariableto3": {
-      "id": "data_setvariableto3",
-      "opcode": "data_setvariableto",
-      "inputs": {
-        "VALUE": {
-          "name": "VALUE",
-          "block": "data_variable1",
-          "shadow": null
-        }
-      },
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "JcCwdCqPkN6E2Daw|a1T",
-          "value": "MoneyOnLastFrame",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if1",
-      "shadow": false
-    },
-    "data_variable1": {
-      "id": "data_variable1",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "Pt.1X5RCAbK=Tm1JiWs^",
-          "value": "Money",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "data_setvariableto3",
+      "parent": "motion_gotoxy1",
       "shadow": false
     },
     "control_start_as_clone1": {
@@ -781,15 +215,15 @@
       "opcode": "control_start_as_clone",
       "inputs": {},
       "fields": {},
-      "next": "looks_hide2",
+      "next": "looks_hide3",
       "topLevel": true,
       "parent": null,
       "shadow": false,
       "x": 1862,
       "y": 250
     },
-    "looks_hide2": {
-      "id": "looks_hide2",
+    "looks_hide3": {
+      "id": "looks_hide3",
       "opcode": "looks_hide",
       "inputs": {},
       "fields": {},
@@ -809,9 +243,9 @@
         }
       },
       "fields": {},
-      "next": "text_setFont2",
+      "next": "text_setFont1",
       "topLevel": false,
-      "parent": "looks_hide2",
+      "parent": "looks_hide3",
       "shadow": false
     },
     "sound_sounds_menu1": {
@@ -829,6 +263,766 @@
       "parent": "sound_play1",
       "shadow": true
     },
+    "text_setFont1": {
+      "id": "text_setFont1",
+      "opcode": "text_setFont",
+      "inputs": {},
+      "fields": {
+        "FONT": {
+          "name": "FONT",
+          "value": "\"BillJilly\", Pixel"
+        }
+      },
+      "next": "text_setWidth1",
+      "topLevel": false,
+      "parent": "sound_play1",
+      "shadow": false
+    },
+    "text_setWidth1": {
+      "id": "text_setWidth1",
+      "opcode": "text_setWidth",
+      "inputs": {
+        "WIDTH": {
+          "name": "WIDTH",
+          "block": "math_number11",
+          "shadow": "math_number11"
+        }
+      },
+      "fields": {
+        "ALIGN": {
+          "name": "ALIGN",
+          "value": "right"
+        }
+      },
+      "next": "control_if_else1",
+      "topLevel": false,
+      "parent": "text_setFont1",
+      "shadow": false
+    },
+    "math_number11": {
+      "id": "math_number11",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "150"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setWidth1",
+      "shadow": true
+    },
+    "control_if_else1": {
+      "id": "control_if_else1",
+      "opcode": "control_if_else",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_gt1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "text_setColor1",
+          "shadow": null
+        },
+        "SUBSTACK2": {
+          "name": "SUBSTACK2",
+          "block": "text_setColor2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "looks_show1",
+      "topLevel": false,
+      "parent": "text_setWidth1",
+      "shadow": false
+    },
+    "operator_gt1": {
+      "id": "operator_gt1",
+      "opcode": "operator_gt",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable1",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "text3",
+          "shadow": "text3"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "data_variable1": {
+      "id": "data_variable1",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "a5x6#]MeH,|Mrof4A|+A",
+          "value": "MoneyDifference",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": false
+    },
+    "text3": {
+      "id": "text3",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "0"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_gt1",
+      "shadow": true
+    },
+    "text_setColor1": {
+      "id": "text_setColor1",
+      "opcode": "text_setColor",
+      "inputs": {
+        "COLOR": {
+          "name": "COLOR",
+          "block": "colour_picker1",
+          "shadow": "colour_picker1"
+        }
+      },
+      "fields": {},
+      "next": "text_setText1",
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "colour_picker1": {
+      "id": "colour_picker1",
+      "opcode": "colour_picker",
+      "inputs": {},
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#75ff2b"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor1",
+      "shadow": true
+    },
+    "text_setText1": {
+      "id": "text_setText1",
+      "opcode": "text_setText",
+      "inputs": {
+        "TEXT": {
+          "name": "TEXT",
+          "block": "operator_join1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor1",
+      "shadow": false
+    },
+    "operator_join1": {
+      "id": "operator_join1",
+      "opcode": "operator_join",
+      "inputs": {
+        "STRING1": {
+          "name": "STRING1",
+          "block": "text4",
+          "shadow": "text4"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "dogeiscutformatnumbers_formatNumber1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText1",
+      "shadow": false
+    },
+    "text4": {
+      "id": "text4",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "+$"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": true
+    },
+    "dogeiscutformatnumbers_formatNumber1": {
+      "id": "dogeiscutformatnumbers_formatNumber1",
+      "opcode": "dogeiscutformatnumbers_formatNumber",
+      "inputs": {
+        "NUM": {
+          "name": "NUM",
+          "block": "operator_multiply1",
+          "shadow": null
+        },
+        "DECIMALS": {
+          "name": "DECIMALS",
+          "block": "math_number8",
+          "shadow": "math_number8"
+        }
+      },
+      "fields": {
+        "NOTATION": {
+          "name": "NOTATION",
+          "value": "AD standard"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join1",
+      "shadow": false
+    },
+    "operator_multiply1": {
+      "id": "operator_multiply1",
+      "opcode": "operator_multiply",
+      "inputs": {
+        "NUM1": {
+          "name": "NUM1",
+          "block": "data_variable2",
+          "shadow": null
+        },
+        "NUM2": {
+          "name": "NUM2",
+          "block": "math_number7",
+          "shadow": "math_number7"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "dogeiscutformatnumbers_formatNumber1",
+      "shadow": false
+    },
+    "data_variable2": {
+      "id": "data_variable2",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "a5x6#]MeH,|Mrof4A|+A",
+          "value": "MoneyDifference",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_multiply1",
+      "shadow": false
+    },
+    "math_number7": {
+      "id": "math_number7",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "1000"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_multiply1",
+      "shadow": true
+    },
+    "math_number8": {
+      "id": "math_number8",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "dogeiscutformatnumbers_formatNumber1",
+      "shadow": true
+    },
+    "text_setColor2": {
+      "id": "text_setColor2",
+      "opcode": "text_setColor",
+      "inputs": {
+        "COLOR": {
+          "name": "COLOR",
+          "block": "colour_picker2",
+          "shadow": "colour_picker2"
+        }
+      },
+      "fields": {},
+      "next": "text_setText2",
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "colour_picker2": {
+      "id": "colour_picker2",
+      "opcode": "colour_picker",
+      "inputs": {},
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#ff2a2a"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor2",
+      "shadow": true
+    },
+    "text_setText2": {
+      "id": "text_setText2",
+      "opcode": "text_setText",
+      "inputs": {
+        "TEXT": {
+          "name": "TEXT",
+          "block": "operator_join2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor2",
+      "shadow": false
+    },
+    "operator_join2": {
+      "id": "operator_join2",
+      "opcode": "operator_join",
+      "inputs": {
+        "STRING1": {
+          "name": "STRING1",
+          "block": "text5",
+          "shadow": "text5"
+        },
+        "STRING2": {
+          "name": "STRING2",
+          "block": "dogeiscutformatnumbers_formatNumber2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setText2",
+      "shadow": false
+    },
+    "text5": {
+      "id": "text5",
+      "opcode": "text",
+      "inputs": {},
+      "fields": {
+        "TEXT": {
+          "name": "TEXT",
+          "value": "-$"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": true
+    },
+    "dogeiscutformatnumbers_formatNumber2": {
+      "id": "dogeiscutformatnumbers_formatNumber2",
+      "opcode": "dogeiscutformatnumbers_formatNumber",
+      "inputs": {
+        "NUM": {
+          "name": "NUM",
+          "block": "operator_multiply2",
+          "shadow": null
+        },
+        "DECIMALS": {
+          "name": "DECIMALS",
+          "block": "math_number10",
+          "shadow": "math_number10"
+        }
+      },
+      "fields": {
+        "NOTATION": {
+          "name": "NOTATION",
+          "value": "AD standard"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_join2",
+      "shadow": false
+    },
+    "operator_multiply2": {
+      "id": "operator_multiply2",
+      "opcode": "operator_multiply",
+      "inputs": {
+        "NUM1": {
+          "name": "NUM1",
+          "block": "data_variable3",
+          "shadow": null
+        },
+        "NUM2": {
+          "name": "NUM2",
+          "block": "math_number9",
+          "shadow": "math_number9"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "dogeiscutformatnumbers_formatNumber2",
+      "shadow": false
+    },
+    "data_variable3": {
+      "id": "data_variable3",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "a5x6#]MeH,|Mrof4A|+A",
+          "value": "MoneyDifference",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_multiply2",
+      "shadow": false
+    },
+    "math_number9": {
+      "id": "math_number9",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "1000"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_multiply2",
+      "shadow": true
+    },
+    "math_number10": {
+      "id": "math_number10",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "dogeiscutformatnumbers_formatNumber2",
+      "shadow": true
+    },
+    "looks_show1": {
+      "id": "looks_show1",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": "control_repeat1",
+      "topLevel": false,
+      "parent": "control_if_else1",
+      "shadow": false
+    },
+    "control_repeat1": {
+      "id": "control_repeat1",
+      "opcode": "control_repeat",
+      "inputs": {
+        "TIMES": {
+          "name": "TIMES",
+          "block": "math_whole_number2",
+          "shadow": "math_whole_number2"
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "motion_changeyby2",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "control_repeat2",
+      "topLevel": false,
+      "parent": "looks_show1",
+      "shadow": false
+    },
+    "math_whole_number2": {
+      "id": "math_whole_number2",
+      "opcode": "math_whole_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "5"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_repeat1",
+      "shadow": true
+    },
+    "motion_changeyby2": {
+      "id": "motion_changeyby2",
+      "opcode": "motion_changeyby",
+      "inputs": {
+        "DY": {
+          "name": "DY",
+          "block": "math_number6",
+          "shadow": "math_number6"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_repeat1",
+      "shadow": false
+    },
+    "math_number6": {
+      "id": "math_number6",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_changeyby2",
+      "shadow": true
+    },
+    "control_repeat2": {
+      "id": "control_repeat2",
+      "opcode": "control_repeat",
+      "inputs": {
+        "TIMES": {
+          "name": "TIMES",
+          "block": "math_whole_number1",
+          "shadow": "math_whole_number1"
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "motion_changeyby1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "control_delete_this_clone2",
+      "topLevel": false,
+      "parent": "control_repeat1",
+      "shadow": false
+    },
+    "math_whole_number1": {
+      "id": "math_whole_number1",
+      "opcode": "math_whole_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "15"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_repeat2",
+      "shadow": true
+    },
+    "motion_changeyby1": {
+      "id": "motion_changeyby1",
+      "opcode": "motion_changeyby",
+      "inputs": {
+        "DY": {
+          "name": "DY",
+          "block": "math_number5",
+          "shadow": "math_number5"
+        }
+      },
+      "fields": {},
+      "next": "looks_changeeffectby1",
+      "topLevel": false,
+      "parent": "control_repeat2",
+      "shadow": false
+    },
+    "math_number5": {
+      "id": "math_number5",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "3"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_changeyby1",
+      "shadow": true
+    },
+    "looks_changeeffectby1": {
+      "id": "looks_changeeffectby1",
+      "opcode": "looks_changeeffectby",
+      "inputs": {
+        "CHANGE": {
+          "name": "CHANGE",
+          "block": "operator_divide1",
+          "shadow": null
+        }
+      },
+      "fields": {
+        "EFFECT": {
+          "name": "EFFECT",
+          "value": "GHOST"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "motion_changeyby1",
+      "shadow": false
+    },
+    "operator_divide1": {
+      "id": "operator_divide1",
+      "opcode": "operator_divide",
+      "inputs": {
+        "NUM1": {
+          "name": "NUM1",
+          "block": "math_number3",
+          "shadow": "math_number3"
+        },
+        "NUM2": {
+          "name": "NUM2",
+          "block": "math_number4",
+          "shadow": "math_number4"
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_changeeffectby1",
+      "shadow": false
+    },
+    "math_number3": {
+      "id": "math_number3",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "100"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide1",
+      "shadow": true
+    },
+    "math_number4": {
+      "id": "math_number4",
+      "opcode": "math_number",
+      "inputs": {},
+      "fields": {
+        "NUM": {
+          "name": "NUM",
+          "value": "15"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_divide1",
+      "shadow": true
+    },
+    "control_delete_this_clone2": {
+      "id": "control_delete_this_clone2",
+      "opcode": "control_delete_this_clone",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "control_repeat2",
+      "shadow": false
+    },
+    "event_whenbroadcastreceived2": {
+      "id": "event_whenbroadcastreceived2",
+      "opcode": "event_whenbroadcastreceived",
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": {
+          "name": "BROADCAST_OPTION",
+          "id": "X$b7KhkWBuw^}6#}%6`n",
+          "value": "GAME begin",
+          "variableType": "broadcast_msg"
+        }
+      },
+      "next": "text_setColor3",
+      "topLevel": true,
+      "parent": null,
+      "shadow": false,
+      "x": 773,
+      "y": 243
+    },
+    "text_setColor3": {
+      "id": "text_setColor3",
+      "opcode": "text_setColor",
+      "inputs": {
+        "COLOR": {
+          "name": "COLOR",
+          "block": "colour_picker3",
+          "shadow": "colour_picker3"
+        }
+      },
+      "fields": {},
+      "next": "text_setFont2",
+      "topLevel": false,
+      "parent": "event_whenbroadcastreceived2",
+      "shadow": false
+    },
+    "colour_picker3": {
+      "id": "colour_picker3",
+      "opcode": "colour_picker",
+      "inputs": {},
+      "fields": {
+        "COLOUR": {
+          "name": "COLOUR",
+          "value": "#ffffff"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "text_setColor3",
+      "shadow": true
+    },
     "text_setFont2": {
       "id": "text_setFont2",
       "opcode": "text_setFont",
@@ -841,7 +1035,7 @@
       },
       "next": "text_setWidth2",
       "topLevel": false,
-      "parent": "sound_play1",
+      "parent": "text_setColor3",
       "shadow": false
     },
     "text_setWidth2": {
@@ -860,7 +1054,7 @@
           "value": "right"
         }
       },
-      "next": "control_if_else1",
+      "next": "text_setText3",
       "topLevel": false,
       "parent": "text_setFont2",
       "shadow": false
@@ -880,295 +1074,8 @@
       "parent": "text_setWidth2",
       "shadow": true
     },
-    "control_if_else1": {
-      "id": "control_if_else1",
-      "opcode": "control_if_else",
-      "inputs": {
-        "CONDITION": {
-          "name": "CONDITION",
-          "block": "operator_gt1",
-          "shadow": null
-        },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "text_setColor2",
-          "shadow": null
-        },
-        "SUBSTACK2": {
-          "name": "SUBSTACK2",
-          "block": "text_setColor3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": "looks_show2",
-      "topLevel": false,
-      "parent": "text_setWidth2",
-      "shadow": false
-    },
-    "operator_gt1": {
-      "id": "operator_gt1",
-      "opcode": "operator_gt",
-      "inputs": {
-        "OPERAND1": {
-          "name": "OPERAND1",
-          "block": "data_variable8",
-          "shadow": null
-        },
-        "OPERAND2": {
-          "name": "OPERAND2",
-          "block": "text5",
-          "shadow": "text5"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "control_if_else1",
-      "shadow": false
-    },
-    "data_variable8": {
-      "id": "data_variable8",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "a5x6#]MeH,|Mrof4A|+A",
-          "value": "MoneyDifference",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt1",
-      "shadow": false
-    },
-    "text5": {
-      "id": "text5",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "0"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_gt1",
-      "shadow": true
-    },
-    "text_setColor2": {
-      "id": "text_setColor2",
-      "opcode": "text_setColor",
-      "inputs": {
-        "COLOR": {
-          "name": "COLOR",
-          "block": "colour_picker2",
-          "shadow": "colour_picker2"
-        }
-      },
-      "fields": {},
-      "next": "text_setText3",
-      "topLevel": false,
-      "parent": "control_if_else1",
-      "shadow": false
-    },
-    "colour_picker2": {
-      "id": "colour_picker2",
-      "opcode": "colour_picker",
-      "inputs": {},
-      "fields": {
-        "COLOUR": {
-          "name": "COLOUR",
-          "value": "#75ff2b"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setColor2",
-      "shadow": true
-    },
     "text_setText3": {
       "id": "text_setText3",
-      "opcode": "text_setText",
-      "inputs": {
-        "TEXT": {
-          "name": "TEXT",
-          "block": "operator_join3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setColor2",
-      "shadow": false
-    },
-    "operator_join3": {
-      "id": "operator_join3",
-      "opcode": "operator_join",
-      "inputs": {
-        "STRING1": {
-          "name": "STRING1",
-          "block": "text6",
-          "shadow": "text6"
-        },
-        "STRING2": {
-          "name": "STRING2",
-          "block": "dogeiscutformatnumbers_formatNumber3",
-          "shadow": null
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setText3",
-      "shadow": false
-    },
-    "text6": {
-      "id": "text6",
-      "opcode": "text",
-      "inputs": {},
-      "fields": {
-        "TEXT": {
-          "name": "TEXT",
-          "value": "+$"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_join3",
-      "shadow": true
-    },
-    "dogeiscutformatnumbers_formatNumber3": {
-      "id": "dogeiscutformatnumbers_formatNumber3",
-      "opcode": "dogeiscutformatnumbers_formatNumber",
-      "inputs": {
-        "NUM": {
-          "name": "NUM",
-          "block": "operator_multiply3",
-          "shadow": null
-        },
-        "DECIMALS": {
-          "name": "DECIMALS",
-          "block": "math_number13",
-          "shadow": "math_number13"
-        }
-      },
-      "fields": {
-        "NOTATION": {
-          "name": "NOTATION",
-          "value": "AD standard"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_join3",
-      "shadow": false
-    },
-    "operator_multiply3": {
-      "id": "operator_multiply3",
-      "opcode": "operator_multiply",
-      "inputs": {
-        "NUM1": {
-          "name": "NUM1",
-          "block": "data_variable9",
-          "shadow": null
-        },
-        "NUM2": {
-          "name": "NUM2",
-          "block": "math_number12",
-          "shadow": "math_number12"
-        }
-      },
-      "fields": {},
-      "next": null,
-      "topLevel": false,
-      "parent": "dogeiscutformatnumbers_formatNumber3",
-      "shadow": false
-    },
-    "data_variable9": {
-      "id": "data_variable9",
-      "opcode": "data_variable",
-      "inputs": {},
-      "fields": {
-        "VARIABLE": {
-          "name": "VARIABLE",
-          "id": "a5x6#]MeH,|Mrof4A|+A",
-          "value": "MoneyDifference",
-          "variableType": ""
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply3",
-      "shadow": false
-    },
-    "math_number12": {
-      "id": "math_number12",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "1000"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "operator_multiply3",
-      "shadow": true
-    },
-    "math_number13": {
-      "id": "math_number13",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "3"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "dogeiscutformatnumbers_formatNumber3",
-      "shadow": true
-    },
-    "text_setColor3": {
-      "id": "text_setColor3",
-      "opcode": "text_setColor",
-      "inputs": {
-        "COLOR": {
-          "name": "COLOR",
-          "block": "colour_picker3",
-          "shadow": "colour_picker3"
-        }
-      },
-      "fields": {},
-      "next": "text_setText4",
-      "topLevel": false,
-      "parent": "control_if_else1",
-      "shadow": false
-    },
-    "colour_picker3": {
-      "id": "colour_picker3",
-      "opcode": "colour_picker",
-      "inputs": {},
-      "fields": {
-        "COLOUR": {
-          "name": "COLOUR",
-          "value": "#ff2a2a"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "text_setColor3",
-      "shadow": true
-    },
-    "text_setText4": {
-      "id": "text_setText4",
       "opcode": "text_setText",
       "inputs": {
         "TEXT": {
@@ -1178,9 +1085,9 @@
         }
       },
       "fields": {},
-      "next": null,
+      "next": "looks_show2",
       "topLevel": false,
-      "parent": "text_setColor3",
+      "parent": "text_setWidth2",
       "shadow": false
     },
     "operator_join4": {
@@ -1201,7 +1108,7 @@
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "text_setText4",
+      "parent": "text_setText3",
       "shadow": false
     },
     "text7": {
@@ -1211,7 +1118,7 @@
       "fields": {
         "TEXT": {
           "name": "TEXT",
-          "value": "-$"
+          "value": "$"
         }
       },
       "next": null,
@@ -1273,8 +1180,8 @@
       "fields": {
         "VARIABLE": {
           "name": "VARIABLE",
-          "id": "a5x6#]MeH,|Mrof4A|+A",
-          "value": "MoneyDifference",
+          "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
           "variableType": ""
         }
       },
@@ -1318,231 +1225,386 @@
       "opcode": "looks_show",
       "inputs": {},
       "fields": {},
-      "next": "control_repeat1",
+      "next": "control_forever1",
       "topLevel": false,
-      "parent": "control_if_else1",
+      "parent": "text_setText3",
       "shadow": false
     },
-    "control_repeat1": {
-      "id": "control_repeat1",
-      "opcode": "control_repeat",
+    "control_forever1": {
+      "id": "control_forever1",
+      "opcode": "control_forever",
       "inputs": {
-        "TIMES": {
-          "name": "TIMES",
-          "block": "math_whole_number2",
-          "shadow": "math_whole_number2"
-        },
         "SUBSTACK": {
           "name": "SUBSTACK",
-          "block": "motion_changeyby2",
+          "block": "text_setText4",
           "shadow": null
         }
       },
       "fields": {},
-      "next": "control_repeat2",
+      "next": null,
       "topLevel": false,
       "parent": "looks_show2",
       "shadow": false
     },
-    "math_whole_number2": {
-      "id": "math_whole_number2",
-      "opcode": "math_whole_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "5"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "control_repeat1",
-      "shadow": true
-    },
-    "motion_changeyby2": {
-      "id": "motion_changeyby2",
-      "opcode": "motion_changeyby",
+    "text_setText4": {
+      "id": "text_setText4",
+      "opcode": "text_setText",
       "inputs": {
-        "DY": {
-          "name": "DY",
-          "block": "math_number11",
-          "shadow": "math_number11"
+        "TEXT": {
+          "name": "TEXT",
+          "block": "operator_join3",
+          "shadow": null
         }
       },
       "fields": {},
-      "next": null,
+      "next": "control_if1",
       "topLevel": false,
-      "parent": "control_repeat1",
+      "parent": "control_forever1",
       "shadow": false
     },
-    "math_number11": {
-      "id": "math_number11",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "3"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_changeyby2",
-      "shadow": true
-    },
-    "control_repeat2": {
-      "id": "control_repeat2",
-      "opcode": "control_repeat",
+    "operator_join3": {
+      "id": "operator_join3",
+      "opcode": "operator_join",
       "inputs": {
-        "TIMES": {
-          "name": "TIMES",
-          "block": "math_whole_number1",
-          "shadow": "math_whole_number1"
+        "STRING1": {
+          "name": "STRING1",
+          "block": "text6",
+          "shadow": "text6"
         },
-        "SUBSTACK": {
-          "name": "SUBSTACK",
-          "block": "motion_changeyby1",
+        "STRING2": {
+          "name": "STRING2",
+          "block": "dogeiscutformatnumbers_formatNumber3",
           "shadow": null
         }
       },
       "fields": {},
-      "next": "control_delete_this_clone1",
+      "next": null,
       "topLevel": false,
-      "parent": "control_repeat1",
+      "parent": "text_setText4",
       "shadow": false
     },
-    "math_whole_number1": {
-      "id": "math_whole_number1",
-      "opcode": "math_whole_number",
+    "text6": {
+      "id": "text6",
+      "opcode": "text",
       "inputs": {},
       "fields": {
-        "NUM": {
-          "name": "NUM",
-          "value": "15"
+        "TEXT": {
+          "name": "TEXT",
+          "value": "$"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "control_repeat2",
+      "parent": "operator_join3",
       "shadow": true
     },
-    "motion_changeyby1": {
-      "id": "motion_changeyby1",
-      "opcode": "motion_changeyby",
+    "dogeiscutformatnumbers_formatNumber3": {
+      "id": "dogeiscutformatnumbers_formatNumber3",
+      "opcode": "dogeiscutformatnumbers_formatNumber",
       "inputs": {
-        "DY": {
-          "name": "DY",
-          "block": "math_number10",
-          "shadow": "math_number10"
-        }
-      },
-      "fields": {},
-      "next": "looks_changeeffectby1",
-      "topLevel": false,
-      "parent": "control_repeat2",
-      "shadow": false
-    },
-    "math_number10": {
-      "id": "math_number10",
-      "opcode": "math_number",
-      "inputs": {},
-      "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "3"
-        }
-      },
-      "next": null,
-      "topLevel": false,
-      "parent": "motion_changeyby1",
-      "shadow": true
-    },
-    "looks_changeeffectby1": {
-      "id": "looks_changeeffectby1",
-      "opcode": "looks_changeeffectby",
-      "inputs": {
-        "CHANGE": {
-          "name": "CHANGE",
-          "block": "operator_divide1",
+          "block": "operator_multiply3",
           "shadow": null
+        },
+        "DECIMALS": {
+          "name": "DECIMALS",
+          "block": "math_number13",
+          "shadow": "math_number13"
         }
       },
       "fields": {
-        "EFFECT": {
-          "name": "EFFECT",
-          "value": "GHOST"
+        "NOTATION": {
+          "name": "NOTATION",
+          "value": "AD standard"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "motion_changeyby1",
+      "parent": "operator_join3",
       "shadow": false
     },
-    "operator_divide1": {
-      "id": "operator_divide1",
-      "opcode": "operator_divide",
+    "operator_multiply3": {
+      "id": "operator_multiply3",
+      "opcode": "operator_multiply",
       "inputs": {
         "NUM1": {
           "name": "NUM1",
-          "block": "math_number8",
-          "shadow": "math_number8"
+          "block": "data_variable9",
+          "shadow": null
         },
         "NUM2": {
           "name": "NUM2",
-          "block": "math_number9",
-          "shadow": "math_number9"
+          "block": "math_number12",
+          "shadow": "math_number12"
         }
       },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "looks_changeeffectby1",
+      "parent": "dogeiscutformatnumbers_formatNumber3",
       "shadow": false
     },
-    "math_number8": {
-      "id": "math_number8",
+    "data_variable9": {
+      "id": "data_variable9",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_multiply3",
+      "shadow": false
+    },
+    "math_number12": {
+      "id": "math_number12",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "100"
+          "value": "1000"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_divide1",
+      "parent": "operator_multiply3",
       "shadow": true
     },
-    "math_number9": {
-      "id": "math_number9",
+    "math_number13": {
+      "id": "math_number13",
       "opcode": "math_number",
       "inputs": {},
       "fields": {
         "NUM": {
           "name": "NUM",
-          "value": "15"
+          "value": "3"
         }
       },
       "next": null,
       "topLevel": false,
-      "parent": "operator_divide1",
+      "parent": "dogeiscutformatnumbers_formatNumber3",
       "shadow": true
     },
-    "control_delete_this_clone1": {
-      "id": "control_delete_this_clone1",
-      "opcode": "control_delete_this_clone",
-      "inputs": {},
+    "control_if1": {
+      "id": "control_if1",
+      "opcode": "control_if",
+      "inputs": {
+        "CONDITION": {
+          "name": "CONDITION",
+          "block": "operator_not1",
+          "shadow": null
+        },
+        "SUBSTACK": {
+          "name": "SUBSTACK",
+          "block": "lmsclonesplus_createCloneOfMyselfWithVar1",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": "data_setvariableto3",
+      "topLevel": false,
+      "parent": "text_setText4",
+      "shadow": false
+    },
+    "operator_not1": {
+      "id": "operator_not1",
+      "opcode": "operator_not",
+      "inputs": {
+        "OPERAND": {
+          "name": "OPERAND",
+          "block": "operator_equals1",
+          "shadow": null
+        }
+      },
       "fields": {},
       "next": null,
       "topLevel": false,
-      "parent": "control_repeat2",
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "operator_equals1": {
+      "id": "operator_equals1",
+      "opcode": "operator_equals",
+      "inputs": {
+        "OPERAND1": {
+          "name": "OPERAND1",
+          "block": "data_variable5",
+          "shadow": null
+        },
+        "OPERAND2": {
+          "name": "OPERAND2",
+          "block": "data_variable6",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_not1",
+      "shadow": false
+    },
+    "data_variable5": {
+      "id": "data_variable5",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": false
+    },
+    "data_variable6": {
+      "id": "data_variable6",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_equals1",
+      "shadow": false
+    },
+    "lmsclonesplus_createCloneOfMyselfWithVar1": {
+      "id": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "opcode": "lmsclonesplus_createCloneOfMyselfWithVar",
+      "inputs": {
+        "INPUTB": {
+          "name": "INPUTB",
+          "block": "operator_subtract1",
+          "shadow": null
+        }
+      },
+      "fields": {
+        "INPUTA": {
+          "name": "INPUTA",
+          "value": "a5x6#]MeH,|Mrof4A|+A"
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "operator_subtract1": {
+      "id": "operator_subtract1",
+      "opcode": "operator_subtract",
+      "inputs": {
+        "NUM1": {
+          "name": "NUM1",
+          "block": "data_variable7",
+          "shadow": null
+        },
+        "NUM2": {
+          "name": "NUM2",
+          "block": "data_variable8",
+          "shadow": null
+        }
+      },
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "lmsclonesplus_createCloneOfMyselfWithVar1",
+      "shadow": false
+    },
+    "data_variable7": {
+      "id": "data_variable7",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_subtract1",
+      "shadow": false
+    },
+    "data_variable8": {
+      "id": "data_variable8",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "operator_subtract1",
+      "shadow": false
+    },
+    "data_setvariableto3": {
+      "id": "data_setvariableto3",
+      "opcode": "data_setvariableto",
+      "inputs": {
+        "VALUE": {
+          "name": "VALUE",
+          "block": "data_variable4",
+          "shadow": null
+        }
+      },
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "JcCwdCqPkN6E2Daw|a1T",
+          "value": "MoneyOnLastFrame",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "control_if1",
+      "shadow": false
+    },
+    "data_variable4": {
+      "id": "data_variable4",
+      "opcode": "data_variable",
+      "inputs": {},
+      "fields": {
+        "VARIABLE": {
+          "name": "VARIABLE",
+          "id": "Pt.1X5RCAbK=Tm1JiWs^",
+          "value": "Money",
+          "variableType": ""
+        }
+      },
+      "next": null,
+      "topLevel": false,
+      "parent": "data_setvariableto3",
       "shadow": false
     }
   },
   "scripts": [
-    "event_whenflagclicked1",
     "event_whenbroadcastreceived1",
-    "control_start_as_clone1"
+    "event_whenflagclicked1",
+    "control_start_as_clone1",
+    "event_whenbroadcastreceived2"
   ]
 }

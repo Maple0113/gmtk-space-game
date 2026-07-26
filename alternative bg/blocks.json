@@ -38,7 +38,7 @@
         }
       },
       "fields": {},
-      "next": null,
+      "next": "looks_show1",
       "topLevel": false,
       "parent": "looks_gotofrontback1",
       "shadow": false
@@ -57,6 +57,16 @@
       "topLevel": false,
       "parent": "looks_setsizeto1",
       "shadow": true
+    },
+    "looks_show1": {
+      "id": "looks_show1",
+      "opcode": "looks_show",
+      "inputs": {},
+      "fields": {},
+      "next": null,
+      "topLevel": false,
+      "parent": "looks_setsizeto1",
+      "shadow": false
     }
   },
   "scripts": [

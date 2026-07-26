@@ -32,7 +32,7 @@
     "name": "PlacementGrid",
     "type": "",
     "isCloud": false,
-    "value": "[[0,1],[0,1]]"
+    "value": "[[0,0],[0,0]]"
   },
   "Pt.1X5RCAbK=Tm1JiWs^": {
     "id": "Pt.1X5RCAbK=Tm1JiWs^",
@@ -47,6 +47,13 @@
     "type": "",
     "isCloud": false,
     "value": "true"
+  },
+  "hydVEoo-,a|a1S{TMQ1[": {
+    "id": "hydVEoo-,a|a1S{TMQ1[",
+    "name": "Progress",
+    "type": "",
+    "isCloud": false,
+    "value": 0
   },
   "mY!n(%JOZe1++Q$MH;WY": {
     "id": "mY!n(%JOZe1++Q$MH;WY",
@@ -76,8 +83,8 @@
     "isCloud": false,
     "value": [
       "{\"Name\":\"body\",\"Amount\":1,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"],[\"1\",\"1\"]]}",
-      "{\"Name\":\"nosecone\",\"Amount\":0,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
-      "{\"Name\":\"fin\",\"Amount\":1,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
+      "{\"Name\":\"nosecone\",\"Amount\":1,\"Position\":2,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
+      "{\"Name\":\"fin\",\"Amount\":2,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"],[\"1\"]]}",
       "{\"Name\":\"fueltank\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\",\"1\"]]}",
       "{\"Name\":\"thruster\",\"Amount\":0,\"Position\":0,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
       "{\"Name\":\"advertisement\",\"Amount\":0,\"Position\":1,\"Costume\":\"\",\"Pattern\":[[\"1\"]]}",
@@ -109,7 +116,7 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[1,1]"
+      "[0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -130,8 +137,8 @@
     "type": "list",
     "isCloud": false,
     "value": [
-      "[0,1]",
-      "[0,1]"
+      "[0,0]",
+      "[0,0]"
     ],
     "_monitorUpToDate": false
   },
@@ -164,27 +171,7 @@
     "name": "Rocket",
     "type": "list",
     "isCloud": false,
-    "value": [
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "nosecone",
-      "fin",
-      "fin",
-      "fin",
-      "fin",
-      "fin",
-      "fin",
-      "fin",
-      "fin"
-    ],
+    "value": [],
     "_monitorUpToDate": false
   },
   "X$b7KhkWBuw^}6#}%6`n": {
@@ -313,11 +300,18 @@
     "isCloud": false,
     "value": "GAME rocket submit"
   },
-  "hydVEoo-,a|a1S{TMQ1[": {
-    "id": "hydVEoo-,a|a1S{TMQ1[",
-    "name": "Progress",
-    "type": "",
+  "3.f=+dS@N]3^ITVh46Jv": {
+    "id": "3.f=+dS@N]3^ITVh46Jv",
+    "name": "GAME reset",
+    "type": "broadcast_msg",
     "isCloud": false,
-    "value": 0
+    "value": "GAME reset"
+  },
+  "FSKk3#o,}z`:nwm)!K|X": {
+    "id": "FSKk3#o,}z`:nwm)!K|X",
+    "name": "GAME progress tutorial",
+    "type": "broadcast_msg",
+    "isCloud": false,
+    "value": "GAME progress tutorial"
   }
 }

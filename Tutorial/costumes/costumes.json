@@ -1,0 +1,50 @@
+[
+  {
+    "name": "TutorialMan",
+    "dataFormat": "png",
+    "rotationCenterX": 128,
+    "rotationCenterY": 128
+  },
+  {
+    "name": "costume1",
+    "dataFormat": "svg",
+    "rotationCenterX": 216.2265625,
+    "rotationCenterY": 112.39376367707544
+  },
+  {
+    "name": "tutorial1",
+    "dataFormat": "svg",
+    "rotationCenterX": 138.035705,
+    "rotationCenterY": 134.4999998749999
+  },
+  {
+    "name": "tutorial2",
+    "dataFormat": "svg",
+    "rotationCenterX": 346.3324781426433,
+    "rotationCenterY": 216.88204225705738
+  },
+  {
+    "name": "tutorial3",
+    "dataFormat": "svg",
+    "rotationCenterX": 372.477725,
+    "rotationCenterY": 218.94738999999998
+  },
+  {
+    "name": "TutorialCursor-Sheet",
+    "dataFormat": "png",
+    "rotationCenterX": 44,
+    "rotationCenterY": 24
+  },
+  {
+    "name": "cursor open",
+    "dataFormat": "png",
+    "rotationCenterX": 16,
+    "rotationCenterY": 16
+  },
+  {
+    "name": "cursor closed",
+    "dataFormat": "png",
+    "rotationCenterX": 14,
+    "rotationCenterY": 8
+  }
+]

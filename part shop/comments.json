@@ -1,42 +1,42 @@
 {
-  "fV": {
-    "id": "fV",
+  "gw": {
+    "id": "gw",
     "text": "make part an easy-to-use object",
     "x": -502,
     "y": 602,
     "width": 181,
     "height": 103,
     "minimized": false,
-    "blockId": "lb"
+    "blockId": "mn"
   },
-  "fX": {
-    "id": "fX",
+  "gy": {
+    "id": "gy",
     "text": "get grid",
     "x": -716,
     "y": 915,
     "width": 200,
     "height": 200,
     "minimized": true,
-    "blockId": "lc"
+    "blockId": "mo"
   },
-  "jn": {
-    "id": "jn",
+  "kn": {
+    "id": "kn",
     "text": "binarify pattern",
     "x": -534,
     "y": 1807,
     "width": 156,
     "height": 80,
     "minimized": false,
-    "blockId": "ld"
+    "blockId": "mp"
   },
-  "jm": {
-    "id": "jm",
+  "km": {
+    "id": "km",
     "text": "binarify grid",
     "x": -684,
     "y": 1969,
     "width": 118,
     "height": 85,
     "minimized": false,
-    "blockId": "le"
+    "blockId": "mq"
   }
 }
